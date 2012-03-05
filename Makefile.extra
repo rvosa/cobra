@@ -2,6 +2,7 @@ RAWDATADIR = data/raw
 TREFILES = $(wildcard $(RAWDATADIR)/*.tre)
 IMGS = $(patsubst %.tre,%.svg,$(TREFILES))
 NEXML = $(patsubst %.tre,%.xml,$(TREFILES))
+PHYLO = $(patsubst %.xml,%.phyloxml,$(TREFILES))
 
 .PHONY : clean all
 
@@ -11,12 +12,16 @@ nexml : $(NEXML)
 
 images : $(IMGS)
 
+phyloxml : $(PHYLO)
+
 $(IMGS) : %.svg : %.tre 
 	perl script/drawtree.pl --infile $< --format nexus --outfile $@ --define '-width=1500' --define '-shape=rect'
 
 $(NEXML) : %.xml : %.tre
-    perl script/merge.pl --treefile $< --treeformat nexus --seqfile $*.fas --seqformat fasta --seqdefines '-type=dna' --namelength 3 --outfile $@
+	perl script/merge.pl --treefile $< --treeformat nexus --seqfile $*.fas --seqformat fasta --seqdefines '-type=dna' --namelength 3 --outfile $@
+
+$(PHYLO) : %.phyloxml : %.xml
+	perl script/phyloxml.pl -i $< -f 'nexus' > $@
 
 clean :
-	rm -f $(NEXML) $(IMGS)
-
+	rm -f $(NEXML) $(IMGS) $(PHYLO)
