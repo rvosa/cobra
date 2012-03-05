@@ -1,0 +1,23 @@
+#TAXA = Homo_sapiens
+RAWDATADIR = data/raw
+NEXFILES := $(wildcard $(RAWDATADIR)/*.nex)
+FASFILES := $(wildcard $(RAWDATADIR)/*.fas)
+XMLFILES := $(patsubst %.nex,%.xml,$(NEXFILES))
+IMGFILES := $(patsubst %.nex,%.svg,$(NEXFILES))
+
+.PHONY : clean all
+
+all : $(IMGFILES)
+
+images : $(IMGFILES)
+
+clean :
+	rm -f $(IMGFILES)
+
+$(IMGFILES) : %.svg : %.tre 
+	perl script/drawtree.pl \
+		--infile $< \
+        --format nexus \
+		--outfile $@ \
+        --define '-width=1500' \
+        --define '-shape=rect'
