@@ -58,7 +58,6 @@ for my $taxon ( @{ $project->get_items(_TAXON_) } ) {
         my $key = $1;
         if ( $map{$key} ) {
             my $code = $map{$key}->[2];
-            chop($code);
             my %ns = ( 'pxml' => _NS_PHYLOXML_ );
             update_meta( $taxon, 'pxml:code' => $code, %ns );
             update_meta( $taxon, 'pxml:scientific_name' => $map{$key}->[0], %ns );
