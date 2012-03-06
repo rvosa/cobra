@@ -5,6 +5,7 @@ use Bio::Phylo::Factory;
 use Bio::Phylo::IO qw'parse unparse';
 use Bio::Phylo::Util::Logger ':levels';
 use Bio::Phylo::Util::CONSTANT qw':objecttypes :namespaces';
+use Data::Dumper;
 
 my $fac = Bio::Phylo::Factory->new;
 my $log = Bio::Phylo::Util::Logger->new(
@@ -56,7 +57,8 @@ for my $taxon ( @{ $project->get_items(_TAXON_) } ) {
     if ( $name =~ m/^([^_]+_[^_]+_[^_]+)/ ) {
         my $key = $1;
         if ( $map{$key} ) {
-            my $code = join '', map { substr $_, 0, 5 } map { uc $_ } split / /, $map{$key}->[0];
+            my $code = $map{$key}->[2];
+            chop($code);
             my %ns = ( 'pxml' => _NS_PHYLOXML_ );
             update_meta( $taxon, 'pxml:code' => $code, %ns );
             update_meta( $taxon, 'pxml:scientific_name' => $map{$key}->[0], %ns );
