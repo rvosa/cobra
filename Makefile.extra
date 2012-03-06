@@ -1,8 +1,10 @@
 RAWDATADIR = data/raw
+TAXAMAP = data/excel/taxa.csv
 TREFILES = $(wildcard $(RAWDATADIR)/*.tre)
 IMGS = $(patsubst %.tre,%.svg,$(TREFILES))
 NEXML = $(patsubst %.tre,%.xml,$(TREFILES))
 PHYLO = $(patsubst %.xml,%.phyloxml,$(TREFILES))
+TAXA = $(patsubst %.xml,%.txt,$(PHYLO))
 
 .PHONY : clean all
 
@@ -14,6 +16,11 @@ images : $(IMGS)
 
 phyloxml : $(PHYLO)
 
+taxa : $(TAXA)
+
+$(TAXA) : %.txt : %.xml
+	perl script/extract_taxa.pl --infile $< --format nexml > $@
+
 $(IMGS) : %.svg : %.tre 
 	perl script/drawtree.pl --infile $< --format nexus --outfile $@ --define '-width=1500' --define '-shape=rect'
 
@@ -21,7 +28,7 @@ $(NEXML) : %.xml : %.tre
 	perl script/merge.pl --treefile $< --treeformat nexus --seqfile $*.fas --seqformat fasta --seqdefines '-type=dna' --namelength 3 --outfile $@
 
 $(PHYLO) : %.phyloxml : %.xml
-	perl script/phyloxml.pl -i $< -f 'nexus' > $@
+	perl script/phyloxml.pl -i $< -f 'nexml' -t $(TAXAMAP) > $@
 
 clean :
 	rm -f $(NEXML) $(IMGS) $(PHYLO)
