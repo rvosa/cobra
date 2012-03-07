@@ -5,18 +5,20 @@ use Bio::Phylo::Cobra::TaxaMap;
 use Bio::Phylo::PhyloWS::Client;
 use Bio::Phylo::Factory;
 use Bio::Phylo::IO 'parse';
+use Getopt::Long;
 
-my $default_dir = $0;
-$default_dir =~ s|fetch_trees\.pl$|../data/sourcetrees/|;
+# process command line arguments
+my ( $dir, $file, $id );
+GetOptions(
+	'dir=s' => \$dir, # sourcetrees
+	'csv=s' => \$file, # taxa.csv
+	'id=i'  => \$id, # optional: use single NCBI identifier
+);
 
-my $default_csv = $0;
-$default_csv =~ s|fetch_trees\.pl$|../data/excel/taxa.csv|;
-
-# read csv file
-my $file = shift @ARGV || $default_csv;
-my $dir = shift @ARGV || $default_dir;
+# read csv file, get distinct NCBI taxon IDs
 my $map = Bio::Phylo::Cobra::TaxaMap->new($file);
 my @ids = $map->get_distinct_taxonIDs;
+@ids = ( $id ) if $id;
 
 # instantiate client
 my $fac = Bio::Phylo::Factory->new;
@@ -36,7 +38,7 @@ for my $id ( @ids ) {
 			'-recordSchema' => 'tree',
 		);
 		
-		# XXX there is something wrong or weird about the guid from treebase
+		# XXX the treebase guid is the purl
 		for my $res ( @{ $desc->get_entities } ) {
 			my $guid = $res->get_guid;
 			
@@ -52,8 +54,6 @@ for my $id ( @ids ) {
 				);
 				
 				# write the result to a file based on the GUID.
-				# this should clobber instance where multiple taxa in our list
-				# were in the same study. that's the behavior that we want.
 				my $outfile = $guid;
 				$outfile =~ s|^.+:(.+)$|$dir/$1.xml|;			
 				open my $fh, '>', $outfile or die "Can't open $outfile: $!";
@@ -82,7 +82,7 @@ print "taxa with 0 hits:\n";
 print join "\n", @notseen;
 
 __DATA__
-0.391691394658754 overlapping taxa in 337 files
+0.414860681114551 overlapping taxa in 323 files
 taxa with 0 hits:
 111304
 186611
@@ -92,7 +92,7 @@ taxa with 0 hits:
 338837
 338838
 51750
+537493
 61970
 672774
 865857
-8781
