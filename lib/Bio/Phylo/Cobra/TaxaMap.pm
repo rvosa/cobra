@@ -1,6 +1,7 @@
 package Bio::Phylo::Cobra::TaxaMap;
 use strict;
 use warnings;
+use Bio::Phylo::Util::Exceptions 'throw';
 our $AUTOLOAD;
 
 my %keys = (
@@ -132,5 +133,12 @@ sub AUTOLOAD {
 			$result{ $value } = 1 if $value;
 		}
 		return sort { $a cmp $b } keys %result;
+	}
+	elsif ( $method =~ /^[A-Z]+?$/) {
+		# do nothing
+		return;
+	}
+	else {
+		throw 'UnknownMethod' => $AUTOLOAD;
 	}
 }
