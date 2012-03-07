@@ -1,636 +1,279 @@
-<nex:nexml about="#nl49659" generator="Bio::Phylo::Project v.0.46_1660" version="0.9" xmlns="http://www.nexml.org/2009" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:nex="http://www.nexml.org/2009" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:tb="http://purl.org/phylo/treebase/2.0/terms#" xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.nexml.org/2009 http://www.nexml.org/2009/nexml.xsd">
-  <meta content="rvosa" datatype="xsd:string" id="ma50124" property="dc:creator" xsi:type="nex:LiteralMeta"/>
-  <meta content="2012-03-06T21:59:16" datatype="xsd:date" id="ma50125" property="dc:date" xsi:type="nex:LiteralMeta"/>
-  <otus about="#Tls11019" id="Tls11019" label="Varanoid" xml:base="http://purl.org/phylo/treebase/phylows/taxon/TB2:">
-    <meta content="Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@23979597 $Rev: 1040 $" datatype="xsd:string" id="ma49661" property="skos:historyNote" xsi:type="nex:LiteralMeta"/>
-    <otu about="#Tl12260" id="Tl12260" label="Varanus yuwonoi">
-      <meta content="30505" datatype="xsd:integer" id="ma49663" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="71181" datatype="xsd:integer" id="ma49664" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/169856" id="ma49665" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2546439" id="ma49666" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" id="ma49667" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl12298" id="Tl12298" label="Varanus varius">
-      <meta content="30504" datatype="xsd:integer" id="ma49669" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="71180" datatype="xsd:integer" id="ma49670" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/8559" id="ma49671" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2546437" id="ma49672" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" id="ma49673" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl12305" id="Tl12305" label="Varanus storri">
-      <meta content="30501" datatype="xsd:integer" id="ma49675" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="71169" datatype="xsd:integer" id="ma49676" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/169855" id="ma49677" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2546429" id="ma49678" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" id="ma49679" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl12303" id="Tl12303" label="Varanus spenceri">
-      <meta content="30500" datatype="xsd:integer" id="ma49681" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="71167" datatype="xsd:integer" id="ma49682" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/169854" id="ma49683" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2546427" id="ma49684" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" id="ma49685" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl12251" id="Tl12251" label="Varanus semiremex">
-      <meta content="30499" datatype="xsd:integer" id="ma49687" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="71166" datatype="xsd:integer" id="ma49688" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/169853" id="ma49689" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2546408" id="ma49690" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" id="ma49691" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl12254" id="Tl12254" label="Varanus scalaris AUST">
-      <meta content="30498" datatype="xsd:integer" id="ma49693" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="71163" datatype="xsd:integer" id="ma49694" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/169852" id="ma49695" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta content="Varanus scalaris" datatype="xsd:string" id="ma49696" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2546426" id="ma49697" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" id="ma49698" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl12255" id="Tl12255" label="Varanus salvator salvator">
-      <meta content="30496" datatype="xsd:integer" id="ma49700" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="71158" datatype="xsd:integer" id="ma49701" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/169831" id="ma49702" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2546424" id="ma49703" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" id="ma49704" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl12271" id="Tl12271" label="Varanus salvator bivittatus">
-      <meta content="30494" datatype="xsd:integer" id="ma49706" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="71151" datatype="xsd:integer" id="ma49707" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:208868" id="ma49708" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" id="ma49709" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl12264" id="Tl12264" label="Varanus salvator togianus">
-      <meta content="30497" datatype="xsd:integer" id="ma49711" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="71160" datatype="xsd:integer" id="ma49712" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/169832" id="ma49713" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2546425" id="ma49714" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" id="ma49715" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl12277" id="Tl12277" label="Varanus salvator cumingi">
-      <meta content="30495" datatype="xsd:integer" id="ma49717" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="71152" datatype="xsd:integer" id="ma49718" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/169830" id="ma49719" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2546421" id="ma49720" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" id="ma49721" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl12253" id="Tl12253" label="Varanus salvadori">
-      <meta content="30492" datatype="xsd:integer" id="ma49723" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="71146" datatype="xsd:integer" id="ma49724" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/62049" id="ma49725" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta content="Varanus salvadorii" datatype="xsd:string" id="ma49726" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2546418" id="ma49727" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" id="ma49728" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl12266" id="Tl12266" label="Varanus tristis">
-      <meta content="30503" datatype="xsd:integer" id="ma49730" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="71175" datatype="xsd:integer" id="ma49731" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/62052" id="ma49732" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2546434" id="ma49733" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" id="ma49734" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl12262" id="Tl12262" label="Varanus timorensis">
-      <meta content="30502" datatype="xsd:integer" id="ma49736" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="71173" datatype="xsd:integer" id="ma49737" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/62053" id="ma49738" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2546433" id="ma49739" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" id="ma49740" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl12275" id="Tl12275" label="Varanus scalaris TIMO">
-      <meta content="30498" datatype="xsd:integer" id="ma49742" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="71163" datatype="xsd:integer" id="ma49743" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/169852" id="ma49744" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta content="Varanus scalaris" datatype="xsd:string" id="ma49745" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2546426" id="ma49746" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" id="ma49747" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl12267" id="Tl12267" label="Varanus rudicollis">
-      <meta content="30491" datatype="xsd:integer" id="ma49749" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="71142" datatype="xsd:integer" id="ma49750" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/169851" id="ma49751" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2546417" id="ma49752" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" id="ma49753" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl12296" id="Tl12296" label="Varanus primordius">
-      <meta content="30490" datatype="xsd:integer" id="ma49755" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="71139" datatype="xsd:integer" id="ma49756" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/169850" id="ma49757" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2546415" id="ma49758" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" id="ma49759" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl12257" id="Tl12257" label="Varanus prasinus">
-      <meta content="30489" datatype="xsd:integer" id="ma49761" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="71136" datatype="xsd:integer" id="ma49762" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/62050" id="ma49763" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2546414" id="ma49764" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" id="ma49765" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl12304" id="Tl12304" label="Varanus pilbarensis">
-      <meta content="30488" datatype="xsd:integer" id="ma49767" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="71133" datatype="xsd:integer" id="ma49768" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/62048" id="ma49769" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2546413" id="ma49770" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" id="ma49771" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl12294" id="Tl12294" label="Varanus panoptes horni">
-      <meta content="30486" datatype="xsd:integer" id="ma49773" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="71129" datatype="xsd:integer" id="ma49774" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/169848" id="ma49775" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:208849" id="ma49776" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" id="ma49777" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl12291" id="Tl12291" label="Varanus panoptes panoptes">
-      <meta content="30487" datatype="xsd:integer" id="ma49779" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="71130" datatype="xsd:integer" id="ma49780" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/169849" id="ma49781" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2549701" id="ma49782" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" id="ma49783" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl12284" id="Tl12284" label="Varanus olivaceus">
-      <meta content="30485" datatype="xsd:integer" id="ma49785" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="71126" datatype="xsd:integer" id="ma49786" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/62047" id="ma49787" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2546409" id="ma49788" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" id="ma49789" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl12270" id="Tl12270" label="Varanus bengalensis nebulosis">
-      <meta content="31885" datatype="xsd:integer" id="ma49791" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="74006" datatype="xsd:integer" id="ma49792" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/169827" id="ma49793" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:10196593" id="ma49794" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" id="ma49795" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl12276" id="Tl12276" label="Varanus niloticus">
-      <meta content="30484" datatype="xsd:integer" id="ma49797" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="71123" datatype="xsd:integer" id="ma49798" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/62046" id="ma49799" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2546407" id="ma49800" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" id="ma49801" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl12274" id="Tl12274" label="Varanus mitchelli">
-      <meta content="30483" datatype="xsd:integer" id="ma49803" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="71121" datatype="xsd:integer" id="ma49804" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/62045" id="ma49805" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2546406" id="ma49806" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" id="ma49807" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl12282" id="Tl12282" label="Varanus mertensi">
-      <meta content="30482" datatype="xsd:integer" id="ma49809" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="71120" datatype="xsd:integer" id="ma49810" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/62044" id="ma49811" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2546405" id="ma49812" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" id="ma49813" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl12269" id="Tl12269" label="Varanus melinus">
-      <meta content="30481" datatype="xsd:integer" id="ma49815" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="71117" datatype="xsd:integer" id="ma49816" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/169846" id="ma49817" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2546404" id="ma49818" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" id="ma49819" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl12280" id="Tl12280" label="Varanus komodoensis">
-      <meta content="30480" datatype="xsd:integer" id="ma49821" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="71114" datatype="xsd:integer" id="ma49822" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/61221" id="ma49823" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2546401" id="ma49824" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" id="ma49825" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl12306" id="Tl12306" label="Varanus kingorum">
-      <meta content="30479" datatype="xsd:integer" id="ma49827" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="71112" datatype="xsd:integer" id="ma49828" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/169845" id="ma49829" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2546400" id="ma49830" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" id="ma49831" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl12292" id="Tl12292" label="Varanus keithhornei">
-      <meta content="30478" datatype="xsd:integer" id="ma49833" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="71109" datatype="xsd:integer" id="ma49834" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/169844" id="ma49835" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2546399" id="ma49836" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" id="ma49837" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl12283" id="Tl12283" label="Varanus jobiensis">
-      <meta content="30477" datatype="xsd:integer" id="ma49839" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="71107" datatype="xsd:integer" id="ma49840" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/169843" id="ma49841" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2546398" id="ma49842" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" id="ma49843" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl12286" id="Tl12286" label="Varanus indicus FI">
-      <meta content="30476" datatype="xsd:integer" id="ma49845" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="71105" datatype="xsd:integer" id="ma49846" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/62043" id="ma49847" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta content="Varanus indicus" datatype="xsd:string" id="ma49848" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2546396" id="ma49849" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" id="ma49850" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl12252" id="Tl12252" label="Varanus indicus NT">
-      <meta content="30476" datatype="xsd:integer" id="ma49852" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="71105" datatype="xsd:integer" id="ma49853" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/62043" id="ma49854" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta content="Varanus indicus" datatype="xsd:string" id="ma49855" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2546396" id="ma49856" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" id="ma49857" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl12268" id="Tl12268" label="Varanus indicus SI">
-      <meta content="30476" datatype="xsd:integer" id="ma49859" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="71105" datatype="xsd:integer" id="ma49860" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/62043" id="ma49861" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta content="Varanus indicus" datatype="xsd:string" id="ma49862" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2546396" id="ma49863" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" id="ma49864" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl135974" id="Tl135974" label="Varanus griseus">
-      <meta content="30475" datatype="xsd:integer" id="ma49866" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="71101" datatype="xsd:integer" id="ma49867" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/52184" id="ma49868" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2546391" id="ma49869" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" id="ma49870" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl12293" id="Tl12293" label="Varanus gouldii">
-      <meta content="30474" datatype="xsd:integer" id="ma49872" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="71098" datatype="xsd:integer" id="ma49873" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/62042" id="ma49874" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2546388" id="ma49875" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" id="ma49876" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl12258" id="Tl12258" label="Varanus glebopalma">
-      <meta content="30473" datatype="xsd:integer" id="ma49878" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="71096" datatype="xsd:integer" id="ma49879" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/169842" id="ma49880" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2546387" id="ma49881" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" id="ma49882" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl12259" id="Tl12259" label="Varanus glauerti">
-      <meta content="30472" datatype="xsd:integer" id="ma49884" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="71093" datatype="xsd:integer" id="ma49885" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/169841" id="ma49886" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2546386" id="ma49887" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" id="ma49888" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl12281" id="Tl12281" label="Varanus gilleni">
-      <meta content="30471" datatype="xsd:integer" id="ma49890" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="71091" datatype="xsd:integer" id="ma49891" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/169840" id="ma49892" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2546385" id="ma49893" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" id="ma49894" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl12263" id="Tl12263" label="Varanus giganteus">
-      <meta content="30470" datatype="xsd:integer" id="ma49896" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="71088" datatype="xsd:integer" id="ma49897" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/62041" id="ma49898" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2546384" id="ma49899" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" id="ma49900" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl12289" id="Tl12289" label="Varanus flavescens">
-      <meta content="30469" datatype="xsd:integer" id="ma49902" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="71085" datatype="xsd:integer" id="ma49903" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/169839" id="ma49904" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2546378" id="ma49905" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" id="ma49906" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl12295" id="Tl12295" label="Varanus exanthematicus">
-      <meta content="30468" datatype="xsd:integer" id="ma49908" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="71080" datatype="xsd:integer" id="ma49909" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/8557" id="ma49910" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2546381" id="ma49911" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" id="ma49912" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl12278" id="Tl12278" label="Varanus eremius">
-      <meta content="30467" datatype="xsd:integer" id="ma49914" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="71078" datatype="xsd:integer" id="ma49915" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/62040" id="ma49916" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2546379" id="ma49917" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" id="ma49918" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl12261" id="Tl12261" label="Varanus dumerili">
-      <meta content="30466" datatype="xsd:integer" id="ma49920" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="71077" datatype="xsd:integer" id="ma49921" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:208781" id="ma49922" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" id="ma49923" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl12302" id="Tl12302" label="Varanus doreanus">
-      <meta content="30465" datatype="xsd:integer" id="ma49925" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="71075" datatype="xsd:integer" id="ma49926" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/169836" id="ma49927" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2546374" id="ma49928" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" id="ma49929" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl12300" id="Tl12300" label="Varanus bengalensis bengalensis">
-      <meta content="30464" datatype="xsd:integer" id="ma49931" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="71070" datatype="xsd:integer" id="ma49932" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/169826" id="ma49933" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2546365" id="ma49934" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" id="ma49935" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl12279" id="Tl12279" label="Varanus beccari">
-      <meta content="30463" datatype="xsd:integer" id="ma49937" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="71069" datatype="xsd:integer" id="ma49938" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta content="Varanus beccarii" datatype="xsd:string" id="ma49939" property="skos:prefLabel" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/437646" id="ma49940" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:5792723" id="ma49941" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" id="ma49942" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl12285" id="Tl12285" label="Varanus baritji">
-      <meta content="30462" datatype="xsd:integer" id="ma49944" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="71067" datatype="xsd:integer" id="ma49945" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/169834" id="ma49946" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2546362" id="ma49947" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" id="ma49948" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl12299" id="Tl12299" label="Varanus acanthurus">
-      <meta content="30461" datatype="xsd:integer" id="ma49950" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="71066" datatype="xsd:integer" id="ma49951" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/62035" id="ma49952" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2546352" id="ma49953" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" id="ma49954" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl135988" id="Tl135988" label="Lanthanotus borneensis">
-      <meta content="15292" datatype="xsd:integer" id="ma49956" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="35914" datatype="xsd:integer" id="ma49957" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/62058" id="ma49958" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2540887" id="ma49959" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" id="ma49960" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl135993" id="Tl135993" label="Heloderma suspectum">
-      <meta content="13229" datatype="xsd:integer" id="ma49962" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="31255" datatype="xsd:integer" id="ma49963" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/8554" id="ma49964" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2540275" id="ma49965" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" id="ma49966" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl12273" id="Tl12273" label="Heloderma horridum">
-      <meta content="13228" datatype="xsd:integer" id="ma49968" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="31254" datatype="xsd:integer" id="ma49969" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/8551" id="ma49970" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2540274" id="ma49971" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" id="ma49972" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl12287" id="Tl12287" label="Elgaria kingi">
-      <meta content="9925" datatype="xsd:integer" id="ma49974" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="23742" datatype="xsd:integer" id="ma49975" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta content="Elgaria kingii" datatype="xsd:string" id="ma49976" property="skos:prefLabel" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/102185" id="ma49977" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:6308199" id="ma49978" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" id="ma49979" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl135887" id="Tl135887" label="Anniella pulchra">
-      <meta content="1678" datatype="xsd:integer" id="ma49981" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="4167" datatype="xsd:integer" id="ma49982" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/51957" id="ma49983" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2536250" id="ma49984" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" id="ma49985" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl12256" id="Tl12256" label="Anguis fragilis">
-      <meta content="1625" datatype="xsd:integer" id="ma49987" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="4069" datatype="xsd:integer" id="ma49988" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/102178" id="ma49989" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2536237" id="ma49990" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" id="ma49991" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl135986" id="Tl135986" label="Xenosaurus grandis">
-      <meta content="31041" datatype="xsd:integer" id="ma49993" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="72473" datatype="xsd:integer" id="ma49994" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/52183" id="ma49995" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2546556" id="ma49996" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" id="ma49997" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl135937" id="Tl135937" label="Shinisaurus crocodilurus">
-      <meta content="26868" datatype="xsd:integer" id="ma49999" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="62722" datatype="xsd:integer" id="ma50000" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/52224" id="ma50001" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2544878" id="ma50002" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" id="ma50003" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-  </otus>
-  <trees about="#trees98355" id="trees98355" otus="Tls11019" xml:base="http://purl.org/phylo/treebase/phylows/tree/TB2:">
-    <meta content="Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlTreeBlockWriter@32ed6239 $Rev: 1040 $" datatype="xsd:string" id="ma50005" property="skos:historyNote" xsi:type="nex:LiteralMeta"/>
-    <tree about="#Tr848" id="Tr848" label="Fig. 3.2" xsi:type="nex:IntTree">
-      <meta content="56" datatype="xsd:integer" id="ma50007" property="tb:ntax.tree" xsi:type="nex:LiteralMeta"/>
-      <meta content="Unrated" datatype="xsd:string" id="ma50008" property="tb:quality.tree" xsi:type="nex:LiteralMeta"/>
-      <meta content="Single" datatype="xsd:string" id="ma50009" property="tb:type.tree" xsi:type="nex:LiteralMeta"/>
-      <meta content="Species Tree" datatype="xsd:string" id="ma50010" property="tb:kind.tree" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" id="ma50011" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-      <node about="#Tn48320" id="Tn48320" root="true"/>
-      <node about="#Tn48340" id="Tn48340" label="Shinisaurus crocodilurus" otu="Tl135937"/>
-      <node about="#Tn48333" id="Tn48333"/>
-      <node about="#Tn48416" id="Tn48416"/>
-      <node about="#Tn48420" id="Tn48420"/>
-      <node about="#Tn48331" id="Tn48331"/>
-      <node about="#Tn48418" id="Tn48418"/>
-      <node about="#Tn48329" id="Tn48329" label="Heloderma horridum" otu="Tl12273"/>
-      <node about="#Tn48360" id="Tn48360" label="Heloderma suspectum" otu="Tl135993"/>
-      <node about="#Tn48326" id="Tn48326" label="Xenosaurus grandis" otu="Tl135986"/>
-      <node about="#Tn48424" id="Tn48424"/>
-      <node about="#Tn48372" id="Tn48372" label="Lanthanotus borneensis" otu="Tl135988"/>
-      <node about="#Tn48351" id="Tn48351"/>
-      <node about="#Tn48413" id="Tn48413"/>
-      <node about="#Tn48403" id="Tn48403" label="Anniella pulchra" otu="Tl135887"/>
-      <node about="#Tn48367" id="Tn48367"/>
-      <node about="#Tn48375" id="Tn48375"/>
-      <node about="#Tn48368" id="Tn48368" label="Anguis fragilis" otu="Tl12256"/>
-      <node about="#Tn48381" id="Tn48381" label="Elgaria kingi" otu="Tl12287"/>
-      <node about="#Tn48330" id="Tn48330"/>
-      <node about="#Tn48399" id="Tn48399"/>
-      <node about="#Tn48328" id="Tn48328"/>
-      <node about="#Tn48341" id="Tn48341" label="Varanus griseus" otu="Tl135974"/>
-      <node about="#Tn48385" id="Tn48385"/>
-      <node about="#Tn48417" id="Tn48417"/>
-      <node about="#Tn48350" id="Tn48350"/>
-      <node about="#Tn48427" id="Tn48427"/>
-      <node about="#Tn48347" id="Tn48347" label="Varanus exanthematicus" otu="Tl12295"/>
-      <node about="#Tn48336" id="Tn48336" label="Varanus niloticus" otu="Tl12276"/>
-      <node about="#Tn48354" id="Tn48354"/>
-      <node about="#Tn48390" id="Tn48390"/>
-      <node about="#Tn48325" id="Tn48325"/>
-      <node about="#Tn48371" id="Tn48371"/>
-      <node about="#Tn48400" id="Tn48400"/>
-      <node about="#Tn48324" id="Tn48324" label="Varanus olivaceus" otu="Tl12284"/>
-      <node about="#Tn48319" id="Tn48319"/>
-      <node about="#Tn48389" id="Tn48389"/>
-      <node about="#Tn48359" id="Tn48359"/>
-      <node about="#Tn48388" id="Tn48388"/>
-      <node about="#Tn48406" id="Tn48406"/>
-      <node about="#Tn48394" id="Tn48394" label="Varanus glebopalma" otu="Tl12258"/>
-      <node about="#Tn48409" id="Tn48409"/>
-      <node about="#Tn48327" id="Tn48327" label="Varanus spenceri" otu="Tl12303"/>
-      <node about="#Tn48348" id="Tn48348"/>
-      <node about="#Tn48397" id="Tn48397" label="Varanus salvadori" otu="Tl12253"/>
-      <node about="#Tn48343" id="Tn48343"/>
-      <node about="#Tn48398" id="Tn48398"/>
-      <node about="#Tn48365" id="Tn48365"/>
-      <node about="#Tn48415" id="Tn48415" label="Varanus dumerili" otu="Tl12261"/>
-      <node about="#Tn48386" id="Tn48386" label="Varanus rudicollis" otu="Tl12267"/>
-      <node about="#Tn48384" id="Tn48384"/>
-      <node about="#Tn48357" id="Tn48357"/>
-      <node about="#Tn48377" id="Tn48377"/>
-      <node about="#Tn48370" id="Tn48370" label="Varanus eremius" otu="Tl12278"/>
-      <node about="#Tn48373" id="Tn48373" label="Varanus gilleni" otu="Tl12281"/>
-      <node about="#Tn48349" id="Tn48349"/>
-      <node about="#Tn48339" id="Tn48339" label="Varanus pilbarensis" otu="Tl12304"/>
-      <node about="#Tn48362" id="Tn48362"/>
-      <node about="#Tn48401" id="Tn48401" label="Varanus mertensi" otu="Tl12282"/>
-      <node about="#Tn48414" id="Tn48414" label="Varanus komodoensis" otu="Tl12280"/>
-      <node about="#Tn48337" id="Tn48337" label="Varanus varius" otu="Tl12298"/>
-      <node about="#Tn48408" id="Tn48408"/>
-      <node about="#Tn48423" id="Tn48423" label="Varanus prasinus" otu="Tl12257"/>
-      <node about="#Tn48422" id="Tn48422"/>
-      <node about="#Tn48425" id="Tn48425"/>
-      <node about="#Tn48323" id="Tn48323"/>
-      <node about="#Tn48355" id="Tn48355" label="Varanus flavescens" otu="Tl12289"/>
-      <node about="#Tn48335" id="Tn48335" label="Varanus salvator cumingi" otu="Tl12277"/>
-      <node about="#Tn48395" id="Tn48395"/>
-      <node about="#Tn48411" id="Tn48411"/>
-      <node about="#Tn48410" id="Tn48410" label="Varanus storri" otu="Tl12305"/>
-      <node about="#Tn48428" id="Tn48428" label="Varanus kingorum" otu="Tl12306"/>
-      <node about="#Tn48334" id="Tn48334" label="Varanus primordius" otu="Tl12296"/>
-      <node about="#Tn48402" id="Tn48402"/>
-      <node about="#Tn48387" id="Tn48387"/>
-      <node about="#Tn48383" id="Tn48383" label="Varanus giganteus" otu="Tl12263"/>
-      <node about="#Tn48353" id="Tn48353"/>
-      <node about="#Tn48382" id="Tn48382" label="Varanus beccari" otu="Tl12279"/>
-      <node about="#Tn48393" id="Tn48393" label="Varanus keithhornei" otu="Tl12292"/>
-      <node about="#Tn48378" id="Tn48378"/>
-      <node about="#Tn48429" id="Tn48429" label="Varanus jobiensis" otu="Tl12283"/>
-      <node about="#Tn48412" id="Tn48412"/>
-      <node about="#Tn48364" id="Tn48364" label="Varanus melinus" otu="Tl12269"/>
-      <node about="#Tn48369" id="Tn48369" label="Varanus bengalensis bengalensis" otu="Tl12300"/>
-      <node about="#Tn48426" id="Tn48426" label="Varanus bengalensis nebulosis" otu="Tl12270"/>
-      <node about="#Tn48391" id="Tn48391" label="Varanus salvator togianus" otu="Tl12264"/>
-      <node about="#Tn48405" id="Tn48405"/>
-      <node about="#Tn48338" id="Tn48338" label="Varanus acanthurus" otu="Tl12299"/>
-      <node about="#Tn48404" id="Tn48404" label="Varanus baritji" otu="Tl12285"/>
-      <node about="#Tn48379" id="Tn48379" label="Varanus glauerti" otu="Tl12259"/>
-      <node about="#Tn48356" id="Tn48356" label="Varanus tristis" otu="Tl12266"/>
-      <node about="#Tn48376" id="Tn48376"/>
-      <node about="#Tn48358" id="Tn48358"/>
-      <node about="#Tn48342" id="Tn48342" label="Varanus gouldii" otu="Tl12293"/>
-      <node about="#Tn48352" id="Tn48352"/>
-      <node about="#Tn48374" id="Tn48374" label="Varanus doreanus" otu="Tl12302"/>
-      <node about="#Tn48361" id="Tn48361" label="Varanus yuwonoi" otu="Tl12260"/>
-      <node about="#Tn48345" id="Tn48345" label="Varanus indicus SI" otu="Tl12268"/>
-      <node about="#Tn48363" id="Tn48363"/>
-      <node about="#Tn48407" id="Tn48407" label="Varanus salvator bivittatus" otu="Tl12271"/>
-      <node about="#Tn48366" id="Tn48366" label="Varanus salvator salvator" otu="Tl12255"/>
-      <node about="#Tn48421" id="Tn48421"/>
-      <node about="#Tn48346" id="Tn48346" label="Varanus timorensis" otu="Tl12262"/>
-      <node about="#Tn48321" id="Tn48321" label="Varanus scalaris TIMO" otu="Tl12275"/>
-      <node about="#Tn48396" id="Tn48396" label="Varanus scalaris AUST" otu="Tl12254"/>
-      <node about="#Tn48322" id="Tn48322" label="Varanus panoptes panoptes" otu="Tl12291"/>
-      <node about="#Tn48344" id="Tn48344" label="Varanus panoptes horni" otu="Tl12294"/>
-      <node about="#Tn48392" id="Tn48392" label="Varanus indicus NT" otu="Tl12252"/>
-      <node about="#Tn48419" id="Tn48419" label="Varanus indicus FI" otu="Tl12286"/>
-      <node about="#Tn48380" id="Tn48380" label="Varanus mitchelli" otu="Tl12274"/>
-      <node about="#Tn48332" id="Tn48332" label="Varanus semiremex" otu="Tl12251"/>
-      <edge id="edge50013" source="Tn48320" target="Tn48340"/>
-      <edge id="edge50014" source="Tn48320" target="Tn48333"/>
-      <edge id="edge50015" source="Tn48333" target="Tn48416"/>
-      <edge id="edge50120" source="Tn48333" target="Tn48420"/>
-      <edge id="edge50016" source="Tn48416" target="Tn48331"/>
-      <edge id="edge50023" source="Tn48416" target="Tn48418"/>
-      <edge id="edge50121" source="Tn48420" target="Tn48329"/>
-      <edge id="edge50122" source="Tn48420" target="Tn48360"/>
-      <edge id="edge50017" source="Tn48331" target="Tn48326"/>
-      <edge id="edge50018" source="Tn48331" target="Tn48424"/>
-      <edge id="edge50024" source="Tn48418" target="Tn48372"/>
-      <edge id="edge50025" source="Tn48418" target="Tn48351"/>
-      <edge id="edge50019" source="Tn48424" target="Tn48413"/>
-      <edge id="edge50022" source="Tn48424" target="Tn48403"/>
-      <edge id="edge50026" source="Tn48351" target="Tn48367"/>
-      <edge id="edge50115" source="Tn48351" target="Tn48375"/>
-      <edge id="edge50020" source="Tn48413" target="Tn48368"/>
-      <edge id="edge50021" source="Tn48413" target="Tn48381"/>
-      <edge id="edge50027" source="Tn48367" target="Tn48330"/>
-      <edge id="edge50076" source="Tn48367" target="Tn48399"/>
-      <edge id="edge50116" source="Tn48375" target="Tn48328"/>
-      <edge id="edge50119" source="Tn48375" target="Tn48341"/>
-      <edge id="edge50028" source="Tn48330" target="Tn48385"/>
-      <edge id="edge50059" source="Tn48330" target="Tn48417"/>
-      <edge id="edge50077" source="Tn48399" target="Tn48350"/>
-      <edge id="edge50098" source="Tn48399" target="Tn48427"/>
-      <edge id="edge50117" source="Tn48328" target="Tn48347"/>
-      <edge id="edge50118" source="Tn48328" target="Tn48336"/>
-      <edge id="edge50029" source="Tn48385" target="Tn48354"/>
-      <edge id="edge50042" source="Tn48385" target="Tn48390"/>
-      <edge id="edge50060" source="Tn48417" target="Tn48325"/>
-      <edge id="edge50071" source="Tn48417" target="Tn48371"/>
-      <edge id="edge50078" source="Tn48350" target="Tn48400"/>
-      <edge id="edge50097" source="Tn48350" target="Tn48324"/>
-      <edge id="edge50099" source="Tn48427" target="Tn48319"/>
-      <edge id="edge50106" source="Tn48427" target="Tn48389"/>
-      <edge id="edge50030" source="Tn48354" target="Tn48359"/>
-      <edge id="edge50039" source="Tn48354" target="Tn48388"/>
-      <edge id="edge50043" source="Tn48390" target="Tn48406"/>
-      <edge id="edge50058" source="Tn48390" target="Tn48394"/>
-      <edge id="edge50061" source="Tn48325" target="Tn48409"/>
-      <edge id="edge50070" source="Tn48325" target="Tn48327"/>
-      <edge id="edge50072" source="Tn48371" target="Tn48348"/>
-      <edge id="edge50075" source="Tn48371" target="Tn48397"/>
-      <edge id="edge50079" source="Tn48400" target="Tn48343"/>
-      <edge id="edge50084" source="Tn48400" target="Tn48398"/>
-      <edge id="edge50100" source="Tn48319" target="Tn48365"/>
-      <edge id="edge50105" source="Tn48319" target="Tn48415"/>
-      <edge id="edge50107" source="Tn48389" target="Tn48386"/>
-      <edge id="edge50108" source="Tn48389" target="Tn48384"/>
-      <edge id="edge50031" source="Tn48359" target="Tn48357"/>
-      <edge id="edge50036" source="Tn48359" target="Tn48377"/>
-      <edge id="edge50040" source="Tn48388" target="Tn48370"/>
-      <edge id="edge50041" source="Tn48388" target="Tn48373"/>
-      <edge id="edge50044" source="Tn48406" target="Tn48349"/>
-      <edge id="edge50057" source="Tn48406" target="Tn48339"/>
-      <edge id="edge50062" source="Tn48409" target="Tn48362"/>
-      <edge id="edge50069" source="Tn48409" target="Tn48401"/>
-      <edge id="edge50073" source="Tn48348" target="Tn48414"/>
-      <edge id="edge50074" source="Tn48348" target="Tn48337"/>
-      <edge id="edge50080" source="Tn48343" target="Tn48408"/>
-      <edge id="edge50083" source="Tn48343" target="Tn48423"/>
-      <edge id="edge50085" source="Tn48398" target="Tn48422"/>
-      <edge id="edge50090" source="Tn48398" target="Tn48425"/>
-      <edge id="edge50101" source="Tn48365" target="Tn48323"/>
-      <edge id="edge50104" source="Tn48365" target="Tn48355"/>
-      <edge id="edge50109" source="Tn48384" target="Tn48335"/>
-      <edge id="edge50110" source="Tn48384" target="Tn48395"/>
-      <edge id="edge50032" source="Tn48357" target="Tn48411"/>
-      <edge id="edge50035" source="Tn48357" target="Tn48410"/>
-      <edge id="edge50037" source="Tn48377" target="Tn48428"/>
-      <edge id="edge50038" source="Tn48377" target="Tn48334"/>
-      <edge id="edge50045" source="Tn48349" target="Tn48402"/>
-      <edge id="edge50048" source="Tn48349" target="Tn48387"/>
-      <edge id="edge50063" source="Tn48362" target="Tn48383"/>
-      <edge id="edge50064" source="Tn48362" target="Tn48353"/>
-      <edge id="edge50081" source="Tn48408" target="Tn48382"/>
-      <edge id="edge50082" source="Tn48408" target="Tn48393"/>
-      <edge id="edge50086" source="Tn48422" target="Tn48378"/>
-      <edge id="edge50089" source="Tn48422" target="Tn48429"/>
-      <edge id="edge50091" source="Tn48425" target="Tn48412"/>
-      <edge id="edge50096" source="Tn48425" target="Tn48364"/>
-      <edge id="edge50102" source="Tn48323" target="Tn48369"/>
-      <edge id="edge50103" source="Tn48323" target="Tn48426"/>
-      <edge id="edge50111" source="Tn48395" target="Tn48391"/>
-      <edge id="edge50112" source="Tn48395" target="Tn48405"/>
-      <edge id="edge50033" source="Tn48411" target="Tn48338"/>
-      <edge id="edge50034" source="Tn48411" target="Tn48404"/>
-      <edge id="edge50046" source="Tn48402" target="Tn48379"/>
-      <edge id="edge50047" source="Tn48402" target="Tn48356"/>
-      <edge id="edge50049" source="Tn48387" target="Tn48376"/>
-      <edge id="edge50054" source="Tn48387" target="Tn48358"/>
-      <edge id="edge50065" source="Tn48353" target="Tn48342"/>
-      <edge id="edge50066" source="Tn48353" target="Tn48352"/>
-      <edge id="edge50087" source="Tn48378" target="Tn48374"/>
-      <edge id="edge50088" source="Tn48378" target="Tn48361"/>
-      <edge id="edge50092" source="Tn48412" target="Tn48345"/>
-      <edge id="edge50093" source="Tn48412" target="Tn48363"/>
-      <edge id="edge50113" source="Tn48405" target="Tn48407"/>
-      <edge id="edge50114" source="Tn48405" target="Tn48366"/>
-      <edge id="edge50050" source="Tn48376" target="Tn48421"/>
-      <edge id="edge50053" source="Tn48376" target="Tn48346"/>
-      <edge id="edge50055" source="Tn48358" target="Tn48321"/>
-      <edge id="edge50056" source="Tn48358" target="Tn48396"/>
-      <edge id="edge50067" source="Tn48352" target="Tn48322"/>
-      <edge id="edge50068" source="Tn48352" target="Tn48344"/>
-      <edge id="edge50094" source="Tn48363" target="Tn48392"/>
-      <edge id="edge50095" source="Tn48363" target="Tn48419"/>
-      <edge id="edge50051" source="Tn48421" target="Tn48380"/>
-      <edge id="edge50052" source="Tn48421" target="Tn48332"/>
-    </tree>
-  </trees>
-</nex:nexml>
+<nex:nexml xmlns="http://www.nexml.org/2009" version="0.9" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xsi:schemaLocation="http://www.nexml.org/2009 http://www.nexml.org/2009/nexml.xsd" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" generator="Bio::Phylo::Project v.0.46_1660" xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:nex="http://www.nexml.org/2009" xmlns:tb="http://purl.org/phylo/treebase/2.0/terms#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" about="#nl65672" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:dc="http://purl.org/dc/elements/1.1/"><meta xsi:type="nex:LiteralMeta" content="rvosa" id="ma66137" datatype="xsd:string" property="dc:creator"/><meta xsi:type="nex:LiteralMeta" content="2012-03-07T20:20:43" id="ma66138" datatype="xsd:date" property="dc:date"/><otus xml:base="http://purl.org/phylo/treebase/phylows/taxon/TB2:" label="Varanoid" id="Tls11019" about="#Tls11019"><meta xsi:type="nex:LiteralMeta" content="Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@1e79a533 $Rev: 1040 $" id="ma65674" datatype="xsd:string" property="skos:historyNote"/>
+<otu label="Varanus yuwonoi" id="Tl12260" about="#Tl12260"><meta xsi:type="nex:LiteralMeta" content="30505" id="ma65676" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="71181" id="ma65677" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/169856" xsi:type="nex:ResourceMeta" id="ma65678"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2546439" xsi:type="nex:ResourceMeta" id="ma65679"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" xsi:type="nex:ResourceMeta" id="ma65680"/></otu>
+<otu label="Varanus varius" id="Tl12298" about="#Tl12298"><meta xsi:type="nex:LiteralMeta" content="30504" id="ma65682" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="71180" id="ma65683" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/8559" xsi:type="nex:ResourceMeta" id="ma65684"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2546437" xsi:type="nex:ResourceMeta" id="ma65685"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" xsi:type="nex:ResourceMeta" id="ma65686"/></otu>
+<otu label="Varanus storri" id="Tl12305" about="#Tl12305"><meta xsi:type="nex:LiteralMeta" content="30501" id="ma65688" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="71169" id="ma65689" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/169855" xsi:type="nex:ResourceMeta" id="ma65690"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2546429" xsi:type="nex:ResourceMeta" id="ma65691"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" xsi:type="nex:ResourceMeta" id="ma65692"/></otu>
+<otu label="Varanus spenceri" id="Tl12303" about="#Tl12303"><meta xsi:type="nex:LiteralMeta" content="30500" id="ma65694" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="71167" id="ma65695" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/169854" xsi:type="nex:ResourceMeta" id="ma65696"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2546427" xsi:type="nex:ResourceMeta" id="ma65697"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" xsi:type="nex:ResourceMeta" id="ma65698"/></otu>
+<otu label="Varanus semiremex" id="Tl12251" about="#Tl12251"><meta xsi:type="nex:LiteralMeta" content="30499" id="ma65700" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="71166" id="ma65701" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/169853" xsi:type="nex:ResourceMeta" id="ma65702"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2546408" xsi:type="nex:ResourceMeta" id="ma65703"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" xsi:type="nex:ResourceMeta" id="ma65704"/></otu>
+<otu label="Varanus scalaris AUST" id="Tl12254" about="#Tl12254"><meta xsi:type="nex:LiteralMeta" content="30498" id="ma65706" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="71163" id="ma65707" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/169852" xsi:type="nex:ResourceMeta" id="ma65708"/><meta xsi:type="nex:LiteralMeta" content="Varanus scalaris" id="ma65709" datatype="xsd:string" property="skos:altLabel"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2546426" xsi:type="nex:ResourceMeta" id="ma65710"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" xsi:type="nex:ResourceMeta" id="ma65711"/></otu>
+<otu label="Varanus salvator salvator" id="Tl12255" about="#Tl12255"><meta xsi:type="nex:LiteralMeta" content="30496" id="ma65713" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="71158" id="ma65714" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/169831" xsi:type="nex:ResourceMeta" id="ma65715"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2546424" xsi:type="nex:ResourceMeta" id="ma65716"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" xsi:type="nex:ResourceMeta" id="ma65717"/></otu>
+<otu label="Varanus salvator bivittatus" id="Tl12271" about="#Tl12271"><meta xsi:type="nex:LiteralMeta" content="30494" id="ma65719" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="71151" id="ma65720" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:208868" xsi:type="nex:ResourceMeta" id="ma65721"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" xsi:type="nex:ResourceMeta" id="ma65722"/></otu>
+<otu label="Varanus salvator togianus" id="Tl12264" about="#Tl12264"><meta xsi:type="nex:LiteralMeta" content="30497" id="ma65724" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="71160" id="ma65725" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/169832" xsi:type="nex:ResourceMeta" id="ma65726"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2546425" xsi:type="nex:ResourceMeta" id="ma65727"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" xsi:type="nex:ResourceMeta" id="ma65728"/></otu>
+<otu label="Varanus salvator cumingi" id="Tl12277" about="#Tl12277"><meta xsi:type="nex:LiteralMeta" content="30495" id="ma65730" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="71152" id="ma65731" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/169830" xsi:type="nex:ResourceMeta" id="ma65732"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2546421" xsi:type="nex:ResourceMeta" id="ma65733"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" xsi:type="nex:ResourceMeta" id="ma65734"/></otu>
+<otu label="Varanus salvadori" id="Tl12253" about="#Tl12253"><meta xsi:type="nex:LiteralMeta" content="30492" id="ma65736" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="71146" id="ma65737" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/62049" xsi:type="nex:ResourceMeta" id="ma65738"/><meta xsi:type="nex:LiteralMeta" content="Varanus salvadorii" id="ma65739" datatype="xsd:string" property="skos:altLabel"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2546418" xsi:type="nex:ResourceMeta" id="ma65740"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" xsi:type="nex:ResourceMeta" id="ma65741"/></otu>
+<otu label="Varanus tristis" id="Tl12266" about="#Tl12266"><meta xsi:type="nex:LiteralMeta" content="30503" id="ma65743" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="71175" id="ma65744" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/62052" xsi:type="nex:ResourceMeta" id="ma65745"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2546434" xsi:type="nex:ResourceMeta" id="ma65746"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" xsi:type="nex:ResourceMeta" id="ma65747"/></otu>
+<otu label="Varanus timorensis" id="Tl12262" about="#Tl12262"><meta xsi:type="nex:LiteralMeta" content="30502" id="ma65749" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="71173" id="ma65750" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/62053" xsi:type="nex:ResourceMeta" id="ma65751"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2546433" xsi:type="nex:ResourceMeta" id="ma65752"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" xsi:type="nex:ResourceMeta" id="ma65753"/></otu>
+<otu label="Varanus scalaris TIMO" id="Tl12275" about="#Tl12275"><meta xsi:type="nex:LiteralMeta" content="30498" id="ma65755" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="71163" id="ma65756" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/169852" xsi:type="nex:ResourceMeta" id="ma65757"/><meta xsi:type="nex:LiteralMeta" content="Varanus scalaris" id="ma65758" datatype="xsd:string" property="skos:altLabel"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2546426" xsi:type="nex:ResourceMeta" id="ma65759"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" xsi:type="nex:ResourceMeta" id="ma65760"/></otu>
+<otu label="Varanus rudicollis" id="Tl12267" about="#Tl12267"><meta xsi:type="nex:LiteralMeta" content="30491" id="ma65762" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="71142" id="ma65763" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/169851" xsi:type="nex:ResourceMeta" id="ma65764"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2546417" xsi:type="nex:ResourceMeta" id="ma65765"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" xsi:type="nex:ResourceMeta" id="ma65766"/></otu>
+<otu label="Varanus primordius" id="Tl12296" about="#Tl12296"><meta xsi:type="nex:LiteralMeta" content="30490" id="ma65768" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="71139" id="ma65769" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/169850" xsi:type="nex:ResourceMeta" id="ma65770"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2546415" xsi:type="nex:ResourceMeta" id="ma65771"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" xsi:type="nex:ResourceMeta" id="ma65772"/></otu>
+<otu label="Varanus prasinus" id="Tl12257" about="#Tl12257"><meta xsi:type="nex:LiteralMeta" content="30489" id="ma65774" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="71136" id="ma65775" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/62050" xsi:type="nex:ResourceMeta" id="ma65776"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2546414" xsi:type="nex:ResourceMeta" id="ma65777"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" xsi:type="nex:ResourceMeta" id="ma65778"/></otu>
+<otu label="Varanus pilbarensis" id="Tl12304" about="#Tl12304"><meta xsi:type="nex:LiteralMeta" content="30488" id="ma65780" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="71133" id="ma65781" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/62048" xsi:type="nex:ResourceMeta" id="ma65782"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2546413" xsi:type="nex:ResourceMeta" id="ma65783"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" xsi:type="nex:ResourceMeta" id="ma65784"/></otu>
+<otu label="Varanus panoptes horni" id="Tl12294" about="#Tl12294"><meta xsi:type="nex:LiteralMeta" content="30486" id="ma65786" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="71129" id="ma65787" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/169848" xsi:type="nex:ResourceMeta" id="ma65788"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:208849" xsi:type="nex:ResourceMeta" id="ma65789"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" xsi:type="nex:ResourceMeta" id="ma65790"/></otu>
+<otu label="Varanus panoptes panoptes" id="Tl12291" about="#Tl12291"><meta xsi:type="nex:LiteralMeta" content="30487" id="ma65792" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="71130" id="ma65793" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/169849" xsi:type="nex:ResourceMeta" id="ma65794"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2549701" xsi:type="nex:ResourceMeta" id="ma65795"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" xsi:type="nex:ResourceMeta" id="ma65796"/></otu>
+<otu label="Varanus olivaceus" id="Tl12284" about="#Tl12284"><meta xsi:type="nex:LiteralMeta" content="30485" id="ma65798" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="71126" id="ma65799" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/62047" xsi:type="nex:ResourceMeta" id="ma65800"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2546409" xsi:type="nex:ResourceMeta" id="ma65801"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" xsi:type="nex:ResourceMeta" id="ma65802"/></otu>
+<otu label="Varanus bengalensis nebulosis" id="Tl12270" about="#Tl12270"><meta xsi:type="nex:LiteralMeta" content="31885" id="ma65804" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="74006" id="ma65805" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/169827" xsi:type="nex:ResourceMeta" id="ma65806"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:10196593" xsi:type="nex:ResourceMeta" id="ma65807"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" xsi:type="nex:ResourceMeta" id="ma65808"/></otu>
+<otu label="Varanus niloticus" id="Tl12276" about="#Tl12276"><meta xsi:type="nex:LiteralMeta" content="30484" id="ma65810" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="71123" id="ma65811" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/62046" xsi:type="nex:ResourceMeta" id="ma65812"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2546407" xsi:type="nex:ResourceMeta" id="ma65813"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" xsi:type="nex:ResourceMeta" id="ma65814"/></otu>
+<otu label="Varanus mitchelli" id="Tl12274" about="#Tl12274"><meta xsi:type="nex:LiteralMeta" content="30483" id="ma65816" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="71121" id="ma65817" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/62045" xsi:type="nex:ResourceMeta" id="ma65818"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2546406" xsi:type="nex:ResourceMeta" id="ma65819"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" xsi:type="nex:ResourceMeta" id="ma65820"/></otu>
+<otu label="Varanus mertensi" id="Tl12282" about="#Tl12282"><meta xsi:type="nex:LiteralMeta" content="30482" id="ma65822" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="71120" id="ma65823" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/62044" xsi:type="nex:ResourceMeta" id="ma65824"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2546405" xsi:type="nex:ResourceMeta" id="ma65825"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" xsi:type="nex:ResourceMeta" id="ma65826"/></otu>
+<otu label="Varanus melinus" id="Tl12269" about="#Tl12269"><meta xsi:type="nex:LiteralMeta" content="30481" id="ma65828" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="71117" id="ma65829" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/169846" xsi:type="nex:ResourceMeta" id="ma65830"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2546404" xsi:type="nex:ResourceMeta" id="ma65831"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" xsi:type="nex:ResourceMeta" id="ma65832"/></otu>
+<otu label="Varanus komodoensis" id="Tl12280" about="#Tl12280"><meta xsi:type="nex:LiteralMeta" content="30480" id="ma65834" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="71114" id="ma65835" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/61221" xsi:type="nex:ResourceMeta" id="ma65836"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2546401" xsi:type="nex:ResourceMeta" id="ma65837"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" xsi:type="nex:ResourceMeta" id="ma65838"/></otu>
+<otu label="Varanus kingorum" id="Tl12306" about="#Tl12306"><meta xsi:type="nex:LiteralMeta" content="30479" id="ma65840" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="71112" id="ma65841" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/169845" xsi:type="nex:ResourceMeta" id="ma65842"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2546400" xsi:type="nex:ResourceMeta" id="ma65843"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" xsi:type="nex:ResourceMeta" id="ma65844"/></otu>
+<otu label="Varanus keithhornei" id="Tl12292" about="#Tl12292"><meta xsi:type="nex:LiteralMeta" content="30478" id="ma65846" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="71109" id="ma65847" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/169844" xsi:type="nex:ResourceMeta" id="ma65848"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2546399" xsi:type="nex:ResourceMeta" id="ma65849"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" xsi:type="nex:ResourceMeta" id="ma65850"/></otu>
+<otu label="Varanus jobiensis" id="Tl12283" about="#Tl12283"><meta xsi:type="nex:LiteralMeta" content="30477" id="ma65852" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="71107" id="ma65853" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/169843" xsi:type="nex:ResourceMeta" id="ma65854"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2546398" xsi:type="nex:ResourceMeta" id="ma65855"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" xsi:type="nex:ResourceMeta" id="ma65856"/></otu>
+<otu label="Varanus indicus FI" id="Tl12286" about="#Tl12286"><meta xsi:type="nex:LiteralMeta" content="30476" id="ma65858" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="71105" id="ma65859" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/62043" xsi:type="nex:ResourceMeta" id="ma65860"/><meta xsi:type="nex:LiteralMeta" content="Varanus indicus" id="ma65861" datatype="xsd:string" property="skos:altLabel"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2546396" xsi:type="nex:ResourceMeta" id="ma65862"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" xsi:type="nex:ResourceMeta" id="ma65863"/></otu>
+<otu label="Varanus indicus NT" id="Tl12252" about="#Tl12252"><meta xsi:type="nex:LiteralMeta" content="30476" id="ma65865" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="71105" id="ma65866" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/62043" xsi:type="nex:ResourceMeta" id="ma65867"/><meta xsi:type="nex:LiteralMeta" content="Varanus indicus" id="ma65868" datatype="xsd:string" property="skos:altLabel"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2546396" xsi:type="nex:ResourceMeta" id="ma65869"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" xsi:type="nex:ResourceMeta" id="ma65870"/></otu>
+<otu label="Varanus indicus SI" id="Tl12268" about="#Tl12268"><meta xsi:type="nex:LiteralMeta" content="30476" id="ma65872" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="71105" id="ma65873" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/62043" xsi:type="nex:ResourceMeta" id="ma65874"/><meta xsi:type="nex:LiteralMeta" content="Varanus indicus" id="ma65875" datatype="xsd:string" property="skos:altLabel"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2546396" xsi:type="nex:ResourceMeta" id="ma65876"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" xsi:type="nex:ResourceMeta" id="ma65877"/></otu>
+<otu label="Varanus griseus" id="Tl135974" about="#Tl135974"><meta xsi:type="nex:LiteralMeta" content="30475" id="ma65879" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="71101" id="ma65880" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/52184" xsi:type="nex:ResourceMeta" id="ma65881"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2546391" xsi:type="nex:ResourceMeta" id="ma65882"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" xsi:type="nex:ResourceMeta" id="ma65883"/></otu>
+<otu label="Varanus gouldii" id="Tl12293" about="#Tl12293"><meta xsi:type="nex:LiteralMeta" content="30474" id="ma65885" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="71098" id="ma65886" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/62042" xsi:type="nex:ResourceMeta" id="ma65887"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2546388" xsi:type="nex:ResourceMeta" id="ma65888"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" xsi:type="nex:ResourceMeta" id="ma65889"/></otu>
+<otu label="Varanus glebopalma" id="Tl12258" about="#Tl12258"><meta xsi:type="nex:LiteralMeta" content="30473" id="ma65891" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="71096" id="ma65892" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/169842" xsi:type="nex:ResourceMeta" id="ma65893"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2546387" xsi:type="nex:ResourceMeta" id="ma65894"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" xsi:type="nex:ResourceMeta" id="ma65895"/></otu>
+<otu label="Varanus glauerti" id="Tl12259" about="#Tl12259"><meta xsi:type="nex:LiteralMeta" content="30472" id="ma65897" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="71093" id="ma65898" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/169841" xsi:type="nex:ResourceMeta" id="ma65899"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2546386" xsi:type="nex:ResourceMeta" id="ma65900"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" xsi:type="nex:ResourceMeta" id="ma65901"/></otu>
+<otu label="Varanus gilleni" id="Tl12281" about="#Tl12281"><meta xsi:type="nex:LiteralMeta" content="30471" id="ma65903" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="71091" id="ma65904" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/169840" xsi:type="nex:ResourceMeta" id="ma65905"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2546385" xsi:type="nex:ResourceMeta" id="ma65906"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" xsi:type="nex:ResourceMeta" id="ma65907"/></otu>
+<otu label="Varanus giganteus" id="Tl12263" about="#Tl12263"><meta xsi:type="nex:LiteralMeta" content="30470" id="ma65909" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="71088" id="ma65910" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/62041" xsi:type="nex:ResourceMeta" id="ma65911"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2546384" xsi:type="nex:ResourceMeta" id="ma65912"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" xsi:type="nex:ResourceMeta" id="ma65913"/></otu>
+<otu label="Varanus flavescens" id="Tl12289" about="#Tl12289"><meta xsi:type="nex:LiteralMeta" content="30469" id="ma65915" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="71085" id="ma65916" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/169839" xsi:type="nex:ResourceMeta" id="ma65917"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2546378" xsi:type="nex:ResourceMeta" id="ma65918"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" xsi:type="nex:ResourceMeta" id="ma65919"/></otu>
+<otu label="Varanus exanthematicus" id="Tl12295" about="#Tl12295"><meta xsi:type="nex:LiteralMeta" content="30468" id="ma65921" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="71080" id="ma65922" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/8557" xsi:type="nex:ResourceMeta" id="ma65923"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2546381" xsi:type="nex:ResourceMeta" id="ma65924"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" xsi:type="nex:ResourceMeta" id="ma65925"/></otu>
+<otu label="Varanus eremius" id="Tl12278" about="#Tl12278"><meta xsi:type="nex:LiteralMeta" content="30467" id="ma65927" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="71078" id="ma65928" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/62040" xsi:type="nex:ResourceMeta" id="ma65929"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2546379" xsi:type="nex:ResourceMeta" id="ma65930"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" xsi:type="nex:ResourceMeta" id="ma65931"/></otu>
+<otu label="Varanus dumerili" id="Tl12261" about="#Tl12261"><meta xsi:type="nex:LiteralMeta" content="30466" id="ma65933" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="71077" id="ma65934" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:208781" xsi:type="nex:ResourceMeta" id="ma65935"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" xsi:type="nex:ResourceMeta" id="ma65936"/></otu>
+<otu label="Varanus doreanus" id="Tl12302" about="#Tl12302"><meta xsi:type="nex:LiteralMeta" content="30465" id="ma65938" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="71075" id="ma65939" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/169836" xsi:type="nex:ResourceMeta" id="ma65940"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2546374" xsi:type="nex:ResourceMeta" id="ma65941"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" xsi:type="nex:ResourceMeta" id="ma65942"/></otu>
+<otu label="Varanus bengalensis bengalensis" id="Tl12300" about="#Tl12300"><meta xsi:type="nex:LiteralMeta" content="30464" id="ma65944" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="71070" id="ma65945" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/169826" xsi:type="nex:ResourceMeta" id="ma65946"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2546365" xsi:type="nex:ResourceMeta" id="ma65947"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" xsi:type="nex:ResourceMeta" id="ma65948"/></otu>
+<otu label="Varanus beccari" id="Tl12279" about="#Tl12279"><meta xsi:type="nex:LiteralMeta" content="30463" id="ma65950" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="71069" id="ma65951" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta xsi:type="nex:LiteralMeta" content="Varanus beccarii" id="ma65952" datatype="xsd:string" property="skos:prefLabel"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/437646" xsi:type="nex:ResourceMeta" id="ma65953"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:5792723" xsi:type="nex:ResourceMeta" id="ma65954"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" xsi:type="nex:ResourceMeta" id="ma65955"/></otu>
+<otu label="Varanus baritji" id="Tl12285" about="#Tl12285"><meta xsi:type="nex:LiteralMeta" content="30462" id="ma65957" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="71067" id="ma65958" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/169834" xsi:type="nex:ResourceMeta" id="ma65959"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2546362" xsi:type="nex:ResourceMeta" id="ma65960"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" xsi:type="nex:ResourceMeta" id="ma65961"/></otu>
+<otu label="Varanus acanthurus" id="Tl12299" about="#Tl12299"><meta xsi:type="nex:LiteralMeta" content="30461" id="ma65963" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="71066" id="ma65964" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/62035" xsi:type="nex:ResourceMeta" id="ma65965"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2546352" xsi:type="nex:ResourceMeta" id="ma65966"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" xsi:type="nex:ResourceMeta" id="ma65967"/></otu>
+<otu label="Lanthanotus borneensis" id="Tl135988" about="#Tl135988"><meta xsi:type="nex:LiteralMeta" content="15292" id="ma65969" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="35914" id="ma65970" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/62058" xsi:type="nex:ResourceMeta" id="ma65971"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2540887" xsi:type="nex:ResourceMeta" id="ma65972"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" xsi:type="nex:ResourceMeta" id="ma65973"/></otu>
+<otu label="Heloderma suspectum" id="Tl135993" about="#Tl135993"><meta xsi:type="nex:LiteralMeta" content="13229" id="ma65975" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="31255" id="ma65976" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/8554" xsi:type="nex:ResourceMeta" id="ma65977"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2540275" xsi:type="nex:ResourceMeta" id="ma65978"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" xsi:type="nex:ResourceMeta" id="ma65979"/></otu>
+<otu label="Heloderma horridum" id="Tl12273" about="#Tl12273"><meta xsi:type="nex:LiteralMeta" content="13228" id="ma65981" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="31254" id="ma65982" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/8551" xsi:type="nex:ResourceMeta" id="ma65983"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2540274" xsi:type="nex:ResourceMeta" id="ma65984"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" xsi:type="nex:ResourceMeta" id="ma65985"/></otu>
+<otu label="Elgaria kingi" id="Tl12287" about="#Tl12287"><meta xsi:type="nex:LiteralMeta" content="9925" id="ma65987" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="23742" id="ma65988" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta xsi:type="nex:LiteralMeta" content="Elgaria kingii" id="ma65989" datatype="xsd:string" property="skos:prefLabel"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/102185" xsi:type="nex:ResourceMeta" id="ma65990"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:6308199" xsi:type="nex:ResourceMeta" id="ma65991"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" xsi:type="nex:ResourceMeta" id="ma65992"/></otu>
+<otu label="Anniella pulchra" id="Tl135887" about="#Tl135887"><meta xsi:type="nex:LiteralMeta" content="1678" id="ma65994" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="4167" id="ma65995" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/51957" xsi:type="nex:ResourceMeta" id="ma65996"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2536250" xsi:type="nex:ResourceMeta" id="ma65997"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" xsi:type="nex:ResourceMeta" id="ma65998"/></otu>
+<otu label="Anguis fragilis" id="Tl12256" about="#Tl12256"><meta xsi:type="nex:LiteralMeta" content="1625" id="ma66000" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="4069" id="ma66001" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/102178" xsi:type="nex:ResourceMeta" id="ma66002"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2536237" xsi:type="nex:ResourceMeta" id="ma66003"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" xsi:type="nex:ResourceMeta" id="ma66004"/></otu>
+<otu label="Xenosaurus grandis" id="Tl135986" about="#Tl135986"><meta xsi:type="nex:LiteralMeta" content="31041" id="ma66006" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="72473" id="ma66007" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/52183" xsi:type="nex:ResourceMeta" id="ma66008"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2546556" xsi:type="nex:ResourceMeta" id="ma66009"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" xsi:type="nex:ResourceMeta" id="ma66010"/></otu>
+<otu label="Shinisaurus crocodilurus" id="Tl135937" about="#Tl135937"><meta xsi:type="nex:LiteralMeta" content="26868" id="ma66012" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="62722" id="ma66013" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/52224" xsi:type="nex:ResourceMeta" id="ma66014"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2544878" xsi:type="nex:ResourceMeta" id="ma66015"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" xsi:type="nex:ResourceMeta" id="ma66016"/></otu></otus><trees otus="Tls11019" xml:base="http://purl.org/phylo/treebase/phylows/tree/TB2:" id="trees71505" about="#trees71505"><meta xsi:type="nex:LiteralMeta" content="Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlTreeBlockWriter@14c26233 $Rev: 1040 $" id="ma66018" datatype="xsd:string" property="skos:historyNote"/>
+<tree xsi:type="nex:IntTree" label="Fig. 3.2" id="Tr848" about="#Tr848"><meta xsi:type="nex:LiteralMeta" content="56" id="ma66020" datatype="xsd:integer" property="tb:ntax.tree"/><meta xsi:type="nex:LiteralMeta" content="Unrated" id="ma66021" datatype="xsd:string" property="tb:quality.tree"/><meta xsi:type="nex:LiteralMeta" content="Single" id="ma66022" datatype="xsd:string" property="tb:type.tree"/><meta xsi:type="nex:LiteralMeta" content="Species Tree" id="ma66023" datatype="xsd:string" property="tb:kind.tree"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S946" xsi:type="nex:ResourceMeta" id="ma66024"/>
+<node root="true" id="Tn48320" about="#Tn48320"/>
+<node label="Shinisaurus crocodilurus" id="Tn48340" about="#Tn48340" otu="Tl135937"/>
+<node id="Tn48333" about="#Tn48333"/>
+<node id="Tn48416" about="#Tn48416"/>
+<node id="Tn48420" about="#Tn48420"/>
+<node id="Tn48331" about="#Tn48331"/>
+<node id="Tn48418" about="#Tn48418"/>
+<node label="Heloderma horridum" id="Tn48329" about="#Tn48329" otu="Tl12273"/>
+<node label="Heloderma suspectum" id="Tn48360" about="#Tn48360" otu="Tl135993"/>
+<node label="Xenosaurus grandis" id="Tn48326" about="#Tn48326" otu="Tl135986"/>
+<node id="Tn48424" about="#Tn48424"/>
+<node label="Lanthanotus borneensis" id="Tn48372" about="#Tn48372" otu="Tl135988"/>
+<node id="Tn48351" about="#Tn48351"/>
+<node id="Tn48413" about="#Tn48413"/>
+<node label="Anniella pulchra" id="Tn48403" about="#Tn48403" otu="Tl135887"/>
+<node id="Tn48367" about="#Tn48367"/>
+<node id="Tn48375" about="#Tn48375"/>
+<node label="Anguis fragilis" id="Tn48368" about="#Tn48368" otu="Tl12256"/>
+<node label="Elgaria kingi" id="Tn48381" about="#Tn48381" otu="Tl12287"/>
+<node id="Tn48330" about="#Tn48330"/>
+<node id="Tn48399" about="#Tn48399"/>
+<node id="Tn48328" about="#Tn48328"/>
+<node label="Varanus griseus" id="Tn48341" about="#Tn48341" otu="Tl135974"/>
+<node id="Tn48385" about="#Tn48385"/>
+<node id="Tn48417" about="#Tn48417"/>
+<node id="Tn48350" about="#Tn48350"/>
+<node id="Tn48427" about="#Tn48427"/>
+<node label="Varanus exanthematicus" id="Tn48347" about="#Tn48347" otu="Tl12295"/>
+<node label="Varanus niloticus" id="Tn48336" about="#Tn48336" otu="Tl12276"/>
+<node id="Tn48354" about="#Tn48354"/>
+<node id="Tn48390" about="#Tn48390"/>
+<node id="Tn48325" about="#Tn48325"/>
+<node id="Tn48371" about="#Tn48371"/>
+<node id="Tn48400" about="#Tn48400"/>
+<node label="Varanus olivaceus" id="Tn48324" about="#Tn48324" otu="Tl12284"/>
+<node id="Tn48319" about="#Tn48319"/>
+<node id="Tn48389" about="#Tn48389"/>
+<node id="Tn48359" about="#Tn48359"/>
+<node id="Tn48388" about="#Tn48388"/>
+<node id="Tn48406" about="#Tn48406"/>
+<node label="Varanus glebopalma" id="Tn48394" about="#Tn48394" otu="Tl12258"/>
+<node id="Tn48409" about="#Tn48409"/>
+<node label="Varanus spenceri" id="Tn48327" about="#Tn48327" otu="Tl12303"/>
+<node id="Tn48348" about="#Tn48348"/>
+<node label="Varanus salvadori" id="Tn48397" about="#Tn48397" otu="Tl12253"/>
+<node id="Tn48343" about="#Tn48343"/>
+<node id="Tn48398" about="#Tn48398"/>
+<node id="Tn48365" about="#Tn48365"/>
+<node label="Varanus dumerili" id="Tn48415" about="#Tn48415" otu="Tl12261"/>
+<node label="Varanus rudicollis" id="Tn48386" about="#Tn48386" otu="Tl12267"/>
+<node id="Tn48384" about="#Tn48384"/>
+<node id="Tn48357" about="#Tn48357"/>
+<node id="Tn48377" about="#Tn48377"/>
+<node label="Varanus eremius" id="Tn48370" about="#Tn48370" otu="Tl12278"/>
+<node label="Varanus gilleni" id="Tn48373" about="#Tn48373" otu="Tl12281"/>
+<node id="Tn48349" about="#Tn48349"/>
+<node label="Varanus pilbarensis" id="Tn48339" about="#Tn48339" otu="Tl12304"/>
+<node id="Tn48362" about="#Tn48362"/>
+<node label="Varanus mertensi" id="Tn48401" about="#Tn48401" otu="Tl12282"/>
+<node label="Varanus komodoensis" id="Tn48414" about="#Tn48414" otu="Tl12280"/>
+<node label="Varanus varius" id="Tn48337" about="#Tn48337" otu="Tl12298"/>
+<node id="Tn48408" about="#Tn48408"/>
+<node label="Varanus prasinus" id="Tn48423" about="#Tn48423" otu="Tl12257"/>
+<node id="Tn48422" about="#Tn48422"/>
+<node id="Tn48425" about="#Tn48425"/>
+<node id="Tn48323" about="#Tn48323"/>
+<node label="Varanus flavescens" id="Tn48355" about="#Tn48355" otu="Tl12289"/>
+<node label="Varanus salvator cumingi" id="Tn48335" about="#Tn48335" otu="Tl12277"/>
+<node id="Tn48395" about="#Tn48395"/>
+<node id="Tn48411" about="#Tn48411"/>
+<node label="Varanus storri" id="Tn48410" about="#Tn48410" otu="Tl12305"/>
+<node label="Varanus kingorum" id="Tn48428" about="#Tn48428" otu="Tl12306"/>
+<node label="Varanus primordius" id="Tn48334" about="#Tn48334" otu="Tl12296"/>
+<node id="Tn48402" about="#Tn48402"/>
+<node id="Tn48387" about="#Tn48387"/>
+<node label="Varanus giganteus" id="Tn48383" about="#Tn48383" otu="Tl12263"/>
+<node id="Tn48353" about="#Tn48353"/>
+<node label="Varanus beccari" id="Tn48382" about="#Tn48382" otu="Tl12279"/>
+<node label="Varanus keithhornei" id="Tn48393" about="#Tn48393" otu="Tl12292"/>
+<node id="Tn48378" about="#Tn48378"/>
+<node label="Varanus jobiensis" id="Tn48429" about="#Tn48429" otu="Tl12283"/>
+<node id="Tn48412" about="#Tn48412"/>
+<node label="Varanus melinus" id="Tn48364" about="#Tn48364" otu="Tl12269"/>
+<node label="Varanus bengalensis bengalensis" id="Tn48369" about="#Tn48369" otu="Tl12300"/>
+<node label="Varanus bengalensis nebulosis" id="Tn48426" about="#Tn48426" otu="Tl12270"/>
+<node label="Varanus salvator togianus" id="Tn48391" about="#Tn48391" otu="Tl12264"/>
+<node id="Tn48405" about="#Tn48405"/>
+<node label="Varanus acanthurus" id="Tn48338" about="#Tn48338" otu="Tl12299"/>
+<node label="Varanus baritji" id="Tn48404" about="#Tn48404" otu="Tl12285"/>
+<node label="Varanus glauerti" id="Tn48379" about="#Tn48379" otu="Tl12259"/>
+<node label="Varanus tristis" id="Tn48356" about="#Tn48356" otu="Tl12266"/>
+<node id="Tn48376" about="#Tn48376"/>
+<node id="Tn48358" about="#Tn48358"/>
+<node label="Varanus gouldii" id="Tn48342" about="#Tn48342" otu="Tl12293"/>
+<node id="Tn48352" about="#Tn48352"/>
+<node label="Varanus doreanus" id="Tn48374" about="#Tn48374" otu="Tl12302"/>
+<node label="Varanus yuwonoi" id="Tn48361" about="#Tn48361" otu="Tl12260"/>
+<node label="Varanus indicus SI" id="Tn48345" about="#Tn48345" otu="Tl12268"/>
+<node id="Tn48363" about="#Tn48363"/>
+<node label="Varanus salvator bivittatus" id="Tn48407" about="#Tn48407" otu="Tl12271"/>
+<node label="Varanus salvator salvator" id="Tn48366" about="#Tn48366" otu="Tl12255"/>
+<node id="Tn48421" about="#Tn48421"/>
+<node label="Varanus timorensis" id="Tn48346" about="#Tn48346" otu="Tl12262"/>
+<node label="Varanus scalaris TIMO" id="Tn48321" about="#Tn48321" otu="Tl12275"/>
+<node label="Varanus scalaris AUST" id="Tn48396" about="#Tn48396" otu="Tl12254"/>
+<node label="Varanus panoptes panoptes" id="Tn48322" about="#Tn48322" otu="Tl12291"/>
+<node label="Varanus panoptes horni" id="Tn48344" about="#Tn48344" otu="Tl12294"/>
+<node label="Varanus indicus NT" id="Tn48392" about="#Tn48392" otu="Tl12252"/>
+<node label="Varanus indicus FI" id="Tn48419" about="#Tn48419" otu="Tl12286"/>
+<node label="Varanus mitchelli" id="Tn48380" about="#Tn48380" otu="Tl12274"/>
+<node label="Varanus semiremex" id="Tn48332" about="#Tn48332" otu="Tl12251"/>
+<edge source="Tn48320" target="Tn48340" id="edge66026"/>
+<edge source="Tn48320" target="Tn48333" id="edge66027"/>
+<edge source="Tn48333" target="Tn48416" id="edge66028"/>
+<edge source="Tn48333" target="Tn48420" id="edge66133"/>
+<edge source="Tn48416" target="Tn48331" id="edge66029"/>
+<edge source="Tn48416" target="Tn48418" id="edge66036"/>
+<edge source="Tn48420" target="Tn48329" id="edge66134"/>
+<edge source="Tn48420" target="Tn48360" id="edge66135"/>
+<edge source="Tn48331" target="Tn48326" id="edge66030"/>
+<edge source="Tn48331" target="Tn48424" id="edge66031"/>
+<edge source="Tn48418" target="Tn48372" id="edge66037"/>
+<edge source="Tn48418" target="Tn48351" id="edge66038"/>
+<edge source="Tn48424" target="Tn48413" id="edge66032"/>
+<edge source="Tn48424" target="Tn48403" id="edge66035"/>
+<edge source="Tn48351" target="Tn48367" id="edge66039"/>
+<edge source="Tn48351" target="Tn48375" id="edge66128"/>
+<edge source="Tn48413" target="Tn48368" id="edge66033"/>
+<edge source="Tn48413" target="Tn48381" id="edge66034"/>
+<edge source="Tn48367" target="Tn48330" id="edge66040"/>
+<edge source="Tn48367" target="Tn48399" id="edge66089"/>
+<edge source="Tn48375" target="Tn48328" id="edge66129"/>
+<edge source="Tn48375" target="Tn48341" id="edge66132"/>
+<edge source="Tn48330" target="Tn48385" id="edge66041"/>
+<edge source="Tn48330" target="Tn48417" id="edge66072"/>
+<edge source="Tn48399" target="Tn48350" id="edge66090"/>
+<edge source="Tn48399" target="Tn48427" id="edge66111"/>
+<edge source="Tn48328" target="Tn48347" id="edge66130"/>
+<edge source="Tn48328" target="Tn48336" id="edge66131"/>
+<edge source="Tn48385" target="Tn48354" id="edge66042"/>
+<edge source="Tn48385" target="Tn48390" id="edge66055"/>
+<edge source="Tn48417" target="Tn48325" id="edge66073"/>
+<edge source="Tn48417" target="Tn48371" id="edge66084"/>
+<edge source="Tn48350" target="Tn48400" id="edge66091"/>
+<edge source="Tn48350" target="Tn48324" id="edge66110"/>
+<edge source="Tn48427" target="Tn48319" id="edge66112"/>
+<edge source="Tn48427" target="Tn48389" id="edge66119"/>
+<edge source="Tn48354" target="Tn48359" id="edge66043"/>
+<edge source="Tn48354" target="Tn48388" id="edge66052"/>
+<edge source="Tn48390" target="Tn48406" id="edge66056"/>
+<edge source="Tn48390" target="Tn48394" id="edge66071"/>
+<edge source="Tn48325" target="Tn48409" id="edge66074"/>
+<edge source="Tn48325" target="Tn48327" id="edge66083"/>
+<edge source="Tn48371" target="Tn48348" id="edge66085"/>
+<edge source="Tn48371" target="Tn48397" id="edge66088"/>
+<edge source="Tn48400" target="Tn48343" id="edge66092"/>
+<edge source="Tn48400" target="Tn48398" id="edge66097"/>
+<edge source="Tn48319" target="Tn48365" id="edge66113"/>
+<edge source="Tn48319" target="Tn48415" id="edge66118"/>
+<edge source="Tn48389" target="Tn48386" id="edge66120"/>
+<edge source="Tn48389" target="Tn48384" id="edge66121"/>
+<edge source="Tn48359" target="Tn48357" id="edge66044"/>
+<edge source="Tn48359" target="Tn48377" id="edge66049"/>
+<edge source="Tn48388" target="Tn48370" id="edge66053"/>
+<edge source="Tn48388" target="Tn48373" id="edge66054"/>
+<edge source="Tn48406" target="Tn48349" id="edge66057"/>
+<edge source="Tn48406" target="Tn48339" id="edge66070"/>
+<edge source="Tn48409" target="Tn48362" id="edge66075"/>
+<edge source="Tn48409" target="Tn48401" id="edge66082"/>
+<edge source="Tn48348" target="Tn48414" id="edge66086"/>
+<edge source="Tn48348" target="Tn48337" id="edge66087"/>
+<edge source="Tn48343" target="Tn48408" id="edge66093"/>
+<edge source="Tn48343" target="Tn48423" id="edge66096"/>
+<edge source="Tn48398" target="Tn48422" id="edge66098"/>
+<edge source="Tn48398" target="Tn48425" id="edge66103"/>
+<edge source="Tn48365" target="Tn48323" id="edge66114"/>
+<edge source="Tn48365" target="Tn48355" id="edge66117"/>
+<edge source="Tn48384" target="Tn48335" id="edge66122"/>
+<edge source="Tn48384" target="Tn48395" id="edge66123"/>
+<edge source="Tn48357" target="Tn48411" id="edge66045"/>
+<edge source="Tn48357" target="Tn48410" id="edge66048"/>
+<edge source="Tn48377" target="Tn48428" id="edge66050"/>
+<edge source="Tn48377" target="Tn48334" id="edge66051"/>
+<edge source="Tn48349" target="Tn48402" id="edge66058"/>
+<edge source="Tn48349" target="Tn48387" id="edge66061"/>
+<edge source="Tn48362" target="Tn48383" id="edge66076"/>
+<edge source="Tn48362" target="Tn48353" id="edge66077"/>
+<edge source="Tn48408" target="Tn48382" id="edge66094"/>
+<edge source="Tn48408" target="Tn48393" id="edge66095"/>
+<edge source="Tn48422" target="Tn48378" id="edge66099"/>
+<edge source="Tn48422" target="Tn48429" id="edge66102"/>
+<edge source="Tn48425" target="Tn48412" id="edge66104"/>
+<edge source="Tn48425" target="Tn48364" id="edge66109"/>
+<edge source="Tn48323" target="Tn48369" id="edge66115"/>
+<edge source="Tn48323" target="Tn48426" id="edge66116"/>
+<edge source="Tn48395" target="Tn48391" id="edge66124"/>
+<edge source="Tn48395" target="Tn48405" id="edge66125"/>
+<edge source="Tn48411" target="Tn48338" id="edge66046"/>
+<edge source="Tn48411" target="Tn48404" id="edge66047"/>
+<edge source="Tn48402" target="Tn48379" id="edge66059"/>
+<edge source="Tn48402" target="Tn48356" id="edge66060"/>
+<edge source="Tn48387" target="Tn48376" id="edge66062"/>
+<edge source="Tn48387" target="Tn48358" id="edge66067"/>
+<edge source="Tn48353" target="Tn48342" id="edge66078"/>
+<edge source="Tn48353" target="Tn48352" id="edge66079"/>
+<edge source="Tn48378" target="Tn48374" id="edge66100"/>
+<edge source="Tn48378" target="Tn48361" id="edge66101"/>
+<edge source="Tn48412" target="Tn48345" id="edge66105"/>
+<edge source="Tn48412" target="Tn48363" id="edge66106"/>
+<edge source="Tn48405" target="Tn48407" id="edge66126"/>
+<edge source="Tn48405" target="Tn48366" id="edge66127"/>
+<edge source="Tn48376" target="Tn48421" id="edge66063"/>
+<edge source="Tn48376" target="Tn48346" id="edge66066"/>
+<edge source="Tn48358" target="Tn48321" id="edge66068"/>
+<edge source="Tn48358" target="Tn48396" id="edge66069"/>
+<edge source="Tn48352" target="Tn48322" id="edge66080"/>
+<edge source="Tn48352" target="Tn48344" id="edge66081"/>
+<edge source="Tn48363" target="Tn48392" id="edge66107"/>
+<edge source="Tn48363" target="Tn48419" id="edge66108"/>
+<edge source="Tn48421" target="Tn48380" id="edge66064"/>
+<edge source="Tn48421" target="Tn48332" id="edge66065"/></tree></trees></nex:nexml>

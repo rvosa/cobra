@@ -1,363 +1,139 @@
-<nex:nexml about="#nl212972" generator="Bio::Phylo::Project v.0.46_1660" version="0.9" xmlns="http://www.nexml.org/2009" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:nex="http://www.nexml.org/2009" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:tb="http://purl.org/phylo/treebase/2.0/terms#" xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.nexml.org/2009 http://www.nexml.org/2009/nexml.xsd">
-  <meta content="rvosa" datatype="xsd:string" id="ma213247" property="dc:creator" xsi:type="nex:LiteralMeta"/>
-  <meta content="2012-03-06T22:09:55" datatype="xsd:date" id="ma213248" property="dc:date" xsi:type="nex:LiteralMeta"/>
-  <otus about="#Tls22922" id="Tls22922" label="Taxa" xml:base="http://purl.org/phylo/treebase/phylows/taxon/TB2:">
-    <meta content="Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@4a1e064 $Rev: 1040 $" datatype="xsd:string" id="ma212974" property="skos:historyNote" xsi:type="nex:LiteralMeta"/>
-    <otu about="#Tl640900" id="Tl640900" label="Cebus albifrons NC 002763">
-      <meta content="5227" datatype="xsd:integer" id="ma212976" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="12693" datatype="xsd:integer" id="ma212977" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/9514" id="ma212978" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta content="Cebus albifrons" datatype="xsd:string" id="ma212979" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2481604" id="ma212980" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11977" id="ma212981" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl640908" id="Tl640908" label="Cynocephalus variegatus AF460846">
-      <meta content="8122" datatype="xsd:integer" id="ma212983" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="19535" datatype="xsd:integer" id="ma212984" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta content="Galeopterus variegatus" datatype="xsd:string" id="ma212985" property="skos:prefLabel" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/482537" id="ma212986" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta content="Cynocephalus variegatus" datatype="xsd:string" id="ma212987" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2481852" id="ma212988" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11977" id="ma212989" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl640883" id="Tl640883" label="Homo sapiens NC 001807">
-      <meta content="13680" datatype="xsd:integer" id="ma212991" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="32274" datatype="xsd:integer" id="ma212992" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/9606" id="ma212993" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta content="Homo sapiens" datatype="xsd:string" id="ma212994" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2481730" id="ma212995" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11977" id="ma212996" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl640904" id="Tl640904" label="Lemur catta NC 004025">
-      <meta content="15528" datatype="xsd:integer" id="ma212998" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="36438" datatype="xsd:integer" id="ma212999" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/9447" id="ma213000" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta content="Lemur catta" datatype="xsd:string" id="ma213001" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2481519" id="ma213002" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11977" id="ma213003" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl640903" id="Tl640903" label="Nycticebus coucang NC 002765">
-      <meta content="19254" datatype="xsd:integer" id="ma213005" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="44802" datatype="xsd:integer" id="ma213006" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/9470" id="ma213007" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta content="Nycticebus coucang" datatype="xsd:string" id="ma213008" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2481550" id="ma213009" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11977" id="ma213010" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl640879" id="Tl640879" label="Otolemur crassicaudatus AF179289">
-      <meta content="11650" datatype="xsd:integer" id="ma213012" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="113254" datatype="xsd:integer" id="ma213013" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/9463" id="ma213014" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta content="Otolemur crassicaudatus" datatype="xsd:string" id="ma213015" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2481563" id="ma213016" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11977" id="ma213017" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl640907" id="Tl640907" label="Pan troglodytes NC 001643">
-      <meta content="31678" datatype="xsd:integer" id="ma213019" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="73683" datatype="xsd:integer" id="ma213020" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/9598" id="ma213021" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta content="Pan troglodytes" datatype="xsd:string" id="ma213022" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2481726" id="ma213023" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11977" id="ma213024" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl640885" id="Tl640885" label="Papio hamadryas NC 001992">
-      <meta content="53849" datatype="xsd:integer" id="ma213026" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="124512" datatype="xsd:integer" id="ma213027" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/9557" id="ma213028" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta content="Papio hamadryas" datatype="xsd:string" id="ma213029" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2481670" id="ma213030" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11977" id="ma213031" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl640895" id="Tl640895" label="Pongo pygmaeus NC 001646">
-      <meta content="23412" datatype="xsd:integer" id="ma213033" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="54796" datatype="xsd:integer" id="ma213034" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/9600" id="ma213035" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta content="Pongo pygmaeus" datatype="xsd:string" id="ma213036" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2481728" id="ma213037" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11977" id="ma213038" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl640880" id="Tl640880" label="Presbytis melalophos DQ355299">
-      <meta content="90696" datatype="xsd:integer" id="ma213040" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="169610" datatype="xsd:integer" id="ma213041" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/78451" id="ma213042" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta content="Presbytis melalophos" datatype="xsd:string" id="ma213043" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2481697" id="ma213044" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11977" id="ma213045" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl640899" id="Tl640899" label="Saimiri sciureus FJ785425">
-      <meta content="26033" datatype="xsd:integer" id="ma213047" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="60913" datatype="xsd:integer" id="ma213048" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/9521" id="ma213049" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta content="Saimiri sciureus" datatype="xsd:string" id="ma213050" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2481610" id="ma213051" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11977" id="ma213052" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl640882" id="Tl640882" label="Tarsius tarsier 104 HM470225">
-      <meta content="543939" datatype="xsd:integer" id="ma213054" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="721217" datatype="xsd:integer" id="ma213055" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/662464" id="ma213056" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta content="Tarsius tarsier" datatype="xsd:string" id="ma213057" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:11311929" id="ma213058" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11977" id="ma213059" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl640888" id="Tl640888" label="Tarsius bancanus 001 AF348159">
-      <meta content="28589" datatype="xsd:integer" id="ma213061" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="66632" datatype="xsd:integer" id="ma213062" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/9477" id="ma213063" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta content="Tarsius bancanus" datatype="xsd:string" id="ma213064" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2481567" id="ma213065" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11977" id="ma213066" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl640893" id="Tl640893" label="Tarsius dentatus 062 HM470229">
-      <meta content="387749" datatype="xsd:integer" id="ma213068" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="403563" datatype="xsd:integer" id="ma213069" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/449501" id="ma213070" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta content="Tarsius dentatus" datatype="xsd:string" id="ma213071" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:11311928" id="ma213072" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11977" id="ma213073" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl640884" id="Tl640884" label="Tarsius sangirensis 049 HM470205">
-      <meta content="608320" datatype="xsd:integer" id="ma213075" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="812644" datatype="xsd:integer" id="ma213076" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta content="Tarsius sangirensis" datatype="xsd:string" id="ma213077" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:112096" id="ma213078" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11977" id="ma213079" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl640896" id="Tl640896" label="Tarsius sangirensis 050 HM470206">
-      <meta content="608320" datatype="xsd:integer" id="ma213081" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="812644" datatype="xsd:integer" id="ma213082" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta content="Tarsius sangirensis" datatype="xsd:string" id="ma213083" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:112096" id="ma213084" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11977" id="ma213085" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl640890" id="Tl640890" label="Tarsius syrichta 001 AF069976">
-      <meta content="28590" datatype="xsd:integer" id="ma213087" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="66634" datatype="xsd:integer" id="ma213088" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/9478" id="ma213089" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta content="Tarsius syrichta" datatype="xsd:string" id="ma213090" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2481569" id="ma213091" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11977" id="ma213092" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl640905" id="Tl640905" label="Tarsius tarsier 018 HM470211">
-      <meta content="543939" datatype="xsd:integer" id="ma213094" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="721217" datatype="xsd:integer" id="ma213095" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/662464" id="ma213096" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta content="Tarsius tarsier" datatype="xsd:string" id="ma213097" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:11311929" id="ma213098" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11977" id="ma213099" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl640889" id="Tl640889" label="Tarsius tarsier 019 HM470212">
-      <meta content="543939" datatype="xsd:integer" id="ma213101" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="721217" datatype="xsd:integer" id="ma213102" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/662464" id="ma213103" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta content="Tarsius tarsier" datatype="xsd:string" id="ma213104" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:11311929" id="ma213105" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11977" id="ma213106" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl640901" id="Tl640901" label="Tarsius tarsier 052 HM470219">
-      <meta content="543939" datatype="xsd:integer" id="ma213108" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="721217" datatype="xsd:integer" id="ma213109" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/662464" id="ma213110" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta content="Tarsius tarsier" datatype="xsd:string" id="ma213111" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:11311929" id="ma213112" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11977" id="ma213113" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl640894" id="Tl640894" label="Tarsius tarsier 057 HM470220">
-      <meta content="543939" datatype="xsd:integer" id="ma213115" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="721217" datatype="xsd:integer" id="ma213116" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/662464" id="ma213117" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta content="Tarsius tarsier" datatype="xsd:string" id="ma213118" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:11311929" id="ma213119" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11977" id="ma213120" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl640891" id="Tl640891" label="Tarsius tarsier 058 HM470221">
-      <meta content="543939" datatype="xsd:integer" id="ma213122" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="721217" datatype="xsd:integer" id="ma213123" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/662464" id="ma213124" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta content="Tarsius tarsier" datatype="xsd:string" id="ma213125" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:11311929" id="ma213126" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11977" id="ma213127" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl640902" id="Tl640902" label="Tarsius tarsier 082 HM470207">
-      <meta content="543939" datatype="xsd:integer" id="ma213129" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="721217" datatype="xsd:integer" id="ma213130" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/662464" id="ma213131" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta content="Tarsius tarsier" datatype="xsd:string" id="ma213132" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:11311929" id="ma213133" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11977" id="ma213134" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl640906" id="Tl640906" label="Tarsius tarsier 084 HM470209">
-      <meta content="543939" datatype="xsd:integer" id="ma213136" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="721217" datatype="xsd:integer" id="ma213137" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/662464" id="ma213138" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta content="Tarsius tarsier" datatype="xsd:string" id="ma213139" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:11311929" id="ma213140" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11977" id="ma213141" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl640887" id="Tl640887" label="Tarsius tarsier 085 HM470210">
-      <meta content="543939" datatype="xsd:integer" id="ma213143" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="721217" datatype="xsd:integer" id="ma213144" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/662464" id="ma213145" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta content="Tarsius tarsier" datatype="xsd:string" id="ma213146" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:11311929" id="ma213147" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11977" id="ma213148" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl640886" id="Tl640886" label="Tarsius tarsier 090 HM470213">
-      <meta content="543939" datatype="xsd:integer" id="ma213150" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="721217" datatype="xsd:integer" id="ma213151" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/662464" id="ma213152" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta content="Tarsius tarsier" datatype="xsd:string" id="ma213153" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:11311929" id="ma213154" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11977" id="ma213155" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl640892" id="Tl640892" label="Tarsius tarsier 096 HM470217">
-      <meta content="543939" datatype="xsd:integer" id="ma213157" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="721217" datatype="xsd:integer" id="ma213158" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/662464" id="ma213159" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta content="Tarsius tarsier" datatype="xsd:string" id="ma213160" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:11311929" id="ma213161" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11977" id="ma213162" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl640881" id="Tl640881" label="Tarsius tarsier 100 HM470218">
-      <meta content="543939" datatype="xsd:integer" id="ma213164" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="721217" datatype="xsd:integer" id="ma213165" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/662464" id="ma213166" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta content="Tarsius tarsier" datatype="xsd:string" id="ma213167" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:11311929" id="ma213168" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11977" id="ma213169" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl640898" id="Tl640898" label="Tarsius tarsier 074 HM470215">
-      <meta content="543939" datatype="xsd:integer" id="ma213171" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="721217" datatype="xsd:integer" id="ma213172" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/662464" id="ma213173" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta content="Tarsius tarsier" datatype="xsd:string" id="ma213174" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:11311929" id="ma213175" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11977" id="ma213176" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl640897" id="Tl640897" label="Theropithecus gelada EU580083">
-      <meta content="53852" datatype="xsd:integer" id="ma213178" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="414460" datatype="xsd:integer" id="ma213179" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/9565" id="ma213180" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta content="Theropithecus gelada" datatype="xsd:string" id="ma213181" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2481674" id="ma213182" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11977" id="ma213183" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-  </otus>
-  <trees about="#trees248420" id="trees248420" otus="Tls22922" xml:base="http://purl.org/phylo/treebase/phylows/tree/TB2:">
-    <meta content="Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlTreeBlockWriter@538e2f2b $Rev: 1040 $" datatype="xsd:string" id="ma213185" property="skos:historyNote" xsi:type="nex:LiteralMeta"/>
-    <tree about="#Tr48913" id="Tr48913" label="Fig. 3" xsi:type="nex:FloatTree">
-      <meta content="29" datatype="xsd:integer" id="ma213187" property="tb:ntax.tree" xsi:type="nex:LiteralMeta"/>
-      <meta content="Unrated" datatype="xsd:string" id="ma213188" property="tb:quality.tree" xsi:type="nex:LiteralMeta"/>
-      <meta content="Consensus" datatype="xsd:string" id="ma213189" property="tb:type.tree" xsi:type="nex:LiteralMeta"/>
-      <meta content="Species Tree" datatype="xsd:string" id="ma213190" property="tb:kind.tree" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S11977" id="ma213191" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-      <node about="#Tn8205234" id="Tn8205234" root="true"/>
-      <node about="#Tn8205226" id="Tn8205226"/>
-      <node about="#Tn8205244" id="Tn8205244"/>
-      <node about="#Tn8205206" id="Tn8205206" label="Lemur catta NC 004025" otu="Tl640904"/>
-      <node about="#Tn8205241" id="Tn8205241"/>
-      <node about="#Tn8205222" id="Tn8205222"/>
-      <node about="#Tn8205247" id="Tn8205247"/>
-      <node about="#Tn8205232" id="Tn8205232" label="Nycticebus coucang NC 002765" otu="Tl640903"/>
-      <node about="#Tn8205240" id="Tn8205240" label="Otolemur crassicaudatus AF179289" otu="Tl640879"/>
-      <node about="#Tn8205221" id="Tn8205221"/>
-      <node about="#Tn8205200" id="Tn8205200"/>
-      <node about="#Tn8205210" id="Tn8205210"/>
-      <node about="#Tn8205201" id="Tn8205201"/>
-      <node about="#Tn8205198" id="Tn8205198" label="Cebus albifrons NC 002763" otu="Tl640900"/>
-      <node about="#Tn8205246" id="Tn8205246" label="Saimiri sciureus FJ785425" otu="Tl640899"/>
-      <node about="#Tn8205233" id="Tn8205233"/>
-      <node about="#Tn8205214" id="Tn8205214"/>
-      <node about="#Tn8205220" id="Tn8205220" label="Tarsius bancanus 001 AF348159" otu="Tl640888"/>
-      <node about="#Tn8205202" id="Tn8205202" label="Tarsius syrichta 001 AF069976" otu="Tl640890"/>
-      <node about="#Tn8205215" id="Tn8205215" label="Tarsius 104 tarsier HM470225" otu="Tl640882"/>
-      <node about="#Tn8205231" id="Tn8205231"/>
-      <node about="#Tn8205250" id="Tn8205250" label="Pan troglodytes NC 001643" otu="Tl640907"/>
-      <node about="#Tn8205203" id="Tn8205203"/>
-      <node about="#Tn8205237" id="Tn8205237" label="Presbytis melalophos DQ355299" otu="Tl640880"/>
-      <node about="#Tn8205207" id="Tn8205207"/>
-      <node about="#Tn8205223" id="Tn8205223"/>
-      <node about="#Tn8205242" id="Tn8205242"/>
-      <node about="#Tn8205243" id="Tn8205243" label="Homo sapiens NC 001807" otu="Tl640883"/>
-      <node about="#Tn8205249" id="Tn8205249" label="Pongo pygmaeus NC 001646" otu="Tl640895"/>
-      <node about="#Tn8205224" id="Tn8205224" label="Papio hamadryas NC 001992" otu="Tl640885"/>
-      <node about="#Tn8205225" id="Tn8205225" label="Theropithecus gelada EU580083" otu="Tl640897"/>
-      <node about="#Tn8205209" id="Tn8205209" label="Tarsius sangirensis 049 HM470205" otu="Tl640884"/>
-      <node about="#Tn8205216" id="Tn8205216" label="Tarsius sangirensis 050 HM470206" otu="Tl640896"/>
-      <node about="#Tn8205205" id="Tn8205205"/>
-      <node about="#Tn8205208" id="Tn8205208"/>
-      <node about="#Tn8205228" id="Tn8205228" label="Tarsius wallacei 074 HM470215" otu="Tl640898"/>
-      <node about="#Tn8205239" id="Tn8205239"/>
-      <node about="#Tn8205248" id="Tn8205248" label="Tarsius tarsier 085 HM470210" otu="Tl640887"/>
-      <node about="#Tn8205204" id="Tn8205204"/>
-      <node about="#Tn8205211" id="Tn8205211" label="Tarsius dentatus 062 HM470229" otu="Tl640893"/>
-      <node about="#Tn8205235" id="Tn8205235" label="Tarsius tarsier 082 HM470207" otu="Tl640902"/>
-      <node about="#Tn8205219" id="Tn8205219"/>
-      <node about="#Tn8205236" id="Tn8205236"/>
-      <node about="#Tn8205213" id="Tn8205213"/>
-      <node about="#Tn8205212" id="Tn8205212" label="Tarsius tarsier 052 HM470219" otu="Tl640901"/>
-      <node about="#Tn8205227" id="Tn8205227" label="Tarsius tarsier 057 HM470220" otu="Tl640894"/>
-      <node about="#Tn8205245" id="Tn8205245" label="Tarsius tarsier 058 HM470221" otu="Tl640891"/>
-      <node about="#Tn8205218" id="Tn8205218" label="Tarsius tarsier 096 HM470217" otu="Tl640892"/>
-      <node about="#Tn8205197" id="Tn8205197" label="Tarsius tarsier 100 HM470218" otu="Tl640881"/>
-      <node about="#Tn8205230" id="Tn8205230" label="Tarsius tarsier 019 HM470212" otu="Tl640889"/>
-      <node about="#Tn8205238" id="Tn8205238"/>
-      <node about="#Tn8205229" id="Tn8205229" label="Tarsius tarsier 018 HM470211" otu="Tl640905"/>
-      <node about="#Tn8205217" id="Tn8205217" label="Tarsius tarsier 084 HM470209" otu="Tl640906"/>
-      <node about="#Tn8205199" id="Tn8205199" label="Tarsius tarsier 090 HM470213" otu="Tl640886"/>
-      <edge id="edge213193" length="0.00965362" source="Tn8205234" target="Tn8205226"/>
-      <edge id="edge213198" length="0.00965362" source="Tn8205234" target="Tn8205244"/>
-      <edge id="edge213194" length="0.08170396" source="Tn8205226" target="Tn8205206"/>
-      <edge id="edge213195" length="0.04425699" source="Tn8205226" target="Tn8205241"/>
-      <edge id="edge213199" length="0.06443301" source="Tn8205244" target="Tn8205222"/>
-      <edge id="edge213214" length="0.08945582" source="Tn8205244" target="Tn8205247"/>
-      <edge id="edge213196" length="0.10173258" source="Tn8205241" target="Tn8205232"/>
-      <edge id="edge213197" length="0.04341737" source="Tn8205241" target="Tn8205240"/>
-      <edge id="edge213200" length="0.08294569" source="Tn8205222" target="Tn8205221"/>
-      <edge id="edge213203" length="0.04670914" source="Tn8205222" target="Tn8205200"/>
-      <edge id="edge213215" length="0.02750609" source="Tn8205247" target="Tn8205210"/>
-      <edge id="edge213218" length="0.01716719" source="Tn8205247" target="Tn8205201"/>
-      <edge id="edge213201" length="0.04308801" source="Tn8205221" target="Tn8205198"/>
-      <edge id="edge213202" length="0.0503467" source="Tn8205221" target="Tn8205246"/>
-      <edge id="edge213204" length="0.04758473" source="Tn8205200" target="Tn8205233"/>
-      <edge id="edge213209" length="0.04082344" source="Tn8205200" target="Tn8205214"/>
-      <edge id="edge213216" length="0.0365617" source="Tn8205210" target="Tn8205220"/>
-      <edge id="edge213217" length="0.04343543" source="Tn8205210" target="Tn8205202"/>
-      <edge id="edge213219" length="0.01169135" source="Tn8205201" target="Tn8205215"/>
-      <edge id="edge213220" length="0.00362978" source="Tn8205201" target="Tn8205231"/>
-      <edge id="edge213205" length="0.00799728" source="Tn8205233" target="Tn8205250"/>
-      <edge id="edge213206" length="0.01090834" source="Tn8205233" target="Tn8205203"/>
-      <edge id="edge213210" length="0.0804831" source="Tn8205214" target="Tn8205237"/>
-      <edge id="edge213211" length="0.06175858" source="Tn8205214" target="Tn8205207"/>
-      <edge id="edge213221" length="0.01869773" source="Tn8205231" target="Tn8205223"/>
-      <edge id="edge213224" length="0.00267588" source="Tn8205231" target="Tn8205242"/>
-      <edge id="edge213207" length="0.01855697" source="Tn8205203" target="Tn8205243"/>
-      <edge id="edge213208" length="0.06182182" source="Tn8205203" target="Tn8205249"/>
-      <edge id="edge213212" length="0.02601145" source="Tn8205207" target="Tn8205224"/>
-      <edge id="edge213213" length="0.02086223" source="Tn8205207" target="Tn8205225"/>
-      <edge id="edge213222" length="0.00146049" source="Tn8205223" target="Tn8205209"/>
-      <edge id="edge213223" length="1.0E-8" source="Tn8205223" target="Tn8205216"/>
-      <edge id="edge213225" length="0.0014655" source="Tn8205242" target="Tn8205205"/>
-      <edge id="edge213234" length="1.0E-8" source="Tn8205242" target="Tn8205208"/>
-      <edge id="edge213226" length="0.00893478" source="Tn8205205" target="Tn8205228"/>
-      <edge id="edge213227" length="0.00394498" source="Tn8205205" target="Tn8205239"/>
-      <edge id="edge213235" length="0.00432594" source="Tn8205208" target="Tn8205248"/>
-      <edge id="edge213236" length="0.002963" source="Tn8205208" target="Tn8205204"/>
-      <edge id="edge213228" length="0.00580196" source="Tn8205239" target="Tn8205211"/>
-      <edge id="edge213229" length="5.5392E-4" source="Tn8205239" target="Tn8205235"/>
-      <edge id="edge213230" length="0.00727454" source="Tn8205239" target="Tn8205219"/>
-      <edge id="edge213237" length="0.0" source="Tn8205204" target="Tn8205236"/>
-      <edge id="edge213240" length="0.00145191" source="Tn8205204" target="Tn8205213"/>
-      <edge id="edge213231" length="0.00146329" source="Tn8205219" target="Tn8205212"/>
-      <edge id="edge213232" length="1.0E-8" source="Tn8205219" target="Tn8205227"/>
-      <edge id="edge213233" length="0.00144865" source="Tn8205219" target="Tn8205245"/>
-      <edge id="edge213238" length="0.00145909" source="Tn8205236" target="Tn8205218"/>
-      <edge id="edge213239" length="0.00145288" source="Tn8205236" target="Tn8205197"/>
-      <edge id="edge213241" length="0.0029261" source="Tn8205213" target="Tn8205230"/>
-      <edge id="edge213242" length="0.00145385" source="Tn8205213" target="Tn8205238"/>
-      <edge id="edge213243" length="1.0E-8" source="Tn8205238" target="Tn8205229"/>
-      <edge id="edge213244" length="0.00145028" source="Tn8205238" target="Tn8205217"/>
-      <edge id="edge213245" length="1.0E-8" source="Tn8205238" target="Tn8205199"/>
-    </tree>
-  </trees>
-</nex:nexml>
+<nex:nexml xmlns="http://www.nexml.org/2009" version="0.9" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xsi:schemaLocation="http://www.nexml.org/2009 http://www.nexml.org/2009/nexml.xsd" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" generator="Bio::Phylo::Project v.0.46_1660" xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:nex="http://www.nexml.org/2009" xmlns:tb="http://purl.org/phylo/treebase/2.0/terms#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" about="#nl200472" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:dc="http://purl.org/dc/elements/1.1/"><meta xsi:type="nex:LiteralMeta" content="rvosa" id="ma200747" datatype="xsd:string" property="dc:creator"/><meta xsi:type="nex:LiteralMeta" content="2012-03-07T20:34:44" id="ma200748" datatype="xsd:date" property="dc:date"/><otus xml:base="http://purl.org/phylo/treebase/phylows/taxon/TB2:" label="Taxa" id="Tls22922" about="#Tls22922"><meta xsi:type="nex:LiteralMeta" content="Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@7119e4a5 $Rev: 1040 $" id="ma200474" datatype="xsd:string" property="skos:historyNote"/>
+<otu label="Cebus albifrons NC 002763" id="Tl640900" about="#Tl640900"><meta xsi:type="nex:LiteralMeta" content="5227" id="ma200476" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="12693" id="ma200477" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/9514" xsi:type="nex:ResourceMeta" id="ma200478"/><meta xsi:type="nex:LiteralMeta" content="Cebus albifrons" id="ma200479" datatype="xsd:string" property="skos:altLabel"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2481604" xsi:type="nex:ResourceMeta" id="ma200480"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S11977" xsi:type="nex:ResourceMeta" id="ma200481"/></otu>
+<otu label="Cynocephalus variegatus AF460846" id="Tl640908" about="#Tl640908"><meta xsi:type="nex:LiteralMeta" content="8122" id="ma200483" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="19535" id="ma200484" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta xsi:type="nex:LiteralMeta" content="Galeopterus variegatus" id="ma200485" datatype="xsd:string" property="skos:prefLabel"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/482537" xsi:type="nex:ResourceMeta" id="ma200486"/><meta xsi:type="nex:LiteralMeta" content="Cynocephalus variegatus" id="ma200487" datatype="xsd:string" property="skos:altLabel"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2481852" xsi:type="nex:ResourceMeta" id="ma200488"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S11977" xsi:type="nex:ResourceMeta" id="ma200489"/></otu>
+<otu label="Homo sapiens NC 001807" id="Tl640883" about="#Tl640883"><meta xsi:type="nex:LiteralMeta" content="13680" id="ma200491" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="32274" id="ma200492" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/9606" xsi:type="nex:ResourceMeta" id="ma200493"/><meta xsi:type="nex:LiteralMeta" content="Homo sapiens" id="ma200494" datatype="xsd:string" property="skos:altLabel"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2481730" xsi:type="nex:ResourceMeta" id="ma200495"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S11977" xsi:type="nex:ResourceMeta" id="ma200496"/></otu>
+<otu label="Lemur catta NC 004025" id="Tl640904" about="#Tl640904"><meta xsi:type="nex:LiteralMeta" content="15528" id="ma200498" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="36438" id="ma200499" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/9447" xsi:type="nex:ResourceMeta" id="ma200500"/><meta xsi:type="nex:LiteralMeta" content="Lemur catta" id="ma200501" datatype="xsd:string" property="skos:altLabel"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2481519" xsi:type="nex:ResourceMeta" id="ma200502"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S11977" xsi:type="nex:ResourceMeta" id="ma200503"/></otu>
+<otu label="Nycticebus coucang NC 002765" id="Tl640903" about="#Tl640903"><meta xsi:type="nex:LiteralMeta" content="19254" id="ma200505" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="44802" id="ma200506" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/9470" xsi:type="nex:ResourceMeta" id="ma200507"/><meta xsi:type="nex:LiteralMeta" content="Nycticebus coucang" id="ma200508" datatype="xsd:string" property="skos:altLabel"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2481550" xsi:type="nex:ResourceMeta" id="ma200509"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S11977" xsi:type="nex:ResourceMeta" id="ma200510"/></otu>
+<otu label="Otolemur crassicaudatus AF179289" id="Tl640879" about="#Tl640879"><meta xsi:type="nex:LiteralMeta" content="11650" id="ma200512" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="113254" id="ma200513" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/9463" xsi:type="nex:ResourceMeta" id="ma200514"/><meta xsi:type="nex:LiteralMeta" content="Otolemur crassicaudatus" id="ma200515" datatype="xsd:string" property="skos:altLabel"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2481563" xsi:type="nex:ResourceMeta" id="ma200516"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S11977" xsi:type="nex:ResourceMeta" id="ma200517"/></otu>
+<otu label="Pan troglodytes NC 001643" id="Tl640907" about="#Tl640907"><meta xsi:type="nex:LiteralMeta" content="31678" id="ma200519" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="73683" id="ma200520" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/9598" xsi:type="nex:ResourceMeta" id="ma200521"/><meta xsi:type="nex:LiteralMeta" content="Pan troglodytes" id="ma200522" datatype="xsd:string" property="skos:altLabel"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2481726" xsi:type="nex:ResourceMeta" id="ma200523"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S11977" xsi:type="nex:ResourceMeta" id="ma200524"/></otu>
+<otu label="Papio hamadryas NC 001992" id="Tl640885" about="#Tl640885"><meta xsi:type="nex:LiteralMeta" content="53849" id="ma200526" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="124512" id="ma200527" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/9557" xsi:type="nex:ResourceMeta" id="ma200528"/><meta xsi:type="nex:LiteralMeta" content="Papio hamadryas" id="ma200529" datatype="xsd:string" property="skos:altLabel"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2481670" xsi:type="nex:ResourceMeta" id="ma200530"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S11977" xsi:type="nex:ResourceMeta" id="ma200531"/></otu>
+<otu label="Pongo pygmaeus NC 001646" id="Tl640895" about="#Tl640895"><meta xsi:type="nex:LiteralMeta" content="23412" id="ma200533" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="54796" id="ma200534" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/9600" xsi:type="nex:ResourceMeta" id="ma200535"/><meta xsi:type="nex:LiteralMeta" content="Pongo pygmaeus" id="ma200536" datatype="xsd:string" property="skos:altLabel"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2481728" xsi:type="nex:ResourceMeta" id="ma200537"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S11977" xsi:type="nex:ResourceMeta" id="ma200538"/></otu>
+<otu label="Presbytis melalophos DQ355299" id="Tl640880" about="#Tl640880"><meta xsi:type="nex:LiteralMeta" content="90696" id="ma200540" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="169610" id="ma200541" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/78451" xsi:type="nex:ResourceMeta" id="ma200542"/><meta xsi:type="nex:LiteralMeta" content="Presbytis melalophos" id="ma200543" datatype="xsd:string" property="skos:altLabel"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2481697" xsi:type="nex:ResourceMeta" id="ma200544"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S11977" xsi:type="nex:ResourceMeta" id="ma200545"/></otu>
+<otu label="Saimiri sciureus FJ785425" id="Tl640899" about="#Tl640899"><meta xsi:type="nex:LiteralMeta" content="26033" id="ma200547" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="60913" id="ma200548" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/9521" xsi:type="nex:ResourceMeta" id="ma200549"/><meta xsi:type="nex:LiteralMeta" content="Saimiri sciureus" id="ma200550" datatype="xsd:string" property="skos:altLabel"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2481610" xsi:type="nex:ResourceMeta" id="ma200551"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S11977" xsi:type="nex:ResourceMeta" id="ma200552"/></otu>
+<otu label="Tarsius tarsier 104 HM470225" id="Tl640882" about="#Tl640882"><meta xsi:type="nex:LiteralMeta" content="543939" id="ma200554" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="721217" id="ma200555" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/662464" xsi:type="nex:ResourceMeta" id="ma200556"/><meta xsi:type="nex:LiteralMeta" content="Tarsius tarsier" id="ma200557" datatype="xsd:string" property="skos:altLabel"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:11311929" xsi:type="nex:ResourceMeta" id="ma200558"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S11977" xsi:type="nex:ResourceMeta" id="ma200559"/></otu>
+<otu label="Tarsius bancanus 001 AF348159" id="Tl640888" about="#Tl640888"><meta xsi:type="nex:LiteralMeta" content="28589" id="ma200561" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="66632" id="ma200562" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/9477" xsi:type="nex:ResourceMeta" id="ma200563"/><meta xsi:type="nex:LiteralMeta" content="Tarsius bancanus" id="ma200564" datatype="xsd:string" property="skos:altLabel"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2481567" xsi:type="nex:ResourceMeta" id="ma200565"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S11977" xsi:type="nex:ResourceMeta" id="ma200566"/></otu>
+<otu label="Tarsius dentatus 062 HM470229" id="Tl640893" about="#Tl640893"><meta xsi:type="nex:LiteralMeta" content="387749" id="ma200568" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="403563" id="ma200569" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/449501" xsi:type="nex:ResourceMeta" id="ma200570"/><meta xsi:type="nex:LiteralMeta" content="Tarsius dentatus" id="ma200571" datatype="xsd:string" property="skos:altLabel"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:11311928" xsi:type="nex:ResourceMeta" id="ma200572"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S11977" xsi:type="nex:ResourceMeta" id="ma200573"/></otu>
+<otu label="Tarsius sangirensis 049 HM470205" id="Tl640884" about="#Tl640884"><meta xsi:type="nex:LiteralMeta" content="608320" id="ma200575" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="812644" id="ma200576" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta xsi:type="nex:LiteralMeta" content="Tarsius sangirensis" id="ma200577" datatype="xsd:string" property="skos:altLabel"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:112096" xsi:type="nex:ResourceMeta" id="ma200578"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S11977" xsi:type="nex:ResourceMeta" id="ma200579"/></otu>
+<otu label="Tarsius sangirensis 050 HM470206" id="Tl640896" about="#Tl640896"><meta xsi:type="nex:LiteralMeta" content="608320" id="ma200581" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="812644" id="ma200582" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta xsi:type="nex:LiteralMeta" content="Tarsius sangirensis" id="ma200583" datatype="xsd:string" property="skos:altLabel"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:112096" xsi:type="nex:ResourceMeta" id="ma200584"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S11977" xsi:type="nex:ResourceMeta" id="ma200585"/></otu>
+<otu label="Tarsius syrichta 001 AF069976" id="Tl640890" about="#Tl640890"><meta xsi:type="nex:LiteralMeta" content="28590" id="ma200587" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="66634" id="ma200588" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/9478" xsi:type="nex:ResourceMeta" id="ma200589"/><meta xsi:type="nex:LiteralMeta" content="Tarsius syrichta" id="ma200590" datatype="xsd:string" property="skos:altLabel"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2481569" xsi:type="nex:ResourceMeta" id="ma200591"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S11977" xsi:type="nex:ResourceMeta" id="ma200592"/></otu>
+<otu label="Tarsius tarsier 018 HM470211" id="Tl640905" about="#Tl640905"><meta xsi:type="nex:LiteralMeta" content="543939" id="ma200594" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="721217" id="ma200595" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/662464" xsi:type="nex:ResourceMeta" id="ma200596"/><meta xsi:type="nex:LiteralMeta" content="Tarsius tarsier" id="ma200597" datatype="xsd:string" property="skos:altLabel"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:11311929" xsi:type="nex:ResourceMeta" id="ma200598"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S11977" xsi:type="nex:ResourceMeta" id="ma200599"/></otu>
+<otu label="Tarsius tarsier 019 HM470212" id="Tl640889" about="#Tl640889"><meta xsi:type="nex:LiteralMeta" content="543939" id="ma200601" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="721217" id="ma200602" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/662464" xsi:type="nex:ResourceMeta" id="ma200603"/><meta xsi:type="nex:LiteralMeta" content="Tarsius tarsier" id="ma200604" datatype="xsd:string" property="skos:altLabel"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:11311929" xsi:type="nex:ResourceMeta" id="ma200605"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S11977" xsi:type="nex:ResourceMeta" id="ma200606"/></otu>
+<otu label="Tarsius tarsier 052 HM470219" id="Tl640901" about="#Tl640901"><meta xsi:type="nex:LiteralMeta" content="543939" id="ma200608" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="721217" id="ma200609" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/662464" xsi:type="nex:ResourceMeta" id="ma200610"/><meta xsi:type="nex:LiteralMeta" content="Tarsius tarsier" id="ma200611" datatype="xsd:string" property="skos:altLabel"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:11311929" xsi:type="nex:ResourceMeta" id="ma200612"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S11977" xsi:type="nex:ResourceMeta" id="ma200613"/></otu>
+<otu label="Tarsius tarsier 057 HM470220" id="Tl640894" about="#Tl640894"><meta xsi:type="nex:LiteralMeta" content="543939" id="ma200615" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="721217" id="ma200616" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/662464" xsi:type="nex:ResourceMeta" id="ma200617"/><meta xsi:type="nex:LiteralMeta" content="Tarsius tarsier" id="ma200618" datatype="xsd:string" property="skos:altLabel"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:11311929" xsi:type="nex:ResourceMeta" id="ma200619"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S11977" xsi:type="nex:ResourceMeta" id="ma200620"/></otu>
+<otu label="Tarsius tarsier 058 HM470221" id="Tl640891" about="#Tl640891"><meta xsi:type="nex:LiteralMeta" content="543939" id="ma200622" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="721217" id="ma200623" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/662464" xsi:type="nex:ResourceMeta" id="ma200624"/><meta xsi:type="nex:LiteralMeta" content="Tarsius tarsier" id="ma200625" datatype="xsd:string" property="skos:altLabel"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:11311929" xsi:type="nex:ResourceMeta" id="ma200626"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S11977" xsi:type="nex:ResourceMeta" id="ma200627"/></otu>
+<otu label="Tarsius tarsier 082 HM470207" id="Tl640902" about="#Tl640902"><meta xsi:type="nex:LiteralMeta" content="543939" id="ma200629" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="721217" id="ma200630" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/662464" xsi:type="nex:ResourceMeta" id="ma200631"/><meta xsi:type="nex:LiteralMeta" content="Tarsius tarsier" id="ma200632" datatype="xsd:string" property="skos:altLabel"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:11311929" xsi:type="nex:ResourceMeta" id="ma200633"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S11977" xsi:type="nex:ResourceMeta" id="ma200634"/></otu>
+<otu label="Tarsius tarsier 084 HM470209" id="Tl640906" about="#Tl640906"><meta xsi:type="nex:LiteralMeta" content="543939" id="ma200636" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="721217" id="ma200637" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/662464" xsi:type="nex:ResourceMeta" id="ma200638"/><meta xsi:type="nex:LiteralMeta" content="Tarsius tarsier" id="ma200639" datatype="xsd:string" property="skos:altLabel"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:11311929" xsi:type="nex:ResourceMeta" id="ma200640"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S11977" xsi:type="nex:ResourceMeta" id="ma200641"/></otu>
+<otu label="Tarsius tarsier 085 HM470210" id="Tl640887" about="#Tl640887"><meta xsi:type="nex:LiteralMeta" content="543939" id="ma200643" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="721217" id="ma200644" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/662464" xsi:type="nex:ResourceMeta" id="ma200645"/><meta xsi:type="nex:LiteralMeta" content="Tarsius tarsier" id="ma200646" datatype="xsd:string" property="skos:altLabel"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:11311929" xsi:type="nex:ResourceMeta" id="ma200647"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S11977" xsi:type="nex:ResourceMeta" id="ma200648"/></otu>
+<otu label="Tarsius tarsier 090 HM470213" id="Tl640886" about="#Tl640886"><meta xsi:type="nex:LiteralMeta" content="543939" id="ma200650" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="721217" id="ma200651" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/662464" xsi:type="nex:ResourceMeta" id="ma200652"/><meta xsi:type="nex:LiteralMeta" content="Tarsius tarsier" id="ma200653" datatype="xsd:string" property="skos:altLabel"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:11311929" xsi:type="nex:ResourceMeta" id="ma200654"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S11977" xsi:type="nex:ResourceMeta" id="ma200655"/></otu>
+<otu label="Tarsius tarsier 096 HM470217" id="Tl640892" about="#Tl640892"><meta xsi:type="nex:LiteralMeta" content="543939" id="ma200657" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="721217" id="ma200658" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/662464" xsi:type="nex:ResourceMeta" id="ma200659"/><meta xsi:type="nex:LiteralMeta" content="Tarsius tarsier" id="ma200660" datatype="xsd:string" property="skos:altLabel"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:11311929" xsi:type="nex:ResourceMeta" id="ma200661"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S11977" xsi:type="nex:ResourceMeta" id="ma200662"/></otu>
+<otu label="Tarsius tarsier 100 HM470218" id="Tl640881" about="#Tl640881"><meta xsi:type="nex:LiteralMeta" content="543939" id="ma200664" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="721217" id="ma200665" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/662464" xsi:type="nex:ResourceMeta" id="ma200666"/><meta xsi:type="nex:LiteralMeta" content="Tarsius tarsier" id="ma200667" datatype="xsd:string" property="skos:altLabel"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:11311929" xsi:type="nex:ResourceMeta" id="ma200668"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S11977" xsi:type="nex:ResourceMeta" id="ma200669"/></otu>
+<otu label="Tarsius tarsier 074 HM470215" id="Tl640898" about="#Tl640898"><meta xsi:type="nex:LiteralMeta" content="543939" id="ma200671" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="721217" id="ma200672" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/662464" xsi:type="nex:ResourceMeta" id="ma200673"/><meta xsi:type="nex:LiteralMeta" content="Tarsius tarsier" id="ma200674" datatype="xsd:string" property="skos:altLabel"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:11311929" xsi:type="nex:ResourceMeta" id="ma200675"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S11977" xsi:type="nex:ResourceMeta" id="ma200676"/></otu>
+<otu label="Theropithecus gelada EU580083" id="Tl640897" about="#Tl640897"><meta xsi:type="nex:LiteralMeta" content="53852" id="ma200678" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="414460" id="ma200679" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/9565" xsi:type="nex:ResourceMeta" id="ma200680"/><meta xsi:type="nex:LiteralMeta" content="Theropithecus gelada" id="ma200681" datatype="xsd:string" property="skos:altLabel"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2481674" xsi:type="nex:ResourceMeta" id="ma200682"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S11977" xsi:type="nex:ResourceMeta" id="ma200683"/></otu></otus><trees otus="Tls22922" xml:base="http://purl.org/phylo/treebase/phylows/tree/TB2:" id="trees229321" about="#trees229321"><meta xsi:type="nex:LiteralMeta" content="Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlTreeBlockWriter@262e7d24 $Rev: 1040 $" id="ma200685" datatype="xsd:string" property="skos:historyNote"/>
+<tree xsi:type="nex:FloatTree" label="Fig. 3" id="Tr48913" about="#Tr48913"><meta xsi:type="nex:LiteralMeta" content="29" id="ma200687" datatype="xsd:integer" property="tb:ntax.tree"/><meta xsi:type="nex:LiteralMeta" content="Unrated" id="ma200688" datatype="xsd:string" property="tb:quality.tree"/><meta xsi:type="nex:LiteralMeta" content="Consensus" id="ma200689" datatype="xsd:string" property="tb:type.tree"/><meta xsi:type="nex:LiteralMeta" content="Species Tree" id="ma200690" datatype="xsd:string" property="tb:kind.tree"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S11977" xsi:type="nex:ResourceMeta" id="ma200691"/>
+<node root="true" id="Tn8205234" about="#Tn8205234"/>
+<node id="Tn8205226" about="#Tn8205226"/>
+<node id="Tn8205244" about="#Tn8205244"/>
+<node label="Lemur catta NC 004025" id="Tn8205206" about="#Tn8205206" otu="Tl640904"/>
+<node id="Tn8205241" about="#Tn8205241"/>
+<node id="Tn8205222" about="#Tn8205222"/>
+<node id="Tn8205247" about="#Tn8205247"/>
+<node label="Nycticebus coucang NC 002765" id="Tn8205232" about="#Tn8205232" otu="Tl640903"/>
+<node label="Otolemur crassicaudatus AF179289" id="Tn8205240" about="#Tn8205240" otu="Tl640879"/>
+<node id="Tn8205221" about="#Tn8205221"/>
+<node id="Tn8205200" about="#Tn8205200"/>
+<node id="Tn8205210" about="#Tn8205210"/>
+<node id="Tn8205201" about="#Tn8205201"/>
+<node label="Cebus albifrons NC 002763" id="Tn8205198" about="#Tn8205198" otu="Tl640900"/>
+<node label="Saimiri sciureus FJ785425" id="Tn8205246" about="#Tn8205246" otu="Tl640899"/>
+<node id="Tn8205233" about="#Tn8205233"/>
+<node id="Tn8205214" about="#Tn8205214"/>
+<node label="Tarsius bancanus 001 AF348159" id="Tn8205220" about="#Tn8205220" otu="Tl640888"/>
+<node label="Tarsius syrichta 001 AF069976" id="Tn8205202" about="#Tn8205202" otu="Tl640890"/>
+<node label="Tarsius 104 tarsier HM470225" id="Tn8205215" about="#Tn8205215" otu="Tl640882"/>
+<node id="Tn8205231" about="#Tn8205231"/>
+<node label="Pan troglodytes NC 001643" id="Tn8205250" about="#Tn8205250" otu="Tl640907"/>
+<node id="Tn8205203" about="#Tn8205203"/>
+<node label="Presbytis melalophos DQ355299" id="Tn8205237" about="#Tn8205237" otu="Tl640880"/>
+<node id="Tn8205207" about="#Tn8205207"/>
+<node id="Tn8205223" about="#Tn8205223"/>
+<node id="Tn8205242" about="#Tn8205242"/>
+<node label="Homo sapiens NC 001807" id="Tn8205243" about="#Tn8205243" otu="Tl640883"/>
+<node label="Pongo pygmaeus NC 001646" id="Tn8205249" about="#Tn8205249" otu="Tl640895"/>
+<node label="Papio hamadryas NC 001992" id="Tn8205224" about="#Tn8205224" otu="Tl640885"/>
+<node label="Theropithecus gelada EU580083" id="Tn8205225" about="#Tn8205225" otu="Tl640897"/>
+<node label="Tarsius sangirensis 049 HM470205" id="Tn8205209" about="#Tn8205209" otu="Tl640884"/>
+<node label="Tarsius sangirensis 050 HM470206" id="Tn8205216" about="#Tn8205216" otu="Tl640896"/>
+<node id="Tn8205205" about="#Tn8205205"/>
+<node id="Tn8205208" about="#Tn8205208"/>
+<node label="Tarsius wallacei 074 HM470215" id="Tn8205228" about="#Tn8205228" otu="Tl640898"/>
+<node id="Tn8205239" about="#Tn8205239"/>
+<node label="Tarsius tarsier 085 HM470210" id="Tn8205248" about="#Tn8205248" otu="Tl640887"/>
+<node id="Tn8205204" about="#Tn8205204"/>
+<node label="Tarsius dentatus 062 HM470229" id="Tn8205211" about="#Tn8205211" otu="Tl640893"/>
+<node label="Tarsius tarsier 082 HM470207" id="Tn8205235" about="#Tn8205235" otu="Tl640902"/>
+<node id="Tn8205219" about="#Tn8205219"/>
+<node id="Tn8205236" about="#Tn8205236"/>
+<node id="Tn8205213" about="#Tn8205213"/>
+<node label="Tarsius tarsier 052 HM470219" id="Tn8205212" about="#Tn8205212" otu="Tl640901"/>
+<node label="Tarsius tarsier 057 HM470220" id="Tn8205227" about="#Tn8205227" otu="Tl640894"/>
+<node label="Tarsius tarsier 058 HM470221" id="Tn8205245" about="#Tn8205245" otu="Tl640891"/>
+<node label="Tarsius tarsier 096 HM470217" id="Tn8205218" about="#Tn8205218" otu="Tl640892"/>
+<node label="Tarsius tarsier 100 HM470218" id="Tn8205197" about="#Tn8205197" otu="Tl640881"/>
+<node label="Tarsius tarsier 019 HM470212" id="Tn8205230" about="#Tn8205230" otu="Tl640889"/>
+<node id="Tn8205238" about="#Tn8205238"/>
+<node label="Tarsius tarsier 018 HM470211" id="Tn8205229" about="#Tn8205229" otu="Tl640905"/>
+<node label="Tarsius tarsier 084 HM470209" id="Tn8205217" about="#Tn8205217" otu="Tl640906"/>
+<node label="Tarsius tarsier 090 HM470213" id="Tn8205199" about="#Tn8205199" otu="Tl640886"/>
+<edge source="Tn8205234" length="0.00965362" target="Tn8205226" id="edge200693"/>
+<edge source="Tn8205234" length="0.00965362" target="Tn8205244" id="edge200698"/>
+<edge source="Tn8205226" length="0.08170396" target="Tn8205206" id="edge200694"/>
+<edge source="Tn8205226" length="0.04425699" target="Tn8205241" id="edge200695"/>
+<edge source="Tn8205244" length="0.06443301" target="Tn8205222" id="edge200699"/>
+<edge source="Tn8205244" length="0.08945582" target="Tn8205247" id="edge200714"/>
+<edge source="Tn8205241" length="0.10173258" target="Tn8205232" id="edge200696"/>
+<edge source="Tn8205241" length="0.04341737" target="Tn8205240" id="edge200697"/>
+<edge source="Tn8205222" length="0.08294569" target="Tn8205221" id="edge200700"/>
+<edge source="Tn8205222" length="0.04670914" target="Tn8205200" id="edge200703"/>
+<edge source="Tn8205247" length="0.02750609" target="Tn8205210" id="edge200715"/>
+<edge source="Tn8205247" length="0.01716719" target="Tn8205201" id="edge200718"/>
+<edge source="Tn8205221" length="0.04308801" target="Tn8205198" id="edge200701"/>
+<edge source="Tn8205221" length="0.0503467" target="Tn8205246" id="edge200702"/>
+<edge source="Tn8205200" length="0.04758473" target="Tn8205233" id="edge200704"/>
+<edge source="Tn8205200" length="0.04082344" target="Tn8205214" id="edge200709"/>
+<edge source="Tn8205210" length="0.0365617" target="Tn8205220" id="edge200716"/>
+<edge source="Tn8205210" length="0.04343543" target="Tn8205202" id="edge200717"/>
+<edge source="Tn8205201" length="0.01169135" target="Tn8205215" id="edge200719"/>
+<edge source="Tn8205201" length="0.00362978" target="Tn8205231" id="edge200720"/>
+<edge source="Tn8205233" length="0.00799728" target="Tn8205250" id="edge200705"/>
+<edge source="Tn8205233" length="0.01090834" target="Tn8205203" id="edge200706"/>
+<edge source="Tn8205214" length="0.0804831" target="Tn8205237" id="edge200710"/>
+<edge source="Tn8205214" length="0.06175858" target="Tn8205207" id="edge200711"/>
+<edge source="Tn8205231" length="0.01869773" target="Tn8205223" id="edge200721"/>
+<edge source="Tn8205231" length="0.00267588" target="Tn8205242" id="edge200724"/>
+<edge source="Tn8205203" length="0.01855697" target="Tn8205243" id="edge200707"/>
+<edge source="Tn8205203" length="0.06182182" target="Tn8205249" id="edge200708"/>
+<edge source="Tn8205207" length="0.02601145" target="Tn8205224" id="edge200712"/>
+<edge source="Tn8205207" length="0.02086223" target="Tn8205225" id="edge200713"/>
+<edge source="Tn8205223" length="0.00146049" target="Tn8205209" id="edge200722"/>
+<edge source="Tn8205223" length="1.0E-8" target="Tn8205216" id="edge200723"/>
+<edge source="Tn8205242" length="0.0014655" target="Tn8205205" id="edge200725"/>
+<edge source="Tn8205242" length="1.0E-8" target="Tn8205208" id="edge200734"/>
+<edge source="Tn8205205" length="0.00893478" target="Tn8205228" id="edge200726"/>
+<edge source="Tn8205205" length="0.00394498" target="Tn8205239" id="edge200727"/>
+<edge source="Tn8205208" length="0.00432594" target="Tn8205248" id="edge200735"/>
+<edge source="Tn8205208" length="0.002963" target="Tn8205204" id="edge200736"/>
+<edge source="Tn8205239" length="0.00580196" target="Tn8205211" id="edge200728"/>
+<edge source="Tn8205239" length="5.5392E-4" target="Tn8205235" id="edge200729"/>
+<edge source="Tn8205239" length="0.00727454" target="Tn8205219" id="edge200730"/>
+<edge source="Tn8205204" length="0.0" target="Tn8205236" id="edge200737"/>
+<edge source="Tn8205204" length="0.00145191" target="Tn8205213" id="edge200740"/>
+<edge source="Tn8205219" length="0.00146329" target="Tn8205212" id="edge200731"/>
+<edge source="Tn8205219" length="1.0E-8" target="Tn8205227" id="edge200732"/>
+<edge source="Tn8205219" length="0.00144865" target="Tn8205245" id="edge200733"/>
+<edge source="Tn8205236" length="0.00145909" target="Tn8205218" id="edge200738"/>
+<edge source="Tn8205236" length="0.00145288" target="Tn8205197" id="edge200739"/>
+<edge source="Tn8205213" length="0.0029261" target="Tn8205230" id="edge200741"/>
+<edge source="Tn8205213" length="0.00145385" target="Tn8205238" id="edge200742"/>
+<edge source="Tn8205238" length="1.0E-8" target="Tn8205229" id="edge200743"/>
+<edge source="Tn8205238" length="0.00145028" target="Tn8205217" id="edge200744"/>
+<edge source="Tn8205238" length="1.0E-8" target="Tn8205199" id="edge200745"/></tree></trees></nex:nexml>

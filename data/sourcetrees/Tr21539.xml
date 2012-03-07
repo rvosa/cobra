@@ -1,832 +1,337 @@
-<nex:nexml about="#nl37793" generator="Bio::Phylo::Project v.0.46_1660" version="0.9" xmlns="http://www.nexml.org/2009" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:nex="http://www.nexml.org/2009" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:tb="http://purl.org/phylo/treebase/2.0/terms#" xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.nexml.org/2009 http://www.nexml.org/2009/nexml.xsd">
-  <meta content="rvosa" datatype="xsd:string" id="ma38418" property="dc:creator" xsi:type="nex:LiteralMeta"/>
-  <meta content="2012-03-06T21:58:20" datatype="xsd:date" id="ma38419" property="dc:date" xsi:type="nex:LiteralMeta"/>
-  <otus about="#Tls18231" id="Tls18231" label="Untitled Taxa Block" xml:base="http://purl.org/phylo/treebase/phylows/taxon/TB2:">
-    <meta content="Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@25dd26ab $Rev: 1040 $" datatype="xsd:string" id="ma37795" property="skos:historyNote" xsi:type="nex:LiteralMeta"/>
-    <otu about="#Tl412140" id="Tl412140" label="Rattus norvegicus">
-      <meta content="24889" datatype="xsd:integer" id="ma37797" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="58300" datatype="xsd:integer" id="ma37798" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/10116" id="ma37799" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2481343" id="ma37800" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" id="ma37801" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl412148" id="Tl412148" label="Rattus colletti ABTC51642">
-      <meta content="85469" datatype="xsd:integer" id="ma37803" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="164182" datatype="xsd:integer" id="ma37804" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/71422" id="ma37805" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta content="Rattus colletti" datatype="xsd:string" id="ma37806" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2481315" id="ma37807" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" id="ma37808" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl412192" id="Tl412192" label="Rattus colletti ABTC51650">
-      <meta content="85469" datatype="xsd:integer" id="ma37810" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="164182" datatype="xsd:integer" id="ma37811" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/71422" id="ma37812" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta content="Rattus colletti" datatype="xsd:string" id="ma37813" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2481315" id="ma37814" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" id="ma37815" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl412188" id="Tl412188" label="Rattus colletti ABTC5656">
-      <meta content="85469" datatype="xsd:integer" id="ma37817" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="164182" datatype="xsd:integer" id="ma37818" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/71422" id="ma37819" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta content="Rattus colletti" datatype="xsd:string" id="ma37820" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2481315" id="ma37821" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" id="ma37822" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl412145" id="Tl412145" label="Rattus fuscipes assimilis A10">
-      <meta content="103962" datatype="xsd:integer" id="ma37824" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="183064" datatype="xsd:integer" id="ma37825" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/95725" id="ma37826" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta content="Rattus fuscipes assimilis" datatype="xsd:string" id="ma37827" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:111544" id="ma37828" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" id="ma37829" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl412151" id="Tl412151" label="Rattus fuscipes assimilis C21">
-      <meta content="103962" datatype="xsd:integer" id="ma37831" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="183064" datatype="xsd:integer" id="ma37832" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/95725" id="ma37833" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta content="Rattus fuscipes assimilis" datatype="xsd:string" id="ma37834" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:111544" id="ma37835" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" id="ma37836" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl412147" id="Tl412147" label="Rattus fuscipes assimilis N01">
-      <meta content="103962" datatype="xsd:integer" id="ma37838" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="183064" datatype="xsd:integer" id="ma37839" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/95725" id="ma37840" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta content="Rattus fuscipes assimilis" datatype="xsd:string" id="ma37841" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:111544" id="ma37842" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" id="ma37843" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl412193" id="Tl412193" label="Rattus fuscipes assimilis N02">
-      <meta content="103962" datatype="xsd:integer" id="ma37845" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="183064" datatype="xsd:integer" id="ma37846" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/95725" id="ma37847" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta content="Rattus fuscipes assimilis" datatype="xsd:string" id="ma37848" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:111544" id="ma37849" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" id="ma37850" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl412181" id="Tl412181" label="Rattus fuscipes assimilis N05">
-      <meta content="103962" datatype="xsd:integer" id="ma37852" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="183064" datatype="xsd:integer" id="ma37853" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/95725" id="ma37854" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta content="Rattus fuscipes assimilis" datatype="xsd:string" id="ma37855" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:111544" id="ma37856" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" id="ma37857" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl412160" id="Tl412160" label="Rattus fuscipes assimilis S01">
-      <meta content="103962" datatype="xsd:integer" id="ma37859" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="183064" datatype="xsd:integer" id="ma37860" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/95725" id="ma37861" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta content="Rattus fuscipes assimilis" datatype="xsd:string" id="ma37862" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:111544" id="ma37863" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" id="ma37864" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl412180" id="Tl412180" label="Rattus fuscipes assimilis S05">
-      <meta content="103962" datatype="xsd:integer" id="ma37866" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="183064" datatype="xsd:integer" id="ma37867" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/95725" id="ma37868" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta content="Rattus fuscipes assimilis" datatype="xsd:string" id="ma37869" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:111544" id="ma37870" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" id="ma37871" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl412172" id="Tl412172" label="Rattus fuscipes assimilis S17">
-      <meta content="103962" datatype="xsd:integer" id="ma37873" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="183064" datatype="xsd:integer" id="ma37874" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/95725" id="ma37875" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta content="Rattus fuscipes assimilis" datatype="xsd:string" id="ma37876" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:111544" id="ma37877" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" id="ma37878" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl412143" id="Tl412143" label="Rattus fuscipes coracius 1618">
-      <meta content="103807" datatype="xsd:integer" id="ma37880" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="182898" datatype="xsd:integer" id="ma37881" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/95531" id="ma37882" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta content="Rattus fuscipes coracius" datatype="xsd:string" id="ma37883" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:111542" id="ma37884" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" id="ma37885" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl412199" id="Tl412199" label="Rattus fuscipes coracius DC02R06">
-      <meta content="103807" datatype="xsd:integer" id="ma37887" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="182898" datatype="xsd:integer" id="ma37888" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/95531" id="ma37889" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta content="Rattus fuscipes coracius" datatype="xsd:string" id="ma37890" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:111542" id="ma37891" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" id="ma37892" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl412135" id="Tl412135" label="Rattus fuscipes coracius DC08R05">
-      <meta content="103807" datatype="xsd:integer" id="ma37894" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="182898" datatype="xsd:integer" id="ma37895" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/95531" id="ma37896" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta content="Rattus fuscipes coracius" datatype="xsd:string" id="ma37897" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:111542" id="ma37898" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" id="ma37899" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl412136" id="Tl412136" label="Rattus fuscipes coracius GI02R01">
-      <meta content="103807" datatype="xsd:integer" id="ma37901" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="182898" datatype="xsd:integer" id="ma37902" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/95531" id="ma37903" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta content="Rattus fuscipes coracius" datatype="xsd:string" id="ma37904" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:111542" id="ma37905" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" id="ma37906" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl412186" id="Tl412186" label="Rattus fuscipes coracius PR06R01">
-      <meta content="103807" datatype="xsd:integer" id="ma37908" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="182898" datatype="xsd:integer" id="ma37909" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/95531" id="ma37910" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta content="Rattus fuscipes coracius" datatype="xsd:string" id="ma37911" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:111542" id="ma37912" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" id="ma37913" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl412183" id="Tl412183" label="Rattus fuscipes coracius WO04R04">
-      <meta content="103807" datatype="xsd:integer" id="ma37915" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="182898" datatype="xsd:integer" id="ma37916" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/95531" id="ma37917" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta content="Rattus fuscipes coracius" datatype="xsd:string" id="ma37918" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:111542" id="ma37919" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" id="ma37920" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl412169" id="Tl412169" label="Rattus fuscipes coracius WO04R06">
-      <meta content="103807" datatype="xsd:integer" id="ma37922" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="182898" datatype="xsd:integer" id="ma37923" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/95531" id="ma37924" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta content="Rattus fuscipes coracius" datatype="xsd:string" id="ma37925" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:111542" id="ma37926" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" id="ma37927" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl412189" id="Tl412189" label="Rattus fuscipes coracius WO05R04">
-      <meta content="103807" datatype="xsd:integer" id="ma37929" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="182898" datatype="xsd:integer" id="ma37930" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/95531" id="ma37931" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta content="Rattus fuscipes coracius" datatype="xsd:string" id="ma37932" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:111542" id="ma37933" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" id="ma37934" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl412178" id="Tl412178" label="Rattus fuscipes coracius WO05R11">
-      <meta content="103807" datatype="xsd:integer" id="ma37936" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="182898" datatype="xsd:integer" id="ma37937" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/95531" id="ma37938" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta content="Rattus fuscipes coracius" datatype="xsd:string" id="ma37939" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:111542" id="ma37940" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" id="ma37941" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl412162" id="Tl412162" label="Rattus fuscipes fuscipes ABTC08616">
-      <meta content="103808" datatype="xsd:integer" id="ma37943" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="182899" datatype="xsd:integer" id="ma37944" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/95532" id="ma37945" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta content="Rattus fuscipes fuscipes" datatype="xsd:string" id="ma37946" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:111543" id="ma37947" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" id="ma37948" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl412142" id="Tl412142" label="Rattus fuscipes fuscipes ABTC08644">
-      <meta content="103808" datatype="xsd:integer" id="ma37950" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="182899" datatype="xsd:integer" id="ma37951" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/95532" id="ma37952" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta content="Rattus fuscipes fuscipes" datatype="xsd:string" id="ma37953" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:111543" id="ma37954" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" id="ma37955" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl412166" id="Tl412166" label="Rattus fuscipes greyi RAT60">
-      <meta content="601803" datatype="xsd:integer" id="ma37957" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="802392" datatype="xsd:integer" id="ma37958" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta content="Rattus fuscipes greyi" datatype="xsd:string" id="ma37959" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:111545" id="ma37960" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" id="ma37961" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl412198" id="Tl412198" label="Rattus giluwensis ABTC87301">
-      <meta content="601801" datatype="xsd:integer" id="ma37963" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="802390" datatype="xsd:integer" id="ma37964" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta content="Rattus giluwensis" datatype="xsd:string" id="ma37965" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2481323" id="ma37966" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" id="ma37967" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl412146" id="Tl412146" label="Rattus giluwensis ABTC87305">
-      <meta content="601801" datatype="xsd:integer" id="ma37969" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="802390" datatype="xsd:integer" id="ma37970" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta content="Rattus giluwensis" datatype="xsd:string" id="ma37971" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2481323" id="ma37972" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" id="ma37973" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl412138" id="Tl412138" label="Rattus leucopus cooktownensis ABTC51770">
-      <meta content="103809" datatype="xsd:integer" id="ma37975" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="182900" datatype="xsd:integer" id="ma37976" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/95533" id="ma37977" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta content="Rattus leucopus cooktownensis" datatype="xsd:string" id="ma37978" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:111546" id="ma37979" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" id="ma37980" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl412155" id="Tl412155" label="Rattus leucopus cooktownensis DC07R02">
-      <meta content="103809" datatype="xsd:integer" id="ma37982" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="182900" datatype="xsd:integer" id="ma37983" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/95533" id="ma37984" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta content="Rattus leucopus cooktownensis" datatype="xsd:string" id="ma37985" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:111546" id="ma37986" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" id="ma37987" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl412190" id="Tl412190" label="Rattus leucopus cooktownensis DC11R05">
-      <meta content="103809" datatype="xsd:integer" id="ma37989" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="182900" datatype="xsd:integer" id="ma37990" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/95533" id="ma37991" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta content="Rattus leucopus cooktownensis" datatype="xsd:string" id="ma37992" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:111546" id="ma37993" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" id="ma37994" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl412157" id="Tl412157" label="Rattus leucopus cooktownensis DT01R03">
-      <meta content="103809" datatype="xsd:integer" id="ma37996" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="182900" datatype="xsd:integer" id="ma37997" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/95533" id="ma37998" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta content="Rattus leucopus cooktownensis" datatype="xsd:string" id="ma37999" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:111546" id="ma38000" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" id="ma38001" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl412137" id="Tl412137" label="Rattus leucopus cooktownensis DT10R02">
-      <meta content="103809" datatype="xsd:integer" id="ma38003" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="182900" datatype="xsd:integer" id="ma38004" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/95533" id="ma38005" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta content="Rattus leucopus cooktownensis" datatype="xsd:string" id="ma38006" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:111546" id="ma38007" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" id="ma38008" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl412141" id="Tl412141" label="Rattus leucopus cooktownensis PR04R01">
-      <meta content="103809" datatype="xsd:integer" id="ma38010" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="182900" datatype="xsd:integer" id="ma38011" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/95533" id="ma38012" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta content="Rattus leucopus cooktownensis" datatype="xsd:string" id="ma38013" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:111546" id="ma38014" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" id="ma38015" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl412164" id="Tl412164" label="Rattus leucopus cooktownensis WO04R05">
-      <meta content="103809" datatype="xsd:integer" id="ma38017" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="182900" datatype="xsd:integer" id="ma38018" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/95533" id="ma38019" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta content="Rattus leucopus cooktownensis" datatype="xsd:string" id="ma38020" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:111546" id="ma38021" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" id="ma38022" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl412182" id="Tl412182" label="Rattus leucopus cooktownensis WO04R09">
-      <meta content="103809" datatype="xsd:integer" id="ma38024" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="182900" datatype="xsd:integer" id="ma38025" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/95533" id="ma38026" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta content="Rattus leucopus cooktownensis" datatype="xsd:string" id="ma38027" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:111546" id="ma38028" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" id="ma38029" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl412165" id="Tl412165" label="Rattus leucopus cooktownensis WO05R09">
-      <meta content="103809" datatype="xsd:integer" id="ma38031" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="182900" datatype="xsd:integer" id="ma38032" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/95533" id="ma38033" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta content="Rattus leucopus cooktownensis" datatype="xsd:string" id="ma38034" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:111546" id="ma38035" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" id="ma38036" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl412132" id="Tl412132" label="Rattus leucopus dobodurae ABTC42803">
-      <meta content="54018" datatype="xsd:integer" id="ma38038" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="124736" datatype="xsd:integer" id="ma38039" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/10115" id="ma38040" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta content="Rattus leucopus" datatype="xsd:string" id="ma38041" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2481330" id="ma38042" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" id="ma38043" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl412170" id="Tl412170" label="Rattus leucopus dobodurae ABTC42806">
-      <meta content="54018" datatype="xsd:integer" id="ma38045" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="124736" datatype="xsd:integer" id="ma38046" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/10115" id="ma38047" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta content="Rattus leucopus" datatype="xsd:string" id="ma38048" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2481330" id="ma38049" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" id="ma38050" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl412197" id="Tl412197" label="Rattus leucopus dobodurae ABTC42808">
-      <meta content="54018" datatype="xsd:integer" id="ma38052" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="124736" datatype="xsd:integer" id="ma38053" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/10115" id="ma38054" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta content="Rattus leucopus" datatype="xsd:string" id="ma38055" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2481330" id="ma38056" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" id="ma38057" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl412179" id="Tl412179" label="Rattus leucopus dobodurae AMSM08493">
-      <meta content="54018" datatype="xsd:integer" id="ma38059" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="124736" datatype="xsd:integer" id="ma38060" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/10115" id="ma38061" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta content="Rattus leucopus" datatype="xsd:string" id="ma38062" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2481330" id="ma38063" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" id="ma38064" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl412163" id="Tl412163" label="Rattus leucopus leucopus ABTC08493">
-      <meta content="103963" datatype="xsd:integer" id="ma38066" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="183065" datatype="xsd:integer" id="ma38067" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/95726" id="ma38068" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta content="Rattus leucopus leucopus" datatype="xsd:string" id="ma38069" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:111547" id="ma38070" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" id="ma38071" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl412194" id="Tl412194" label="Rattus leucopus leucopus IR02R02">
-      <meta content="103963" datatype="xsd:integer" id="ma38073" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="183065" datatype="xsd:integer" id="ma38074" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/95726" id="ma38075" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta content="Rattus leucopus leucopus" datatype="xsd:string" id="ma38076" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:111547" id="ma38077" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" id="ma38078" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl412156" id="Tl412156" label="Rattus leucopus leucopus SP03R01">
-      <meta content="103963" datatype="xsd:integer" id="ma38080" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="183065" datatype="xsd:integer" id="ma38081" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/95726" id="ma38082" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta content="Rattus leucopus leucopus" datatype="xsd:string" id="ma38083" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:111547" id="ma38084" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" id="ma38085" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl412200" id="Tl412200" label="Rattus lutreolus lutreolus D39">
-      <meta content="601798" datatype="xsd:integer" id="ma38087" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="802387" datatype="xsd:integer" id="ma38088" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:111549" id="ma38089" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" id="ma38090" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl412167" id="Tl412167" label="Rattus lutreolus lutreolus ABTC51720">
-      <meta content="601804" datatype="xsd:integer" id="ma38092" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="802393" datatype="xsd:integer" id="ma38093" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta content="Rattus lutreolus lutreolus" datatype="xsd:string" id="ma38094" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:111549" id="ma38095" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" id="ma38096" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl412177" id="Tl412177" label="Rattus leucopus ringens ABTC46876">
-      <meta content="54018" datatype="xsd:integer" id="ma38098" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="124736" datatype="xsd:integer" id="ma38099" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/10115" id="ma38100" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta content="Rattus leucopus" datatype="xsd:string" id="ma38101" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2481330" id="ma38102" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" id="ma38103" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl412196" id="Tl412196" label="Rattus leucopus ringens AMSM17128">
-      <meta content="54018" datatype="xsd:integer" id="ma38105" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="124736" datatype="xsd:integer" id="ma38106" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/10115" id="ma38107" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta content="Rattus leucopus" datatype="xsd:string" id="ma38108" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2481330" id="ma38109" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" id="ma38110" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl412175" id="Tl412175" label="Rattus lutreolus velutinus D69">
-      <meta content="601799" datatype="xsd:integer" id="ma38112" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="802388" datatype="xsd:integer" id="ma38113" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:111550" id="ma38114" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" id="ma38115" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl412152" id="Tl412152" label="Rattus lutreolus velutinus ABTC51762">
-      <meta content="601802" datatype="xsd:integer" id="ma38117" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="802391" datatype="xsd:integer" id="ma38118" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta content="Rattus lutreolus velutinus" datatype="xsd:string" id="ma38119" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:111550" id="ma38120" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" id="ma38121" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl412201" id="Tl412201" label="Rattus niobe ABTC42489">
-      <meta content="443818" datatype="xsd:integer" id="ma38123" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="585954" datatype="xsd:integer" id="ma38124" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/472762" id="ma38125" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta content="Rattus niobe" datatype="xsd:string" id="ma38126" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:6870693" id="ma38127" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" id="ma38128" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl412158" id="Tl412158" label="Rattus niobe ABTC46763">
-      <meta content="443818" datatype="xsd:integer" id="ma38130" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="585954" datatype="xsd:integer" id="ma38131" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/472762" id="ma38132" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta content="Rattus niobe" datatype="xsd:string" id="ma38133" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:6870693" id="ma38134" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" id="ma38135" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl412195" id="Tl412195" label="Rattus niobe ABTC47145">
-      <meta content="443818" datatype="xsd:integer" id="ma38137" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="585954" datatype="xsd:integer" id="ma38138" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/472762" id="ma38139" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta content="Rattus niobe" datatype="xsd:string" id="ma38140" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:6870693" id="ma38141" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" id="ma38142" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl412171" id="Tl412171" label="Rattus novaeguineae ABTC43216">
-      <meta content="383241" datatype="xsd:integer" id="ma38144" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="401741" datatype="xsd:integer" id="ma38145" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/443911" id="ma38146" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta content="Rattus novaeguineae" datatype="xsd:string" id="ma38147" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2481344" id="ma38148" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" id="ma38149" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl412174" id="Tl412174" label="Rattus novaeguineae ABTC46853">
-      <meta content="383241" datatype="xsd:integer" id="ma38151" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="401741" datatype="xsd:integer" id="ma38152" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/443911" id="ma38153" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta content="Rattus novaeguineae" datatype="xsd:string" id="ma38154" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2481344" id="ma38155" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" id="ma38156" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl412159" id="Tl412159" label="Rattus novaeguineae ABTC48962">
-      <meta content="383241" datatype="xsd:integer" id="ma38158" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="401741" datatype="xsd:integer" id="ma38159" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/443911" id="ma38160" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta content="Rattus novaeguineae" datatype="xsd:string" id="ma38161" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2481344" id="ma38162" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" id="ma38163" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl412133" id="Tl412133" label="Rattus novaeguineae ABTC48963">
-      <meta content="383241" datatype="xsd:integer" id="ma38165" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="401741" datatype="xsd:integer" id="ma38166" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/443911" id="ma38167" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta content="Rattus novaeguineae" datatype="xsd:string" id="ma38168" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2481344" id="ma38169" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" id="ma38170" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl412187" id="Tl412187" label="Rattus praetor ABTC47252">
-      <meta content="48104" datatype="xsd:integer" id="ma38172" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="112576" datatype="xsd:integer" id="ma38173" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/349711" id="ma38174" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta content="Rattus praetor" datatype="xsd:string" id="ma38175" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2481348" id="ma38176" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" id="ma38177" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl412139" id="Tl412139" label="Rattus praetor ABTC47272">
-      <meta content="48104" datatype="xsd:integer" id="ma38179" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="112576" datatype="xsd:integer" id="ma38180" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/349711" id="ma38181" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta content="Rattus praetor" datatype="xsd:string" id="ma38182" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2481348" id="ma38183" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" id="ma38184" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl412153" id="Tl412153" label="Rattus praetor ABTC47273">
-      <meta content="48104" datatype="xsd:integer" id="ma38186" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="112576" datatype="xsd:integer" id="ma38187" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/349711" id="ma38188" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta content="Rattus praetor" datatype="xsd:string" id="ma38189" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2481348" id="ma38190" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" id="ma38191" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl412161" id="Tl412161" label="Rattus rattus A65">
-      <meta content="54019" datatype="xsd:integer" id="ma38193" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="414502" datatype="xsd:integer" id="ma38194" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/10117" id="ma38195" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta content="Rattus rattus" datatype="xsd:string" id="ma38196" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2481350" id="ma38197" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" id="ma38198" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl412150" id="Tl412150" label="Rattus sordidus RAT176">
-      <meta content="54022" datatype="xsd:integer" id="ma38200" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="124744" datatype="xsd:integer" id="ma38201" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/10120" id="ma38202" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta content="Rattus sordidus" datatype="xsd:string" id="ma38203" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2481354" id="ma38204" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" id="ma38205" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl412134" id="Tl412134" label="Rattus sordidus ABTC51664">
-      <meta content="54022" datatype="xsd:integer" id="ma38207" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="124744" datatype="xsd:integer" id="ma38208" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/10120" id="ma38209" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta content="Rattus sordidus" datatype="xsd:string" id="ma38210" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2481354" id="ma38211" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" id="ma38212" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl412173" id="Tl412173" label="Rattus steini ABTC47100">
-      <meta content="443819" datatype="xsd:integer" id="ma38214" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="585955" datatype="xsd:integer" id="ma38215" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/472763" id="ma38216" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta content="Rattus steini" datatype="xsd:string" id="ma38217" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2481355" id="ma38218" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" id="ma38219" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl412149" id="Tl412149" label="Rattus tunneyi culmorum D45">
-      <meta content="103810" datatype="xsd:integer" id="ma38221" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="182901" datatype="xsd:integer" id="ma38222" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/95534" id="ma38223" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta content="Rattus tunneyi culmorum" datatype="xsd:string" id="ma38224" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:111551" id="ma38225" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" id="ma38226" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl412176" id="Tl412176" label="Rattus tunneyi culmorum RAT132">
-      <meta content="103810" datatype="xsd:integer" id="ma38228" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="182901" datatype="xsd:integer" id="ma38229" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/95534" id="ma38230" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta content="Rattus tunneyi culmorum" datatype="xsd:string" id="ma38231" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:111551" id="ma38232" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" id="ma38233" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl412185" id="Tl412185" label="Rattus tunneyi tunneyi ABTC08815">
-      <meta content="103964" datatype="xsd:integer" id="ma38235" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="424376" datatype="xsd:integer" id="ma38236" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/95727" id="ma38237" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta content="Rattus tunneyi tunneyi" datatype="xsd:string" id="ma38238" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:111552" id="ma38239" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" id="ma38240" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl412184" id="Tl412184" label="Rattus tunneyi tunneyi ABTC51684">
-      <meta content="103964" datatype="xsd:integer" id="ma38242" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="424376" datatype="xsd:integer" id="ma38243" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/95727" id="ma38244" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta content="Rattus tunneyi tunneyi" datatype="xsd:string" id="ma38245" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:111552" id="ma38246" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" id="ma38247" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl412191" id="Tl412191" label="Rattus verecundus ABTC47140">
-      <meta content="443820" datatype="xsd:integer" id="ma38249" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="585958" datatype="xsd:integer" id="ma38250" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/472764" id="ma38251" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta content="Rattus verecundus" datatype="xsd:string" id="ma38252" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:6201107" id="ma38253" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" id="ma38254" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl412154" id="Tl412154" label="Rattus villosissimus ABTC08439">
-      <meta content="24891" datatype="xsd:integer" id="ma38256" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="58304" datatype="xsd:integer" id="ma38257" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/10122" id="ma38258" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta content="Rattus villosissimus" datatype="xsd:string" id="ma38259" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2481363" id="ma38260" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" id="ma38261" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl412168" id="Tl412168" label="Rattus villosissimus ABTC51672">
-      <meta content="24891" datatype="xsd:integer" id="ma38263" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="58304" datatype="xsd:integer" id="ma38264" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/10122" id="ma38265" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta content="Rattus villosissimus" datatype="xsd:string" id="ma38266" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2481363" id="ma38267" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" id="ma38268" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl412144" id="Tl412144" label="Rattus villosissimus ABTC51675">
-      <meta content="24891" datatype="xsd:integer" id="ma38270" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="58304" datatype="xsd:integer" id="ma38271" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/10122" id="ma38272" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta content="Rattus villosissimus" datatype="xsd:string" id="ma38273" property="skos:altLabel" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2481363" id="ma38274" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" id="ma38275" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-  </otus>
-  <trees about="#trees92318" id="trees92318" otus="Tls18231" xml:base="http://purl.org/phylo/treebase/phylows/tree/TB2:">
-    <meta content="Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlTreeBlockWriter@375e15bb $Rev: 1040 $" datatype="xsd:string" id="ma38277" property="skos:historyNote" xsi:type="nex:LiteralMeta"/>
-    <tree about="#Tr21539" id="Tr21539" label="maj rule" xsi:type="nex:FloatTree">
-      <meta content="70" datatype="xsd:integer" id="ma38279" property="tb:ntax.tree" xsi:type="nex:LiteralMeta"/>
-      <meta content="Unrated" datatype="xsd:string" id="ma38280" property="tb:quality.tree" xsi:type="nex:LiteralMeta"/>
-      <meta content="Consensus" datatype="xsd:string" id="ma38281" property="tb:type.tree" xsi:type="nex:LiteralMeta"/>
-      <meta content="Species Tree" datatype="xsd:string" id="ma38282" property="tb:kind.tree" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" id="ma38283" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-      <node about="#Tn2869469" id="Tn2869469" root="true"/>
-      <node about="#Tn2869463" id="Tn2869463" label="Rattus norvegicus" otu="Tl412140"/>
-      <node about="#Tn2869483" id="Tn2869483" label="Rattus rattus A65" otu="Tl412161"/>
-      <node about="#Tn2869441" id="Tn2869441" label="1.00"/>
-      <node about="#Tn2869423" id="Tn2869423" label="0.75"/>
-      <node about="#Tn2869442" id="Tn2869442" label="0.99"/>
-      <node about="#Tn2869439" id="Tn2869439" label="1.00"/>
-      <node about="#Tn2869384" id="Tn2869384" label="1.00"/>
-      <node about="#Tn2869427" id="Tn2869427" label="1.00"/>
-      <node about="#Tn2869434" id="Tn2869434" label="1.00"/>
-      <node about="#Tn2869415" id="Tn2869415" label="1.00"/>
-      <node about="#Tn2869400" id="Tn2869400" label="1.00"/>
-      <node about="#Tn2869369" id="Tn2869369" label="1.00"/>
-      <node about="#Tn2869468" id="Tn2869468" label="1.00"/>
-      <node about="#Tn2869440" id="Tn2869440" label="1.00"/>
-      <node about="#Tn2869416" id="Tn2869416" label="0.94"/>
-      <node about="#Tn2869408" id="Tn2869408" label="0.76"/>
-      <node about="#Tn2869367" id="Tn2869367" label="Rattus niobe ABTC46763" otu="Tl412158"/>
-      <node about="#Tn2869462" id="Tn2869462" label="1.00"/>
-      <node about="#Tn2869425" id="Tn2869425" label="1.00"/>
-      <node about="#Tn2869386" id="Tn2869386" label="1.00"/>
-      <node about="#Tn2869363" id="Tn2869363" label="1.00"/>
-      <node about="#Tn2869486" id="Tn2869486" label="1.00"/>
-      <node about="#Tn2869428" id="Tn2869428" label="0.93"/>
-      <node about="#Tn2869413" id="Tn2869413" label="Rattus leucopus leucopus IR02R02" otu="Tl412194"/>
-      <node about="#Tn2869429" id="Tn2869429" label="1.00"/>
-      <node about="#Tn2869437" id="Tn2869437" label="1.00"/>
-      <node about="#Tn2869417" id="Tn2869417" label="Rattus giluwenesis ABTC87301" otu="Tl412198"/>
-      <node about="#Tn2869472" id="Tn2869472" label="Rattus giluwensis ABTC87305" otu="Tl412146"/>
-      <node about="#Tn2869461" id="Tn2869461" label="1.00"/>
-      <node about="#Tn2869364" id="Tn2869364" label="Rattus verecundus ABTC47140" otu="Tl412191"/>
-      <node about="#Tn2869395" id="Tn2869395" label="Rattus niobe ABTC42489" otu="Tl412201"/>
-      <node about="#Tn2869399" id="Tn2869399" label="Rattus niobe ABTC47145" otu="Tl412195"/>
-      <node about="#Tn2869359" id="Tn2869359" label="1.00"/>
-      <node about="#Tn2869393" id="Tn2869393" label="1.00"/>
-      <node about="#Tn2869448" id="Tn2869448" label="1.00"/>
-      <node about="#Tn2869389" id="Tn2869389" label="1.00"/>
-      <node about="#Tn2869365" id="Tn2869365" label="1.00"/>
-      <node about="#Tn2869388" id="Tn2869388" label="1.00"/>
-      <node about="#Tn2869356" id="Tn2869356" label="Rattus fuscipes coracius 1618" otu="Tl412143"/>
-      <node about="#Tn2869456" id="Tn2869456" label="0.99"/>
-      <node about="#Tn2869436" id="Tn2869436" label="1.00"/>
-      <node about="#Tn2869473" id="Tn2869473" label="Rattus fuscipes greyi RAT60" otu="Tl412166"/>
-      <node about="#Tn2869394" id="Tn2869394" label="0.94"/>
-      <node about="#Tn2869381" id="Tn2869381" label="Rattus leucopus leucopus SP03R01" otu="Tl412156"/>
-      <node about="#Tn2869431" id="Tn2869431" label="Rattus leucopus dobodurae AMSM08493" otu="Tl412179"/>
-      <node about="#Tn2869374" id="Tn2869374" label="0.55"/>
-      <node about="#Tn2869447" id="Tn2869447" label="Rattus leucopus ringens ABTC46876" otu="Tl412177"/>
-      <node about="#Tn2869476" id="Tn2869476" label="Rattus leucopus ringens AMSM17128" otu="Tl412196"/>
-      <node about="#Tn2869368" id="Tn2869368" label="1.00"/>
-      <node about="#Tn2869484" id="Tn2869484" label="1.00"/>
-      <node about="#Tn2869426" id="Tn2869426" label="1.00"/>
-      <node about="#Tn2869454" id="Tn2869454" label="1.00"/>
-      <node about="#Tn2869411" id="Tn2869411" label="1.00"/>
-      <node about="#Tn2869465" id="Tn2869465" label="1.00"/>
-      <node about="#Tn2869418" id="Tn2869418" label="Rattus lutreolus lutreolus D39" otu="Tl412200"/>
-      <node about="#Tn2869430" id="Tn2869430" label="Rattus lutreolus lutreolus ABTC51720" otu="Tl412167"/>
-      <node about="#Tn2869452" id="Tn2869452" label="Rattus lutreolus velutinus D69" otu="Tl412175"/>
-      <node about="#Tn2869474" id="Tn2869474" label="Rattus lutreolus velutinus ABTC51762" otu="Tl412152"/>
-      <node about="#Tn2869362" id="Tn2869362" label="0.64"/>
-      <node about="#Tn2869360" id="Tn2869360" label="1.00"/>
-      <node about="#Tn2869475" id="Tn2869475" label="0.71"/>
-      <node about="#Tn2869482" id="Tn2869482" label="Rattus fuscipes assimilis S17" otu="Tl412172"/>
-      <node about="#Tn2869404" id="Tn2869404" label="0.85"/>
-      <node about="#Tn2869407" id="Tn2869407" label="0.90"/>
-      <node about="#Tn2869451" id="Tn2869451" label="Rattus fuscipes fuscipes ABTC08616" otu="Tl412162"/>
-      <node about="#Tn2869481" id="Tn2869481" label="Rattus fuscipes fuscipes ABTC08644" otu="Tl412142"/>
-      <node about="#Tn2869422" id="Tn2869422" label="1.00"/>
-      <node about="#Tn2869459" id="Tn2869459" label="Rattus leucopus leucopus ABTC08493" otu="Tl412163"/>
-      <node about="#Tn2869405" id="Tn2869405" label="0.98"/>
-      <node about="#Tn2869406" id="Tn2869406" label="Rattus leucopus dobodurae ABTC42808" otu="Tl412197"/>
-      <node about="#Tn2869410" id="Tn2869410" label="1.00"/>
-      <node about="#Tn2869471" id="Tn2869471" label="Rattus steini ABTC47100" otu="Tl412173"/>
-      <node about="#Tn2869398" id="Tn2869398" label="1.00"/>
-      <node about="#Tn2869435" id="Tn2869435" label="Rattus praetor ABTC47273" otu="Tl412153"/>
-      <node about="#Tn2869433" id="Tn2869433" label="1.00"/>
-      <node about="#Tn2869383" id="Tn2869383" label="1.00"/>
-      <node about="#Tn2869479" id="Tn2869479" label="Rattus sordidus RAT176" otu="Tl412150"/>
-      <node about="#Tn2869370" id="Tn2869370" label="Rattus sordidus ABTC51664" otu="Tl412134"/>
-      <node about="#Tn2869377" id="Tn2869377" label="Rattus tunneyi culmorum D45" otu="Tl412149"/>
-      <node about="#Tn2869355" id="Tn2869355" label="Rattus tunneyi culmorum RAT132" otu="Tl412176"/>
-      <node about="#Tn2869371" id="Tn2869371" label="Rattus tunneyi tunneyi ABTC08815" otu="Tl412185"/>
-      <node about="#Tn2869409" id="Tn2869409" label="Rattus tunneyi tunneyi ABTC51684" otu="Tl412184"/>
-      <node about="#Tn2869380" id="Tn2869380" label="1.00"/>
-      <node about="#Tn2869455" id="Tn2869455" label="Rattus fuscipes assimilis N02" otu="Tl412193"/>
-      <node about="#Tn2869358" id="Tn2869358" label="Rattus fuscipes assimilis N01" otu="Tl412147"/>
-      <node about="#Tn2869419" id="Tn2869419" label="Rattus fuscipes assimilis N05" otu="Tl412181"/>
-      <node about="#Tn2869477" id="Tn2869477" label="Rattus fuscipes assimilis S01" otu="Tl412160"/>
-      <node about="#Tn2869396" id="Tn2869396" label="Rattus fuscipes assimilis S05" otu="Tl412180"/>
-      <node about="#Tn2869403" id="Tn2869403" label="0.69"/>
-      <node about="#Tn2869373" id="Tn2869373" label="Rattus fuscipes coracius DC08R05" otu="Tl412135"/>
-      <node about="#Tn2869487" id="Tn2869487" label="Rattus fuscipes coracius PR06R01" otu="Tl412186"/>
-      <node about="#Tn2869392" id="Tn2869392" label="0.97"/>
-      <node about="#Tn2869424" id="Tn2869424" label="0.99"/>
-      <node about="#Tn2869414" id="Tn2869414" label="Rattus leucopus cooktownensis ABTC51770" otu="Tl412138"/>
-      <node about="#Tn2869449" id="Tn2869449" label="0.65"/>
-      <node about="#Tn2869458" id="Tn2869458" label="Rattus leucopus dobodurae ABTC42803" otu="Tl412132"/>
-      <node about="#Tn2869397" id="Tn2869397" label="Rattus leucopus dobodurae ABTC42806" otu="Tl412170"/>
-      <node about="#Tn2869387" id="Tn2869387" label="1.00"/>
-      <node about="#Tn2869444" id="Tn2869444" label="1.00"/>
-      <node about="#Tn2869366" id="Tn2869366" label="Rattus praetor ABTC47252" otu="Tl412187"/>
-      <node about="#Tn2869378" id="Tn2869378" label="Rattus praetor ABTC47272" otu="Tl412139"/>
-      <node about="#Tn2869457" id="Tn2869457" label="0.99"/>
-      <node about="#Tn2869438" id="Tn2869438" label="Rattus colletti ABTC5656" otu="Tl412188"/>
-      <node about="#Tn2869446" id="Tn2869446" label="Rattus villossisimus ABTC08439" otu="Tl412154"/>
-      <node about="#Tn2869480" id="Tn2869480" label="Rattus villossisimus ABTC51672" otu="Tl412168"/>
-      <node about="#Tn2869402" id="Tn2869402" label="Rattus villossisimus ABTC51675" otu="Tl412144"/>
-      <node about="#Tn2869485" id="Tn2869485" label="Rattus fuscipes assimilis A10" otu="Tl412145"/>
-      <node about="#Tn2869401" id="Tn2869401" label="Rattus fuscipes assimilis C21" otu="Tl412151"/>
-      <node about="#Tn2869467" id="Tn2869467" label="Rattus fuscipes coracius DC02R06" otu="Tl412199"/>
-      <node about="#Tn2869445" id="Tn2869445" label="Rattus fuscipes coracius GI02R01" otu="Tl412136"/>
-      <node about="#Tn2869478" id="Tn2869478" label="Rattus fuscipes coracius WO04R04" otu="Tl412183"/>
-      <node about="#Tn2869453" id="Tn2869453" label="Rattus fuscipes coracius WO04R06" otu="Tl412169"/>
-      <node about="#Tn2869391" id="Tn2869391" label="Rattus fuscipes coracius WO05R04" otu="Tl412189"/>
-      <node about="#Tn2869420" id="Tn2869420" label="Rattus fuscipes coracius WO05R11" otu="Tl412178"/>
-      <node about="#Tn2869357" id="Tn2869357" label="0.67"/>
-      <node about="#Tn2869390" id="Tn2869390" label="Rattus leucopus cooktownensis DC11R05" otu="Tl412190"/>
-      <node about="#Tn2869375" id="Tn2869375" label="Rattus leucopus cooktownensis DT01R03" otu="Tl412157"/>
-      <node about="#Tn2869432" id="Tn2869432" label="Rattus novaeguineae ABTC43216" otu="Tl412171"/>
-      <node about="#Tn2869385" id="Tn2869385" label="Rattus novaeguineae ABTC46853" otu="Tl412174"/>
-      <node about="#Tn2869464" id="Tn2869464" label="Rattus novaeguineae ABTC48962" otu="Tl412159"/>
-      <node about="#Tn2869372" id="Tn2869372" label="Rattus novaeguineae ABTC48963" otu="Tl412133"/>
-      <node about="#Tn2869421" id="Tn2869421" label="Rattus colletti ABTC51642" otu="Tl412148"/>
-      <node about="#Tn2869460" id="Tn2869460" label="Rattus colletti ABTC51650" otu="Tl412192"/>
-      <node about="#Tn2869382" id="Tn2869382" label="0.71"/>
-      <node about="#Tn2869361" id="Tn2869361" label="Rattus leucopus cooktownensis WO04R09" otu="Tl412182"/>
-      <node about="#Tn2869470" id="Tn2869470" label="0.69"/>
-      <node about="#Tn2869412" id="Tn2869412" label="Rattus leucopus cooktownensis PR04R01" otu="Tl412141"/>
-      <node about="#Tn2869450" id="Tn2869450" label="0.90"/>
-      <node about="#Tn2869443" id="Tn2869443" label="Rattus leucopus cooktownensis DC07R02" otu="Tl412155"/>
-      <node about="#Tn2869376" id="Tn2869376" label="Rattus leucopus cooktownensis DT10R02" otu="Tl412137"/>
-      <node about="#Tn2869466" id="Tn2869466" label="Rattus leucopus cooktownensis WO04R05" otu="Tl412164"/>
-      <node about="#Tn2869379" id="Tn2869379" label="Rattus leucopus cooktownensis WO05R09" otu="Tl412165"/>
-      <edge id="edge38285" length="0.028267" source="Tn2869469" target="Tn2869463"/>
-      <edge id="edge38286" length="0.022558" source="Tn2869469" target="Tn2869483"/>
-      <edge id="edge38287" length="0.019643" source="Tn2869469" target="Tn2869441"/>
-      <edge id="edge38288" length="8.06E-4" source="Tn2869441" target="Tn2869423"/>
-      <edge id="edge38390" length="0.00188" source="Tn2869441" target="Tn2869442"/>
-      <edge id="edge38289" length="0.001043" source="Tn2869423" target="Tn2869439"/>
-      <edge id="edge38357" length="0.006548" source="Tn2869423" target="Tn2869384"/>
-      <edge id="edge38391" length="0.004592" source="Tn2869442" target="Tn2869427"/>
-      <edge id="edge38412" length="0.002732" source="Tn2869442" target="Tn2869434"/>
-      <edge id="edge38290" length="0.002966" source="Tn2869439" target="Tn2869415"/>
-      <edge id="edge38320" length="0.005153" source="Tn2869439" target="Tn2869400"/>
-      <edge id="edge38358" length="0.003748" source="Tn2869384" target="Tn2869369"/>
-      <edge id="edge38379" length="0.002553" source="Tn2869384" target="Tn2869468"/>
-      <edge id="edge38392" length="0.005114" source="Tn2869427" target="Tn2869440"/>
-      <edge id="edge38395" length="7.37E-4" source="Tn2869427" target="Tn2869416"/>
-      <edge id="edge38413" length="9.05E-4" source="Tn2869434" target="Tn2869408"/>
-      <edge id="edge38416" length="0.007993" source="Tn2869434" target="Tn2869367"/>
-      <edge id="edge38291" length="9.56E-4" source="Tn2869415" target="Tn2869462"/>
-      <edge id="edge38313" length="0.003547" source="Tn2869415" target="Tn2869425"/>
-      <edge id="edge38321" length="0.001355" source="Tn2869400" target="Tn2869386"/>
-      <edge id="edge38336" length="0.007579" source="Tn2869400" target="Tn2869363"/>
-      <edge id="edge38352" length="0.001795" source="Tn2869400" target="Tn2869486"/>
-      <edge id="edge38359" length="8.36E-4" source="Tn2869369" target="Tn2869428"/>
-      <edge id="edge38378" length="8.52E-4" source="Tn2869369" target="Tn2869413"/>
-      <edge id="edge38380" length="0.002972" source="Tn2869468" target="Tn2869429"/>
-      <edge id="edge38387" length="0.001879" source="Tn2869468" target="Tn2869437"/>
-      <edge id="edge38393" length="4.27E-4" source="Tn2869440" target="Tn2869417"/>
-      <edge id="edge38394" length="2.6E-4" source="Tn2869440" target="Tn2869472"/>
-      <edge id="edge38396" length="0.002269" source="Tn2869416" target="Tn2869461"/>
-      <edge id="edge38411" length="0.005821" source="Tn2869416" target="Tn2869364"/>
-      <edge id="edge38414" length="0.006246" source="Tn2869408" target="Tn2869395"/>
-      <edge id="edge38415" length="0.006608" source="Tn2869408" target="Tn2869399"/>
-      <edge id="edge38292" length="0.00282" source="Tn2869462" target="Tn2869359"/>
-      <edge id="edge38306" length="0.005218" source="Tn2869462" target="Tn2869393"/>
-      <edge id="edge38314" length="0.002503" source="Tn2869425" target="Tn2869448"/>
-      <edge id="edge38317" length="0.005631" source="Tn2869425" target="Tn2869389"/>
-      <edge id="edge38322" length="0.00393" source="Tn2869386" target="Tn2869365"/>
-      <edge id="edge38331" length="0.005066" source="Tn2869386" target="Tn2869388"/>
-      <edge id="edge38337" length="0.001621" source="Tn2869363" target="Tn2869356"/>
-      <edge id="edge38338" length="7.17E-4" source="Tn2869363" target="Tn2869456"/>
-      <edge id="edge38353" length="0.003861" source="Tn2869486" target="Tn2869436"/>
-      <edge id="edge38356" length="0.005377" source="Tn2869486" target="Tn2869473"/>
-      <edge id="edge38360" length="0.001941" source="Tn2869428" target="Tn2869394"/>
-      <edge id="edge38377" length="7.59E-4" source="Tn2869428" target="Tn2869381"/>
-      <edge id="edge38381" length="0.001327" source="Tn2869429" target="Tn2869431"/>
-      <edge id="edge38382" length="3.07E-4" source="Tn2869429" target="Tn2869374"/>
-      <edge id="edge38388" length="0.001214" source="Tn2869437" target="Tn2869447"/>
-      <edge id="edge38389" length="5.96E-4" source="Tn2869437" target="Tn2869476"/>
-      <edge id="edge38397" length="0.001693" source="Tn2869461" target="Tn2869368"/>
-      <edge id="edge38406" length="0.001463" source="Tn2869461" target="Tn2869484"/>
-      <edge id="edge38293" length="0.002488" source="Tn2869359" target="Tn2869426"/>
-      <edge id="edge38303" length="0.005191" source="Tn2869359" target="Tn2869454"/>
-      <edge id="edge38307" length="0.001665" source="Tn2869393" target="Tn2869411"/>
-      <edge id="edge38310" length="0.002942" source="Tn2869393" target="Tn2869465"/>
-      <edge id="edge38315" length="0.002329" source="Tn2869448" target="Tn2869418"/>
-      <edge id="edge38316" length="0.001375" source="Tn2869448" target="Tn2869430"/>
-      <edge id="edge38318" length="0.001332" source="Tn2869389" target="Tn2869452"/>
-      <edge id="edge38319" length="4.99E-4" source="Tn2869389" target="Tn2869474"/>
-      <edge id="edge38323" length="5.96E-4" source="Tn2869365" target="Tn2869362"/>
-      <edge id="edge38328" length="9.08E-4" source="Tn2869365" target="Tn2869360"/>
-      <edge id="edge38332" length="8.54E-4" source="Tn2869388" target="Tn2869475"/>
-      <edge id="edge38335" length="0.001057" source="Tn2869388" target="Tn2869482"/>
-      <edge id="edge38339" length="3.63E-4" source="Tn2869456" target="Tn2869404"/>
-      <edge id="edge38344" length="2.93E-4" source="Tn2869456" target="Tn2869407"/>
-      <edge id="edge38354" length="0.001219" source="Tn2869436" target="Tn2869451"/>
-      <edge id="edge38355" length="0.00209" source="Tn2869436" target="Tn2869481"/>
-      <edge id="edge38361" length="0.004167" source="Tn2869394" target="Tn2869422"/>
-      <edge id="edge38376" length="0.001807" source="Tn2869394" target="Tn2869459"/>
-      <edge id="edge38383" length="5.68E-4" source="Tn2869374" target="Tn2869405"/>
-      <edge id="edge38386" length="0.001451" source="Tn2869374" target="Tn2869406"/>
-      <edge id="edge38398" length="0.001035" source="Tn2869368" target="Tn2869410"/>
-      <edge id="edge38405" length="0.002241" source="Tn2869368" target="Tn2869471"/>
-      <edge id="edge38407" length="0.001285" source="Tn2869484" target="Tn2869398"/>
-      <edge id="edge38410" length="4.82E-4" source="Tn2869484" target="Tn2869435"/>
-      <edge id="edge38294" length="0.001967" source="Tn2869426" target="Tn2869433"/>
-      <edge id="edge38299" length="0.001799" source="Tn2869426" target="Tn2869383"/>
-      <edge id="edge38304" length="0.00221" source="Tn2869454" target="Tn2869479"/>
-      <edge id="edge38305" length="0.001428" source="Tn2869454" target="Tn2869370"/>
-      <edge id="edge38308" length="0.002549" source="Tn2869411" target="Tn2869377"/>
-      <edge id="edge38309" length="0.003724" source="Tn2869411" target="Tn2869355"/>
-      <edge id="edge38311" length="0.002171" source="Tn2869465" target="Tn2869371"/>
-      <edge id="edge38312" length="0.003554" source="Tn2869465" target="Tn2869409"/>
-      <edge id="edge38324" length="0.002831" source="Tn2869362" target="Tn2869380"/>
-      <edge id="edge38327" length="0.001601" source="Tn2869362" target="Tn2869455"/>
-      <edge id="edge38329" length="3.35E-4" source="Tn2869360" target="Tn2869358"/>
-      <edge id="edge38330" length="1.88E-4" source="Tn2869360" target="Tn2869419"/>
-      <edge id="edge38333" length="0.001563" source="Tn2869475" target="Tn2869477"/>
-      <edge id="edge38334" length="9.36E-4" source="Tn2869475" target="Tn2869396"/>
-      <edge id="edge38340" length="4.79E-4" source="Tn2869404" target="Tn2869403"/>
-      <edge id="edge38343" length="8.58E-4" source="Tn2869404" target="Tn2869373"/>
-      <edge id="edge38345" length="9.89E-4" source="Tn2869407" target="Tn2869487"/>
-      <edge id="edge38346" length="5.97E-4" source="Tn2869407" target="Tn2869392"/>
-      <edge id="edge38349" length="3.04E-4" source="Tn2869407" target="Tn2869424"/>
-      <edge id="edge38362" length="4.21E-4" source="Tn2869422" target="Tn2869414"/>
-      <edge id="edge38363" length="4.37E-4" source="Tn2869422" target="Tn2869449"/>
-      <edge id="edge38384" length="9.5E-4" source="Tn2869405" target="Tn2869458"/>
-      <edge id="edge38385" length="3.26E-4" source="Tn2869405" target="Tn2869397"/>
-      <edge id="edge38399" length="0.001025" source="Tn2869410" target="Tn2869387"/>
-      <edge id="edge38402" length="0.001442" source="Tn2869410" target="Tn2869444"/>
-      <edge id="edge38408" length="0.001768" source="Tn2869398" target="Tn2869366"/>
-      <edge id="edge38409" length="0.001399" source="Tn2869398" target="Tn2869378"/>
-      <edge id="edge38295" length="7.49E-4" source="Tn2869433" target="Tn2869457"/>
-      <edge id="edge38298" length="8.92E-4" source="Tn2869433" target="Tn2869438"/>
-      <edge id="edge38300" length="6.16E-4" source="Tn2869383" target="Tn2869446"/>
-      <edge id="edge38301" length="5.31E-4" source="Tn2869383" target="Tn2869480"/>
-      <edge id="edge38302" length="4.09E-4" source="Tn2869383" target="Tn2869402"/>
-      <edge id="edge38325" length="0.00124" source="Tn2869380" target="Tn2869485"/>
-      <edge id="edge38326" length="0.001283" source="Tn2869380" target="Tn2869401"/>
-      <edge id="edge38341" length="0.002038" source="Tn2869403" target="Tn2869467"/>
-      <edge id="edge38342" length="0.001809" source="Tn2869403" target="Tn2869445"/>
-      <edge id="edge38347" length="3.81E-4" source="Tn2869392" target="Tn2869478"/>
-      <edge id="edge38348" length="1.5E-4" source="Tn2869392" target="Tn2869453"/>
-      <edge id="edge38350" length="1.31E-4" source="Tn2869424" target="Tn2869391"/>
-      <edge id="edge38351" length="1.16E-4" source="Tn2869424" target="Tn2869420"/>
-      <edge id="edge38364" length="6.25E-4" source="Tn2869449" target="Tn2869357"/>
-      <edge id="edge38374" length="6.48E-4" source="Tn2869449" target="Tn2869390"/>
-      <edge id="edge38375" length="0.00206" source="Tn2869449" target="Tn2869375"/>
-      <edge id="edge38400" length="0.00216" source="Tn2869387" target="Tn2869432"/>
-      <edge id="edge38401" length="0.001015" source="Tn2869387" target="Tn2869385"/>
-      <edge id="edge38403" length="0.001147" source="Tn2869444" target="Tn2869464"/>
-      <edge id="edge38404" length="0.003437" source="Tn2869444" target="Tn2869372"/>
-      <edge id="edge38296" length="0.001919" source="Tn2869457" target="Tn2869421"/>
-      <edge id="edge38297" length="0.001806" source="Tn2869457" target="Tn2869460"/>
-      <edge id="edge38365" length="0.001063" source="Tn2869357" target="Tn2869382"/>
-      <edge id="edge38373" length="7.56E-4" source="Tn2869357" target="Tn2869361"/>
-      <edge id="edge38366" length="7.09E-4" source="Tn2869382" target="Tn2869470"/>
-      <edge id="edge38369" length="0.001062" source="Tn2869382" target="Tn2869412"/>
-      <edge id="edge38370" length="5.7E-4" source="Tn2869382" target="Tn2869450"/>
-      <edge id="edge38367" length="6.54E-4" source="Tn2869470" target="Tn2869443"/>
-      <edge id="edge38368" length="0.001564" source="Tn2869470" target="Tn2869376"/>
-      <edge id="edge38371" length="6.36E-4" source="Tn2869450" target="Tn2869466"/>
-      <edge id="edge38372" length="7.07E-4" source="Tn2869450" target="Tn2869379"/>
-    </tree>
-  </trees>
-</nex:nexml>
+<nex:nexml xmlns="http://www.nexml.org/2009" version="0.9" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xsi:schemaLocation="http://www.nexml.org/2009 http://www.nexml.org/2009/nexml.xsd" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" generator="Bio::Phylo::Project v.0.46_1660" xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:nex="http://www.nexml.org/2009" xmlns:tb="http://purl.org/phylo/treebase/2.0/terms#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" about="#nl58663" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:dc="http://purl.org/dc/elements/1.1/"><meta xsi:type="nex:LiteralMeta" content="rvosa" id="ma59288" datatype="xsd:string" property="dc:creator"/><meta xsi:type="nex:LiteralMeta" content="2012-03-07T20:19:43" id="ma59289" datatype="xsd:date" property="dc:date"/><otus xml:base="http://purl.org/phylo/treebase/phylows/taxon/TB2:" label="Untitled Taxa Block" id="Tls18231" about="#Tls18231"><meta xsi:type="nex:LiteralMeta" content="Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@37b526fb $Rev: 1040 $" id="ma58665" datatype="xsd:string" property="skos:historyNote"/>
+<otu label="Rattus norvegicus" id="Tl412140" about="#Tl412140"><meta xsi:type="nex:LiteralMeta" content="24889" id="ma58667" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="58300" id="ma58668" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/10116" xsi:type="nex:ResourceMeta" id="ma58669"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2481343" xsi:type="nex:ResourceMeta" id="ma58670"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" xsi:type="nex:ResourceMeta" id="ma58671"/></otu>
+<otu label="Rattus colletti ABTC51642" id="Tl412148" about="#Tl412148"><meta xsi:type="nex:LiteralMeta" content="85469" id="ma58673" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="164182" id="ma58674" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/71422" xsi:type="nex:ResourceMeta" id="ma58675"/><meta xsi:type="nex:LiteralMeta" content="Rattus colletti" id="ma58676" datatype="xsd:string" property="skos:altLabel"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2481315" xsi:type="nex:ResourceMeta" id="ma58677"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" xsi:type="nex:ResourceMeta" id="ma58678"/></otu>
+<otu label="Rattus colletti ABTC51650" id="Tl412192" about="#Tl412192"><meta xsi:type="nex:LiteralMeta" content="85469" id="ma58680" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="164182" id="ma58681" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/71422" xsi:type="nex:ResourceMeta" id="ma58682"/><meta xsi:type="nex:LiteralMeta" content="Rattus colletti" id="ma58683" datatype="xsd:string" property="skos:altLabel"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2481315" xsi:type="nex:ResourceMeta" id="ma58684"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" xsi:type="nex:ResourceMeta" id="ma58685"/></otu>
+<otu label="Rattus colletti ABTC5656" id="Tl412188" about="#Tl412188"><meta xsi:type="nex:LiteralMeta" content="85469" id="ma58687" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="164182" id="ma58688" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/71422" xsi:type="nex:ResourceMeta" id="ma58689"/><meta xsi:type="nex:LiteralMeta" content="Rattus colletti" id="ma58690" datatype="xsd:string" property="skos:altLabel"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2481315" xsi:type="nex:ResourceMeta" id="ma58691"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" xsi:type="nex:ResourceMeta" id="ma58692"/></otu>
+<otu label="Rattus fuscipes assimilis A10" id="Tl412145" about="#Tl412145"><meta xsi:type="nex:LiteralMeta" content="103962" id="ma58694" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="183064" id="ma58695" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/95725" xsi:type="nex:ResourceMeta" id="ma58696"/><meta xsi:type="nex:LiteralMeta" content="Rattus fuscipes assimilis" id="ma58697" datatype="xsd:string" property="skos:altLabel"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:111544" xsi:type="nex:ResourceMeta" id="ma58698"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" xsi:type="nex:ResourceMeta" id="ma58699"/></otu>
+<otu label="Rattus fuscipes assimilis C21" id="Tl412151" about="#Tl412151"><meta xsi:type="nex:LiteralMeta" content="103962" id="ma58701" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="183064" id="ma58702" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/95725" xsi:type="nex:ResourceMeta" id="ma58703"/><meta xsi:type="nex:LiteralMeta" content="Rattus fuscipes assimilis" id="ma58704" datatype="xsd:string" property="skos:altLabel"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:111544" xsi:type="nex:ResourceMeta" id="ma58705"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" xsi:type="nex:ResourceMeta" id="ma58706"/></otu>
+<otu label="Rattus fuscipes assimilis N01" id="Tl412147" about="#Tl412147"><meta xsi:type="nex:LiteralMeta" content="103962" id="ma58708" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="183064" id="ma58709" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/95725" xsi:type="nex:ResourceMeta" id="ma58710"/><meta xsi:type="nex:LiteralMeta" content="Rattus fuscipes assimilis" id="ma58711" datatype="xsd:string" property="skos:altLabel"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:111544" xsi:type="nex:ResourceMeta" id="ma58712"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" xsi:type="nex:ResourceMeta" id="ma58713"/></otu>
+<otu label="Rattus fuscipes assimilis N02" id="Tl412193" about="#Tl412193"><meta xsi:type="nex:LiteralMeta" content="103962" id="ma58715" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="183064" id="ma58716" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/95725" xsi:type="nex:ResourceMeta" id="ma58717"/><meta xsi:type="nex:LiteralMeta" content="Rattus fuscipes assimilis" id="ma58718" datatype="xsd:string" property="skos:altLabel"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:111544" xsi:type="nex:ResourceMeta" id="ma58719"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" xsi:type="nex:ResourceMeta" id="ma58720"/></otu>
+<otu label="Rattus fuscipes assimilis N05" id="Tl412181" about="#Tl412181"><meta xsi:type="nex:LiteralMeta" content="103962" id="ma58722" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="183064" id="ma58723" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/95725" xsi:type="nex:ResourceMeta" id="ma58724"/><meta xsi:type="nex:LiteralMeta" content="Rattus fuscipes assimilis" id="ma58725" datatype="xsd:string" property="skos:altLabel"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:111544" xsi:type="nex:ResourceMeta" id="ma58726"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" xsi:type="nex:ResourceMeta" id="ma58727"/></otu>
+<otu label="Rattus fuscipes assimilis S01" id="Tl412160" about="#Tl412160"><meta xsi:type="nex:LiteralMeta" content="103962" id="ma58729" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="183064" id="ma58730" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/95725" xsi:type="nex:ResourceMeta" id="ma58731"/><meta xsi:type="nex:LiteralMeta" content="Rattus fuscipes assimilis" id="ma58732" datatype="xsd:string" property="skos:altLabel"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:111544" xsi:type="nex:ResourceMeta" id="ma58733"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" xsi:type="nex:ResourceMeta" id="ma58734"/></otu>
+<otu label="Rattus fuscipes assimilis S05" id="Tl412180" about="#Tl412180"><meta xsi:type="nex:LiteralMeta" content="103962" id="ma58736" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="183064" id="ma58737" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/95725" xsi:type="nex:ResourceMeta" id="ma58738"/><meta xsi:type="nex:LiteralMeta" content="Rattus fuscipes assimilis" id="ma58739" datatype="xsd:string" property="skos:altLabel"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:111544" xsi:type="nex:ResourceMeta" id="ma58740"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" xsi:type="nex:ResourceMeta" id="ma58741"/></otu>
+<otu label="Rattus fuscipes assimilis S17" id="Tl412172" about="#Tl412172"><meta xsi:type="nex:LiteralMeta" content="103962" id="ma58743" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="183064" id="ma58744" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/95725" xsi:type="nex:ResourceMeta" id="ma58745"/><meta xsi:type="nex:LiteralMeta" content="Rattus fuscipes assimilis" id="ma58746" datatype="xsd:string" property="skos:altLabel"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:111544" xsi:type="nex:ResourceMeta" id="ma58747"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" xsi:type="nex:ResourceMeta" id="ma58748"/></otu>
+<otu label="Rattus fuscipes coracius 1618" id="Tl412143" about="#Tl412143"><meta xsi:type="nex:LiteralMeta" content="103807" id="ma58750" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="182898" id="ma58751" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/95531" xsi:type="nex:ResourceMeta" id="ma58752"/><meta xsi:type="nex:LiteralMeta" content="Rattus fuscipes coracius" id="ma58753" datatype="xsd:string" property="skos:altLabel"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:111542" xsi:type="nex:ResourceMeta" id="ma58754"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" xsi:type="nex:ResourceMeta" id="ma58755"/></otu>
+<otu label="Rattus fuscipes coracius DC02R06" id="Tl412199" about="#Tl412199"><meta xsi:type="nex:LiteralMeta" content="103807" id="ma58757" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="182898" id="ma58758" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/95531" xsi:type="nex:ResourceMeta" id="ma58759"/><meta xsi:type="nex:LiteralMeta" content="Rattus fuscipes coracius" id="ma58760" datatype="xsd:string" property="skos:altLabel"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:111542" xsi:type="nex:ResourceMeta" id="ma58761"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" xsi:type="nex:ResourceMeta" id="ma58762"/></otu>
+<otu label="Rattus fuscipes coracius DC08R05" id="Tl412135" about="#Tl412135"><meta xsi:type="nex:LiteralMeta" content="103807" id="ma58764" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="182898" id="ma58765" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/95531" xsi:type="nex:ResourceMeta" id="ma58766"/><meta xsi:type="nex:LiteralMeta" content="Rattus fuscipes coracius" id="ma58767" datatype="xsd:string" property="skos:altLabel"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:111542" xsi:type="nex:ResourceMeta" id="ma58768"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" xsi:type="nex:ResourceMeta" id="ma58769"/></otu>
+<otu label="Rattus fuscipes coracius GI02R01" id="Tl412136" about="#Tl412136"><meta xsi:type="nex:LiteralMeta" content="103807" id="ma58771" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="182898" id="ma58772" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/95531" xsi:type="nex:ResourceMeta" id="ma58773"/><meta xsi:type="nex:LiteralMeta" content="Rattus fuscipes coracius" id="ma58774" datatype="xsd:string" property="skos:altLabel"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:111542" xsi:type="nex:ResourceMeta" id="ma58775"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" xsi:type="nex:ResourceMeta" id="ma58776"/></otu>
+<otu label="Rattus fuscipes coracius PR06R01" id="Tl412186" about="#Tl412186"><meta xsi:type="nex:LiteralMeta" content="103807" id="ma58778" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="182898" id="ma58779" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/95531" xsi:type="nex:ResourceMeta" id="ma58780"/><meta xsi:type="nex:LiteralMeta" content="Rattus fuscipes coracius" id="ma58781" datatype="xsd:string" property="skos:altLabel"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:111542" xsi:type="nex:ResourceMeta" id="ma58782"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" xsi:type="nex:ResourceMeta" id="ma58783"/></otu>
+<otu label="Rattus fuscipes coracius WO04R04" id="Tl412183" about="#Tl412183"><meta xsi:type="nex:LiteralMeta" content="103807" id="ma58785" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="182898" id="ma58786" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/95531" xsi:type="nex:ResourceMeta" id="ma58787"/><meta xsi:type="nex:LiteralMeta" content="Rattus fuscipes coracius" id="ma58788" datatype="xsd:string" property="skos:altLabel"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:111542" xsi:type="nex:ResourceMeta" id="ma58789"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" xsi:type="nex:ResourceMeta" id="ma58790"/></otu>
+<otu label="Rattus fuscipes coracius WO04R06" id="Tl412169" about="#Tl412169"><meta xsi:type="nex:LiteralMeta" content="103807" id="ma58792" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="182898" id="ma58793" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/95531" xsi:type="nex:ResourceMeta" id="ma58794"/><meta xsi:type="nex:LiteralMeta" content="Rattus fuscipes coracius" id="ma58795" datatype="xsd:string" property="skos:altLabel"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:111542" xsi:type="nex:ResourceMeta" id="ma58796"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" xsi:type="nex:ResourceMeta" id="ma58797"/></otu>
+<otu label="Rattus fuscipes coracius WO05R04" id="Tl412189" about="#Tl412189"><meta xsi:type="nex:LiteralMeta" content="103807" id="ma58799" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="182898" id="ma58800" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/95531" xsi:type="nex:ResourceMeta" id="ma58801"/><meta xsi:type="nex:LiteralMeta" content="Rattus fuscipes coracius" id="ma58802" datatype="xsd:string" property="skos:altLabel"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:111542" xsi:type="nex:ResourceMeta" id="ma58803"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" xsi:type="nex:ResourceMeta" id="ma58804"/></otu>
+<otu label="Rattus fuscipes coracius WO05R11" id="Tl412178" about="#Tl412178"><meta xsi:type="nex:LiteralMeta" content="103807" id="ma58806" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="182898" id="ma58807" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/95531" xsi:type="nex:ResourceMeta" id="ma58808"/><meta xsi:type="nex:LiteralMeta" content="Rattus fuscipes coracius" id="ma58809" datatype="xsd:string" property="skos:altLabel"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:111542" xsi:type="nex:ResourceMeta" id="ma58810"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" xsi:type="nex:ResourceMeta" id="ma58811"/></otu>
+<otu label="Rattus fuscipes fuscipes ABTC08616" id="Tl412162" about="#Tl412162"><meta xsi:type="nex:LiteralMeta" content="103808" id="ma58813" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="182899" id="ma58814" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/95532" xsi:type="nex:ResourceMeta" id="ma58815"/><meta xsi:type="nex:LiteralMeta" content="Rattus fuscipes fuscipes" id="ma58816" datatype="xsd:string" property="skos:altLabel"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:111543" xsi:type="nex:ResourceMeta" id="ma58817"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" xsi:type="nex:ResourceMeta" id="ma58818"/></otu>
+<otu label="Rattus fuscipes fuscipes ABTC08644" id="Tl412142" about="#Tl412142"><meta xsi:type="nex:LiteralMeta" content="103808" id="ma58820" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="182899" id="ma58821" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/95532" xsi:type="nex:ResourceMeta" id="ma58822"/><meta xsi:type="nex:LiteralMeta" content="Rattus fuscipes fuscipes" id="ma58823" datatype="xsd:string" property="skos:altLabel"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:111543" xsi:type="nex:ResourceMeta" id="ma58824"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" xsi:type="nex:ResourceMeta" id="ma58825"/></otu>
+<otu label="Rattus fuscipes greyi RAT60" id="Tl412166" about="#Tl412166"><meta xsi:type="nex:LiteralMeta" content="601803" id="ma58827" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="802392" id="ma58828" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta xsi:type="nex:LiteralMeta" content="Rattus fuscipes greyi" id="ma58829" datatype="xsd:string" property="skos:altLabel"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:111545" xsi:type="nex:ResourceMeta" id="ma58830"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" xsi:type="nex:ResourceMeta" id="ma58831"/></otu>
+<otu label="Rattus giluwensis ABTC87301" id="Tl412198" about="#Tl412198"><meta xsi:type="nex:LiteralMeta" content="601801" id="ma58833" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="802390" id="ma58834" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta xsi:type="nex:LiteralMeta" content="Rattus giluwensis" id="ma58835" datatype="xsd:string" property="skos:altLabel"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2481323" xsi:type="nex:ResourceMeta" id="ma58836"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" xsi:type="nex:ResourceMeta" id="ma58837"/></otu>
+<otu label="Rattus giluwensis ABTC87305" id="Tl412146" about="#Tl412146"><meta xsi:type="nex:LiteralMeta" content="601801" id="ma58839" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="802390" id="ma58840" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta xsi:type="nex:LiteralMeta" content="Rattus giluwensis" id="ma58841" datatype="xsd:string" property="skos:altLabel"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2481323" xsi:type="nex:ResourceMeta" id="ma58842"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" xsi:type="nex:ResourceMeta" id="ma58843"/></otu>
+<otu label="Rattus leucopus cooktownensis ABTC51770" id="Tl412138" about="#Tl412138"><meta xsi:type="nex:LiteralMeta" content="103809" id="ma58845" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="182900" id="ma58846" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/95533" xsi:type="nex:ResourceMeta" id="ma58847"/><meta xsi:type="nex:LiteralMeta" content="Rattus leucopus cooktownensis" id="ma58848" datatype="xsd:string" property="skos:altLabel"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:111546" xsi:type="nex:ResourceMeta" id="ma58849"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" xsi:type="nex:ResourceMeta" id="ma58850"/></otu>
+<otu label="Rattus leucopus cooktownensis DC07R02" id="Tl412155" about="#Tl412155"><meta xsi:type="nex:LiteralMeta" content="103809" id="ma58852" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="182900" id="ma58853" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/95533" xsi:type="nex:ResourceMeta" id="ma58854"/><meta xsi:type="nex:LiteralMeta" content="Rattus leucopus cooktownensis" id="ma58855" datatype="xsd:string" property="skos:altLabel"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:111546" xsi:type="nex:ResourceMeta" id="ma58856"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" xsi:type="nex:ResourceMeta" id="ma58857"/></otu>
+<otu label="Rattus leucopus cooktownensis DC11R05" id="Tl412190" about="#Tl412190"><meta xsi:type="nex:LiteralMeta" content="103809" id="ma58859" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="182900" id="ma58860" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/95533" xsi:type="nex:ResourceMeta" id="ma58861"/><meta xsi:type="nex:LiteralMeta" content="Rattus leucopus cooktownensis" id="ma58862" datatype="xsd:string" property="skos:altLabel"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:111546" xsi:type="nex:ResourceMeta" id="ma58863"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" xsi:type="nex:ResourceMeta" id="ma58864"/></otu>
+<otu label="Rattus leucopus cooktownensis DT01R03" id="Tl412157" about="#Tl412157"><meta xsi:type="nex:LiteralMeta" content="103809" id="ma58866" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="182900" id="ma58867" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/95533" xsi:type="nex:ResourceMeta" id="ma58868"/><meta xsi:type="nex:LiteralMeta" content="Rattus leucopus cooktownensis" id="ma58869" datatype="xsd:string" property="skos:altLabel"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:111546" xsi:type="nex:ResourceMeta" id="ma58870"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" xsi:type="nex:ResourceMeta" id="ma58871"/></otu>
+<otu label="Rattus leucopus cooktownensis DT10R02" id="Tl412137" about="#Tl412137"><meta xsi:type="nex:LiteralMeta" content="103809" id="ma58873" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="182900" id="ma58874" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/95533" xsi:type="nex:ResourceMeta" id="ma58875"/><meta xsi:type="nex:LiteralMeta" content="Rattus leucopus cooktownensis" id="ma58876" datatype="xsd:string" property="skos:altLabel"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:111546" xsi:type="nex:ResourceMeta" id="ma58877"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" xsi:type="nex:ResourceMeta" id="ma58878"/></otu>
+<otu label="Rattus leucopus cooktownensis PR04R01" id="Tl412141" about="#Tl412141"><meta xsi:type="nex:LiteralMeta" content="103809" id="ma58880" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="182900" id="ma58881" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/95533" xsi:type="nex:ResourceMeta" id="ma58882"/><meta xsi:type="nex:LiteralMeta" content="Rattus leucopus cooktownensis" id="ma58883" datatype="xsd:string" property="skos:altLabel"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:111546" xsi:type="nex:ResourceMeta" id="ma58884"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" xsi:type="nex:ResourceMeta" id="ma58885"/></otu>
+<otu label="Rattus leucopus cooktownensis WO04R05" id="Tl412164" about="#Tl412164"><meta xsi:type="nex:LiteralMeta" content="103809" id="ma58887" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="182900" id="ma58888" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/95533" xsi:type="nex:ResourceMeta" id="ma58889"/><meta xsi:type="nex:LiteralMeta" content="Rattus leucopus cooktownensis" id="ma58890" datatype="xsd:string" property="skos:altLabel"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:111546" xsi:type="nex:ResourceMeta" id="ma58891"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" xsi:type="nex:ResourceMeta" id="ma58892"/></otu>
+<otu label="Rattus leucopus cooktownensis WO04R09" id="Tl412182" about="#Tl412182"><meta xsi:type="nex:LiteralMeta" content="103809" id="ma58894" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="182900" id="ma58895" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/95533" xsi:type="nex:ResourceMeta" id="ma58896"/><meta xsi:type="nex:LiteralMeta" content="Rattus leucopus cooktownensis" id="ma58897" datatype="xsd:string" property="skos:altLabel"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:111546" xsi:type="nex:ResourceMeta" id="ma58898"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" xsi:type="nex:ResourceMeta" id="ma58899"/></otu>
+<otu label="Rattus leucopus cooktownensis WO05R09" id="Tl412165" about="#Tl412165"><meta xsi:type="nex:LiteralMeta" content="103809" id="ma58901" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="182900" id="ma58902" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/95533" xsi:type="nex:ResourceMeta" id="ma58903"/><meta xsi:type="nex:LiteralMeta" content="Rattus leucopus cooktownensis" id="ma58904" datatype="xsd:string" property="skos:altLabel"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:111546" xsi:type="nex:ResourceMeta" id="ma58905"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" xsi:type="nex:ResourceMeta" id="ma58906"/></otu>
+<otu label="Rattus leucopus dobodurae ABTC42803" id="Tl412132" about="#Tl412132"><meta xsi:type="nex:LiteralMeta" content="54018" id="ma58908" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="124736" id="ma58909" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/10115" xsi:type="nex:ResourceMeta" id="ma58910"/><meta xsi:type="nex:LiteralMeta" content="Rattus leucopus" id="ma58911" datatype="xsd:string" property="skos:altLabel"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2481330" xsi:type="nex:ResourceMeta" id="ma58912"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" xsi:type="nex:ResourceMeta" id="ma58913"/></otu>
+<otu label="Rattus leucopus dobodurae ABTC42806" id="Tl412170" about="#Tl412170"><meta xsi:type="nex:LiteralMeta" content="54018" id="ma58915" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="124736" id="ma58916" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/10115" xsi:type="nex:ResourceMeta" id="ma58917"/><meta xsi:type="nex:LiteralMeta" content="Rattus leucopus" id="ma58918" datatype="xsd:string" property="skos:altLabel"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2481330" xsi:type="nex:ResourceMeta" id="ma58919"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" xsi:type="nex:ResourceMeta" id="ma58920"/></otu>
+<otu label="Rattus leucopus dobodurae ABTC42808" id="Tl412197" about="#Tl412197"><meta xsi:type="nex:LiteralMeta" content="54018" id="ma58922" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="124736" id="ma58923" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/10115" xsi:type="nex:ResourceMeta" id="ma58924"/><meta xsi:type="nex:LiteralMeta" content="Rattus leucopus" id="ma58925" datatype="xsd:string" property="skos:altLabel"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2481330" xsi:type="nex:ResourceMeta" id="ma58926"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" xsi:type="nex:ResourceMeta" id="ma58927"/></otu>
+<otu label="Rattus leucopus dobodurae AMSM08493" id="Tl412179" about="#Tl412179"><meta xsi:type="nex:LiteralMeta" content="54018" id="ma58929" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="124736" id="ma58930" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/10115" xsi:type="nex:ResourceMeta" id="ma58931"/><meta xsi:type="nex:LiteralMeta" content="Rattus leucopus" id="ma58932" datatype="xsd:string" property="skos:altLabel"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2481330" xsi:type="nex:ResourceMeta" id="ma58933"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" xsi:type="nex:ResourceMeta" id="ma58934"/></otu>
+<otu label="Rattus leucopus leucopus ABTC08493" id="Tl412163" about="#Tl412163"><meta xsi:type="nex:LiteralMeta" content="103963" id="ma58936" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="183065" id="ma58937" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/95726" xsi:type="nex:ResourceMeta" id="ma58938"/><meta xsi:type="nex:LiteralMeta" content="Rattus leucopus leucopus" id="ma58939" datatype="xsd:string" property="skos:altLabel"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:111547" xsi:type="nex:ResourceMeta" id="ma58940"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" xsi:type="nex:ResourceMeta" id="ma58941"/></otu>
+<otu label="Rattus leucopus leucopus IR02R02" id="Tl412194" about="#Tl412194"><meta xsi:type="nex:LiteralMeta" content="103963" id="ma58943" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="183065" id="ma58944" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/95726" xsi:type="nex:ResourceMeta" id="ma58945"/><meta xsi:type="nex:LiteralMeta" content="Rattus leucopus leucopus" id="ma58946" datatype="xsd:string" property="skos:altLabel"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:111547" xsi:type="nex:ResourceMeta" id="ma58947"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" xsi:type="nex:ResourceMeta" id="ma58948"/></otu>
+<otu label="Rattus leucopus leucopus SP03R01" id="Tl412156" about="#Tl412156"><meta xsi:type="nex:LiteralMeta" content="103963" id="ma58950" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="183065" id="ma58951" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/95726" xsi:type="nex:ResourceMeta" id="ma58952"/><meta xsi:type="nex:LiteralMeta" content="Rattus leucopus leucopus" id="ma58953" datatype="xsd:string" property="skos:altLabel"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:111547" xsi:type="nex:ResourceMeta" id="ma58954"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" xsi:type="nex:ResourceMeta" id="ma58955"/></otu>
+<otu label="Rattus lutreolus lutreolus D39" id="Tl412200" about="#Tl412200"><meta xsi:type="nex:LiteralMeta" content="601798" id="ma58957" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="802387" id="ma58958" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:111549" xsi:type="nex:ResourceMeta" id="ma58959"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" xsi:type="nex:ResourceMeta" id="ma58960"/></otu>
+<otu label="Rattus lutreolus lutreolus ABTC51720" id="Tl412167" about="#Tl412167"><meta xsi:type="nex:LiteralMeta" content="601804" id="ma58962" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="802393" id="ma58963" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta xsi:type="nex:LiteralMeta" content="Rattus lutreolus lutreolus" id="ma58964" datatype="xsd:string" property="skos:altLabel"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:111549" xsi:type="nex:ResourceMeta" id="ma58965"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" xsi:type="nex:ResourceMeta" id="ma58966"/></otu>
+<otu label="Rattus leucopus ringens ABTC46876" id="Tl412177" about="#Tl412177"><meta xsi:type="nex:LiteralMeta" content="54018" id="ma58968" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="124736" id="ma58969" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/10115" xsi:type="nex:ResourceMeta" id="ma58970"/><meta xsi:type="nex:LiteralMeta" content="Rattus leucopus" id="ma58971" datatype="xsd:string" property="skos:altLabel"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2481330" xsi:type="nex:ResourceMeta" id="ma58972"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" xsi:type="nex:ResourceMeta" id="ma58973"/></otu>
+<otu label="Rattus leucopus ringens AMSM17128" id="Tl412196" about="#Tl412196"><meta xsi:type="nex:LiteralMeta" content="54018" id="ma58975" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="124736" id="ma58976" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/10115" xsi:type="nex:ResourceMeta" id="ma58977"/><meta xsi:type="nex:LiteralMeta" content="Rattus leucopus" id="ma58978" datatype="xsd:string" property="skos:altLabel"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2481330" xsi:type="nex:ResourceMeta" id="ma58979"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" xsi:type="nex:ResourceMeta" id="ma58980"/></otu>
+<otu label="Rattus lutreolus velutinus D69" id="Tl412175" about="#Tl412175"><meta xsi:type="nex:LiteralMeta" content="601799" id="ma58982" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="802388" id="ma58983" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:111550" xsi:type="nex:ResourceMeta" id="ma58984"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" xsi:type="nex:ResourceMeta" id="ma58985"/></otu>
+<otu label="Rattus lutreolus velutinus ABTC51762" id="Tl412152" about="#Tl412152"><meta xsi:type="nex:LiteralMeta" content="601802" id="ma58987" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="802391" id="ma58988" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta xsi:type="nex:LiteralMeta" content="Rattus lutreolus velutinus" id="ma58989" datatype="xsd:string" property="skos:altLabel"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:111550" xsi:type="nex:ResourceMeta" id="ma58990"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" xsi:type="nex:ResourceMeta" id="ma58991"/></otu>
+<otu label="Rattus niobe ABTC42489" id="Tl412201" about="#Tl412201"><meta xsi:type="nex:LiteralMeta" content="443818" id="ma58993" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="585954" id="ma58994" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/472762" xsi:type="nex:ResourceMeta" id="ma58995"/><meta xsi:type="nex:LiteralMeta" content="Rattus niobe" id="ma58996" datatype="xsd:string" property="skos:altLabel"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:6870693" xsi:type="nex:ResourceMeta" id="ma58997"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" xsi:type="nex:ResourceMeta" id="ma58998"/></otu>
+<otu label="Rattus niobe ABTC46763" id="Tl412158" about="#Tl412158"><meta xsi:type="nex:LiteralMeta" content="443818" id="ma59000" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="585954" id="ma59001" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/472762" xsi:type="nex:ResourceMeta" id="ma59002"/><meta xsi:type="nex:LiteralMeta" content="Rattus niobe" id="ma59003" datatype="xsd:string" property="skos:altLabel"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:6870693" xsi:type="nex:ResourceMeta" id="ma59004"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" xsi:type="nex:ResourceMeta" id="ma59005"/></otu>
+<otu label="Rattus niobe ABTC47145" id="Tl412195" about="#Tl412195"><meta xsi:type="nex:LiteralMeta" content="443818" id="ma59007" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="585954" id="ma59008" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/472762" xsi:type="nex:ResourceMeta" id="ma59009"/><meta xsi:type="nex:LiteralMeta" content="Rattus niobe" id="ma59010" datatype="xsd:string" property="skos:altLabel"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:6870693" xsi:type="nex:ResourceMeta" id="ma59011"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" xsi:type="nex:ResourceMeta" id="ma59012"/></otu>
+<otu label="Rattus novaeguineae ABTC43216" id="Tl412171" about="#Tl412171"><meta xsi:type="nex:LiteralMeta" content="383241" id="ma59014" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="401741" id="ma59015" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/443911" xsi:type="nex:ResourceMeta" id="ma59016"/><meta xsi:type="nex:LiteralMeta" content="Rattus novaeguineae" id="ma59017" datatype="xsd:string" property="skos:altLabel"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2481344" xsi:type="nex:ResourceMeta" id="ma59018"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" xsi:type="nex:ResourceMeta" id="ma59019"/></otu>
+<otu label="Rattus novaeguineae ABTC46853" id="Tl412174" about="#Tl412174"><meta xsi:type="nex:LiteralMeta" content="383241" id="ma59021" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="401741" id="ma59022" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/443911" xsi:type="nex:ResourceMeta" id="ma59023"/><meta xsi:type="nex:LiteralMeta" content="Rattus novaeguineae" id="ma59024" datatype="xsd:string" property="skos:altLabel"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2481344" xsi:type="nex:ResourceMeta" id="ma59025"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" xsi:type="nex:ResourceMeta" id="ma59026"/></otu>
+<otu label="Rattus novaeguineae ABTC48962" id="Tl412159" about="#Tl412159"><meta xsi:type="nex:LiteralMeta" content="383241" id="ma59028" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="401741" id="ma59029" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/443911" xsi:type="nex:ResourceMeta" id="ma59030"/><meta xsi:type="nex:LiteralMeta" content="Rattus novaeguineae" id="ma59031" datatype="xsd:string" property="skos:altLabel"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2481344" xsi:type="nex:ResourceMeta" id="ma59032"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" xsi:type="nex:ResourceMeta" id="ma59033"/></otu>
+<otu label="Rattus novaeguineae ABTC48963" id="Tl412133" about="#Tl412133"><meta xsi:type="nex:LiteralMeta" content="383241" id="ma59035" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="401741" id="ma59036" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/443911" xsi:type="nex:ResourceMeta" id="ma59037"/><meta xsi:type="nex:LiteralMeta" content="Rattus novaeguineae" id="ma59038" datatype="xsd:string" property="skos:altLabel"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2481344" xsi:type="nex:ResourceMeta" id="ma59039"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" xsi:type="nex:ResourceMeta" id="ma59040"/></otu>
+<otu label="Rattus praetor ABTC47252" id="Tl412187" about="#Tl412187"><meta xsi:type="nex:LiteralMeta" content="48104" id="ma59042" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="112576" id="ma59043" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/349711" xsi:type="nex:ResourceMeta" id="ma59044"/><meta xsi:type="nex:LiteralMeta" content="Rattus praetor" id="ma59045" datatype="xsd:string" property="skos:altLabel"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2481348" xsi:type="nex:ResourceMeta" id="ma59046"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" xsi:type="nex:ResourceMeta" id="ma59047"/></otu>
+<otu label="Rattus praetor ABTC47272" id="Tl412139" about="#Tl412139"><meta xsi:type="nex:LiteralMeta" content="48104" id="ma59049" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="112576" id="ma59050" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/349711" xsi:type="nex:ResourceMeta" id="ma59051"/><meta xsi:type="nex:LiteralMeta" content="Rattus praetor" id="ma59052" datatype="xsd:string" property="skos:altLabel"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2481348" xsi:type="nex:ResourceMeta" id="ma59053"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" xsi:type="nex:ResourceMeta" id="ma59054"/></otu>
+<otu label="Rattus praetor ABTC47273" id="Tl412153" about="#Tl412153"><meta xsi:type="nex:LiteralMeta" content="48104" id="ma59056" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="112576" id="ma59057" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/349711" xsi:type="nex:ResourceMeta" id="ma59058"/><meta xsi:type="nex:LiteralMeta" content="Rattus praetor" id="ma59059" datatype="xsd:string" property="skos:altLabel"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2481348" xsi:type="nex:ResourceMeta" id="ma59060"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" xsi:type="nex:ResourceMeta" id="ma59061"/></otu>
+<otu label="Rattus rattus A65" id="Tl412161" about="#Tl412161"><meta xsi:type="nex:LiteralMeta" content="54019" id="ma59063" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="414502" id="ma59064" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/10117" xsi:type="nex:ResourceMeta" id="ma59065"/><meta xsi:type="nex:LiteralMeta" content="Rattus rattus" id="ma59066" datatype="xsd:string" property="skos:altLabel"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2481350" xsi:type="nex:ResourceMeta" id="ma59067"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" xsi:type="nex:ResourceMeta" id="ma59068"/></otu>
+<otu label="Rattus sordidus RAT176" id="Tl412150" about="#Tl412150"><meta xsi:type="nex:LiteralMeta" content="54022" id="ma59070" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="124744" id="ma59071" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/10120" xsi:type="nex:ResourceMeta" id="ma59072"/><meta xsi:type="nex:LiteralMeta" content="Rattus sordidus" id="ma59073" datatype="xsd:string" property="skos:altLabel"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2481354" xsi:type="nex:ResourceMeta" id="ma59074"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" xsi:type="nex:ResourceMeta" id="ma59075"/></otu>
+<otu label="Rattus sordidus ABTC51664" id="Tl412134" about="#Tl412134"><meta xsi:type="nex:LiteralMeta" content="54022" id="ma59077" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="124744" id="ma59078" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/10120" xsi:type="nex:ResourceMeta" id="ma59079"/><meta xsi:type="nex:LiteralMeta" content="Rattus sordidus" id="ma59080" datatype="xsd:string" property="skos:altLabel"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2481354" xsi:type="nex:ResourceMeta" id="ma59081"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" xsi:type="nex:ResourceMeta" id="ma59082"/></otu>
+<otu label="Rattus steini ABTC47100" id="Tl412173" about="#Tl412173"><meta xsi:type="nex:LiteralMeta" content="443819" id="ma59084" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="585955" id="ma59085" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/472763" xsi:type="nex:ResourceMeta" id="ma59086"/><meta xsi:type="nex:LiteralMeta" content="Rattus steini" id="ma59087" datatype="xsd:string" property="skos:altLabel"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2481355" xsi:type="nex:ResourceMeta" id="ma59088"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" xsi:type="nex:ResourceMeta" id="ma59089"/></otu>
+<otu label="Rattus tunneyi culmorum D45" id="Tl412149" about="#Tl412149"><meta xsi:type="nex:LiteralMeta" content="103810" id="ma59091" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="182901" id="ma59092" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/95534" xsi:type="nex:ResourceMeta" id="ma59093"/><meta xsi:type="nex:LiteralMeta" content="Rattus tunneyi culmorum" id="ma59094" datatype="xsd:string" property="skos:altLabel"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:111551" xsi:type="nex:ResourceMeta" id="ma59095"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" xsi:type="nex:ResourceMeta" id="ma59096"/></otu>
+<otu label="Rattus tunneyi culmorum RAT132" id="Tl412176" about="#Tl412176"><meta xsi:type="nex:LiteralMeta" content="103810" id="ma59098" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="182901" id="ma59099" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/95534" xsi:type="nex:ResourceMeta" id="ma59100"/><meta xsi:type="nex:LiteralMeta" content="Rattus tunneyi culmorum" id="ma59101" datatype="xsd:string" property="skos:altLabel"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:111551" xsi:type="nex:ResourceMeta" id="ma59102"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" xsi:type="nex:ResourceMeta" id="ma59103"/></otu>
+<otu label="Rattus tunneyi tunneyi ABTC08815" id="Tl412185" about="#Tl412185"><meta xsi:type="nex:LiteralMeta" content="103964" id="ma59105" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="424376" id="ma59106" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/95727" xsi:type="nex:ResourceMeta" id="ma59107"/><meta xsi:type="nex:LiteralMeta" content="Rattus tunneyi tunneyi" id="ma59108" datatype="xsd:string" property="skos:altLabel"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:111552" xsi:type="nex:ResourceMeta" id="ma59109"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" xsi:type="nex:ResourceMeta" id="ma59110"/></otu>
+<otu label="Rattus tunneyi tunneyi ABTC51684" id="Tl412184" about="#Tl412184"><meta xsi:type="nex:LiteralMeta" content="103964" id="ma59112" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="424376" id="ma59113" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/95727" xsi:type="nex:ResourceMeta" id="ma59114"/><meta xsi:type="nex:LiteralMeta" content="Rattus tunneyi tunneyi" id="ma59115" datatype="xsd:string" property="skos:altLabel"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:111552" xsi:type="nex:ResourceMeta" id="ma59116"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" xsi:type="nex:ResourceMeta" id="ma59117"/></otu>
+<otu label="Rattus verecundus ABTC47140" id="Tl412191" about="#Tl412191"><meta xsi:type="nex:LiteralMeta" content="443820" id="ma59119" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="585958" id="ma59120" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/472764" xsi:type="nex:ResourceMeta" id="ma59121"/><meta xsi:type="nex:LiteralMeta" content="Rattus verecundus" id="ma59122" datatype="xsd:string" property="skos:altLabel"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:6201107" xsi:type="nex:ResourceMeta" id="ma59123"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" xsi:type="nex:ResourceMeta" id="ma59124"/></otu>
+<otu label="Rattus villosissimus ABTC08439" id="Tl412154" about="#Tl412154"><meta xsi:type="nex:LiteralMeta" content="24891" id="ma59126" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="58304" id="ma59127" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/10122" xsi:type="nex:ResourceMeta" id="ma59128"/><meta xsi:type="nex:LiteralMeta" content="Rattus villosissimus" id="ma59129" datatype="xsd:string" property="skos:altLabel"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2481363" xsi:type="nex:ResourceMeta" id="ma59130"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" xsi:type="nex:ResourceMeta" id="ma59131"/></otu>
+<otu label="Rattus villosissimus ABTC51672" id="Tl412168" about="#Tl412168"><meta xsi:type="nex:LiteralMeta" content="24891" id="ma59133" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="58304" id="ma59134" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/10122" xsi:type="nex:ResourceMeta" id="ma59135"/><meta xsi:type="nex:LiteralMeta" content="Rattus villosissimus" id="ma59136" datatype="xsd:string" property="skos:altLabel"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2481363" xsi:type="nex:ResourceMeta" id="ma59137"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" xsi:type="nex:ResourceMeta" id="ma59138"/></otu>
+<otu label="Rattus villosissimus ABTC51675" id="Tl412144" about="#Tl412144"><meta xsi:type="nex:LiteralMeta" content="24891" id="ma59140" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="58304" id="ma59141" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/10122" xsi:type="nex:ResourceMeta" id="ma59142"/><meta xsi:type="nex:LiteralMeta" content="Rattus villosissimus" id="ma59143" datatype="xsd:string" property="skos:altLabel"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2481363" xsi:type="nex:ResourceMeta" id="ma59144"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" xsi:type="nex:ResourceMeta" id="ma59145"/></otu></otus><trees otus="Tls18231" xml:base="http://purl.org/phylo/treebase/phylows/tree/TB2:" id="trees64864" about="#trees64864"><meta xsi:type="nex:LiteralMeta" content="Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlTreeBlockWriter@1480b58c $Rev: 1040 $" id="ma59147" datatype="xsd:string" property="skos:historyNote"/>
+<tree xsi:type="nex:FloatTree" label="maj rule" id="Tr21539" about="#Tr21539"><meta xsi:type="nex:LiteralMeta" content="70" id="ma59149" datatype="xsd:integer" property="tb:ntax.tree"/><meta xsi:type="nex:LiteralMeta" content="Unrated" id="ma59150" datatype="xsd:string" property="tb:quality.tree"/><meta xsi:type="nex:LiteralMeta" content="Consensus" id="ma59151" datatype="xsd:string" property="tb:type.tree"/><meta xsi:type="nex:LiteralMeta" content="Species Tree" id="ma59152" datatype="xsd:string" property="tb:kind.tree"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S10869" xsi:type="nex:ResourceMeta" id="ma59153"/>
+<node root="true" id="Tn2869469" about="#Tn2869469"/>
+<node label="Rattus norvegicus" id="Tn2869463" about="#Tn2869463" otu="Tl412140"/>
+<node label="Rattus rattus A65" id="Tn2869483" about="#Tn2869483" otu="Tl412161"/>
+<node label="1.00" id="Tn2869441" about="#Tn2869441"/>
+<node label="0.75" id="Tn2869423" about="#Tn2869423"/>
+<node label="0.99" id="Tn2869442" about="#Tn2869442"/>
+<node label="1.00" id="Tn2869439" about="#Tn2869439"/>
+<node label="1.00" id="Tn2869384" about="#Tn2869384"/>
+<node label="1.00" id="Tn2869427" about="#Tn2869427"/>
+<node label="1.00" id="Tn2869434" about="#Tn2869434"/>
+<node label="1.00" id="Tn2869415" about="#Tn2869415"/>
+<node label="1.00" id="Tn2869400" about="#Tn2869400"/>
+<node label="1.00" id="Tn2869369" about="#Tn2869369"/>
+<node label="1.00" id="Tn2869468" about="#Tn2869468"/>
+<node label="1.00" id="Tn2869440" about="#Tn2869440"/>
+<node label="0.94" id="Tn2869416" about="#Tn2869416"/>
+<node label="0.76" id="Tn2869408" about="#Tn2869408"/>
+<node label="Rattus niobe ABTC46763" id="Tn2869367" about="#Tn2869367" otu="Tl412158"/>
+<node label="1.00" id="Tn2869462" about="#Tn2869462"/>
+<node label="1.00" id="Tn2869425" about="#Tn2869425"/>
+<node label="1.00" id="Tn2869386" about="#Tn2869386"/>
+<node label="1.00" id="Tn2869363" about="#Tn2869363"/>
+<node label="1.00" id="Tn2869486" about="#Tn2869486"/>
+<node label="0.93" id="Tn2869428" about="#Tn2869428"/>
+<node label="Rattus leucopus leucopus IR02R02" id="Tn2869413" about="#Tn2869413" otu="Tl412194"/>
+<node label="1.00" id="Tn2869429" about="#Tn2869429"/>
+<node label="1.00" id="Tn2869437" about="#Tn2869437"/>
+<node label="Rattus giluwenesis ABTC87301" id="Tn2869417" about="#Tn2869417" otu="Tl412198"/>
+<node label="Rattus giluwensis ABTC87305" id="Tn2869472" about="#Tn2869472" otu="Tl412146"/>
+<node label="1.00" id="Tn2869461" about="#Tn2869461"/>
+<node label="Rattus verecundus ABTC47140" id="Tn2869364" about="#Tn2869364" otu="Tl412191"/>
+<node label="Rattus niobe ABTC42489" id="Tn2869395" about="#Tn2869395" otu="Tl412201"/>
+<node label="Rattus niobe ABTC47145" id="Tn2869399" about="#Tn2869399" otu="Tl412195"/>
+<node label="1.00" id="Tn2869359" about="#Tn2869359"/>
+<node label="1.00" id="Tn2869393" about="#Tn2869393"/>
+<node label="1.00" id="Tn2869448" about="#Tn2869448"/>
+<node label="1.00" id="Tn2869389" about="#Tn2869389"/>
+<node label="1.00" id="Tn2869365" about="#Tn2869365"/>
+<node label="1.00" id="Tn2869388" about="#Tn2869388"/>
+<node label="Rattus fuscipes coracius 1618" id="Tn2869356" about="#Tn2869356" otu="Tl412143"/>
+<node label="0.99" id="Tn2869456" about="#Tn2869456"/>
+<node label="1.00" id="Tn2869436" about="#Tn2869436"/>
+<node label="Rattus fuscipes greyi RAT60" id="Tn2869473" about="#Tn2869473" otu="Tl412166"/>
+<node label="0.94" id="Tn2869394" about="#Tn2869394"/>
+<node label="Rattus leucopus leucopus SP03R01" id="Tn2869381" about="#Tn2869381" otu="Tl412156"/>
+<node label="Rattus leucopus dobodurae AMSM08493" id="Tn2869431" about="#Tn2869431" otu="Tl412179"/>
+<node label="0.55" id="Tn2869374" about="#Tn2869374"/>
+<node label="Rattus leucopus ringens ABTC46876" id="Tn2869447" about="#Tn2869447" otu="Tl412177"/>
+<node label="Rattus leucopus ringens AMSM17128" id="Tn2869476" about="#Tn2869476" otu="Tl412196"/>
+<node label="1.00" id="Tn2869368" about="#Tn2869368"/>
+<node label="1.00" id="Tn2869484" about="#Tn2869484"/>
+<node label="1.00" id="Tn2869426" about="#Tn2869426"/>
+<node label="1.00" id="Tn2869454" about="#Tn2869454"/>
+<node label="1.00" id="Tn2869411" about="#Tn2869411"/>
+<node label="1.00" id="Tn2869465" about="#Tn2869465"/>
+<node label="Rattus lutreolus lutreolus D39" id="Tn2869418" about="#Tn2869418" otu="Tl412200"/>
+<node label="Rattus lutreolus lutreolus ABTC51720" id="Tn2869430" about="#Tn2869430" otu="Tl412167"/>
+<node label="Rattus lutreolus velutinus D69" id="Tn2869452" about="#Tn2869452" otu="Tl412175"/>
+<node label="Rattus lutreolus velutinus ABTC51762" id="Tn2869474" about="#Tn2869474" otu="Tl412152"/>
+<node label="0.64" id="Tn2869362" about="#Tn2869362"/>
+<node label="1.00" id="Tn2869360" about="#Tn2869360"/>
+<node label="0.71" id="Tn2869475" about="#Tn2869475"/>
+<node label="Rattus fuscipes assimilis S17" id="Tn2869482" about="#Tn2869482" otu="Tl412172"/>
+<node label="0.85" id="Tn2869404" about="#Tn2869404"/>
+<node label="0.90" id="Tn2869407" about="#Tn2869407"/>
+<node label="Rattus fuscipes fuscipes ABTC08616" id="Tn2869451" about="#Tn2869451" otu="Tl412162"/>
+<node label="Rattus fuscipes fuscipes ABTC08644" id="Tn2869481" about="#Tn2869481" otu="Tl412142"/>
+<node label="1.00" id="Tn2869422" about="#Tn2869422"/>
+<node label="Rattus leucopus leucopus ABTC08493" id="Tn2869459" about="#Tn2869459" otu="Tl412163"/>
+<node label="0.98" id="Tn2869405" about="#Tn2869405"/>
+<node label="Rattus leucopus dobodurae ABTC42808" id="Tn2869406" about="#Tn2869406" otu="Tl412197"/>
+<node label="1.00" id="Tn2869410" about="#Tn2869410"/>
+<node label="Rattus steini ABTC47100" id="Tn2869471" about="#Tn2869471" otu="Tl412173"/>
+<node label="1.00" id="Tn2869398" about="#Tn2869398"/>
+<node label="Rattus praetor ABTC47273" id="Tn2869435" about="#Tn2869435" otu="Tl412153"/>
+<node label="1.00" id="Tn2869433" about="#Tn2869433"/>
+<node label="1.00" id="Tn2869383" about="#Tn2869383"/>
+<node label="Rattus sordidus RAT176" id="Tn2869479" about="#Tn2869479" otu="Tl412150"/>
+<node label="Rattus sordidus ABTC51664" id="Tn2869370" about="#Tn2869370" otu="Tl412134"/>
+<node label="Rattus tunneyi culmorum D45" id="Tn2869377" about="#Tn2869377" otu="Tl412149"/>
+<node label="Rattus tunneyi culmorum RAT132" id="Tn2869355" about="#Tn2869355" otu="Tl412176"/>
+<node label="Rattus tunneyi tunneyi ABTC08815" id="Tn2869371" about="#Tn2869371" otu="Tl412185"/>
+<node label="Rattus tunneyi tunneyi ABTC51684" id="Tn2869409" about="#Tn2869409" otu="Tl412184"/>
+<node label="1.00" id="Tn2869380" about="#Tn2869380"/>
+<node label="Rattus fuscipes assimilis N02" id="Tn2869455" about="#Tn2869455" otu="Tl412193"/>
+<node label="Rattus fuscipes assimilis N01" id="Tn2869358" about="#Tn2869358" otu="Tl412147"/>
+<node label="Rattus fuscipes assimilis N05" id="Tn2869419" about="#Tn2869419" otu="Tl412181"/>
+<node label="Rattus fuscipes assimilis S01" id="Tn2869477" about="#Tn2869477" otu="Tl412160"/>
+<node label="Rattus fuscipes assimilis S05" id="Tn2869396" about="#Tn2869396" otu="Tl412180"/>
+<node label="0.69" id="Tn2869403" about="#Tn2869403"/>
+<node label="Rattus fuscipes coracius DC08R05" id="Tn2869373" about="#Tn2869373" otu="Tl412135"/>
+<node label="Rattus fuscipes coracius PR06R01" id="Tn2869487" about="#Tn2869487" otu="Tl412186"/>
+<node label="0.97" id="Tn2869392" about="#Tn2869392"/>
+<node label="0.99" id="Tn2869424" about="#Tn2869424"/>
+<node label="Rattus leucopus cooktownensis ABTC51770" id="Tn2869414" about="#Tn2869414" otu="Tl412138"/>
+<node label="0.65" id="Tn2869449" about="#Tn2869449"/>
+<node label="Rattus leucopus dobodurae ABTC42803" id="Tn2869458" about="#Tn2869458" otu="Tl412132"/>
+<node label="Rattus leucopus dobodurae ABTC42806" id="Tn2869397" about="#Tn2869397" otu="Tl412170"/>
+<node label="1.00" id="Tn2869387" about="#Tn2869387"/>
+<node label="1.00" id="Tn2869444" about="#Tn2869444"/>
+<node label="Rattus praetor ABTC47252" id="Tn2869366" about="#Tn2869366" otu="Tl412187"/>
+<node label="Rattus praetor ABTC47272" id="Tn2869378" about="#Tn2869378" otu="Tl412139"/>
+<node label="0.99" id="Tn2869457" about="#Tn2869457"/>
+<node label="Rattus colletti ABTC5656" id="Tn2869438" about="#Tn2869438" otu="Tl412188"/>
+<node label="Rattus villossisimus ABTC08439" id="Tn2869446" about="#Tn2869446" otu="Tl412154"/>
+<node label="Rattus villossisimus ABTC51672" id="Tn2869480" about="#Tn2869480" otu="Tl412168"/>
+<node label="Rattus villossisimus ABTC51675" id="Tn2869402" about="#Tn2869402" otu="Tl412144"/>
+<node label="Rattus fuscipes assimilis A10" id="Tn2869485" about="#Tn2869485" otu="Tl412145"/>
+<node label="Rattus fuscipes assimilis C21" id="Tn2869401" about="#Tn2869401" otu="Tl412151"/>
+<node label="Rattus fuscipes coracius DC02R06" id="Tn2869467" about="#Tn2869467" otu="Tl412199"/>
+<node label="Rattus fuscipes coracius GI02R01" id="Tn2869445" about="#Tn2869445" otu="Tl412136"/>
+<node label="Rattus fuscipes coracius WO04R04" id="Tn2869478" about="#Tn2869478" otu="Tl412183"/>
+<node label="Rattus fuscipes coracius WO04R06" id="Tn2869453" about="#Tn2869453" otu="Tl412169"/>
+<node label="Rattus fuscipes coracius WO05R04" id="Tn2869391" about="#Tn2869391" otu="Tl412189"/>
+<node label="Rattus fuscipes coracius WO05R11" id="Tn2869420" about="#Tn2869420" otu="Tl412178"/>
+<node label="0.67" id="Tn2869357" about="#Tn2869357"/>
+<node label="Rattus leucopus cooktownensis DC11R05" id="Tn2869390" about="#Tn2869390" otu="Tl412190"/>
+<node label="Rattus leucopus cooktownensis DT01R03" id="Tn2869375" about="#Tn2869375" otu="Tl412157"/>
+<node label="Rattus novaeguineae ABTC43216" id="Tn2869432" about="#Tn2869432" otu="Tl412171"/>
+<node label="Rattus novaeguineae ABTC46853" id="Tn2869385" about="#Tn2869385" otu="Tl412174"/>
+<node label="Rattus novaeguineae ABTC48962" id="Tn2869464" about="#Tn2869464" otu="Tl412159"/>
+<node label="Rattus novaeguineae ABTC48963" id="Tn2869372" about="#Tn2869372" otu="Tl412133"/>
+<node label="Rattus colletti ABTC51642" id="Tn2869421" about="#Tn2869421" otu="Tl412148"/>
+<node label="Rattus colletti ABTC51650" id="Tn2869460" about="#Tn2869460" otu="Tl412192"/>
+<node label="0.71" id="Tn2869382" about="#Tn2869382"/>
+<node label="Rattus leucopus cooktownensis WO04R09" id="Tn2869361" about="#Tn2869361" otu="Tl412182"/>
+<node label="0.69" id="Tn2869470" about="#Tn2869470"/>
+<node label="Rattus leucopus cooktownensis PR04R01" id="Tn2869412" about="#Tn2869412" otu="Tl412141"/>
+<node label="0.90" id="Tn2869450" about="#Tn2869450"/>
+<node label="Rattus leucopus cooktownensis DC07R02" id="Tn2869443" about="#Tn2869443" otu="Tl412155"/>
+<node label="Rattus leucopus cooktownensis DT10R02" id="Tn2869376" about="#Tn2869376" otu="Tl412137"/>
+<node label="Rattus leucopus cooktownensis WO04R05" id="Tn2869466" about="#Tn2869466" otu="Tl412164"/>
+<node label="Rattus leucopus cooktownensis WO05R09" id="Tn2869379" about="#Tn2869379" otu="Tl412165"/>
+<edge source="Tn2869469" length="0.028267" target="Tn2869463" id="edge59155"/>
+<edge source="Tn2869469" length="0.022558" target="Tn2869483" id="edge59156"/>
+<edge source="Tn2869469" length="0.019643" target="Tn2869441" id="edge59157"/>
+<edge source="Tn2869441" length="8.06E-4" target="Tn2869423" id="edge59158"/>
+<edge source="Tn2869441" length="0.00188" target="Tn2869442" id="edge59260"/>
+<edge source="Tn2869423" length="0.001043" target="Tn2869439" id="edge59159"/>
+<edge source="Tn2869423" length="0.006548" target="Tn2869384" id="edge59227"/>
+<edge source="Tn2869442" length="0.004592" target="Tn2869427" id="edge59261"/>
+<edge source="Tn2869442" length="0.002732" target="Tn2869434" id="edge59282"/>
+<edge source="Tn2869439" length="0.002966" target="Tn2869415" id="edge59160"/>
+<edge source="Tn2869439" length="0.005153" target="Tn2869400" id="edge59190"/>
+<edge source="Tn2869384" length="0.003748" target="Tn2869369" id="edge59228"/>
+<edge source="Tn2869384" length="0.002553" target="Tn2869468" id="edge59249"/>
+<edge source="Tn2869427" length="0.005114" target="Tn2869440" id="edge59262"/>
+<edge source="Tn2869427" length="7.37E-4" target="Tn2869416" id="edge59265"/>
+<edge source="Tn2869434" length="9.05E-4" target="Tn2869408" id="edge59283"/>
+<edge source="Tn2869434" length="0.007993" target="Tn2869367" id="edge59286"/>
+<edge source="Tn2869415" length="9.56E-4" target="Tn2869462" id="edge59161"/>
+<edge source="Tn2869415" length="0.003547" target="Tn2869425" id="edge59183"/>
+<edge source="Tn2869400" length="0.001355" target="Tn2869386" id="edge59191"/>
+<edge source="Tn2869400" length="0.007579" target="Tn2869363" id="edge59206"/>
+<edge source="Tn2869400" length="0.001795" target="Tn2869486" id="edge59222"/>
+<edge source="Tn2869369" length="8.36E-4" target="Tn2869428" id="edge59229"/>
+<edge source="Tn2869369" length="8.52E-4" target="Tn2869413" id="edge59248"/>
+<edge source="Tn2869468" length="0.002972" target="Tn2869429" id="edge59250"/>
+<edge source="Tn2869468" length="0.001879" target="Tn2869437" id="edge59257"/>
+<edge source="Tn2869440" length="4.27E-4" target="Tn2869417" id="edge59263"/>
+<edge source="Tn2869440" length="2.6E-4" target="Tn2869472" id="edge59264"/>
+<edge source="Tn2869416" length="0.002269" target="Tn2869461" id="edge59266"/>
+<edge source="Tn2869416" length="0.005821" target="Tn2869364" id="edge59281"/>
+<edge source="Tn2869408" length="0.006246" target="Tn2869395" id="edge59284"/>
+<edge source="Tn2869408" length="0.006608" target="Tn2869399" id="edge59285"/>
+<edge source="Tn2869462" length="0.00282" target="Tn2869359" id="edge59162"/>
+<edge source="Tn2869462" length="0.005218" target="Tn2869393" id="edge59176"/>
+<edge source="Tn2869425" length="0.002503" target="Tn2869448" id="edge59184"/>
+<edge source="Tn2869425" length="0.005631" target="Tn2869389" id="edge59187"/>
+<edge source="Tn2869386" length="0.00393" target="Tn2869365" id="edge59192"/>
+<edge source="Tn2869386" length="0.005066" target="Tn2869388" id="edge59201"/>
+<edge source="Tn2869363" length="0.001621" target="Tn2869356" id="edge59207"/>
+<edge source="Tn2869363" length="7.17E-4" target="Tn2869456" id="edge59208"/>
+<edge source="Tn2869486" length="0.003861" target="Tn2869436" id="edge59223"/>
+<edge source="Tn2869486" length="0.005377" target="Tn2869473" id="edge59226"/>
+<edge source="Tn2869428" length="0.001941" target="Tn2869394" id="edge59230"/>
+<edge source="Tn2869428" length="7.59E-4" target="Tn2869381" id="edge59247"/>
+<edge source="Tn2869429" length="0.001327" target="Tn2869431" id="edge59251"/>
+<edge source="Tn2869429" length="3.07E-4" target="Tn2869374" id="edge59252"/>
+<edge source="Tn2869437" length="0.001214" target="Tn2869447" id="edge59258"/>
+<edge source="Tn2869437" length="5.96E-4" target="Tn2869476" id="edge59259"/>
+<edge source="Tn2869461" length="0.001693" target="Tn2869368" id="edge59267"/>
+<edge source="Tn2869461" length="0.001463" target="Tn2869484" id="edge59276"/>
+<edge source="Tn2869359" length="0.002488" target="Tn2869426" id="edge59163"/>
+<edge source="Tn2869359" length="0.005191" target="Tn2869454" id="edge59173"/>
+<edge source="Tn2869393" length="0.001665" target="Tn2869411" id="edge59177"/>
+<edge source="Tn2869393" length="0.002942" target="Tn2869465" id="edge59180"/>
+<edge source="Tn2869448" length="0.002329" target="Tn2869418" id="edge59185"/>
+<edge source="Tn2869448" length="0.001375" target="Tn2869430" id="edge59186"/>
+<edge source="Tn2869389" length="0.001332" target="Tn2869452" id="edge59188"/>
+<edge source="Tn2869389" length="4.99E-4" target="Tn2869474" id="edge59189"/>
+<edge source="Tn2869365" length="5.96E-4" target="Tn2869362" id="edge59193"/>
+<edge source="Tn2869365" length="9.08E-4" target="Tn2869360" id="edge59198"/>
+<edge source="Tn2869388" length="8.54E-4" target="Tn2869475" id="edge59202"/>
+<edge source="Tn2869388" length="0.001057" target="Tn2869482" id="edge59205"/>
+<edge source="Tn2869456" length="3.63E-4" target="Tn2869404" id="edge59209"/>
+<edge source="Tn2869456" length="2.93E-4" target="Tn2869407" id="edge59214"/>
+<edge source="Tn2869436" length="0.001219" target="Tn2869451" id="edge59224"/>
+<edge source="Tn2869436" length="0.00209" target="Tn2869481" id="edge59225"/>
+<edge source="Tn2869394" length="0.004167" target="Tn2869422" id="edge59231"/>
+<edge source="Tn2869394" length="0.001807" target="Tn2869459" id="edge59246"/>
+<edge source="Tn2869374" length="5.68E-4" target="Tn2869405" id="edge59253"/>
+<edge source="Tn2869374" length="0.001451" target="Tn2869406" id="edge59256"/>
+<edge source="Tn2869368" length="0.001035" target="Tn2869410" id="edge59268"/>
+<edge source="Tn2869368" length="0.002241" target="Tn2869471" id="edge59275"/>
+<edge source="Tn2869484" length="0.001285" target="Tn2869398" id="edge59277"/>
+<edge source="Tn2869484" length="4.82E-4" target="Tn2869435" id="edge59280"/>
+<edge source="Tn2869426" length="0.001967" target="Tn2869433" id="edge59164"/>
+<edge source="Tn2869426" length="0.001799" target="Tn2869383" id="edge59169"/>
+<edge source="Tn2869454" length="0.00221" target="Tn2869479" id="edge59174"/>
+<edge source="Tn2869454" length="0.001428" target="Tn2869370" id="edge59175"/>
+<edge source="Tn2869411" length="0.002549" target="Tn2869377" id="edge59178"/>
+<edge source="Tn2869411" length="0.003724" target="Tn2869355" id="edge59179"/>
+<edge source="Tn2869465" length="0.002171" target="Tn2869371" id="edge59181"/>
+<edge source="Tn2869465" length="0.003554" target="Tn2869409" id="edge59182"/>
+<edge source="Tn2869362" length="0.002831" target="Tn2869380" id="edge59194"/>
+<edge source="Tn2869362" length="0.001601" target="Tn2869455" id="edge59197"/>
+<edge source="Tn2869360" length="3.35E-4" target="Tn2869358" id="edge59199"/>
+<edge source="Tn2869360" length="1.88E-4" target="Tn2869419" id="edge59200"/>
+<edge source="Tn2869475" length="0.001563" target="Tn2869477" id="edge59203"/>
+<edge source="Tn2869475" length="9.36E-4" target="Tn2869396" id="edge59204"/>
+<edge source="Tn2869404" length="4.79E-4" target="Tn2869403" id="edge59210"/>
+<edge source="Tn2869404" length="8.58E-4" target="Tn2869373" id="edge59213"/>
+<edge source="Tn2869407" length="9.89E-4" target="Tn2869487" id="edge59215"/>
+<edge source="Tn2869407" length="5.97E-4" target="Tn2869392" id="edge59216"/>
+<edge source="Tn2869407" length="3.04E-4" target="Tn2869424" id="edge59219"/>
+<edge source="Tn2869422" length="4.21E-4" target="Tn2869414" id="edge59232"/>
+<edge source="Tn2869422" length="4.37E-4" target="Tn2869449" id="edge59233"/>
+<edge source="Tn2869405" length="9.5E-4" target="Tn2869458" id="edge59254"/>
+<edge source="Tn2869405" length="3.26E-4" target="Tn2869397" id="edge59255"/>
+<edge source="Tn2869410" length="0.001025" target="Tn2869387" id="edge59269"/>
+<edge source="Tn2869410" length="0.001442" target="Tn2869444" id="edge59272"/>
+<edge source="Tn2869398" length="0.001768" target="Tn2869366" id="edge59278"/>
+<edge source="Tn2869398" length="0.001399" target="Tn2869378" id="edge59279"/>
+<edge source="Tn2869433" length="7.49E-4" target="Tn2869457" id="edge59165"/>
+<edge source="Tn2869433" length="8.92E-4" target="Tn2869438" id="edge59168"/>
+<edge source="Tn2869383" length="6.16E-4" target="Tn2869446" id="edge59170"/>
+<edge source="Tn2869383" length="5.31E-4" target="Tn2869480" id="edge59171"/>
+<edge source="Tn2869383" length="4.09E-4" target="Tn2869402" id="edge59172"/>
+<edge source="Tn2869380" length="0.00124" target="Tn2869485" id="edge59195"/>
+<edge source="Tn2869380" length="0.001283" target="Tn2869401" id="edge59196"/>
+<edge source="Tn2869403" length="0.002038" target="Tn2869467" id="edge59211"/>
+<edge source="Tn2869403" length="0.001809" target="Tn2869445" id="edge59212"/>
+<edge source="Tn2869392" length="3.81E-4" target="Tn2869478" id="edge59217"/>
+<edge source="Tn2869392" length="1.5E-4" target="Tn2869453" id="edge59218"/>
+<edge source="Tn2869424" length="1.31E-4" target="Tn2869391" id="edge59220"/>
+<edge source="Tn2869424" length="1.16E-4" target="Tn2869420" id="edge59221"/>
+<edge source="Tn2869449" length="6.25E-4" target="Tn2869357" id="edge59234"/>
+<edge source="Tn2869449" length="6.48E-4" target="Tn2869390" id="edge59244"/>
+<edge source="Tn2869449" length="0.00206" target="Tn2869375" id="edge59245"/>
+<edge source="Tn2869387" length="0.00216" target="Tn2869432" id="edge59270"/>
+<edge source="Tn2869387" length="0.001015" target="Tn2869385" id="edge59271"/>
+<edge source="Tn2869444" length="0.001147" target="Tn2869464" id="edge59273"/>
+<edge source="Tn2869444" length="0.003437" target="Tn2869372" id="edge59274"/>
+<edge source="Tn2869457" length="0.001919" target="Tn2869421" id="edge59166"/>
+<edge source="Tn2869457" length="0.001806" target="Tn2869460" id="edge59167"/>
+<edge source="Tn2869357" length="0.001063" target="Tn2869382" id="edge59235"/>
+<edge source="Tn2869357" length="7.56E-4" target="Tn2869361" id="edge59243"/>
+<edge source="Tn2869382" length="7.09E-4" target="Tn2869470" id="edge59236"/>
+<edge source="Tn2869382" length="0.001062" target="Tn2869412" id="edge59239"/>
+<edge source="Tn2869382" length="5.7E-4" target="Tn2869450" id="edge59240"/>
+<edge source="Tn2869470" length="6.54E-4" target="Tn2869443" id="edge59237"/>
+<edge source="Tn2869470" length="0.001564" target="Tn2869376" id="edge59238"/>
+<edge source="Tn2869450" length="6.36E-4" target="Tn2869466" id="edge59241"/>
+<edge source="Tn2869450" length="7.07E-4" target="Tn2869379" id="edge59242"/></tree></trees></nex:nexml>

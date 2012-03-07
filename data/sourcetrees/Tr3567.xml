@@ -1,568 +1,222 @@
-<nex:nexml about="#nl72094" generator="Bio::Phylo::Project v.0.46_1660" version="0.9" xmlns="http://www.nexml.org/2009" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:nex="http://www.nexml.org/2009" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:tb="http://purl.org/phylo/treebase/2.0/terms#" xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.nexml.org/2009 http://www.nexml.org/2009/nexml.xsd">
-  <meta content="rvosa" datatype="xsd:string" id="ma72520" property="dc:creator" xsi:type="nex:LiteralMeta"/>
-  <meta content="2012-03-06T22:00:37" datatype="xsd:date" id="ma72521" property="dc:date" xsi:type="nex:LiteralMeta"/>
-  <otus about="#Tls10309" id="Tls10309" label="morphology only" xml:base="http://purl.org/phylo/treebase/phylows/taxon/TB2:">
-    <meta content="Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@5f969b8c $Rev: 1040 $" datatype="xsd:string" id="ma72096" property="skos:historyNote" xsi:type="nex:LiteralMeta"/>
-    <otu about="#Tl116777" id="Tl116777" label="Anolis cuvieri">
-      <meta content="1723" datatype="xsd:integer" id="ma72098" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="4244" datatype="xsd:integer" id="ma72099" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/38890" id="ma72100" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2536325" id="ma72101" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" id="ma72102" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl104790" id="Tl104790" label="Anolis barahonae">
-      <meta content="1714" datatype="xsd:integer" id="ma72104" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="4223" datatype="xsd:integer" id="ma72105" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/75248" id="ma72106" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2536284" id="ma72107" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" id="ma72108" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl116823" id="Tl116823" label="Anolis alutaceus">
-      <meta content="1711" datatype="xsd:integer" id="ma72110" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="4216" datatype="xsd:integer" id="ma72111" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/38882" id="ma72112" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2536268" id="ma72113" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" id="ma72114" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl104791" id="Tl104791" label="Anolis vanidicus">
-      <meta content="1757" datatype="xsd:integer" id="ma72116" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="4309" datatype="xsd:integer" id="ma72117" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/75273" id="ma72118" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2536502" id="ma72119" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" id="ma72120" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl104787" id="Tl104787" label="Anolis maynardi">
-      <meta content="1742" datatype="xsd:integer" id="ma72122" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="4281" datatype="xsd:integer" id="ma72123" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/75265" id="ma72124" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2536408" id="ma72125" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" id="ma72126" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl116818" id="Tl116818" label="Anolis carolinensis">
-      <meta content="1718" datatype="xsd:integer" id="ma72128" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="4232" datatype="xsd:integer" id="ma72129" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/28377" id="ma72130" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2536304" id="ma72131" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" id="ma72132" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl116782" id="Tl116782" label="Anolis angusticeps">
-      <meta content="1712" datatype="xsd:integer" id="ma72134" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="4218" datatype="xsd:integer" id="ma72135" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/75246" id="ma72136" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2536271" id="ma72137" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" id="ma72138" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl104758" id="Tl104758" label="Anolis sheplani">
-      <meta content="1753" datatype="xsd:integer" id="ma72140" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="4299" datatype="xsd:integer" id="ma72141" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/75270" id="ma72142" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2536484" id="ma72143" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" id="ma72144" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl116827" id="Tl116827" label="Anolis paternus">
-      <meta content="1748" datatype="xsd:integer" id="ma72146" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="4292" datatype="xsd:integer" id="ma72147" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/52189" id="ma72148" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2536438" id="ma72149" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" id="ma72150" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl104761" id="Tl104761" label="Anolis loysiana">
-      <meta content="1737" datatype="xsd:integer" id="ma72152" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="4268" datatype="xsd:integer" id="ma72153" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/75261" id="ma72154" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:184549" id="ma72155" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" id="ma72156" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl104766" id="Tl104766" label="Anolis pumilis">
-      <meta content="1749" datatype="xsd:integer" id="ma72158" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="4293" datatype="xsd:integer" id="ma72159" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/75268" id="ma72160" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:216188" id="ma72161" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" id="ma72162" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl66070" id="Tl66070" label="Anolis lucius">
-      <meta content="1739" datatype="xsd:integer" id="ma72164" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="4274" datatype="xsd:integer" id="ma72165" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/38898" id="ma72166" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2536391" id="ma72167" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" id="ma72168" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl116798" id="Tl116798" label="Anolis vermiculatus">
-      <meta content="1758" datatype="xsd:integer" id="ma72170" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="4310" datatype="xsd:integer" id="ma72171" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/75274" id="ma72172" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2536505" id="ma72173" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" id="ma72174" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl116811" id="Tl116811" label="Anolis bartschi">
-      <meta content="1715" datatype="xsd:integer" id="ma72176" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="4226" datatype="xsd:integer" id="ma72177" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/75249" id="ma72178" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2536288" id="ma72179" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" id="ma72180" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl104776" id="Tl104776" label="Anolis aliniger">
-      <meta content="1710" datatype="xsd:integer" id="ma72182" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="4215" datatype="xsd:integer" id="ma72183" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/75244" id="ma72184" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2536264" id="ma72185" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" id="ma72186" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl116791" id="Tl116791" label="Anolis coelestinus">
-      <meta content="1721" datatype="xsd:integer" id="ma72188" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="4239" datatype="xsd:integer" id="ma72189" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/75252" id="ma72190" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2536317" id="ma72191" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" id="ma72192" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl104789" id="Tl104789" label="Anolis christophei">
-      <meta content="1720" datatype="xsd:integer" id="ma72194" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="4237" datatype="xsd:integer" id="ma72195" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/38888" id="ma72196" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2536312" id="ma72197" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" id="ma72198" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl104786" id="Tl104786" label="Anolis strahmi">
-      <meta content="1754" datatype="xsd:integer" id="ma72200" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="4302" datatype="xsd:integer" id="ma72201" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/75271" id="ma72202" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2536492" id="ma72203" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" id="ma72204" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl104769" id="Tl104769" label="Anolis marcanoi">
-      <meta content="1741" datatype="xsd:integer" id="ma72206" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="4279" datatype="xsd:integer" id="ma72207" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/75264" id="ma72208" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2536398" id="ma72209" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" id="ma72210" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl116786" id="Tl116786" label="Anolis distichus">
-      <meta content="1726" datatype="xsd:integer" id="ma72212" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="4252" datatype="xsd:integer" id="ma72213" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/38893" id="ma72214" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2536334" id="ma72215" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" id="ma72216" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl104763" id="Tl104763" label="Anolis brevirostris">
-      <meta content="1717" datatype="xsd:integer" id="ma72218" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="4231" datatype="xsd:integer" id="ma72219" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/75250" id="ma72220" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2536297" id="ma72221" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" id="ma72222" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl104781" id="Tl104781" label="Anolis agassizi">
-      <meta content="1708" datatype="xsd:integer" id="ma72224" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="4211" datatype="xsd:integer" id="ma72225" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/75242" id="ma72226" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2536259" id="ma72227" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" id="ma72228" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl104760" id="Tl104760" label="Anolis luciae">
-      <meta content="1738" datatype="xsd:integer" id="ma72230" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="4270" datatype="xsd:integer" id="ma72231" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/75262" id="ma72232" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2536390" id="ma72233" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" id="ma72234" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl104779" id="Tl104779" label="Anolis aeneus">
-      <meta content="1707" datatype="xsd:integer" id="ma72236" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="4210" datatype="xsd:integer" id="ma72237" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/75241" id="ma72238" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2536257" id="ma72239" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" id="ma72240" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl104757" id="Tl104757" label="Anolis richardi">
-      <meta content="1751" datatype="xsd:integer" id="ma72242" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="4296" datatype="xsd:integer" id="ma72243" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta content="Anolis richardii" datatype="xsd:string" id="ma72244" property="skos:prefLabel" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/75269" id="ma72245" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:184676" id="ma72246" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" id="ma72247" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl104765" id="Tl104765" label="Phenacosaurus nicefori">
-      <meta content="21754" datatype="xsd:integer" id="ma72249" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="50606" datatype="xsd:integer" id="ma72250" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/75282" id="ma72251" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2543497" id="ma72252" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" id="ma72253" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl104778" id="Tl104778" label="Anolis microtus">
-      <meta content="1743" datatype="xsd:integer" id="ma72255" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="4282" datatype="xsd:integer" id="ma72256" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/75266" id="ma72257" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2536412" id="ma72258" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" id="ma72259" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl104770" id="Tl104770" label="Chamaelinorops barbouri">
-      <meta content="5688" datatype="xsd:integer" id="ma72261" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="13782" datatype="xsd:integer" id="ma72262" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/75278" id="ma72263" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:187408" id="ma72264" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" id="ma72265" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl104756" id="Tl104756" label="Anolis olssoni">
-      <meta content="1746" datatype="xsd:integer" id="ma72267" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="4288" datatype="xsd:integer" id="ma72268" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/75267" id="ma72269" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2536433" id="ma72270" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" id="ma72271" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl104788" id="Tl104788" label="Anolis humilis">
-      <meta content="1731" datatype="xsd:integer" id="ma72273" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="4260" datatype="xsd:integer" id="ma72274" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/75256" id="ma72275" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:184496" id="ma72276" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" id="ma72277" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl104771" id="Tl104771" label="Anolis limifrons">
-      <meta content="1734" datatype="xsd:integer" id="ma72279" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="4265" datatype="xsd:integer" id="ma72280" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/38897" id="ma72281" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:184532" id="ma72282" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" id="ma72283" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl104784" id="Tl104784" label="Anolis ophiolepis">
-      <meta content="1747" datatype="xsd:integer" id="ma72285" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="4290" datatype="xsd:integer" id="ma72286" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/38900" id="ma72287" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:184623" id="ma72288" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" id="ma72289" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl104775" id="Tl104775" label="Anolis ahli">
-      <meta content="1709" datatype="xsd:integer" id="ma72291" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="4213" datatype="xsd:integer" id="ma72292" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/75243" id="ma72293" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:184259" id="ma72294" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" id="ma72295" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl116816" id="Tl116816" label="Anolis sagrei">
-      <meta content="1752" datatype="xsd:integer" id="ma72297" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="4298" datatype="xsd:integer" id="ma72298" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/38937" id="ma72299" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2536477" id="ma72300" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" id="ma72301" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl116806" id="Tl116806" label="Anolis valencienni">
-      <meta content="1756" datatype="xsd:integer" id="ma72303" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="4307" datatype="xsd:integer" id="ma72304" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/141902" id="ma72305" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:184769" id="ma72306" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" id="ma72307" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl104774" id="Tl104774" label="Anolis grahami">
-      <meta content="1730" datatype="xsd:integer" id="ma72309" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="4259" datatype="xsd:integer" id="ma72310" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/38894" id="ma72311" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:5591179" id="ma72312" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" id="ma72313" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl104772" id="Tl104772" label="Anolis lineatopus">
-      <meta content="1735" datatype="xsd:integer" id="ma72315" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="4266" datatype="xsd:integer" id="ma72316" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/75259" id="ma72317" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:184538" id="ma72318" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" id="ma72319" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl104783" id="Tl104783" label="Anolis garmani">
-      <meta content="1729" datatype="xsd:integer" id="ma72321" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="4258" datatype="xsd:integer" id="ma72322" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/75255" id="ma72323" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2536357" id="ma72324" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" id="ma72325" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl104759" id="Tl104759" label="Anolis lineatus">
-      <meta content="1736" datatype="xsd:integer" id="ma72327" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="4267" datatype="xsd:integer" id="ma72328" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/75260" id="ma72329" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:184539" id="ma72330" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" id="ma72331" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl104768" id="Tl104768" label="Anolis etheridgei">
-      <meta content="1728" datatype="xsd:integer" id="ma72333" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="4256" datatype="xsd:integer" id="ma72334" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/75254" id="ma72335" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2536341" id="ma72336" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" id="ma72337" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl104773" id="Tl104773" label="Anolis insolitus">
-      <meta content="1732" datatype="xsd:integer" id="ma72339" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="4262" datatype="xsd:integer" id="ma72340" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/75257" id="ma72341" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2536374" id="ma72342" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" id="ma72343" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl116819" id="Tl116819" label="Anolis bahorucoensis">
-      <meta content="1713" datatype="xsd:integer" id="ma72345" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="4221" datatype="xsd:integer" id="ma72346" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/75247" id="ma72347" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2536281" id="ma72348" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" id="ma72349" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl104767" id="Tl104767" label="Anolis wattsi">
-      <meta content="1759" datatype="xsd:integer" id="ma72351" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="4312" datatype="xsd:integer" id="ma72352" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/75275" id="ma72353" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2536507" id="ma72354" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" id="ma72355" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl104777" id="Tl104777" label="Anolis bimaculatus">
-      <meta content="1716" datatype="xsd:integer" id="ma72357" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="4227" datatype="xsd:integer" id="ma72358" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/38885" id="ma72359" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2536289" id="ma72360" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" id="ma72361" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl104780" id="Tl104780" label="Anolis stratulus">
-      <meta content="1755" datatype="xsd:integer" id="ma72363" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="4303" datatype="xsd:integer" id="ma72364" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/75272" id="ma72365" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2536493" id="ma72366" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" id="ma72367" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl104764" id="Tl104764" label="Anolis krugi">
-      <meta content="1733" datatype="xsd:integer" id="ma72369" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="4264" datatype="xsd:integer" id="ma72370" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/75258" id="ma72371" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3403213" id="ma72372" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" id="ma72373" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl116779" id="Tl116779" label="Anolis cristatellus">
-      <meta content="1722" datatype="xsd:integer" id="ma72375" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="4240" datatype="xsd:integer" id="ma72376" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/38889" id="ma72377" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2536320" id="ma72378" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" id="ma72379" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl104782" id="Tl104782" label="Anolis acutus">
-      <meta content="1706" datatype="xsd:integer" id="ma72381" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="4206" datatype="xsd:integer" id="ma72382" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/75240" id="ma72383" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2536255" id="ma72384" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" id="ma72385" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl116809" id="Tl116809" label="Polychrus acutirostris">
-      <meta content="23297" datatype="xsd:integer" id="ma72387" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="54499" datatype="xsd:integer" id="ma72388" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/161137" id="ma72389" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2543911" id="ma72390" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" id="ma72391" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl116778" id="Tl116778" label="Diplolaemus darwinii">
-      <meta content="9258" datatype="xsd:integer" id="ma72393" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="22173" datatype="xsd:integer" id="ma72394" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/75280" id="ma72395" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:5957045" id="ma72396" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" id="ma72397" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl66067" id="Tl66067" label="Anolis equestris">
-      <meta content="1727" datatype="xsd:integer" id="ma72399" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="4253" datatype="xsd:integer" id="ma72400" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/75253" id="ma72401" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2536339" id="ma72402" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" id="ma72403" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl116808" id="Tl116808" label="Anolis luteogularis">
-      <meta content="1740" datatype="xsd:integer" id="ma72405" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="4276" datatype="xsd:integer" id="ma72406" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/75263" id="ma72407" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2536392" id="ma72408" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" id="ma72409" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl104762" id="Tl104762" label="Anolis occultus">
-      <meta content="1745" datatype="xsd:integer" id="ma72411" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="4286" datatype="xsd:integer" id="ma72412" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/38899" id="ma72413" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2536430" id="ma72414" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" id="ma72415" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl104755" id="Tl104755" label="Chamaeleolis guamuhaya">
-      <meta content="5685" datatype="xsd:integer" id="ma72417" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="13778" datatype="xsd:integer" id="ma72418" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/75283" id="ma72419" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:187292" id="ma72420" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" id="ma72421" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-    <otu about="#Tl104785" id="Tl104785" label="Chamaeleolis chamaeleonides">
-      <meta content="5684" datatype="xsd:integer" id="ma72423" property="tb:identifier.taxon" xsi:type="nex:LiteralMeta"/>
-      <meta content="13777" datatype="xsd:integer" id="ma72424" property="tb:identifier.taxonVariant" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.uniprot.org/taxonomy/38887" id="ma72425" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:187290" id="ma72426" rel="skos:closeMatch" xsi:type="nex:ResourceMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" id="ma72427" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-    </otu>
-  </otus>
-  <trees about="#trees120368" id="trees120368" otus="Tls10309" xml:base="http://purl.org/phylo/treebase/phylows/tree/TB2:">
-    <meta content="Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlTreeBlockWriter@3fd6f3df $Rev: 1040 $" datatype="xsd:string" id="ma72429" property="skos:historyNote" xsi:type="nex:LiteralMeta"/>
-    <tree about="#Tr3567" id="Tr3567" label="Fig. 9" xsi:type="nex:IntTree">
-      <meta content="55" datatype="xsd:integer" id="ma72431" property="tb:ntax.tree" xsi:type="nex:LiteralMeta"/>
-      <meta content="Unrated" datatype="xsd:string" id="ma72432" property="tb:quality.tree" xsi:type="nex:LiteralMeta"/>
-      <meta content="Consensus" datatype="xsd:string" id="ma72433" property="tb:type.tree" xsi:type="nex:LiteralMeta"/>
-      <meta content="Species Tree" datatype="xsd:string" id="ma72434" property="tb:kind.tree" xsi:type="nex:LiteralMeta"/>
-      <meta href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" id="ma72435" rel="rdfs:isDefinedBy" xsi:type="nex:ResourceMeta"/>
-      <node about="#Tn251929" id="Tn251929" root="true"/>
-      <node about="#Tn251964" id="Tn251964" label="Diplolaemus darwinii" otu="Tl116778"/>
-      <node about="#Tn251948" id="Tn251948"/>
-      <node about="#Tn251944" id="Tn251944" label="Polychrus acutirostris" otu="Tl116809"/>
-      <node about="#Tn251961" id="Tn251961"/>
-      <node about="#Tn251962" id="Tn251962"/>
-      <node about="#Tn251938" id="Tn251938" label="Anolis microtus" otu="Tl104778"/>
-      <node about="#Tn251915" id="Tn251915"/>
-      <node about="#Tn251923" id="Tn251923"/>
-      <node about="#Tn251952" id="Tn251952" label="Anolis richardi" otu="Tl104757"/>
-      <node about="#Tn251932" id="Tn251932" label="Anolis aeneus" otu="Tl104779"/>
-      <node about="#Tn251947" id="Tn251947" label="Anolis luciae" otu="Tl104760"/>
-      <node about="#Tn251935" id="Tn251935" label="Anolis agassizi" otu="Tl104781"/>
-      <node about="#Tn251960" id="Tn251960" label="Anolis occultus" otu="Tl104762"/>
-      <node about="#Tn251969" id="Tn251969" label="Phenacosaurus nicefori" otu="Tl104765"/>
-      <node about="#Tn251978" id="Tn251978"/>
-      <node about="#Tn251957" id="Tn251957" label="Chamaeleolis chamaeleonides" otu="Tl104785"/>
-      <node about="#Tn251977" id="Tn251977"/>
-      <node about="#Tn251983" id="Tn251983" label="Anolis distichus" otu="Tl116786"/>
-      <node about="#Tn251974" id="Tn251974"/>
-      <node about="#Tn251933" id="Tn251933" label="Anolis luteogularis" otu="Tl116808"/>
-      <node about="#Tn251930" id="Tn251930" label="Anolis equestris" otu="Tl66067"/>
-      <node about="#Tn251910" id="Tn251910" label="Anolis barahonae" otu="Tl104790"/>
-      <node about="#Tn251912" id="Tn251912" label="Anolis cuvieri" otu="Tl116777"/>
-      <node about="#Tn251931" id="Tn251931" label="Anolis brevirostris" otu="Tl104763"/>
-      <node about="#Tn251922" id="Tn251922"/>
-      <node about="#Tn251972" id="Tn251972" label="Anolis stratulus" otu="Tl104780"/>
-      <node about="#Tn251979" id="Tn251979" label="Anolis acutus" otu="Tl104782"/>
-      <node about="#Tn251967" id="Tn251967" label="Anolis bimaculatus" otu="Tl104777"/>
-      <node about="#Tn251926" id="Tn251926"/>
-      <node about="#Tn251956" id="Tn251956"/>
-      <node about="#Tn251946" id="Tn251946" label="Anolis bahorucoensis" otu="Tl116819"/>
-      <node about="#Tn251981" id="Tn251981" label="Anolis christophei" otu="Tl104789"/>
-      <node about="#Tn251908" id="Tn251908" label="Anolis wattsi" otu="Tl104767"/>
-      <node about="#Tn251954" id="Tn251954" label="Anolis bartschi" otu="Tl116811"/>
-      <node about="#Tn251955" id="Tn251955" label="Anolis lucius" otu="Tl66070"/>
-      <node about="#Tn251918" id="Tn251918"/>
-      <node about="#Tn251976" id="Tn251976" label="Anolis cristatellus" otu="Tl116779"/>
-      <node about="#Tn251980" id="Tn251980" label="Anolis krugi" otu="Tl104764"/>
-      <node about="#Tn251949" id="Tn251949"/>
-      <node about="#Tn251916" id="Tn251916"/>
-      <node about="#Tn251927" id="Tn251927"/>
-      <node about="#Tn251971" id="Tn251971" label="Anolis carolinensis" otu="Tl116818"/>
-      <node about="#Tn251936" id="Tn251936" label="Anolis maynardi" otu="Tl104787"/>
-      <node about="#Tn251988" id="Tn251988"/>
-      <node about="#Tn251968" id="Tn251968" label="Anolis etheridgei" otu="Tl104768"/>
-      <node about="#Tn251951" id="Tn251951"/>
-      <node about="#Tn251940" id="Tn251940" label="Anolis alutaceus" otu="Tl116823"/>
-      <node about="#Tn251975" id="Tn251975"/>
-      <node about="#Tn251970" id="Tn251970" label="Anolis limifrons" otu="Tl104771"/>
-      <node about="#Tn251920" id="Tn251920" label="Anolis coelestinus" otu="Tl116791"/>
-      <node about="#Tn251986" id="Tn251986" label="Anolis aliniger" otu="Tl104776"/>
-      <node about="#Tn251942" id="Tn251942"/>
-      <node about="#Tn251941" id="Tn251941" label="Anolis olssoni" otu="Tl104756"/>
-      <node about="#Tn251963" id="Tn251963" label="Anolis loysiana" otu="Tl104761"/>
-      <node about="#Tn251913" id="Tn251913" label="Anolis paternus" otu="Tl116827"/>
-      <node about="#Tn251937" id="Tn251937" label="Anolis angusticeps" otu="Tl116782"/>
-      <node about="#Tn251984" id="Tn251984"/>
-      <node about="#Tn251924" id="Tn251924"/>
-      <node about="#Tn251973" id="Tn251973"/>
-      <node about="#Tn251982" id="Tn251982" label="Anolis pumilis" otu="Tl104766"/>
-      <node about="#Tn251965" id="Tn251965" label="Anolis lineatopus" otu="Tl104772"/>
-      <node about="#Tn251985" id="Tn251985" label="Anolis valencienni" otu="Tl116806"/>
-      <node about="#Tn251959" id="Tn251959"/>
-      <node about="#Tn251914" id="Tn251914" label="Anolis garmani" otu="Tl104783"/>
-      <node about="#Tn251958" id="Tn251958" label="Anolis lineatus" otu="Tl104759"/>
-      <node about="#Tn251909" id="Tn251909" label="Anolis grahami" otu="Tl104774"/>
-      <node about="#Tn251934" id="Tn251934" label="Anolis vermiculatus" otu="Tl116798"/>
-      <node about="#Tn251925" id="Tn251925"/>
-      <node about="#Tn251928" id="Tn251928"/>
-      <node about="#Tn251966" id="Tn251966" label="Anolis sagrei" otu="Tl116816"/>
-      <node about="#Tn251989" id="Tn251989" label="Anolis ahli" otu="Tl104775"/>
-      <node about="#Tn251950" id="Tn251950" label="Anolis ophiolepis" otu="Tl104784"/>
-      <node about="#Tn251907" id="Tn251907" label="Anolis humilis" otu="Tl104788"/>
-      <node about="#Tn251917" id="Tn251917"/>
-      <node about="#Tn251919" id="Tn251919"/>
-      <node about="#Tn251939" id="Tn251939" label="Anolis insolitus" otu="Tl104773"/>
-      <node about="#Tn251987" id="Tn251987" label="Chamaelinorops barbouri" otu="Tl104770"/>
-      <node about="#Tn251953" id="Tn251953" label="Chamaeleolis guamuhaya" otu="Tl104755"/>
-      <node about="#Tn251943" id="Tn251943" label="Anolis marcanoi" otu="Tl104769"/>
-      <node about="#Tn251921" id="Tn251921" label="Anolis strahmi" otu="Tl104786"/>
-      <node about="#Tn251945" id="Tn251945" label="Anolis sheplani" otu="Tl104758"/>
-      <node about="#Tn251911" id="Tn251911" label="Anolis vanidicus" otu="Tl104791"/>
-      <edge id="edge72437" source="Tn251929" target="Tn251964"/>
-      <edge id="edge72438" source="Tn251929" target="Tn251948"/>
-      <edge id="edge72439" source="Tn251948" target="Tn251944"/>
-      <edge id="edge72440" source="Tn251948" target="Tn251961"/>
-      <edge id="edge72441" source="Tn251961" target="Tn251962"/>
-      <edge id="edge72446" source="Tn251961" target="Tn251938"/>
-      <edge id="edge72447" source="Tn251961" target="Tn251915"/>
-      <edge id="edge72450" source="Tn251961" target="Tn251923"/>
-      <edge id="edge72442" source="Tn251962" target="Tn251952"/>
-      <edge id="edge72443" source="Tn251962" target="Tn251932"/>
-      <edge id="edge72444" source="Tn251962" target="Tn251947"/>
-      <edge id="edge72445" source="Tn251962" target="Tn251935"/>
-      <edge id="edge72448" source="Tn251915" target="Tn251960"/>
-      <edge id="edge72449" source="Tn251915" target="Tn251969"/>
-      <edge id="edge72451" source="Tn251923" target="Tn251978"/>
-      <edge id="edge72454" source="Tn251923" target="Tn251957"/>
-      <edge id="edge72455" source="Tn251923" target="Tn251977"/>
-      <edge id="edge72458" source="Tn251923" target="Tn251983"/>
-      <edge id="edge72459" source="Tn251923" target="Tn251974"/>
-      <edge id="edge72452" source="Tn251978" target="Tn251933"/>
-      <edge id="edge72453" source="Tn251978" target="Tn251930"/>
-      <edge id="edge72456" source="Tn251977" target="Tn251910"/>
-      <edge id="edge72457" source="Tn251977" target="Tn251912"/>
-      <edge id="edge72460" source="Tn251974" target="Tn251931"/>
-      <edge id="edge72461" source="Tn251974" target="Tn251922"/>
-      <edge id="edge72466" source="Tn251974" target="Tn251972"/>
-      <edge id="edge72467" source="Tn251974" target="Tn251979"/>
-      <edge id="edge72468" source="Tn251974" target="Tn251967"/>
-      <edge id="edge72469" source="Tn251974" target="Tn251926"/>
-      <edge id="edge72462" source="Tn251922" target="Tn251956"/>
-      <edge id="edge72465" source="Tn251922" target="Tn251946"/>
-      <edge id="edge72470" source="Tn251926" target="Tn251981"/>
-      <edge id="edge72471" source="Tn251926" target="Tn251908"/>
-      <edge id="edge72472" source="Tn251926" target="Tn251954"/>
-      <edge id="edge72473" source="Tn251926" target="Tn251955"/>
-      <edge id="edge72474" source="Tn251926" target="Tn251918"/>
-      <edge id="edge72463" source="Tn251956" target="Tn251976"/>
-      <edge id="edge72464" source="Tn251956" target="Tn251980"/>
-      <edge id="edge72475" source="Tn251918" target="Tn251949"/>
-      <edge id="edge72495" source="Tn251918" target="Tn251916"/>
-      <edge id="edge72514" source="Tn251918" target="Tn251927"/>
-      <edge id="edge72517" source="Tn251918" target="Tn251971"/>
-      <edge id="edge72518" source="Tn251918" target="Tn251936"/>
-      <edge id="edge72476" source="Tn251949" target="Tn251988"/>
-      <edge id="edge72489" source="Tn251949" target="Tn251968"/>
-      <edge id="edge72490" source="Tn251949" target="Tn251951"/>
-      <edge id="edge72494" source="Tn251949" target="Tn251940"/>
-      <edge id="edge72496" source="Tn251916" target="Tn251975"/>
-      <edge id="edge72513" source="Tn251916" target="Tn251970"/>
-      <edge id="edge72515" source="Tn251927" target="Tn251920"/>
-      <edge id="edge72516" source="Tn251927" target="Tn251986"/>
-      <edge id="edge72477" source="Tn251988" target="Tn251942"/>
-      <edge id="edge72488" source="Tn251988" target="Tn251941"/>
-      <edge id="edge72491" source="Tn251951" target="Tn251963"/>
-      <edge id="edge72492" source="Tn251951" target="Tn251913"/>
-      <edge id="edge72493" source="Tn251951" target="Tn251937"/>
-      <edge id="edge72497" source="Tn251975" target="Tn251984"/>
-      <edge id="edge72508" source="Tn251975" target="Tn251924"/>
-      <edge id="edge72478" source="Tn251942" target="Tn251973"/>
-      <edge id="edge72487" source="Tn251942" target="Tn251982"/>
-      <edge id="edge72498" source="Tn251984" target="Tn251965"/>
-      <edge id="edge72499" source="Tn251984" target="Tn251985"/>
-      <edge id="edge72500" source="Tn251984" target="Tn251959"/>
-      <edge id="edge72509" source="Tn251924" target="Tn251914"/>
-      <edge id="edge72510" source="Tn251924" target="Tn251958"/>
-      <edge id="edge72511" source="Tn251924" target="Tn251909"/>
-      <edge id="edge72512" source="Tn251924" target="Tn251934"/>
-      <edge id="edge72479" source="Tn251973" target="Tn251925"/>
-      <edge id="edge72484" source="Tn251973" target="Tn251928"/>
-      <edge id="edge72501" source="Tn251959" target="Tn251966"/>
-      <edge id="edge72502" source="Tn251959" target="Tn251989"/>
-      <edge id="edge72503" source="Tn251959" target="Tn251950"/>
-      <edge id="edge72504" source="Tn251959" target="Tn251907"/>
-      <edge id="edge72505" source="Tn251959" target="Tn251917"/>
-      <edge id="edge72480" source="Tn251925" target="Tn251919"/>
-      <edge id="edge72483" source="Tn251925" target="Tn251939"/>
-      <edge id="edge72485" source="Tn251928" target="Tn251987"/>
-      <edge id="edge72486" source="Tn251928" target="Tn251953"/>
-      <edge id="edge72506" source="Tn251917" target="Tn251943"/>
-      <edge id="edge72507" source="Tn251917" target="Tn251921"/>
-      <edge id="edge72481" source="Tn251919" target="Tn251945"/>
-      <edge id="edge72482" source="Tn251919" target="Tn251911"/>
-    </tree>
-  </trees>
-</nex:nexml>
+<nex:nexml xmlns="http://www.nexml.org/2009" version="0.9" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xsi:schemaLocation="http://www.nexml.org/2009 http://www.nexml.org/2009/nexml.xsd" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" generator="Bio::Phylo::Project v.0.46_1660" xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:nex="http://www.nexml.org/2009" xmlns:tb="http://purl.org/phylo/treebase/2.0/terms#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" about="#nl80061" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:dc="http://purl.org/dc/elements/1.1/"><meta xsi:type="nex:LiteralMeta" content="rvosa" id="ma80487" datatype="xsd:string" property="dc:creator"/><meta xsi:type="nex:LiteralMeta" content="2012-03-07T20:22:04" id="ma80488" datatype="xsd:date" property="dc:date"/><otus xml:base="http://purl.org/phylo/treebase/phylows/taxon/TB2:" label="morphology only" id="Tls10309" about="#Tls10309"><meta xsi:type="nex:LiteralMeta" content="Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@48fbd7 $Rev: 1040 $" id="ma80063" datatype="xsd:string" property="skos:historyNote"/>
+<otu label="Anolis cuvieri" id="Tl116777" about="#Tl116777"><meta xsi:type="nex:LiteralMeta" content="1723" id="ma80065" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="4244" id="ma80066" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/38890" xsi:type="nex:ResourceMeta" id="ma80067"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2536325" xsi:type="nex:ResourceMeta" id="ma80068"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" xsi:type="nex:ResourceMeta" id="ma80069"/></otu>
+<otu label="Anolis barahonae" id="Tl104790" about="#Tl104790"><meta xsi:type="nex:LiteralMeta" content="1714" id="ma80071" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="4223" id="ma80072" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/75248" xsi:type="nex:ResourceMeta" id="ma80073"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2536284" xsi:type="nex:ResourceMeta" id="ma80074"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" xsi:type="nex:ResourceMeta" id="ma80075"/></otu>
+<otu label="Anolis alutaceus" id="Tl116823" about="#Tl116823"><meta xsi:type="nex:LiteralMeta" content="1711" id="ma80077" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="4216" id="ma80078" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/38882" xsi:type="nex:ResourceMeta" id="ma80079"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2536268" xsi:type="nex:ResourceMeta" id="ma80080"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" xsi:type="nex:ResourceMeta" id="ma80081"/></otu>
+<otu label="Anolis vanidicus" id="Tl104791" about="#Tl104791"><meta xsi:type="nex:LiteralMeta" content="1757" id="ma80083" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="4309" id="ma80084" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/75273" xsi:type="nex:ResourceMeta" id="ma80085"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2536502" xsi:type="nex:ResourceMeta" id="ma80086"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" xsi:type="nex:ResourceMeta" id="ma80087"/></otu>
+<otu label="Anolis maynardi" id="Tl104787" about="#Tl104787"><meta xsi:type="nex:LiteralMeta" content="1742" id="ma80089" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="4281" id="ma80090" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/75265" xsi:type="nex:ResourceMeta" id="ma80091"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2536408" xsi:type="nex:ResourceMeta" id="ma80092"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" xsi:type="nex:ResourceMeta" id="ma80093"/></otu>
+<otu label="Anolis carolinensis" id="Tl116818" about="#Tl116818"><meta xsi:type="nex:LiteralMeta" content="1718" id="ma80095" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="4232" id="ma80096" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/28377" xsi:type="nex:ResourceMeta" id="ma80097"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2536304" xsi:type="nex:ResourceMeta" id="ma80098"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" xsi:type="nex:ResourceMeta" id="ma80099"/></otu>
+<otu label="Anolis angusticeps" id="Tl116782" about="#Tl116782"><meta xsi:type="nex:LiteralMeta" content="1712" id="ma80101" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="4218" id="ma80102" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/75246" xsi:type="nex:ResourceMeta" id="ma80103"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2536271" xsi:type="nex:ResourceMeta" id="ma80104"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" xsi:type="nex:ResourceMeta" id="ma80105"/></otu>
+<otu label="Anolis sheplani" id="Tl104758" about="#Tl104758"><meta xsi:type="nex:LiteralMeta" content="1753" id="ma80107" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="4299" id="ma80108" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/75270" xsi:type="nex:ResourceMeta" id="ma80109"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2536484" xsi:type="nex:ResourceMeta" id="ma80110"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" xsi:type="nex:ResourceMeta" id="ma80111"/></otu>
+<otu label="Anolis paternus" id="Tl116827" about="#Tl116827"><meta xsi:type="nex:LiteralMeta" content="1748" id="ma80113" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="4292" id="ma80114" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/52189" xsi:type="nex:ResourceMeta" id="ma80115"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2536438" xsi:type="nex:ResourceMeta" id="ma80116"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" xsi:type="nex:ResourceMeta" id="ma80117"/></otu>
+<otu label="Anolis loysiana" id="Tl104761" about="#Tl104761"><meta xsi:type="nex:LiteralMeta" content="1737" id="ma80119" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="4268" id="ma80120" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/75261" xsi:type="nex:ResourceMeta" id="ma80121"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:184549" xsi:type="nex:ResourceMeta" id="ma80122"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" xsi:type="nex:ResourceMeta" id="ma80123"/></otu>
+<otu label="Anolis pumilis" id="Tl104766" about="#Tl104766"><meta xsi:type="nex:LiteralMeta" content="1749" id="ma80125" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="4293" id="ma80126" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/75268" xsi:type="nex:ResourceMeta" id="ma80127"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:216188" xsi:type="nex:ResourceMeta" id="ma80128"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" xsi:type="nex:ResourceMeta" id="ma80129"/></otu>
+<otu label="Anolis lucius" id="Tl66070" about="#Tl66070"><meta xsi:type="nex:LiteralMeta" content="1739" id="ma80131" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="4274" id="ma80132" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/38898" xsi:type="nex:ResourceMeta" id="ma80133"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2536391" xsi:type="nex:ResourceMeta" id="ma80134"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" xsi:type="nex:ResourceMeta" id="ma80135"/></otu>
+<otu label="Anolis vermiculatus" id="Tl116798" about="#Tl116798"><meta xsi:type="nex:LiteralMeta" content="1758" id="ma80137" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="4310" id="ma80138" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/75274" xsi:type="nex:ResourceMeta" id="ma80139"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2536505" xsi:type="nex:ResourceMeta" id="ma80140"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" xsi:type="nex:ResourceMeta" id="ma80141"/></otu>
+<otu label="Anolis bartschi" id="Tl116811" about="#Tl116811"><meta xsi:type="nex:LiteralMeta" content="1715" id="ma80143" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="4226" id="ma80144" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/75249" xsi:type="nex:ResourceMeta" id="ma80145"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2536288" xsi:type="nex:ResourceMeta" id="ma80146"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" xsi:type="nex:ResourceMeta" id="ma80147"/></otu>
+<otu label="Anolis aliniger" id="Tl104776" about="#Tl104776"><meta xsi:type="nex:LiteralMeta" content="1710" id="ma80149" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="4215" id="ma80150" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/75244" xsi:type="nex:ResourceMeta" id="ma80151"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2536264" xsi:type="nex:ResourceMeta" id="ma80152"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" xsi:type="nex:ResourceMeta" id="ma80153"/></otu>
+<otu label="Anolis coelestinus" id="Tl116791" about="#Tl116791"><meta xsi:type="nex:LiteralMeta" content="1721" id="ma80155" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="4239" id="ma80156" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/75252" xsi:type="nex:ResourceMeta" id="ma80157"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2536317" xsi:type="nex:ResourceMeta" id="ma80158"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" xsi:type="nex:ResourceMeta" id="ma80159"/></otu>
+<otu label="Anolis christophei" id="Tl104789" about="#Tl104789"><meta xsi:type="nex:LiteralMeta" content="1720" id="ma80161" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="4237" id="ma80162" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/38888" xsi:type="nex:ResourceMeta" id="ma80163"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2536312" xsi:type="nex:ResourceMeta" id="ma80164"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" xsi:type="nex:ResourceMeta" id="ma80165"/></otu>
+<otu label="Anolis strahmi" id="Tl104786" about="#Tl104786"><meta xsi:type="nex:LiteralMeta" content="1754" id="ma80167" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="4302" id="ma80168" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/75271" xsi:type="nex:ResourceMeta" id="ma80169"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2536492" xsi:type="nex:ResourceMeta" id="ma80170"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" xsi:type="nex:ResourceMeta" id="ma80171"/></otu>
+<otu label="Anolis marcanoi" id="Tl104769" about="#Tl104769"><meta xsi:type="nex:LiteralMeta" content="1741" id="ma80173" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="4279" id="ma80174" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/75264" xsi:type="nex:ResourceMeta" id="ma80175"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2536398" xsi:type="nex:ResourceMeta" id="ma80176"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" xsi:type="nex:ResourceMeta" id="ma80177"/></otu>
+<otu label="Anolis distichus" id="Tl116786" about="#Tl116786"><meta xsi:type="nex:LiteralMeta" content="1726" id="ma80179" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="4252" id="ma80180" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/38893" xsi:type="nex:ResourceMeta" id="ma80181"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2536334" xsi:type="nex:ResourceMeta" id="ma80182"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" xsi:type="nex:ResourceMeta" id="ma80183"/></otu>
+<otu label="Anolis brevirostris" id="Tl104763" about="#Tl104763"><meta xsi:type="nex:LiteralMeta" content="1717" id="ma80185" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="4231" id="ma80186" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/75250" xsi:type="nex:ResourceMeta" id="ma80187"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2536297" xsi:type="nex:ResourceMeta" id="ma80188"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" xsi:type="nex:ResourceMeta" id="ma80189"/></otu>
+<otu label="Anolis agassizi" id="Tl104781" about="#Tl104781"><meta xsi:type="nex:LiteralMeta" content="1708" id="ma80191" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="4211" id="ma80192" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/75242" xsi:type="nex:ResourceMeta" id="ma80193"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2536259" xsi:type="nex:ResourceMeta" id="ma80194"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" xsi:type="nex:ResourceMeta" id="ma80195"/></otu>
+<otu label="Anolis luciae" id="Tl104760" about="#Tl104760"><meta xsi:type="nex:LiteralMeta" content="1738" id="ma80197" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="4270" id="ma80198" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/75262" xsi:type="nex:ResourceMeta" id="ma80199"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2536390" xsi:type="nex:ResourceMeta" id="ma80200"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" xsi:type="nex:ResourceMeta" id="ma80201"/></otu>
+<otu label="Anolis aeneus" id="Tl104779" about="#Tl104779"><meta xsi:type="nex:LiteralMeta" content="1707" id="ma80203" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="4210" id="ma80204" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/75241" xsi:type="nex:ResourceMeta" id="ma80205"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2536257" xsi:type="nex:ResourceMeta" id="ma80206"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" xsi:type="nex:ResourceMeta" id="ma80207"/></otu>
+<otu label="Anolis richardi" id="Tl104757" about="#Tl104757"><meta xsi:type="nex:LiteralMeta" content="1751" id="ma80209" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="4296" id="ma80210" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta xsi:type="nex:LiteralMeta" content="Anolis richardii" id="ma80211" datatype="xsd:string" property="skos:prefLabel"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/75269" xsi:type="nex:ResourceMeta" id="ma80212"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:184676" xsi:type="nex:ResourceMeta" id="ma80213"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" xsi:type="nex:ResourceMeta" id="ma80214"/></otu>
+<otu label="Phenacosaurus nicefori" id="Tl104765" about="#Tl104765"><meta xsi:type="nex:LiteralMeta" content="21754" id="ma80216" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="50606" id="ma80217" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/75282" xsi:type="nex:ResourceMeta" id="ma80218"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2543497" xsi:type="nex:ResourceMeta" id="ma80219"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" xsi:type="nex:ResourceMeta" id="ma80220"/></otu>
+<otu label="Anolis microtus" id="Tl104778" about="#Tl104778"><meta xsi:type="nex:LiteralMeta" content="1743" id="ma80222" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="4282" id="ma80223" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/75266" xsi:type="nex:ResourceMeta" id="ma80224"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2536412" xsi:type="nex:ResourceMeta" id="ma80225"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" xsi:type="nex:ResourceMeta" id="ma80226"/></otu>
+<otu label="Chamaelinorops barbouri" id="Tl104770" about="#Tl104770"><meta xsi:type="nex:LiteralMeta" content="5688" id="ma80228" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="13782" id="ma80229" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/75278" xsi:type="nex:ResourceMeta" id="ma80230"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:187408" xsi:type="nex:ResourceMeta" id="ma80231"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" xsi:type="nex:ResourceMeta" id="ma80232"/></otu>
+<otu label="Anolis olssoni" id="Tl104756" about="#Tl104756"><meta xsi:type="nex:LiteralMeta" content="1746" id="ma80234" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="4288" id="ma80235" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/75267" xsi:type="nex:ResourceMeta" id="ma80236"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2536433" xsi:type="nex:ResourceMeta" id="ma80237"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" xsi:type="nex:ResourceMeta" id="ma80238"/></otu>
+<otu label="Anolis humilis" id="Tl104788" about="#Tl104788"><meta xsi:type="nex:LiteralMeta" content="1731" id="ma80240" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="4260" id="ma80241" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/75256" xsi:type="nex:ResourceMeta" id="ma80242"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:184496" xsi:type="nex:ResourceMeta" id="ma80243"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" xsi:type="nex:ResourceMeta" id="ma80244"/></otu>
+<otu label="Anolis limifrons" id="Tl104771" about="#Tl104771"><meta xsi:type="nex:LiteralMeta" content="1734" id="ma80246" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="4265" id="ma80247" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/38897" xsi:type="nex:ResourceMeta" id="ma80248"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:184532" xsi:type="nex:ResourceMeta" id="ma80249"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" xsi:type="nex:ResourceMeta" id="ma80250"/></otu>
+<otu label="Anolis ophiolepis" id="Tl104784" about="#Tl104784"><meta xsi:type="nex:LiteralMeta" content="1747" id="ma80252" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="4290" id="ma80253" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/38900" xsi:type="nex:ResourceMeta" id="ma80254"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:184623" xsi:type="nex:ResourceMeta" id="ma80255"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" xsi:type="nex:ResourceMeta" id="ma80256"/></otu>
+<otu label="Anolis ahli" id="Tl104775" about="#Tl104775"><meta xsi:type="nex:LiteralMeta" content="1709" id="ma80258" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="4213" id="ma80259" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/75243" xsi:type="nex:ResourceMeta" id="ma80260"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:184259" xsi:type="nex:ResourceMeta" id="ma80261"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" xsi:type="nex:ResourceMeta" id="ma80262"/></otu>
+<otu label="Anolis sagrei" id="Tl116816" about="#Tl116816"><meta xsi:type="nex:LiteralMeta" content="1752" id="ma80264" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="4298" id="ma80265" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/38937" xsi:type="nex:ResourceMeta" id="ma80266"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2536477" xsi:type="nex:ResourceMeta" id="ma80267"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" xsi:type="nex:ResourceMeta" id="ma80268"/></otu>
+<otu label="Anolis valencienni" id="Tl116806" about="#Tl116806"><meta xsi:type="nex:LiteralMeta" content="1756" id="ma80270" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="4307" id="ma80271" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/141902" xsi:type="nex:ResourceMeta" id="ma80272"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:184769" xsi:type="nex:ResourceMeta" id="ma80273"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" xsi:type="nex:ResourceMeta" id="ma80274"/></otu>
+<otu label="Anolis grahami" id="Tl104774" about="#Tl104774"><meta xsi:type="nex:LiteralMeta" content="1730" id="ma80276" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="4259" id="ma80277" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/38894" xsi:type="nex:ResourceMeta" id="ma80278"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:5591179" xsi:type="nex:ResourceMeta" id="ma80279"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" xsi:type="nex:ResourceMeta" id="ma80280"/></otu>
+<otu label="Anolis lineatopus" id="Tl104772" about="#Tl104772"><meta xsi:type="nex:LiteralMeta" content="1735" id="ma80282" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="4266" id="ma80283" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/75259" xsi:type="nex:ResourceMeta" id="ma80284"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:184538" xsi:type="nex:ResourceMeta" id="ma80285"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" xsi:type="nex:ResourceMeta" id="ma80286"/></otu>
+<otu label="Anolis garmani" id="Tl104783" about="#Tl104783"><meta xsi:type="nex:LiteralMeta" content="1729" id="ma80288" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="4258" id="ma80289" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/75255" xsi:type="nex:ResourceMeta" id="ma80290"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2536357" xsi:type="nex:ResourceMeta" id="ma80291"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" xsi:type="nex:ResourceMeta" id="ma80292"/></otu>
+<otu label="Anolis lineatus" id="Tl104759" about="#Tl104759"><meta xsi:type="nex:LiteralMeta" content="1736" id="ma80294" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="4267" id="ma80295" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/75260" xsi:type="nex:ResourceMeta" id="ma80296"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:184539" xsi:type="nex:ResourceMeta" id="ma80297"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" xsi:type="nex:ResourceMeta" id="ma80298"/></otu>
+<otu label="Anolis etheridgei" id="Tl104768" about="#Tl104768"><meta xsi:type="nex:LiteralMeta" content="1728" id="ma80300" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="4256" id="ma80301" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/75254" xsi:type="nex:ResourceMeta" id="ma80302"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2536341" xsi:type="nex:ResourceMeta" id="ma80303"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" xsi:type="nex:ResourceMeta" id="ma80304"/></otu>
+<otu label="Anolis insolitus" id="Tl104773" about="#Tl104773"><meta xsi:type="nex:LiteralMeta" content="1732" id="ma80306" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="4262" id="ma80307" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/75257" xsi:type="nex:ResourceMeta" id="ma80308"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2536374" xsi:type="nex:ResourceMeta" id="ma80309"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" xsi:type="nex:ResourceMeta" id="ma80310"/></otu>
+<otu label="Anolis bahorucoensis" id="Tl116819" about="#Tl116819"><meta xsi:type="nex:LiteralMeta" content="1713" id="ma80312" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="4221" id="ma80313" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/75247" xsi:type="nex:ResourceMeta" id="ma80314"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2536281" xsi:type="nex:ResourceMeta" id="ma80315"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" xsi:type="nex:ResourceMeta" id="ma80316"/></otu>
+<otu label="Anolis wattsi" id="Tl104767" about="#Tl104767"><meta xsi:type="nex:LiteralMeta" content="1759" id="ma80318" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="4312" id="ma80319" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/75275" xsi:type="nex:ResourceMeta" id="ma80320"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2536507" xsi:type="nex:ResourceMeta" id="ma80321"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" xsi:type="nex:ResourceMeta" id="ma80322"/></otu>
+<otu label="Anolis bimaculatus" id="Tl104777" about="#Tl104777"><meta xsi:type="nex:LiteralMeta" content="1716" id="ma80324" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="4227" id="ma80325" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/38885" xsi:type="nex:ResourceMeta" id="ma80326"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2536289" xsi:type="nex:ResourceMeta" id="ma80327"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" xsi:type="nex:ResourceMeta" id="ma80328"/></otu>
+<otu label="Anolis stratulus" id="Tl104780" about="#Tl104780"><meta xsi:type="nex:LiteralMeta" content="1755" id="ma80330" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="4303" id="ma80331" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/75272" xsi:type="nex:ResourceMeta" id="ma80332"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2536493" xsi:type="nex:ResourceMeta" id="ma80333"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" xsi:type="nex:ResourceMeta" id="ma80334"/></otu>
+<otu label="Anolis krugi" id="Tl104764" about="#Tl104764"><meta xsi:type="nex:LiteralMeta" content="1733" id="ma80336" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="4264" id="ma80337" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/75258" xsi:type="nex:ResourceMeta" id="ma80338"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:3403213" xsi:type="nex:ResourceMeta" id="ma80339"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" xsi:type="nex:ResourceMeta" id="ma80340"/></otu>
+<otu label="Anolis cristatellus" id="Tl116779" about="#Tl116779"><meta xsi:type="nex:LiteralMeta" content="1722" id="ma80342" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="4240" id="ma80343" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/38889" xsi:type="nex:ResourceMeta" id="ma80344"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2536320" xsi:type="nex:ResourceMeta" id="ma80345"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" xsi:type="nex:ResourceMeta" id="ma80346"/></otu>
+<otu label="Anolis acutus" id="Tl104782" about="#Tl104782"><meta xsi:type="nex:LiteralMeta" content="1706" id="ma80348" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="4206" id="ma80349" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/75240" xsi:type="nex:ResourceMeta" id="ma80350"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2536255" xsi:type="nex:ResourceMeta" id="ma80351"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" xsi:type="nex:ResourceMeta" id="ma80352"/></otu>
+<otu label="Polychrus acutirostris" id="Tl116809" about="#Tl116809"><meta xsi:type="nex:LiteralMeta" content="23297" id="ma80354" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="54499" id="ma80355" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/161137" xsi:type="nex:ResourceMeta" id="ma80356"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2543911" xsi:type="nex:ResourceMeta" id="ma80357"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" xsi:type="nex:ResourceMeta" id="ma80358"/></otu>
+<otu label="Diplolaemus darwinii" id="Tl116778" about="#Tl116778"><meta xsi:type="nex:LiteralMeta" content="9258" id="ma80360" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="22173" id="ma80361" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/75280" xsi:type="nex:ResourceMeta" id="ma80362"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:5957045" xsi:type="nex:ResourceMeta" id="ma80363"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" xsi:type="nex:ResourceMeta" id="ma80364"/></otu>
+<otu label="Anolis equestris" id="Tl66067" about="#Tl66067"><meta xsi:type="nex:LiteralMeta" content="1727" id="ma80366" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="4253" id="ma80367" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/75253" xsi:type="nex:ResourceMeta" id="ma80368"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2536339" xsi:type="nex:ResourceMeta" id="ma80369"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" xsi:type="nex:ResourceMeta" id="ma80370"/></otu>
+<otu label="Anolis luteogularis" id="Tl116808" about="#Tl116808"><meta xsi:type="nex:LiteralMeta" content="1740" id="ma80372" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="4276" id="ma80373" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/75263" xsi:type="nex:ResourceMeta" id="ma80374"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2536392" xsi:type="nex:ResourceMeta" id="ma80375"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" xsi:type="nex:ResourceMeta" id="ma80376"/></otu>
+<otu label="Anolis occultus" id="Tl104762" about="#Tl104762"><meta xsi:type="nex:LiteralMeta" content="1745" id="ma80378" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="4286" id="ma80379" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/38899" xsi:type="nex:ResourceMeta" id="ma80380"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:2536430" xsi:type="nex:ResourceMeta" id="ma80381"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" xsi:type="nex:ResourceMeta" id="ma80382"/></otu>
+<otu label="Chamaeleolis guamuhaya" id="Tl104755" about="#Tl104755"><meta xsi:type="nex:LiteralMeta" content="5685" id="ma80384" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="13778" id="ma80385" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/75283" xsi:type="nex:ResourceMeta" id="ma80386"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:187292" xsi:type="nex:ResourceMeta" id="ma80387"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" xsi:type="nex:ResourceMeta" id="ma80388"/></otu>
+<otu label="Chamaeleolis chamaeleonides" id="Tl104785" about="#Tl104785"><meta xsi:type="nex:LiteralMeta" content="5684" id="ma80390" datatype="xsd:integer" property="tb:identifier.taxon"/><meta xsi:type="nex:LiteralMeta" content="13777" id="ma80391" datatype="xsd:integer" property="tb:identifier.taxonVariant"/><meta rel="skos:closeMatch" href="http://purl.uniprot.org/taxonomy/38887" xsi:type="nex:ResourceMeta" id="ma80392"/><meta rel="skos:closeMatch" href="http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:187290" xsi:type="nex:ResourceMeta" id="ma80393"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" xsi:type="nex:ResourceMeta" id="ma80394"/></otu></otus><trees otus="Tls10309" xml:base="http://purl.org/phylo/treebase/phylows/tree/TB2:" id="trees85517" about="#trees85517"><meta xsi:type="nex:LiteralMeta" content="Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlTreeBlockWriter@5d09e28b $Rev: 1040 $" id="ma80396" datatype="xsd:string" property="skos:historyNote"/>
+<tree xsi:type="nex:IntTree" label="Fig. 9" id="Tr3567" about="#Tr3567"><meta xsi:type="nex:LiteralMeta" content="55" id="ma80398" datatype="xsd:integer" property="tb:ntax.tree"/><meta xsi:type="nex:LiteralMeta" content="Unrated" id="ma80399" datatype="xsd:string" property="tb:quality.tree"/><meta xsi:type="nex:LiteralMeta" content="Consensus" id="ma80400" datatype="xsd:string" property="tb:type.tree"/><meta xsi:type="nex:LiteralMeta" content="Species Tree" id="ma80401" datatype="xsd:string" property="tb:kind.tree"/><meta rel="rdfs:isDefinedBy" href="http://purl.org/phylo/treebase/phylows/study/TB2:S603" xsi:type="nex:ResourceMeta" id="ma80402"/>
+<node root="true" id="Tn251929" about="#Tn251929"/>
+<node label="Diplolaemus darwinii" id="Tn251964" about="#Tn251964" otu="Tl116778"/>
+<node id="Tn251948" about="#Tn251948"/>
+<node label="Polychrus acutirostris" id="Tn251944" about="#Tn251944" otu="Tl116809"/>
+<node id="Tn251961" about="#Tn251961"/>
+<node id="Tn251962" about="#Tn251962"/>
+<node label="Anolis microtus" id="Tn251938" about="#Tn251938" otu="Tl104778"/>
+<node id="Tn251915" about="#Tn251915"/>
+<node id="Tn251923" about="#Tn251923"/>
+<node label="Anolis richardi" id="Tn251952" about="#Tn251952" otu="Tl104757"/>
+<node label="Anolis aeneus" id="Tn251932" about="#Tn251932" otu="Tl104779"/>
+<node label="Anolis luciae" id="Tn251947" about="#Tn251947" otu="Tl104760"/>
+<node label="Anolis agassizi" id="Tn251935" about="#Tn251935" otu="Tl104781"/>
+<node label="Anolis occultus" id="Tn251960" about="#Tn251960" otu="Tl104762"/>
+<node label="Phenacosaurus nicefori" id="Tn251969" about="#Tn251969" otu="Tl104765"/>
+<node id="Tn251978" about="#Tn251978"/>
+<node label="Chamaeleolis chamaeleonides" id="Tn251957" about="#Tn251957" otu="Tl104785"/>
+<node id="Tn251977" about="#Tn251977"/>
+<node label="Anolis distichus" id="Tn251983" about="#Tn251983" otu="Tl116786"/>
+<node id="Tn251974" about="#Tn251974"/>
+<node label="Anolis luteogularis" id="Tn251933" about="#Tn251933" otu="Tl116808"/>
+<node label="Anolis equestris" id="Tn251930" about="#Tn251930" otu="Tl66067"/>
+<node label="Anolis barahonae" id="Tn251910" about="#Tn251910" otu="Tl104790"/>
+<node label="Anolis cuvieri" id="Tn251912" about="#Tn251912" otu="Tl116777"/>
+<node label="Anolis brevirostris" id="Tn251931" about="#Tn251931" otu="Tl104763"/>
+<node id="Tn251922" about="#Tn251922"/>
+<node label="Anolis stratulus" id="Tn251972" about="#Tn251972" otu="Tl104780"/>
+<node label="Anolis acutus" id="Tn251979" about="#Tn251979" otu="Tl104782"/>
+<node label="Anolis bimaculatus" id="Tn251967" about="#Tn251967" otu="Tl104777"/>
+<node id="Tn251926" about="#Tn251926"/>
+<node id="Tn251956" about="#Tn251956"/>
+<node label="Anolis bahorucoensis" id="Tn251946" about="#Tn251946" otu="Tl116819"/>
+<node label="Anolis christophei" id="Tn251981" about="#Tn251981" otu="Tl104789"/>
+<node label="Anolis wattsi" id="Tn251908" about="#Tn251908" otu="Tl104767"/>
+<node label="Anolis bartschi" id="Tn251954" about="#Tn251954" otu="Tl116811"/>
+<node label="Anolis lucius" id="Tn251955" about="#Tn251955" otu="Tl66070"/>
+<node id="Tn251918" about="#Tn251918"/>
+<node label="Anolis cristatellus" id="Tn251976" about="#Tn251976" otu="Tl116779"/>
+<node label="Anolis krugi" id="Tn251980" about="#Tn251980" otu="Tl104764"/>
+<node id="Tn251949" about="#Tn251949"/>
+<node id="Tn251916" about="#Tn251916"/>
+<node id="Tn251927" about="#Tn251927"/>
+<node label="Anolis carolinensis" id="Tn251971" about="#Tn251971" otu="Tl116818"/>
+<node label="Anolis maynardi" id="Tn251936" about="#Tn251936" otu="Tl104787"/>
+<node id="Tn251988" about="#Tn251988"/>
+<node label="Anolis etheridgei" id="Tn251968" about="#Tn251968" otu="Tl104768"/>
+<node id="Tn251951" about="#Tn251951"/>
+<node label="Anolis alutaceus" id="Tn251940" about="#Tn251940" otu="Tl116823"/>
+<node id="Tn251975" about="#Tn251975"/>
+<node label="Anolis limifrons" id="Tn251970" about="#Tn251970" otu="Tl104771"/>
+<node label="Anolis coelestinus" id="Tn251920" about="#Tn251920" otu="Tl116791"/>
+<node label="Anolis aliniger" id="Tn251986" about="#Tn251986" otu="Tl104776"/>
+<node id="Tn251942" about="#Tn251942"/>
+<node label="Anolis olssoni" id="Tn251941" about="#Tn251941" otu="Tl104756"/>
+<node label="Anolis loysiana" id="Tn251963" about="#Tn251963" otu="Tl104761"/>
+<node label="Anolis paternus" id="Tn251913" about="#Tn251913" otu="Tl116827"/>
+<node label="Anolis angusticeps" id="Tn251937" about="#Tn251937" otu="Tl116782"/>
+<node id="Tn251984" about="#Tn251984"/>
+<node id="Tn251924" about="#Tn251924"/>
+<node id="Tn251973" about="#Tn251973"/>
+<node label="Anolis pumilis" id="Tn251982" about="#Tn251982" otu="Tl104766"/>
+<node label="Anolis lineatopus" id="Tn251965" about="#Tn251965" otu="Tl104772"/>
+<node label="Anolis valencienni" id="Tn251985" about="#Tn251985" otu="Tl116806"/>
+<node id="Tn251959" about="#Tn251959"/>
+<node label="Anolis garmani" id="Tn251914" about="#Tn251914" otu="Tl104783"/>
+<node label="Anolis lineatus" id="Tn251958" about="#Tn251958" otu="Tl104759"/>
+<node label="Anolis grahami" id="Tn251909" about="#Tn251909" otu="Tl104774"/>
+<node label="Anolis vermiculatus" id="Tn251934" about="#Tn251934" otu="Tl116798"/>
+<node id="Tn251925" about="#Tn251925"/>
+<node id="Tn251928" about="#Tn251928"/>
+<node label="Anolis sagrei" id="Tn251966" about="#Tn251966" otu="Tl116816"/>
+<node label="Anolis ahli" id="Tn251989" about="#Tn251989" otu="Tl104775"/>
+<node label="Anolis ophiolepis" id="Tn251950" about="#Tn251950" otu="Tl104784"/>
+<node label="Anolis humilis" id="Tn251907" about="#Tn251907" otu="Tl104788"/>
+<node id="Tn251917" about="#Tn251917"/>
+<node id="Tn251919" about="#Tn251919"/>
+<node label="Anolis insolitus" id="Tn251939" about="#Tn251939" otu="Tl104773"/>
+<node label="Chamaelinorops barbouri" id="Tn251987" about="#Tn251987" otu="Tl104770"/>
+<node label="Chamaeleolis guamuhaya" id="Tn251953" about="#Tn251953" otu="Tl104755"/>
+<node label="Anolis marcanoi" id="Tn251943" about="#Tn251943" otu="Tl104769"/>
+<node label="Anolis strahmi" id="Tn251921" about="#Tn251921" otu="Tl104786"/>
+<node label="Anolis sheplani" id="Tn251945" about="#Tn251945" otu="Tl104758"/>
+<node label="Anolis vanidicus" id="Tn251911" about="#Tn251911" otu="Tl104791"/>
+<edge source="Tn251929" target="Tn251964" id="edge80404"/>
+<edge source="Tn251929" target="Tn251948" id="edge80405"/>
+<edge source="Tn251948" target="Tn251944" id="edge80406"/>
+<edge source="Tn251948" target="Tn251961" id="edge80407"/>
+<edge source="Tn251961" target="Tn251962" id="edge80408"/>
+<edge source="Tn251961" target="Tn251938" id="edge80413"/>
+<edge source="Tn251961" target="Tn251915" id="edge80414"/>
+<edge source="Tn251961" target="Tn251923" id="edge80417"/>
+<edge source="Tn251962" target="Tn251952" id="edge80409"/>
+<edge source="Tn251962" target="Tn251932" id="edge80410"/>
+<edge source="Tn251962" target="Tn251947" id="edge80411"/>
+<edge source="Tn251962" target="Tn251935" id="edge80412"/>
+<edge source="Tn251915" target="Tn251960" id="edge80415"/>
+<edge source="Tn251915" target="Tn251969" id="edge80416"/>
+<edge source="Tn251923" target="Tn251978" id="edge80418"/>
+<edge source="Tn251923" target="Tn251957" id="edge80421"/>
+<edge source="Tn251923" target="Tn251977" id="edge80422"/>
+<edge source="Tn251923" target="Tn251983" id="edge80425"/>
+<edge source="Tn251923" target="Tn251974" id="edge80426"/>
+<edge source="Tn251978" target="Tn251933" id="edge80419"/>
+<edge source="Tn251978" target="Tn251930" id="edge80420"/>
+<edge source="Tn251977" target="Tn251910" id="edge80423"/>
+<edge source="Tn251977" target="Tn251912" id="edge80424"/>
+<edge source="Tn251974" target="Tn251931" id="edge80427"/>
+<edge source="Tn251974" target="Tn251922" id="edge80428"/>
+<edge source="Tn251974" target="Tn251972" id="edge80433"/>
+<edge source="Tn251974" target="Tn251979" id="edge80434"/>
+<edge source="Tn251974" target="Tn251967" id="edge80435"/>
+<edge source="Tn251974" target="Tn251926" id="edge80436"/>
+<edge source="Tn251922" target="Tn251956" id="edge80429"/>
+<edge source="Tn251922" target="Tn251946" id="edge80432"/>
+<edge source="Tn251926" target="Tn251981" id="edge80437"/>
+<edge source="Tn251926" target="Tn251908" id="edge80438"/>
+<edge source="Tn251926" target="Tn251954" id="edge80439"/>
+<edge source="Tn251926" target="Tn251955" id="edge80440"/>
+<edge source="Tn251926" target="Tn251918" id="edge80441"/>
+<edge source="Tn251956" target="Tn251976" id="edge80430"/>
+<edge source="Tn251956" target="Tn251980" id="edge80431"/>
+<edge source="Tn251918" target="Tn251949" id="edge80442"/>
+<edge source="Tn251918" target="Tn251916" id="edge80462"/>
+<edge source="Tn251918" target="Tn251927" id="edge80481"/>
+<edge source="Tn251918" target="Tn251971" id="edge80484"/>
+<edge source="Tn251918" target="Tn251936" id="edge80485"/>
+<edge source="Tn251949" target="Tn251988" id="edge80443"/>
+<edge source="Tn251949" target="Tn251968" id="edge80456"/>
+<edge source="Tn251949" target="Tn251951" id="edge80457"/>
+<edge source="Tn251949" target="Tn251940" id="edge80461"/>
+<edge source="Tn251916" target="Tn251975" id="edge80463"/>
+<edge source="Tn251916" target="Tn251970" id="edge80480"/>
+<edge source="Tn251927" target="Tn251920" id="edge80482"/>
+<edge source="Tn251927" target="Tn251986" id="edge80483"/>
+<edge source="Tn251988" target="Tn251942" id="edge80444"/>
+<edge source="Tn251988" target="Tn251941" id="edge80455"/>
+<edge source="Tn251951" target="Tn251963" id="edge80458"/>
+<edge source="Tn251951" target="Tn251913" id="edge80459"/>
+<edge source="Tn251951" target="Tn251937" id="edge80460"/>
+<edge source="Tn251975" target="Tn251984" id="edge80464"/>
+<edge source="Tn251975" target="Tn251924" id="edge80475"/>
+<edge source="Tn251942" target="Tn251973" id="edge80445"/>
+<edge source="Tn251942" target="Tn251982" id="edge80454"/>
+<edge source="Tn251984" target="Tn251965" id="edge80465"/>
+<edge source="Tn251984" target="Tn251985" id="edge80466"/>
+<edge source="Tn251984" target="Tn251959" id="edge80467"/>
+<edge source="Tn251924" target="Tn251914" id="edge80476"/>
+<edge source="Tn251924" target="Tn251958" id="edge80477"/>
+<edge source="Tn251924" target="Tn251909" id="edge80478"/>
+<edge source="Tn251924" target="Tn251934" id="edge80479"/>
+<edge source="Tn251973" target="Tn251925" id="edge80446"/>
+<edge source="Tn251973" target="Tn251928" id="edge80451"/>
+<edge source="Tn251959" target="Tn251966" id="edge80468"/>
+<edge source="Tn251959" target="Tn251989" id="edge80469"/>
+<edge source="Tn251959" target="Tn251950" id="edge80470"/>
+<edge source="Tn251959" target="Tn251907" id="edge80471"/>
+<edge source="Tn251959" target="Tn251917" id="edge80472"/>
+<edge source="Tn251925" target="Tn251919" id="edge80447"/>
+<edge source="Tn251925" target="Tn251939" id="edge80450"/>
+<edge source="Tn251928" target="Tn251987" id="edge80452"/>
+<edge source="Tn251928" target="Tn251953" id="edge80453"/>
+<edge source="Tn251917" target="Tn251943" id="edge80473"/>
+<edge source="Tn251917" target="Tn251921" id="edge80474"/>
+<edge source="Tn251919" target="Tn251945" id="edge80448"/>
+<edge source="Tn251919" target="Tn251911" id="edge80449"/></tree></trees></nex:nexml>
