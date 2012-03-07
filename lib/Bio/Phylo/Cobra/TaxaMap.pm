@@ -108,7 +108,7 @@ sub AUTOLOAD {
 		my $value = shift;
 		my @result;
 		for my $row ( $self->as_2d ) {
-			if ( $row->[$keys{$key}] eq $value ) {
+			if ( $row->[$keys{$key}] && $row->[$keys{$key}] eq $value ) {
 				push @result, $row->[$keys{$wanted}];
 			}
 		}
