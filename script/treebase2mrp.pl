@@ -34,14 +34,20 @@ my ($forest) = @{
 for my $tree ( @{ $forest->get_entities } ) {
     for my $tip ( @{ $tree->get_terminals } ) {
         my $taxon = $tip->get_taxon;
-        META: for my $meta ( @{ $taxon->get_meta('skos:closeMatch', 'skos:exactMatch') } ) {
-            my $obj = $meta->get_object;
-            if ( $obj =~ m|http://purl.uniprot.org/taxonomy/(\d+)| ) {
-                my $id = $1;
-                $tip->set_name($id);
-                $taxon->set_name($id);
-                last META;
-            }
+        my @predicates = qw(skos:closeMatch skos:exactMatch);
+        if ( $taxon) {
+			META: for my $meta ( @{ $taxon->get_meta(@predicates) } ) {
+				my $obj = $meta->get_object;
+				if ( $obj =~ m|http://purl.uniprot.org/taxonomy/(\d+)| ) {
+					my $id = $1;
+					$tip->set_name($id);
+					$taxon->set_name($id);
+					last META;
+				}
+			}
+        }
+        else {
+        	warn "no taxon for tip ",$tip->get_xml_id," in $infile";
         }
     }
 }
@@ -83,7 +89,24 @@ for my $i ( 0 .. ( $nchar - 1 ) ) {
     $pattern{$pattern}++;
 }
 
+# calculate pruned, informative, distinct nchar
+my $informnchar;
+ROW: for my $row ( keys %informative ) {
+	if ( not defined $informnchar ) {
+		$informnchar = scalar @{ $informative{$row} };
+		next ROW;
+	}
+	die $informnchar if $informnchar != scalar @{ $informative{$row} };
+}
+
 # print as simple key/value table
-for my $row ( keys %informative ) {
-    print $row, "\t", join('', @{ $informative{$row} } ), "\n";
+for my $row ( keys %seen ) {
+	if ( $informative{$row} ) {
+		my $seq = join '', @{ $informative{$row} };
+		$seq .=  '?' x ( $informnchar - length($seq) );
+    	print $row, "\t", $seq, "\n";
+    }
+    else {
+    	print $row, "\t", ( '?' x $informnchar ), "\n";
+    }
 }
