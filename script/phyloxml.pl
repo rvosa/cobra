@@ -55,8 +55,8 @@ $project->insert($taxa);
 for my $taxon ( @{ $taxa->get_entities } ) {
     my $code = $taxon->get_name;
     
-    # lookup scientific name
-    my $binomial = get_binomial_for_code($code);
+    # lookup scientific name and sequence label
+    my ($binomial,$label) = get_binomial_and_label_for_code($code);
     
     # this can only go wrong, if...
     if ( $binomial ) {
@@ -65,6 +65,9 @@ for my $taxon ( @{ $taxa->get_entities } ) {
         my %ns = ( 'pxml' => _NS_PHYLOXML_ );
         update_meta( $taxon, 'pxml:code' => $code, %ns );
         update_meta( $taxon, 'pxml:scientific_name' => $binomial, %ns );
+        
+        # use original sequence label as node name
+        $taxon->get_nodes->[0]->set_name($label) if $label;
     }
     
     # ... we've had more than 10 sequences in the same file, i.e. with
@@ -97,7 +100,7 @@ sub update_meta {
     }
 }
 
-sub get_binomial_for_code {
+sub get_binomial_and_label_for_code {
     my $code = shift;
     
     # read phylip file, get index of $code
@@ -114,7 +117,7 @@ sub get_binomial_for_code {
                 my $label = $1;                
                 my $binomial = $map->get_binomial_for_label($label);
                 warn $code, "\t", $label, "\t", $binomial;
-                return $binomial;
+                return $binomial, $label;
             }
         }
     }
