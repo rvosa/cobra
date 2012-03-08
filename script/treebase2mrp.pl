@@ -8,16 +8,20 @@ use Bio::Phylo::Util::CONSTANT ':objecttypes';
 use Data::Dumper;
 
 # process command line arguments
-my ( $infile, $format, $csv );
+my ( $infile, $format, $csv, $verbose );
 GetOptions(
     'infile=s' => \$infile,
     'format=s' => \$format,
     'csv=s'    => \$csv,
+	'verbose+' => \$verbose,
 );
+
+my $log = Bio::Phylo::Util::Logger->new( '-level' => $verbose, '-class' => 'main' );
 
 # create seen hash for NCBI taxon ids
 my $map = Bio::Phylo::Cobra::TaxaMap->new($csv);
 my %seen = map { $_ => 1 } $map->get_all_taxonIDs;
+$log->debug(Dumper(\%seen));
 
 # parse tree block from input file
 my ($forest) = @{
@@ -32,14 +36,23 @@ my ($forest) = @{
 # skos:*match annotations, which may have an NCBI taxon id. if it does,
 # copy it over to the tip and taxon name
 for my $tree ( @{ $forest->get_entities } ) {
+	$log->debug("tree: " . $tree->get_name() . " in file $infile");
+	
     for my $tip ( @{ $tree->get_terminals } ) {
         my $taxon = $tip->get_taxon;
         my @predicates = qw(skos:closeMatch skos:exactMatch);
         if ( $taxon) {
+			$log->debug("taxon: " . $taxon->get_name);
+			
+			# loop over metadata annotations that match @predicates
 			META: for my $meta ( @{ $taxon->get_meta(@predicates) } ) {
 				my $obj = $meta->get_object;
+				$log->debug($obj);
+				
+				# this matches the ncbi taxonomy				
 				if ( $obj =~ m|http://purl.uniprot.org/taxonomy/(\d+)| ) {
 					my $id = $1;
+					$log->debug($id);					
 					$tip->set_name($id);
 					$taxon->set_name($id);
 					last META;
@@ -47,7 +60,7 @@ for my $tree ( @{ $forest->get_entities } ) {
 			}
         }
         else {
-        	warn "no taxon for tip ",$tip->get_xml_id," in $infile";
+        	$log->warn("no taxon for tip " . $tip->get_xml_id . " in $infile");
         }
     }
 }
@@ -61,8 +74,11 @@ my %simple;
 my $nchar;
 for my $row ( @{ $matrix->get_entities } ) {
     my $name = $row->get_name;
-    if ( $seen{$name} ) {
+	$log->debug('row: '.$name);
+	
+    if ( $seen{$name} ) {		
         my @char = $row->get_char;
+		$log->debug($name."\t".join('',@char));
         $simple{$name} = \@char;
         $nchar = scalar @char;
     }
