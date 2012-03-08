@@ -8,10 +8,11 @@ use Bio::Phylo::Util::CONSTANT qw':objecttypes :namespaces';
 use Bio::Phylo::Factory;
 
 # process command line arguments
-my ( $infile, $csv );
+my ( $infile, $csv, $og );
 GetOptions(
-    'infile=s' => \$infile,
-    'csv=s'    => \$csv,
+    'infile=s'   => \$infile,
+    'csv=s'      => \$csv,
+    'outgroup=s' => \$og,
 );
 
 # build nexus string from $infile only keeping distinct trees
@@ -53,7 +54,7 @@ $forest->set_taxa($taxa);
 $project->insert($taxa,$forest);
 
 # re-root on MRP outgroup
-my $outgroup = $tree->get_by_name("'mrp_outgroup'");
+my $outgroup = $tree->get_by_name($og);
 $outgroup->set_root_below;
 
 # warn for polytomies
@@ -61,7 +62,21 @@ $tree->visit(
     sub {
         my $node = shift;
         if ( scalar(@{ $node->get_children }) > 2 ) {
+            $node->add_meta(
+                $fac->create_meta(
+                    '-namespaces' => { 'pxml' => _NS_PHYLOXML_ },
+                    '-triple' => { 'pxml:width' => 1 },
+                )                
+            );
             warn $node->to_newick;
+        }
+        else {
+            $node->add_meta(
+                $fac->create_meta(
+                    '-namespaces' => { 'pxml' => _NS_PHYLOXML_ },
+                    '-triple' => { 'pxml:width' => 5 },
+                )                
+            );            
         }
     }
 );
