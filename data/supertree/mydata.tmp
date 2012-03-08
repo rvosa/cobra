@@ -1,31 +1,32 @@
 #NEXUS 
 
-Begin trees;  [Treefile saved Wed Mar  7 17:19:13 2012]
+Begin trees;  [Treefile saved Thu Mar  8 02:03:00 2012]
 [!
 >Data file = /Users/rvosa/Dropbox/documents/projects/current/cobra/data/supertree/MRP_matrix.nex
 >Heuristic search settings:
 >  Optimality criterion = parsimony
 >    Character-status summary:
->      Of 1187 total characters:
+>      Of 1206 total characters:
 >        All characters are of type 'ord' (Wagner)
 >        All characters have equal weight
->        553 characters are parsimony-uninformative
->        Number of parsimony-informative characters = 634
+>        15 characters are constant
+>        577 variable characters are parsimony-uninformative
+>        Number of parsimony-informative characters = 614
 >    Gaps are treated as "missing"
 >  Branch-swapping algorithm: tree-bisection-reconnection (TBR)
 >  Initial swapping on tree 1 already in memory
 >  Steepest descent option not in effect
->  Initial 'MaxTrees' setting = 200 (will be auto-increased by 100)
+>  Initial 'MaxTrees' setting = 300 (will be auto-increased by 100)
 >  Branches collapsed (creating polytomies) if maximum branch length is zero
 >  'MulTrees' option not in effect; only 1 tree will be saved per replicate
 >  Keeping only trees compatible with constraint-tree "ncbi"
 >  Trees are unrooted
 >
 >Heuristic search completed
->   Total number of rearrangements tried = 3336
->   Score of best tree(s) found = 1294
+>   Total number of rearrangements tried = 3344
+>   Score of best tree(s) found = 1298
 >   Number of trees retained = 1
->   Time used = <1 sec (CPU time = 0.20 sec)
+>   Time used = <1 sec (CPU time = 0.19 sec)
 ]
 	Translate
 		1 Acipenser_schrenckii,
@@ -160,7 +161,7 @@ Begin trees;  [Treefile saved Wed Mar  7 17:19:13 2012]
 		130 Xenopus_laevis,
 		131 Xenopus_tropicalis,
 		132 Xiphophorus_maculatus,
-		133 'mrp_outgroup'
+		133 mrp_outgroup
 		;
-tree PAUP_1 = [&U] (1,(2,(((((((((((((((((((3,4),((((30,(35,36)),(31,(32,34))),33),103)),(14,58)),((((15,19),18),((16,17),20)),29)),((((51,53),52),(110,(111,112))),((88,90),89))),(37,129)),41),25),10),((7,(11,12)),((27,(45,46)),((39,(127,128)),66)))),((8,((((((9,77),(((82,83),94),(92,93))),((42,69),(44,(57,114)))),61),(((21,23),22),(70,((((73,74),75),76),80)))),(60,99))),(((28,47),((((43,113),109),107),((63,85),(98,108)))),(62,91)))),96),(((26,50,95),((((115,116),((117,125),(122,124))),(((118,123),121),(120,126))),119)),(54,55))),(6,86)),((49,68),106)),((((5,48),(13,105)),(((24,100),(((56,84),87),(64,65))),(((67,72),97),81))),71)),(130,131)),(59,(102,133))),((38,40),((((78,79),101),104),132)))));
+tree PAUP_1 = [&U] (1,(2,(((((((((((((((((((3,4),((((30,(35,36)),(31,(32,34))),33),103)),(14,58)),((((15,19),18),((16,17),20)),29)),(((51,53),52),((88,90),89))),((37,129),((110,111),112))),41),25),10),((7,(11,12)),((27,(45,46)),((39,(127,128)),66)))),((8,((((((9,77),(((82,83),94),(92,93))),61),((42,69),(44,(57,114)))),(((21,23),22),(70,((((73,76),74),75),80)))),(60,99))),((28,47),(((43,(107,(109,113))),((63,85),(98,108))),(62,91))))),96),(((26,50,95),((((115,116),((117,125),(122,124))),(((118,123),121),(120,126))),119)),(54,55))),(6,86)),((49,68),106)),(((5,((13,105),48)),(((24,100),(((56,84),87),(64,65))),(((67,72),97),81))),71)),(130,131)),(59,(102,133))),((38,40),((((78,79),101),104),132)))));
 End;
