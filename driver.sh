@@ -29,17 +29,17 @@ PERL5LIB="${PERL5LIB}:lib"
 SCRIPT=script/
 
 # convert fasta files to phylip files for phyml
-# FASTAFILES=`ls $RAWDATA/*.fas`
-# for FASTAFILE in $FASTAFILES; do
-#     PHYLIPFILE=`echo $FASTAFILE | sed -e 's/.fas/.phylip/'`
-#     $PERL $SCRIPT/fas2phylip.pl -i $FASTAFILE -c $TAXAMAP > $PHYLIPFILE
-# done
+#FASTAFILES=`ls $RAWDATA/*.fas`
+#for FASTAFILE in $FASTAFILES; do
+#    PHYLIPFILE=`echo $FASTAFILE | sed -e 's/.fas/.phylip/'`
+#    $PERL $SCRIPT/fas2phylip.pl -i $FASTAFILE -c $TAXAMAP > $PHYLIPFILE
+#done
 
 # run phyml on each phylip file
-# PHYLIPFILES=`ls $RAWDATA/*.phylip`
-# for PHYLIPFILE in $PHYLIPFILES; do
-#     $PHYML -i $PHYLIPFILE
-# done
+#PHYLIPFILES=`ls $RAWDATA/*.phylip`
+#for PHYLIPFILE in $PHYLIPFILES; do
+#    $PHYML -i $PHYLIPFILE
+#done
 
 # write phyml files to phyloxml
 #PHYMLSTEMS=`ls $RAWDATA/*.phylip_phyml_tree.txt | sed -e 's/.phylip_phyml_tree.txt//'`
@@ -53,8 +53,8 @@ SCRIPT=script/
 # write NeXML files to MRP matrices
 #NEXMLFILES=`ls $SOURCETREES/Tr*.xml`
 #for NEXML in $NEXMLFILES; do
-#    DAT=`echo $NEXML | sed -e 's/.xml/.dat/'`
-#    $PERL $SCRIPT/treebase2mrp.pl -i $NEXML -f nexml -c $TAXAMAP > $DAT
+    #DAT=`echo $NEXML | sed -e 's/.xml/.dat/'`
+    #$PERL $SCRIPT/treebase2mrp.pl -i $NEXML -f nexml -c $TAXAMAP > $DAT
 #done
 
 # write NCBI tree to MRP matrix
