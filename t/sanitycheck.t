@@ -16,7 +16,7 @@ while( my $entry = readdir $dirhandle ) {
     # for every *.fas file there must exist a *.nex file
     if ( $entry =~ m/(.+)\.fas$/ ) {
         my $stem = $1;
-        my $treefile = $dir . $stem . '.nex';
+        my $treefile = $dir . $stem . '.tre';
         my $seqfile  = $dir . $stem . '.fas';
         ok( -e $treefile && -e $seqfile, "$treefile and $seqfile exist");
         
