@@ -9,8 +9,7 @@ my %keys = (
 	'binomial'   => 1,
 	'taxonID'    => 2,
 	'code'       => 3,
-	'namebankID' => 4,
-	'tolID'      => 5,
+	'gi'         => 4,
 );
 
 =pod
@@ -25,7 +24,7 @@ my %keys = (
 
 =item $map->taxonID($label, [$taxonID])
 
-=item $map->tolID($label, [$tolID])
+=item $map->gi($label, [$gi])
 
 =item $map->code($label, [$code])
 
@@ -37,7 +36,7 @@ my %keys = (
 
 =item $map->get_x_for_y()
 
-x and y are both one of label, binomial, namebankID, taxonID, tolID, code
+x and y are both one of label, binomial, taxonID, gi, code
 
 =item $map->get_all_xs()
 
@@ -72,6 +71,15 @@ sub new {
 	return bless \%self, $package;
 }
 
+sub parse_label {
+	my ( $self, $label ) = @_;
+	if ( $label =~ /^([^_]+_[^_]+_[^_]+)/ ) {
+		my $parsed = $1;
+		return $parsed;
+	}
+	throw 'BadArgs' => "Bad label '$label', expecting >= 3 underscore-separated words"
+}
+
 sub as_2d {
 	my $self = shift;
 	my @result;
@@ -85,6 +93,7 @@ sub to_csv {
 	my $self = shift;
 	my $string = '';
 	for my $row ( $self->as_2d ) {
+		no warnings 'uninitialized'; # there *can* be empty fields, it's ok
 		$string .= join ',', @{ $row };
 		$string .= "\n";	
 	}
@@ -98,10 +107,10 @@ sub AUTOLOAD {
 		my $self = shift;
 		my $label = shift;
 		my $value = shift;
-		if ( $value ) {
-			$self->{$label}->[$keys{$method}] = $value;
+		if ( defined $value ) {
+			$self->{$label}->[$keys{$method} - 1] = $value;
 		}
-		return $self->{$label}->[$keys{$method}];
+		return $self->{$label}->[$keys{$method} - 1];
 	}
 	elsif ( $method =~ m/get_([^_]+)_for_([^_]+)/ ) {
 		my ( $wanted, $key ) = ( $1, $2 );
