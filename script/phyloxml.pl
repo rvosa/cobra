@@ -54,6 +54,7 @@ $project->insert($taxa);
 # iterate over taxa
 for my $taxon ( @{ $taxa->get_entities } ) {
     my $code = $taxon->get_name;
+    $code =~ s/\d+$//;
     
     # lookup scientific name and sequence label
     my ($binomial,$label) = get_binomial_and_label_for_code($code);
@@ -105,14 +106,16 @@ sub get_binomial_and_label_for_code {
     
     # read phylip file, get index of $code
     open my $phylipfile, '<', "$infile.phylip" or die $!;
+    
+    # read all lines except the ntax nchar line at the top
     my @phyliplines = grep { $_ !~ /^\s*\d+\s+\d+\s*$/ } <$phylipfile>;
     
-    # read fasta, get line at index
+    # read all definition files from the fasta
     open my $fastafile, '<', "$infile.fas" or die $!;
     my @fastalines = grep { /^>/ } <$fastafile>;
     
     for my $i ( 0 .. $#phyliplines ) {
-        if ( $phyliplines[$i] =~ /^\Q$code\E\s+/ ) {
+        if ( $phyliplines[$i] =~ /^\Q$code\E\d*\s+/ ) {
             if ( $fastalines[$i] =~ />([^_]+_[^_]+_[^_]+)/ ) {
                 my $label = $1;                
                 my $binomial = $map->get_binomial_for_label($label);
