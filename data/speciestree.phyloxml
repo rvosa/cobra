@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <phyloxml xmlns="http://www.phyloxml.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.phyloxml.org http://www.phyloxml.org/1.10/phyloxml.xsd">
+  <!--
+    The following polytomies were randomly resolved to make this phyloxml tree
+    fully bifurcating, as is required by the SDI algorithm:
+    
+    (Laticauda_semifasciata:1.000000,(((Pseudonaja_textilis:1.000000,(Oxyuranus_microlepidotus:1.000000,Oxyuranus_scutellatus:1.000000):1.000000):1.000000,(Pseudechis_australis:1.000000,Pseudechis_porphyriacus:1.000000):1.000000):1.000000,(Austrelaps_superbus:1.000000,Notechis_scutatus:1.000000):1.000000):1.000000,((Demansia_vestigiata:1.000000,(Hoplocephalus_stephensii:1.000000,Micropechis_ikaheka:1.000000):1.000000):1.000000,(Drysdalia_coronoides:1.000000,Tropidechis_carinatus:1.000000):1.000000):1.000000):1.000000; at script//make_consensus.pl line 71, <DATA> line 1.
+    ((Cerastes_cerastes:1.000000,(Echis_ocellatus:1.000000,(Echis_carinatus:1.000000,Echis_pyramidum_leakeyi:1.000000):1.000000):1.000000):1.000000,(Macrovipera_lebetina:1.000000,(Daboia_russellii:1.000000,(Vipera_berus:1.000000,Vipera_nikolskii:1.000000):1.000000):1.000000):1.000000,(Atheris_nitschei:1.000000,(Bitis_arietans:1.000000,Bitis_gabonica:1.000000):1.000000):1.000000):1.000000; at script//make_consensus.pl line 71, <DATA> line 1.
+    (Ailuropoda_melanoleuca:1.000000,Equus_caballus:1.000000,(Bos_taurus:1.000000,Sus_scrofa:1.000000):1.000000):1.000000; at script//make_consensus.pl line 71, <DATA> line 1.
+    (Celestus_warreni:1.000000,Gerrhonotus_infernalis:1.000000,Pseudopus_apodus:1.000000):1.000000; at script//make_consensus.pl line 71, <DATA> line 1.
+  -->  
   <phylogeny rooted="true">
     <clade>
       <name>root</name>
@@ -20,7 +29,7 @@
           <branch_length>1</branch_length>
           <width>5</width>
           <taxonomy>
-            <code>SCHIMANS0</code>
+            <code>SCHIMANS</code>
             <scientific_name>Schistosoma mansoni</scientific_name>
           </taxonomy>
         </clade>
@@ -32,7 +41,7 @@
             <branch_length>1</branch_length>
             <width>5</width>
             <taxonomy>
-              <code>LAMPFLUV0</code>
+              <code>LAMPFLUV</code>
               <scientific_name>Lampetra fluviatilis</scientific_name>
             </taxonomy>
           </clade>
@@ -62,7 +71,7 @@
                           <branch_length>1</branch_length>
                           <width>5</width>
                           <taxonomy>
-                            <code>PYTHMOLU0</code>
+                            <code>PYTHMOLU</code>
                             <scientific_name>Python molurus</scientific_name>
                           </taxonomy>
                         </clade>
@@ -80,7 +89,7 @@
                                 <branch_length>1</branch_length>
                                 <width>5</width>
                                 <taxonomy>
-                                  <code>AZEMFEAE0</code>
+                                  <code>AZEMFEAE</code>
                                   <scientific_name>Azemiops feae</scientific_name>
                                 </taxonomy>
                               </clade>
@@ -92,7 +101,7 @@
                                   <branch_length>1</branch_length>
                                   <width>5</width>
                                   <taxonomy>
-                                    <code>CALLRHOD0</code>
+                                    <code>CALLRHOD</code>
                                     <scientific_name>Calloselasma rhodostoma</scientific_name>
                                   </taxonomy>
                                 </clade>
@@ -104,7 +113,7 @@
                                     <branch_length>1</branch_length>
                                     <width>5</width>
                                     <taxonomy>
-                                      <code>DEINACUT0</code>
+                                      <code>DEINACUT</code>
                                       <scientific_name>Deinagkistrodon acutus</scientific_name>
                                     </taxonomy>
                                   </clade>
@@ -131,7 +140,7 @@
                                                 <branch_length>1</branch_length>
                                                 <width>5</width>
                                                 <taxonomy>
-                                                  <code>SISTCATE0</code>
+                                                  <code>SISTCATE</code>
                                                   <scientific_name>Sistrurus catenatus</scientific_name>
                                                 </taxonomy>
                                               </clade>
@@ -143,7 +152,7 @@
                                                   <branch_length>1</branch_length>
                                                   <width>5</width>
                                                   <taxonomy>
-                                                    <code>CROTHORR0</code>
+                                                    <code>CROTHORR</code>
                                                     <scientific_name>Crotalus horridus</scientific_name>
                                                   </taxonomy>
                                                 </clade>
@@ -158,7 +167,7 @@
                                                       <branch_length>1</branch_length>
                                                       <width>5</width>
                                                       <taxonomy>
-                                                        <code>CROTADAM0</code>
+                                                        <code>CROTADAM</code>
                                                         <scientific_name>Crotalus adamanteus</scientific_name>
                                                       </taxonomy>
                                                     </clade>
@@ -170,7 +179,7 @@
                                                         <branch_length>1</branch_length>
                                                         <width>5</width>
                                                         <taxonomy>
-                                                          <code>CROTOREG0</code>
+                                                          <code>CROTOREG</code>
                                                           <scientific_name>Crotalus oreganus</scientific_name>
                                                         </taxonomy>
                                                       </clade>
@@ -179,7 +188,7 @@
                                                         <branch_length>1</branch_length>
                                                         <width>5</width>
                                                         <taxonomy>
-                                                          <code>CROTVIRI0</code>
+                                                          <code>CROTVIRI</code>
                                                           <scientific_name>Crotalus viridis</scientific_name>
                                                         </taxonomy>
                                                       </clade>
@@ -193,7 +202,7 @@
                                                       <branch_length>1</branch_length>
                                                       <width>5</width>
                                                       <taxonomy>
-                                                        <code>CROTATRO0</code>
+                                                        <code>CROTATRO</code>
                                                         <scientific_name>Crotalus atrox</scientific_name>
                                                       </taxonomy>
                                                     </clade>
@@ -205,7 +214,7 @@
                                                         <branch_length>1</branch_length>
                                                         <width>5</width>
                                                         <taxonomy>
-                                                          <code>CROTDURI0</code>
+                                                          <code>CROTDURI</code>
                                                           <scientific_name>Crotalus durissus</scientific_name>
                                                         </taxonomy>
                                                       </clade>
@@ -214,7 +223,7 @@
                                                         <branch_length>1</branch_length>
                                                         <width>5</width>
                                                         <taxonomy>
-                                                          <code>CROTMOLO0</code>
+                                                          <code>CROTMOLO</code>
                                                           <scientific_name>Crotalus molossus</scientific_name>
                                                         </taxonomy>
                                                       </clade>
@@ -231,7 +240,7 @@
                                                 <branch_length>1</branch_length>
                                                 <width>5</width>
                                                 <taxonomy>
-                                                  <code>AGKICONT0</code>
+                                                  <code>AGKICONT</code>
                                                   <scientific_name>Agkistrodon contortrix</scientific_name>
                                                 </taxonomy>
                                               </clade>
@@ -240,7 +249,7 @@
                                                 <branch_length>1</branch_length>
                                                 <width>5</width>
                                                 <taxonomy>
-                                                  <code>AGKIPISC0</code>
+                                                  <code>AGKIPISC</code>
                                                   <scientific_name>Agkistrodon piscivorus</scientific_name>
                                                 </taxonomy>
                                               </clade>
@@ -254,7 +263,7 @@
                                               <branch_length>1</branch_length>
                                               <width>5</width>
                                               <taxonomy>
-                                                <code>BOTHSCHL0</code>
+                                                <code>BOTHSCHL</code>
                                                 <scientific_name>Bothriechis schlegelii</scientific_name>
                                               </taxonomy>
                                             </clade>
@@ -263,7 +272,7 @@
                                               <branch_length>1</branch_length>
                                               <width>5</width>
                                               <taxonomy>
-                                                <code>LACHMUTA0</code>
+                                                <code>LACHMUTA</code>
                                                 <scientific_name>Lachesis muta</scientific_name>
                                               </taxonomy>
                                             </clade>
@@ -277,7 +286,7 @@
                                             <branch_length>1</branch_length>
                                             <width>5</width>
                                             <taxonomy>
-                                              <code>CERRGODM0</code>
+                                              <code>CERRGODM</code>
                                               <scientific_name>Cerrophidion godmani</scientific_name>
                                             </taxonomy>
                                           </clade>
@@ -292,7 +301,7 @@
                                                 <branch_length>1</branch_length>
                                                 <width>5</width>
                                                 <taxonomy>
-                                                  <code>BOTHNEUW0</code>
+                                                  <code>BOTHNEUW</code>
                                                   <scientific_name>Bothrops neuwiedi</scientific_name>
                                                 </taxonomy>
                                               </clade>
@@ -304,7 +313,7 @@
                                                   <branch_length>1</branch_length>
                                                   <width>5</width>
                                                   <taxonomy>
-                                                    <code>BOTHINSU0</code>
+                                                    <code>BOTHINSU</code>
                                                     <scientific_name>Bothrops insularis</scientific_name>
                                                   </taxonomy>
                                                 </clade>
@@ -313,7 +322,7 @@
                                                   <branch_length>1</branch_length>
                                                   <width>5</width>
                                                   <taxonomy>
-                                                    <code>BOTHJARA0</code>
+                                                    <code>BOTHJARA</code>
                                                     <scientific_name>Bothrops jararaca</scientific_name>
                                                   </taxonomy>
                                                 </clade>
@@ -327,7 +336,7 @@
                                                 <branch_length>1</branch_length>
                                                 <width>5</width>
                                                 <taxonomy>
-                                                  <code>BOTHJARA1</code>
+                                                  <code>BOTHJARC</code>
                                                   <scientific_name>Bothrops jararacussu</scientific_name>
                                                 </taxonomy>
                                               </clade>
@@ -339,7 +348,7 @@
                                                   <branch_length>1</branch_length>
                                                   <width>5</width>
                                                   <taxonomy>
-                                                    <code>BOTHASPE0</code>
+                                                    <code>BOTHASPE</code>
                                                     <scientific_name>Bothrops asper</scientific_name>
                                                   </taxonomy>
                                                 </clade>
@@ -348,7 +357,7 @@
                                                   <branch_length>1</branch_length>
                                                   <width>5</width>
                                                   <taxonomy>
-                                                    <code>BOTHMOOJ0</code>
+                                                    <code>BOTHMOOJ</code>
                                                     <scientific_name>Bothrops moojeni</scientific_name>
                                                   </taxonomy>
                                                 </clade>
@@ -364,11 +373,85 @@
                                           <branch_length>1</branch_length>
                                           <width>5</width>
                                           <clade>
+                                            <branch_length>1</branch_length>
+                                            <width>5</width>
+                                            <clade>
+                                              <name>Trimeresurus_flavoviridis</name>
+                                              <branch_length>1</branch_length>
+                                              <width>5</width>
+                                              <taxonomy>
+                                                <code>TRIMFLAV</code>
+                                                <scientific_name>Trimeresurus flavoviridis</scientific_name>
+                                              </taxonomy>
+                                            </clade>
+                                            <clade>
+                                              <branch_length>1</branch_length>
+                                              <width>5</width>
+                                              <clade>
+                                                <name>Trimeresurus_gracilis</name>
+                                                <branch_length>1</branch_length>
+                                                <width>5</width>
+                                                <taxonomy>
+                                                  <code>TRIMGRAC</code>
+                                                  <scientific_name>Trimeresurus gracilis</scientific_name>
+                                                </taxonomy>
+                                              </clade>
+                                              <clade>
+                                                <name>Trimeresurus_gramineus</name>
+                                                <branch_length>1</branch_length>
+                                                <width>5</width>
+                                                <taxonomy>
+                                                  <code>TRIMGRAM</code>
+                                                  <scientific_name>Trimeresurus gramineus</scientific_name>
+                                                </taxonomy>
+                                              </clade>
+                                            </clade>
+                                          </clade>
+                                          <clade>
+                                            <branch_length>1</branch_length>
+                                            <width>5</width>
+                                            <clade>
+                                              <name>Gloydius_halys</name>
+                                              <branch_length>1</branch_length>
+                                              <width>5</width>
+                                              <taxonomy>
+                                                <code>GLOYHALY</code>
+                                                <scientific_name>Gloydius halys</scientific_name>
+                                              </taxonomy>
+                                            </clade>
+                                            <clade>
+                                              <branch_length>1</branch_length>
+                                              <width>5</width>
+                                              <clade>
+                                                <name>Gloydius_blomhoffi</name>
+                                                <branch_length>1</branch_length>
+                                                <width>5</width>
+                                                <taxonomy>
+                                                  <code>GLOYBLOM</code>
+                                                  <scientific_name>Gloydius blomhoffi</scientific_name>
+                                                </taxonomy>
+                                              </clade>
+                                              <clade>
+                                                <name>Gloydius_ussuriensis</name>
+                                                <branch_length>1</branch_length>
+                                                <width>5</width>
+                                                <taxonomy>
+                                                  <code>GLOYUSSU</code>
+                                                  <scientific_name>Gloydius ussuriensis</scientific_name>
+                                                </taxonomy>
+                                              </clade>
+                                            </clade>
+                                          </clade>
+                                        </clade>
+                                        <clade>
+                                          <branch_length>1</branch_length>
+                                          <width>5</width>
+                                          <clade>
                                             <name>Protobothrops_jerdonii</name>
                                             <branch_length>1</branch_length>
                                             <width>5</width>
                                             <taxonomy>
-                                              <code>PROTJERD0</code>
+                                              <code>PROTJERD</code>
                                               <scientific_name>Protobothrops jerdonii</scientific_name>
                                             </taxonomy>
                                           </clade>
@@ -380,7 +463,7 @@
                                               <branch_length>1</branch_length>
                                               <width>5</width>
                                               <taxonomy>
-                                                <code>PROTELEG0</code>
+                                                <code>PROTELEG</code>
                                                 <scientific_name>Protobothrops elegans</scientific_name>
                                               </taxonomy>
                                             </clade>
@@ -389,43 +472,8 @@
                                               <branch_length>1</branch_length>
                                               <width>5</width>
                                               <taxonomy>
-                                                <code>PROTMUCR0</code>
+                                                <code>PROTMUCR</code>
                                                 <scientific_name>Protobothrops mucrosquamatus</scientific_name>
-                                              </taxonomy>
-                                            </clade>
-                                          </clade>
-                                        </clade>
-                                        <clade>
-                                          <branch_length>1</branch_length>
-                                          <width>5</width>
-                                          <clade>
-                                            <name>Gloydius_halys</name>
-                                            <branch_length>1</branch_length>
-                                            <width>5</width>
-                                            <taxonomy>
-                                              <code>GLOYHALY0</code>
-                                              <scientific_name>Gloydius halys</scientific_name>
-                                            </taxonomy>
-                                          </clade>
-                                          <clade>
-                                            <branch_length>1</branch_length>
-                                            <width>5</width>
-                                            <clade>
-                                              <name>Gloydius_blomhoffi</name>
-                                              <branch_length>1</branch_length>
-                                              <width>5</width>
-                                              <taxonomy>
-                                                <code>GLOYBLOM0</code>
-                                                <scientific_name>Gloydius blomhoffi</scientific_name>
-                                              </taxonomy>
-                                            </clade>
-                                            <clade>
-                                              <name>Gloydius_ussuriensis</name>
-                                              <branch_length>1</branch_length>
-                                              <width>5</width>
-                                              <taxonomy>
-                                                <code>GLOYUSSU0</code>
-                                                <scientific_name>Gloydius ussuriensis</scientific_name>
                                               </taxonomy>
                                             </clade>
                                           </clade>
@@ -436,61 +484,22 @@
                                       <branch_length>1</branch_length>
                                       <width>5</width>
                                       <clade>
+                                        <name>Cryptelytrops_albolabris</name>
                                         <branch_length>1</branch_length>
                                         <width>5</width>
-                                        <clade>
-                                          <name>Trimeresurus_gramineus</name>
-                                          <branch_length>1</branch_length>
-                                          <width>5</width>
-                                          <taxonomy>
-                                            <code>TRIMGRAM0</code>
-                                            <scientific_name>Trimeresurus gramineus</scientific_name>
-                                          </taxonomy>
-                                        </clade>
-                                        <clade>
-                                          <branch_length>1</branch_length>
-                                          <width>5</width>
-                                          <clade>
-                                            <name>Trimeresurus_flavoviridis</name>
-                                            <branch_length>1</branch_length>
-                                            <width>5</width>
-                                            <taxonomy>
-                                              <code>TRIMFLAV0</code>
-                                              <scientific_name>Trimeresurus flavoviridis</scientific_name>
-                                            </taxonomy>
-                                          </clade>
-                                          <clade>
-                                            <name>Trimeresurus_gracilis</name>
-                                            <branch_length>1</branch_length>
-                                            <width>5</width>
-                                            <taxonomy>
-                                              <code>TRIMGRAC0</code>
-                                              <scientific_name>Trimeresurus gracilis</scientific_name>
-                                            </taxonomy>
-                                          </clade>
-                                        </clade>
+                                        <taxonomy>
+                                          <code>CRYPALBO</code>
+                                          <scientific_name>Cryptelytrops albolabris</scientific_name>
+                                        </taxonomy>
                                       </clade>
                                       <clade>
+                                        <name>Viridovipera_stejnegeri</name>
                                         <branch_length>1</branch_length>
                                         <width>5</width>
-                                        <clade>
-                                          <name>Cryptelytrops_albolabris</name>
-                                          <branch_length>1</branch_length>
-                                          <width>5</width>
-                                          <taxonomy>
-                                            <code>CRYPALBO0</code>
-                                            <scientific_name>Cryptelytrops albolabris</scientific_name>
-                                          </taxonomy>
-                                        </clade>
-                                        <clade>
-                                          <name>Viridovipera_stejnegeri</name>
-                                          <branch_length>1</branch_length>
-                                          <width>5</width>
-                                          <taxonomy>
-                                            <code>VIRISTEJ0</code>
-                                            <scientific_name>Viridovipera stejnegeri</scientific_name>
-                                          </taxonomy>
-                                        </clade>
+                                        <taxonomy>
+                                          <code>VIRISTEJ</code>
+                                          <scientific_name>Viridovipera stejnegeri</scientific_name>
+                                        </taxonomy>
                                       </clade>
                                     </clade>
                                   </clade>
@@ -508,7 +517,7 @@
                                   <branch_length>1</branch_length>
                                   <width>5</width>
                                   <taxonomy>
-                                    <code>ATHENITS0</code>
+                                    <code>ATHENITS</code>
                                     <scientific_name>Atheris nitschei</scientific_name>
                                   </taxonomy>
                                 </clade>
@@ -520,7 +529,7 @@
                                     <branch_length>1</branch_length>
                                     <width>5</width>
                                     <taxonomy>
-                                      <code>BITIARIE0</code>
+                                      <code>BITIARIE</code>
                                       <scientific_name>Bitis arietans</scientific_name>
                                     </taxonomy>
                                   </clade>
@@ -529,7 +538,7 @@
                                     <branch_length>1</branch_length>
                                     <width>5</width>
                                     <taxonomy>
-                                      <code>BITIGABO0</code>
+                                      <code>BITIGABO</code>
                                       <scientific_name>Bitis gabonica</scientific_name>
                                     </taxonomy>
                                   </clade>
@@ -546,7 +555,7 @@
                                     <branch_length>1</branch_length>
                                     <width>5</width>
                                     <taxonomy>
-                                      <code>CERACERA0</code>
+                                      <code>CERACERA</code>
                                       <scientific_name>Cerastes cerastes</scientific_name>
                                     </taxonomy>
                                   </clade>
@@ -554,22 +563,35 @@
                                     <branch_length>1</branch_length>
                                     <width>5</width>
                                     <clade>
-                                      <name>Echis_carinatus</name>
-                                      <branch_length>1</branch_length>
-                                      <width>5</width>
-                                      <taxonomy>
-                                        <code>ECHICARI0</code>
-                                        <scientific_name>Echis carinatus</scientific_name>
-                                      </taxonomy>
-                                    </clade>
-                                    <clade>
                                       <name>Echis_ocellatus</name>
                                       <branch_length>1</branch_length>
                                       <width>5</width>
                                       <taxonomy>
-                                        <code>ECHIOCEL0</code>
+                                        <code>ECHIOCEL</code>
                                         <scientific_name>Echis ocellatus</scientific_name>
                                       </taxonomy>
+                                    </clade>
+                                    <clade>
+                                      <branch_length>1</branch_length>
+                                      <width>5</width>
+                                      <clade>
+                                        <name>Echis_carinatus</name>
+                                        <branch_length>1</branch_length>
+                                        <width>5</width>
+                                        <taxonomy>
+                                          <code>ECHICARI</code>
+                                          <scientific_name>Echis carinatus</scientific_name>
+                                        </taxonomy>
+                                      </clade>
+                                      <clade>
+                                        <name>Echis_pyramidum_leakeyi</name>
+                                        <branch_length>1</branch_length>
+                                        <width>5</width>
+                                        <taxonomy>
+                                          <code>ECHIPYRA</code>
+                                          <scientific_name>Echis pyramidum leakeyi</scientific_name>
+                                        </taxonomy>
+                                      </clade>
                                     </clade>
                                   </clade>
                                 </clade>
@@ -581,7 +603,7 @@
                                     <branch_length>1</branch_length>
                                     <width>5</width>
                                     <taxonomy>
-                                      <code>MACRLEBE0</code>
+                                      <code>MACRLEBE</code>
                                       <scientific_name>Macrovipera lebetina</scientific_name>
                                     </taxonomy>
                                   </clade>
@@ -593,7 +615,7 @@
                                       <branch_length>1</branch_length>
                                       <width>5</width>
                                       <taxonomy>
-                                        <code>DABORUSS0</code>
+                                        <code>DABORUSS</code>
                                         <scientific_name>Daboia russellii</scientific_name>
                                       </taxonomy>
                                     </clade>
@@ -605,7 +627,7 @@
                                         <branch_length>1</branch_length>
                                         <width>5</width>
                                         <taxonomy>
-                                          <code>VIPEBERU0</code>
+                                          <code>VIPEBERU</code>
                                           <scientific_name>Vipera berus</scientific_name>
                                         </taxonomy>
                                       </clade>
@@ -614,7 +636,7 @@
                                         <branch_length>1</branch_length>
                                         <width>5</width>
                                         <taxonomy>
-                                          <code>VIPENIKO0</code>
+                                          <code>VIPENIKO</code>
                                           <scientific_name>Vipera nikolskii</scientific_name>
                                         </taxonomy>
                                       </clade>
@@ -635,7 +657,7 @@
                                 <branch_length>1</branch_length>
                                 <width>5</width>
                                 <taxonomy>
-                                  <code>ATRAMICR0</code>
+                                  <code>ATRAMICR</code>
                                   <scientific_name>Atractaspis microlepidota</scientific_name>
                                 </taxonomy>
                               </clade>
@@ -649,17 +671,8 @@
                                     <branch_length>1</branch_length>
                                     <width>1</width>
                                     <clade>
-                                      <name>Laticauda_semifasciata</name>
                                       <branch_length>1</branch_length>
                                       <width>5</width>
-                                      <taxonomy>
-                                        <code>LATISEMI0</code>
-                                        <scientific_name>Laticauda semifasciata</scientific_name>
-                                      </taxonomy>
-                                    </clade>
-                                    <clade>
-                                      <name>r1</name>
-                                      <branch_length>0</branch_length>
                                       <clade>
                                         <branch_length>1</branch_length>
                                         <width>5</width>
@@ -667,59 +680,33 @@
                                           <branch_length>1</branch_length>
                                           <width>5</width>
                                           <clade>
+                                            <name>Pseudonaja_textilis</name>
                                             <branch_length>1</branch_length>
                                             <width>5</width>
-                                            <clade>
-                                              <name>Pseudonaja_textilis</name>
-                                              <branch_length>1</branch_length>
-                                              <width>5</width>
-                                              <taxonomy>
-                                                <code>PSEUTEXT0</code>
-                                                <scientific_name>Pseudonaja textilis</scientific_name>
-                                              </taxonomy>
-                                            </clade>
-                                            <clade>
-                                              <branch_length>1</branch_length>
-                                              <width>5</width>
-                                              <clade>
-                                                <name>Oxyuranus_microlepidotus</name>
-                                                <branch_length>1</branch_length>
-                                                <width>5</width>
-                                                <taxonomy>
-                                                  <code>OXYUMICR0</code>
-                                                  <scientific_name>Oxyuranus microlepidotus</scientific_name>
-                                                </taxonomy>
-                                              </clade>
-                                              <clade>
-                                                <name>Oxyuranus_scutellatus</name>
-                                                <branch_length>1</branch_length>
-                                                <width>5</width>
-                                                <taxonomy>
-                                                  <code>OXYUSCUT0</code>
-                                                  <scientific_name>Oxyuranus scutellatus</scientific_name>
-                                                </taxonomy>
-                                              </clade>
-                                            </clade>
+                                            <taxonomy>
+                                              <code>PSEUTEXT</code>
+                                              <scientific_name>Pseudonaja textilis</scientific_name>
+                                            </taxonomy>
                                           </clade>
                                           <clade>
                                             <branch_length>1</branch_length>
                                             <width>5</width>
                                             <clade>
-                                              <name>Pseudechis_australis</name>
+                                              <name>Oxyuranus_microlepidotus</name>
                                               <branch_length>1</branch_length>
                                               <width>5</width>
                                               <taxonomy>
-                                                <code>PSEUAUST0</code>
-                                                <scientific_name>Pseudechis australis</scientific_name>
+                                                <code>OXYUMICR</code>
+                                                <scientific_name>Oxyuranus microlepidotus</scientific_name>
                                               </taxonomy>
                                             </clade>
                                             <clade>
-                                              <name>Pseudechis_porphyriacus</name>
+                                              <name>Oxyuranus_scutellatus</name>
                                               <branch_length>1</branch_length>
                                               <width>5</width>
                                               <taxonomy>
-                                                <code>PSEUPORP0</code>
-                                                <scientific_name>Pseudechis porphyriacus</scientific_name>
+                                                <code>OXYUSCUT</code>
+                                                <scientific_name>Oxyuranus scutellatus</scientific_name>
                                               </taxonomy>
                                             </clade>
                                           </clade>
@@ -728,21 +715,21 @@
                                           <branch_length>1</branch_length>
                                           <width>5</width>
                                           <clade>
-                                            <name>Austrelaps_superbus</name>
+                                            <name>Pseudechis_australis</name>
                                             <branch_length>1</branch_length>
                                             <width>5</width>
                                             <taxonomy>
-                                              <code>AUSTSUPE0</code>
-                                              <scientific_name>Austrelaps superbus</scientific_name>
+                                              <code>PSEUAUST</code>
+                                              <scientific_name>Pseudechis australis</scientific_name>
                                             </taxonomy>
                                           </clade>
                                           <clade>
-                                            <name>Notechis_scutatus</name>
+                                            <name>Pseudechis_porphyriacus</name>
                                             <branch_length>1</branch_length>
                                             <width>5</width>
                                             <taxonomy>
-                                              <code>NOTESCUT0</code>
-                                              <scientific_name>Notechis scutatus</scientific_name>
+                                              <code>PSEUPORP</code>
+                                              <scientific_name>Pseudechis porphyriacus</scientific_name>
                                             </taxonomy>
                                           </clade>
                                         </clade>
@@ -751,15 +738,50 @@
                                         <branch_length>1</branch_length>
                                         <width>5</width>
                                         <clade>
+                                          <name>Austrelaps_superbus</name>
+                                          <branch_length>1</branch_length>
+                                          <width>5</width>
+                                          <taxonomy>
+                                            <code>AUSTSUPE</code>
+                                            <scientific_name>Austrelaps superbus</scientific_name>
+                                          </taxonomy>
+                                        </clade>
+                                        <clade>
+                                          <name>Notechis_scutatus</name>
+                                          <branch_length>1</branch_length>
+                                          <width>5</width>
+                                          <taxonomy>
+                                            <code>NOTESCUT</code>
+                                            <scientific_name>Notechis scutatus</scientific_name>
+                                          </taxonomy>
+                                        </clade>
+                                      </clade>
+                                    </clade>
+                                    <clade>
+                                      <name>r1</name>
+                                      <branch_length>0</branch_length>
+                                      <clade>
+                                        <name>Laticauda_semifasciata</name>
+                                        <branch_length>1</branch_length>
+                                        <width>5</width>
+                                        <taxonomy>
+                                          <code>LATISEMI</code>
+                                          <scientific_name>Laticauda semifasciata</scientific_name>
+                                        </taxonomy>
+                                      </clade>
+                                      <clade>
+                                        <branch_length>1</branch_length>
+                                        <width>5</width>
+                                        <clade>
                                           <branch_length>1</branch_length>
                                           <width>5</width>
                                           <clade>
-                                            <name>Drysdalia_coronoides</name>
+                                            <name>Demansia_vestigiata</name>
                                             <branch_length>1</branch_length>
                                             <width>5</width>
                                             <taxonomy>
-                                              <code>DRYSCORO0</code>
-                                              <scientific_name>Drysdalia coronoides</scientific_name>
+                                              <code>DEMAVEST</code>
+                                              <scientific_name>Demansia vestigiata</scientific_name>
                                             </taxonomy>
                                           </clade>
                                           <clade>
@@ -770,17 +792,17 @@
                                               <branch_length>1</branch_length>
                                               <width>5</width>
                                               <taxonomy>
-                                                <code>HOPLSTEP0</code>
+                                                <code>HOPLSTEP</code>
                                                 <scientific_name>Hoplocephalus stephensii</scientific_name>
                                               </taxonomy>
                                             </clade>
                                             <clade>
-                                              <name>Tropidechis_carinatus</name>
+                                              <name>Micropechis_ikaheka</name>
                                               <branch_length>1</branch_length>
                                               <width>5</width>
                                               <taxonomy>
-                                                <code>TROPCARI0</code>
-                                                <scientific_name>Tropidechis carinatus</scientific_name>
+                                                <code>MICRIKAH</code>
+                                                <scientific_name>Micropechis ikaheka</scientific_name>
                                               </taxonomy>
                                             </clade>
                                           </clade>
@@ -789,21 +811,21 @@
                                           <branch_length>1</branch_length>
                                           <width>5</width>
                                           <clade>
-                                            <name>Demansia_vestigiata</name>
+                                            <name>Drysdalia_coronoides</name>
                                             <branch_length>1</branch_length>
                                             <width>5</width>
                                             <taxonomy>
-                                              <code>DEMAVEST0</code>
-                                              <scientific_name>Demansia vestigiata</scientific_name>
+                                              <code>DRYSCORO</code>
+                                              <scientific_name>Drysdalia coronoides</scientific_name>
                                             </taxonomy>
                                           </clade>
                                           <clade>
-                                            <name>Micropechis_ikaheka</name>
+                                            <name>Tropidechis_carinatus</name>
                                             <branch_length>1</branch_length>
                                             <width>5</width>
                                             <taxonomy>
-                                              <code>MICRIKAH0</code>
-                                              <scientific_name>Micropechis ikaheka</scientific_name>
+                                              <code>TROPCARI</code>
+                                              <scientific_name>Tropidechis carinatus</scientific_name>
                                             </taxonomy>
                                           </clade>
                                         </clade>
@@ -821,7 +843,7 @@
                                         <branch_length>1</branch_length>
                                         <width>5</width>
                                         <taxonomy>
-                                          <code>MICRCORA0</code>
+                                          <code>MICRCORA</code>
                                           <scientific_name>Micrurus corallinus</scientific_name>
                                         </taxonomy>
                                       </clade>
@@ -833,7 +855,7 @@
                                           <branch_length>1</branch_length>
                                           <width>5</width>
                                           <taxonomy>
-                                            <code>OPHIHANN0</code>
+                                            <code>OPHIHANN</code>
                                             <scientific_name>Ophiophagus hannah</scientific_name>
                                           </taxonomy>
                                         </clade>
@@ -841,24 +863,24 @@
                                           <branch_length>1</branch_length>
                                           <width>5</width>
                                           <clade>
-                                            <name>Naja_mossambica</name>
+                                            <name>Naja_sputatrix</name>
                                             <branch_length>1</branch_length>
                                             <width>5</width>
                                             <taxonomy>
-                                              <code>NAJAMOSS0</code>
-                                              <scientific_name>Naja mossambica</scientific_name>
+                                              <code>NAJASPUT</code>
+                                              <scientific_name>Naja sputatrix</scientific_name>
                                             </taxonomy>
                                           </clade>
                                           <clade>
                                             <branch_length>1</branch_length>
                                             <width>5</width>
                                             <clade>
-                                              <name>Naja_kaouthia</name>
+                                              <name>Naja_mossambica</name>
                                               <branch_length>1</branch_length>
                                               <width>5</width>
                                               <taxonomy>
-                                                <code>NAJAKAOU0</code>
-                                                <scientific_name>Naja kaouthia</scientific_name>
+                                                <code>NAJAMOSS</code>
+                                                <scientific_name>Naja mossambica</scientific_name>
                                               </taxonomy>
                                             </clade>
                                             <clade>
@@ -869,17 +891,17 @@
                                                 <branch_length>1</branch_length>
                                                 <width>5</width>
                                                 <taxonomy>
-                                                  <code>NAJAATRA0</code>
+                                                  <code>NAJAATRA</code>
                                                   <scientific_name>Naja atra</scientific_name>
                                                 </taxonomy>
                                               </clade>
                                               <clade>
-                                                <name>Naja_sputatrix</name>
+                                                <name>Naja_kaouthia</name>
                                                 <branch_length>1</branch_length>
                                                 <width>5</width>
                                                 <taxonomy>
-                                                  <code>NAJASPUT0</code>
-                                                  <scientific_name>Naja sputatrix</scientific_name>
+                                                  <code>NAJAKAOU</code>
+                                                  <scientific_name>Naja kaouthia</scientific_name>
                                                 </taxonomy>
                                               </clade>
                                             </clade>
@@ -895,7 +917,7 @@
                                         <branch_length>1</branch_length>
                                         <width>5</width>
                                         <taxonomy>
-                                          <code>BUNGFASC0</code>
+                                          <code>BUNGFASC</code>
                                           <scientific_name>Bungarus fasciatus</scientific_name>
                                         </taxonomy>
                                       </clade>
@@ -907,7 +929,7 @@
                                           <branch_length>1</branch_length>
                                           <width>5</width>
                                           <taxonomy>
-                                            <code>BUNGCAND0</code>
+                                            <code>BUNGCAND</code>
                                             <scientific_name>Bungarus candidus</scientific_name>
                                           </taxonomy>
                                         </clade>
@@ -916,7 +938,7 @@
                                           <branch_length>1</branch_length>
                                           <width>5</width>
                                           <taxonomy>
-                                            <code>BUNGMULT0</code>
+                                            <code>BUNGMULT</code>
                                             <scientific_name>Bungarus multicinctus</scientific_name>
                                           </taxonomy>
                                         </clade>
@@ -932,7 +954,7 @@
                                     <branch_length>1</branch_length>
                                     <width>5</width>
                                     <taxonomy>
-                                      <code>LAPEHARD0</code>
+                                      <code>LAPEHARD</code>
                                       <scientific_name>Lapemis hardwickii</scientific_name>
                                     </taxonomy>
                                   </clade>
@@ -941,7 +963,7 @@
                                     <branch_length>1</branch_length>
                                     <width>5</width>
                                     <taxonomy>
-                                      <code>RHINNIGR0</code>
+                                      <code>RHINNIGR</code>
                                       <scientific_name>Rhinoplocephalus nigrescens</scientific_name>
                                     </taxonomy>
                                   </clade>
@@ -968,7 +990,7 @@
                                         <branch_length>1</branch_length>
                                         <width>5</width>
                                         <taxonomy>
-                                          <code>LIOPPOEC0</code>
+                                          <code>LIOPPOEC</code>
                                           <scientific_name>Liophis poecilogyrus</scientific_name>
                                         </taxonomy>
                                       </clade>
@@ -977,7 +999,7 @@
                                         <branch_length>1</branch_length>
                                         <width>5</width>
                                         <taxonomy>
-                                          <code>PHILOLFE0</code>
+                                          <code>PHILOLFE</code>
                                           <scientific_name>Philodryas olfersii</scientific_name>
                                         </taxonomy>
                                       </clade>
@@ -990,7 +1012,7 @@
                                         <branch_length>1</branch_length>
                                         <width>5</width>
                                         <taxonomy>
-                                          <code>RHABTIGR0</code>
+                                          <code>RHABTIGR</code>
                                           <scientific_name>Rhabdophis tigrinus</scientific_name>
                                         </taxonomy>
                                       </clade>
@@ -999,7 +1021,7 @@
                                         <branch_length>1</branch_length>
                                         <width>5</width>
                                         <taxonomy>
-                                          <code>THAMELEG0</code>
+                                          <code>THAMELEG</code>
                                           <scientific_name>Thamnophis elegans</scientific_name>
                                         </taxonomy>
                                       </clade>
@@ -1009,24 +1031,24 @@
                                     <branch_length>1</branch_length>
                                     <width>5</width>
                                     <clade>
-                                      <name>Dispholidus_typus</name>
+                                      <name>Telescopus_dhara</name>
                                       <branch_length>1</branch_length>
                                       <width>5</width>
                                       <taxonomy>
-                                        <code>DISPTYPU0</code>
-                                        <scientific_name>Dispholidus typus</scientific_name>
+                                        <code>TELEDHAR</code>
+                                        <scientific_name>Telescopus dhara</scientific_name>
                                       </taxonomy>
                                     </clade>
                                     <clade>
                                       <branch_length>1</branch_length>
                                       <width>5</width>
                                       <clade>
-                                        <name>Telescopus_dhara</name>
+                                        <name>Dispholidus_typus</name>
                                         <branch_length>1</branch_length>
                                         <width>5</width>
                                         <taxonomy>
-                                          <code>TELEDHAR0</code>
-                                          <scientific_name>Telescopus dhara</scientific_name>
+                                          <code>DISPTYPU</code>
+                                          <scientific_name>Dispholidus typus</scientific_name>
                                         </taxonomy>
                                       </clade>
                                       <clade>
@@ -1037,7 +1059,7 @@
                                           <branch_length>1</branch_length>
                                           <width>5</width>
                                           <taxonomy>
-                                            <code>THRAJACK0</code>
+                                            <code>THRAJACK</code>
                                             <scientific_name>Thrasops jacksoni</scientific_name>
                                           </taxonomy>
                                         </clade>
@@ -1046,7 +1068,7 @@
                                           <branch_length>1</branch_length>
                                           <width>5</width>
                                           <taxonomy>
-                                            <code>TRIMBISC0</code>
+                                            <code>TRIMBISC</code>
                                             <scientific_name>Trimorphodon biscutatus</scientific_name>
                                           </taxonomy>
                                         </clade>
@@ -1058,21 +1080,21 @@
                                   <branch_length>1</branch_length>
                                   <width>5</width>
                                   <clade>
-                                    <name>Leioheterodon_madagascariensis</name>
+                                    <name>Cerberus_rynchops</name>
                                     <branch_length>1</branch_length>
                                     <width>5</width>
                                     <taxonomy>
-                                      <code>LEIOMADA0</code>
-                                      <scientific_name>Leioheterodon madagascariensis</scientific_name>
+                                      <code>CERBRYNC</code>
+                                      <scientific_name>Cerberus rynchops</scientific_name>
                                     </taxonomy>
                                   </clade>
                                   <clade>
-                                    <name>Psammophis_mossambicus</name>
+                                    <name>Enhydris_polylepis</name>
                                     <branch_length>1</branch_length>
                                     <width>5</width>
                                     <taxonomy>
-                                      <code>PSAMMOSS0</code>
-                                      <scientific_name>Psammophis mossambicus</scientific_name>
+                                      <code>ENHYPOLY</code>
+                                      <scientific_name>Enhydris polylepis</scientific_name>
                                     </taxonomy>
                                   </clade>
                                 </clade>
@@ -1081,21 +1103,21 @@
                                 <branch_length>1</branch_length>
                                 <width>5</width>
                                 <clade>
-                                  <name>Cerberus_rynchops</name>
+                                  <name>Leioheterodon_madagascariensis</name>
                                   <branch_length>1</branch_length>
                                   <width>5</width>
                                   <taxonomy>
-                                    <code>CERBRYNC0</code>
-                                    <scientific_name>Cerberus rynchops</scientific_name>
+                                    <code>LEIOMADA</code>
+                                    <scientific_name>Leioheterodon madagascariensis</scientific_name>
                                   </taxonomy>
                                 </clade>
                                 <clade>
-                                  <name>Enhydris_polylepis</name>
+                                  <name>Psammophis_mossambicus</name>
                                   <branch_length>1</branch_length>
                                   <width>5</width>
                                   <taxonomy>
-                                    <code>ENHYPOLY0</code>
-                                    <scientific_name>Enhydris polylepis</scientific_name>
+                                    <code>PSAMMOSS</code>
+                                    <scientific_name>Psammophis mossambicus</scientific_name>
                                   </taxonomy>
                                 </clade>
                               </clade>
@@ -1117,7 +1139,7 @@
                               <branch_length>1</branch_length>
                               <width>5</width>
                               <taxonomy>
-                                <code>VARAINDI0</code>
+                                <code>VARAINDI</code>
                                 <scientific_name>Varanus indicus</scientific_name>
                               </taxonomy>
                             </clade>
@@ -1138,7 +1160,7 @@
                                       <branch_length>1</branch_length>
                                       <width>5</width>
                                       <taxonomy>
-                                        <code>VARAMITC0</code>
+                                        <code>VARAMITC</code>
                                         <scientific_name>Varanus mitchelli</scientific_name>
                                       </taxonomy>
                                     </clade>
@@ -1147,7 +1169,7 @@
                                       <branch_length>1</branch_length>
                                       <width>5</width>
                                       <taxonomy>
-                                        <code>VARASCAL0</code>
+                                        <code>VARASCAL</code>
                                         <scientific_name>Varanus scalaris</scientific_name>
                                       </taxonomy>
                                     </clade>
@@ -1160,7 +1182,7 @@
                                       <branch_length>1</branch_length>
                                       <width>5</width>
                                       <taxonomy>
-                                        <code>VARAGLAU0</code>
+                                        <code>VARAGLAU</code>
                                         <scientific_name>Varanus glauerti</scientific_name>
                                       </taxonomy>
                                     </clade>
@@ -1169,7 +1191,7 @@
                                       <branch_length>1</branch_length>
                                       <width>5</width>
                                       <taxonomy>
-                                        <code>VARATRIS0</code>
+                                        <code>VARATRIS</code>
                                         <scientific_name>Varanus tristis</scientific_name>
                                       </taxonomy>
                                     </clade>
@@ -1183,7 +1205,7 @@
                                     <branch_length>1</branch_length>
                                     <width>5</width>
                                     <taxonomy>
-                                      <code>VARAACAN0</code>
+                                      <code>VARAACAN</code>
                                       <scientific_name>Varanus acanthurus</scientific_name>
                                     </taxonomy>
                                   </clade>
@@ -1192,7 +1214,7 @@
                                     <branch_length>1</branch_length>
                                     <width>5</width>
                                     <taxonomy>
-                                      <code>VARAGILL0</code>
+                                      <code>VARAGILL</code>
                                       <scientific_name>Varanus gilleni</scientific_name>
                                     </taxonomy>
                                   </clade>
@@ -1209,7 +1231,7 @@
                                     <branch_length>1</branch_length>
                                     <width>5</width>
                                     <taxonomy>
-                                      <code>VARAMERT0</code>
+                                      <code>VARAMERT</code>
                                       <scientific_name>Varanus mertensi</scientific_name>
                                     </taxonomy>
                                   </clade>
@@ -1221,7 +1243,7 @@
                                       <branch_length>1</branch_length>
                                       <width>5</width>
                                       <taxonomy>
-                                        <code>VARAGOUL0</code>
+                                        <code>VARAGOUL</code>
                                         <scientific_name>Varanus gouldii</scientific_name>
                                       </taxonomy>
                                     </clade>
@@ -1230,7 +1252,7 @@
                                       <branch_length>1</branch_length>
                                       <width>5</width>
                                       <taxonomy>
-                                        <code>VARAPANO0</code>
+                                        <code>VARAPANO</code>
                                         <scientific_name>Varanus panoptes</scientific_name>
                                       </taxonomy>
                                     </clade>
@@ -1244,7 +1266,7 @@
                                     <branch_length>1</branch_length>
                                     <width>5</width>
                                     <taxonomy>
-                                      <code>VARAKOMO0</code>
+                                      <code>VARAKOMO</code>
                                       <scientific_name>Varanus komodoensis</scientific_name>
                                     </taxonomy>
                                   </clade>
@@ -1253,7 +1275,7 @@
                                     <branch_length>1</branch_length>
                                     <width>5</width>
                                     <taxonomy>
-                                      <code>VARAVARI0</code>
+                                      <code>VARAVARI</code>
                                       <scientific_name>Varanus varius</scientific_name>
                                     </taxonomy>
                                   </clade>
@@ -1265,12 +1287,12 @@
                             <branch_length>1</branch_length>
                             <width>1</width>
                             <clade>
-                              <name>Gerrhonotus_infernalis</name>
+                              <name>Celestus_warreni</name>
                               <branch_length>1</branch_length>
                               <width>5</width>
                               <taxonomy>
-                                <code>GERRINFE0</code>
-                                <scientific_name>Gerrhonotus infernalis</scientific_name>
+                                <code>CELEWARR</code>
+                                <scientific_name>Celestus warreni</scientific_name>
                               </taxonomy>
                             </clade>
                             <clade>
@@ -1281,17 +1303,17 @@
                                 <branch_length>1</branch_length>
                                 <width>5</width>
                                 <taxonomy>
-                                  <code>PSEUAPOD0</code>
+                                  <code>PSEUAPOD</code>
                                   <scientific_name>Pseudopus apodus</scientific_name>
                                 </taxonomy>
                               </clade>
                               <clade>
-                                <name>Celestus_warreni</name>
+                                <name>Gerrhonotus_infernalis</name>
                                 <branch_length>1</branch_length>
                                 <width>5</width>
                                 <taxonomy>
-                                  <code>CELEWARR0</code>
-                                  <scientific_name>Celestus warreni</scientific_name>
+                                  <code>GERRINFE</code>
+                                  <scientific_name>Gerrhonotus infernalis</scientific_name>
                                 </taxonomy>
                               </clade>
                             </clade>
@@ -1305,17 +1327,17 @@
                             <branch_length>1</branch_length>
                             <width>5</width>
                             <taxonomy>
-                              <code>HELOHORR0</code>
+                              <code>HELOHORR</code>
                               <scientific_name>Heloderma horridum</scientific_name>
                             </taxonomy>
                           </clade>
                           <clade>
-                            <name>Heloderma_suspectum</name>
+                            <name>Heloderma_suspectum_cinctum</name>
                             <branch_length>1</branch_length>
                             <width>5</width>
                             <taxonomy>
-                              <code>HELOSUSP0</code>
-                              <scientific_name>Heloderma suspectum</scientific_name>
+                              <code>HELOCINC</code>
+                              <scientific_name>Heloderma suspectum cinctum</scientific_name>
                             </taxonomy>
                           </clade>
                         </clade>
@@ -1329,7 +1351,7 @@
                         <branch_length>1</branch_length>
                         <width>5</width>
                         <taxonomy>
-                          <code>ANOLCARO0</code>
+                          <code>ANOLCARO</code>
                           <scientific_name>Anolis carolinensis</scientific_name>
                         </taxonomy>
                       </clade>
@@ -1338,7 +1360,7 @@
                         <branch_length>1</branch_length>
                         <width>5</width>
                         <taxonomy>
-                          <code>POGOBARB0</code>
+                          <code>POGOBARB</code>
                           <scientific_name>Pogona barbata</scientific_name>
                         </taxonomy>
                       </clade>
@@ -1352,7 +1374,7 @@
                       <branch_length>1</branch_length>
                       <width>5</width>
                       <taxonomy>
-                        <code>TAENGUTT0</code>
+                        <code>TAENGUTT</code>
                         <scientific_name>Taeniopygia guttata</scientific_name>
                       </taxonomy>
                     </clade>
@@ -1364,7 +1386,7 @@
                         <branch_length>1</branch_length>
                         <width>5</width>
                         <taxonomy>
-                          <code>GALLGALL0</code>
+                          <code>GALLGALL</code>
                           <scientific_name>Gallus gallus</scientific_name>
                         </taxonomy>
                       </clade>
@@ -1373,7 +1395,7 @@
                         <branch_length>1</branch_length>
                         <width>5</width>
                         <taxonomy>
-                          <code>MELEGALL0</code>
+                          <code>MELEGALL</code>
                           <scientific_name>Meleagris gallopavo</scientific_name>
                         </taxonomy>
                       </clade>
@@ -1388,7 +1410,7 @@
                     <branch_length>1</branch_length>
                     <width>5</width>
                     <taxonomy>
-                      <code>MONODOME0</code>
+                      <code>MONODOME</code>
                       <scientific_name>Monodelphis domestica</scientific_name>
                     </taxonomy>
                   </clade>
@@ -1412,7 +1434,7 @@
                               <branch_length>1</branch_length>
                               <width>5</width>
                               <taxonomy>
-                                <code>PONGABEL0</code>
+                                <code>PONGABEL</code>
                                 <scientific_name>Pongo abelii</scientific_name>
                               </taxonomy>
                             </clade>
@@ -1424,7 +1446,7 @@
                                 <branch_length>1</branch_length>
                                 <width>5</width>
                                 <taxonomy>
-                                  <code>HOMOSAPI0</code>
+                                  <code>HOMOSAPI</code>
                                   <scientific_name>Homo sapiens</scientific_name>
                                 </taxonomy>
                               </clade>
@@ -1433,7 +1455,7 @@
                                 <branch_length>1</branch_length>
                                 <width>5</width>
                                 <taxonomy>
-                                  <code>PANTROG0</code>
+                                  <code>PANTROG</code>
                                   <scientific_name>Pan troglodytes</scientific_name>
                                 </taxonomy>
                               </clade>
@@ -1447,7 +1469,7 @@
                               <branch_length>1</branch_length>
                               <width>5</width>
                               <taxonomy>
-                                <code>MACAFASC0</code>
+                                <code>MACAFASC</code>
                                 <scientific_name>Macaca fascicularis</scientific_name>
                               </taxonomy>
                             </clade>
@@ -1456,7 +1478,7 @@
                               <branch_length>1</branch_length>
                               <width>5</width>
                               <taxonomy>
-                                <code>MACAMULA0</code>
+                                <code>MACAMULA</code>
                                 <scientific_name>Macaca mulatta</scientific_name>
                               </taxonomy>
                             </clade>
@@ -1470,7 +1492,7 @@
                             <branch_length>1</branch_length>
                             <width>5</width>
                             <taxonomy>
-                              <code>CALLJACC0</code>
+                              <code>CALLJACC</code>
                               <scientific_name>Callithrix jacchus</scientific_name>
                             </taxonomy>
                           </clade>
@@ -1479,7 +1501,7 @@
                             <branch_length>1</branch_length>
                             <width>5</width>
                             <taxonomy>
-                              <code>SAIMSCIU0</code>
+                              <code>SAIMSCIU</code>
                               <scientific_name>Saimiri sciureus</scientific_name>
                             </taxonomy>
                           </clade>
@@ -1493,7 +1515,7 @@
                           <branch_length>1</branch_length>
                           <width>5</width>
                           <taxonomy>
-                            <code>ORYCCUNI0</code>
+                            <code>ORYCCUNI</code>
                             <scientific_name>Oryctolagus cuniculus</scientific_name>
                           </taxonomy>
                         </clade>
@@ -1505,7 +1527,7 @@
                             <branch_length>1</branch_length>
                             <width>5</width>
                             <taxonomy>
-                              <code>RATTNORV0</code>
+                              <code>RATTNORV</code>
                               <scientific_name>Rattus norvegicus</scientific_name>
                             </taxonomy>
                           </clade>
@@ -1517,7 +1539,7 @@
                               <branch_length>1</branch_length>
                               <width>5</width>
                               <taxonomy>
-                                <code>MASTNATA0</code>
+                                <code>MASTNATA</code>
                                 <scientific_name>Mastomys natalensis</scientific_name>
                               </taxonomy>
                             </clade>
@@ -1526,7 +1548,7 @@
                               <branch_length>1</branch_length>
                               <width>5</width>
                               <taxonomy>
-                                <code>MUSMUSC0</code>
+                                <code>MUSMUSC</code>
                                 <scientific_name>Mus musculus</scientific_name>
                               </taxonomy>
                             </clade>
@@ -1538,47 +1560,47 @@
                       <branch_length>1</branch_length>
                       <width>1</width>
                       <clade>
-                        <name>Ailuropoda_melanoleuca</name>
                         <branch_length>1</branch_length>
                         <width>5</width>
-                        <taxonomy>
-                          <code>AILUMELA0</code>
-                          <scientific_name>Ailuropoda melanoleuca</scientific_name>
-                        </taxonomy>
+                        <clade>
+                          <name>Bos_taurus</name>
+                          <branch_length>1</branch_length>
+                          <width>5</width>
+                          <taxonomy>
+                            <code>BOSTAUR</code>
+                            <scientific_name>Bos taurus</scientific_name>
+                          </taxonomy>
+                        </clade>
+                        <clade>
+                          <name>Sus_scrofa</name>
+                          <branch_length>1</branch_length>
+                          <width>5</width>
+                          <taxonomy>
+                            <code>SUSSCRO</code>
+                            <scientific_name>Sus scrofa</scientific_name>
+                          </taxonomy>
+                        </clade>
                       </clade>
                       <clade>
                         <name>r1</name>
                         <branch_length>0</branch_length>
                         <clade>
+                          <name>Ailuropoda_melanoleuca</name>
+                          <branch_length>1</branch_length>
+                          <width>5</width>
+                          <taxonomy>
+                            <code>AILUMELA</code>
+                            <scientific_name>Ailuropoda melanoleuca</scientific_name>
+                          </taxonomy>
+                        </clade>
+                        <clade>
                           <name>Equus_caballus</name>
                           <branch_length>1</branch_length>
                           <width>5</width>
                           <taxonomy>
-                            <code>EQUUCABA0</code>
+                            <code>EQUUCABA</code>
                             <scientific_name>Equus caballus</scientific_name>
                           </taxonomy>
-                        </clade>
-                        <clade>
-                          <branch_length>1</branch_length>
-                          <width>5</width>
-                          <clade>
-                            <name>Bos_taurus</name>
-                            <branch_length>1</branch_length>
-                            <width>5</width>
-                            <taxonomy>
-                              <code>BOSTAUR0</code>
-                              <scientific_name>Bos taurus</scientific_name>
-                            </taxonomy>
-                          </clade>
-                          <clade>
-                            <name>Sus_scrofa</name>
-                            <branch_length>1</branch_length>
-                            <width>5</width>
-                            <taxonomy>
-                              <code>SUSSCRO0</code>
-                              <scientific_name>Sus scrofa</scientific_name>
-                            </taxonomy>
-                          </clade>
                         </clade>
                       </clade>
                     </clade>
@@ -1589,21 +1611,21 @@
                 <branch_length>1</branch_length>
                 <width>5</width>
                 <clade>
+                  <name>'Xenopus_(Silurana)_tropicalis'</name>
+                  <branch_length>1</branch_length>
+                  <width>5</width>
+                  <taxonomy>
+                    <code>XENOTROP</code>
+                    <scientific_name>Xenopus (Silurana) tropicalis</scientific_name>
+                  </taxonomy>
+                </clade>
+                <clade>
                   <name>Xenopus_laevis</name>
                   <branch_length>1</branch_length>
                   <width>5</width>
                   <taxonomy>
-                    <code>XENOLAEV0</code>
+                    <code>XENOLAEV</code>
                     <scientific_name>Xenopus laevis</scientific_name>
-                  </taxonomy>
-                </clade>
-                <clade>
-                  <name>Xenopus_tropicalis</name>
-                  <branch_length>1</branch_length>
-                  <width>5</width>
-                  <taxonomy>
-                    <code>XENOTROP0</code>
-                    <scientific_name>Xenopus tropicalis</scientific_name>
                   </taxonomy>
                 </clade>
               </clade>
@@ -1622,7 +1644,7 @@
                     <branch_length>1</branch_length>
                     <width>5</width>
                     <taxonomy>
-                      <code>XIPHMACU0</code>
+                      <code>XIPHMACU</code>
                       <scientific_name>Xiphophorus maculatus</scientific_name>
                     </taxonomy>
                   </clade>
@@ -1634,7 +1656,7 @@
                       <branch_length>1</branch_length>
                       <width>5</width>
                       <taxonomy>
-                        <code>SPIRLANC0</code>
+                        <code>SPIRLANC</code>
                         <scientific_name>Spirinchus lanceolatus</scientific_name>
                       </taxonomy>
                     </clade>
@@ -1646,7 +1668,7 @@
                         <branch_length>1</branch_length>
                         <width>5</width>
                         <taxonomy>
-                          <code>SALMSALA0</code>
+                          <code>SALMSALA</code>
                           <scientific_name>Salmo salar</scientific_name>
                         </taxonomy>
                       </clade>
@@ -1658,7 +1680,7 @@
                           <branch_length>1</branch_length>
                           <width>5</width>
                           <taxonomy>
-                            <code>ONCOKETA0</code>
+                            <code>ONCOKETA</code>
                             <scientific_name>Oncorhynchus keta</scientific_name>
                           </taxonomy>
                         </clade>
@@ -1667,7 +1689,7 @@
                           <branch_length>1</branch_length>
                           <width>5</width>
                           <taxonomy>
-                            <code>ONCOMYKI0</code>
+                            <code>ONCOMYKI</code>
                             <scientific_name>Oncorhynchus mykiss</scientific_name>
                           </taxonomy>
                         </clade>
@@ -1683,7 +1705,7 @@
                     <branch_length>1</branch_length>
                     <width>5</width>
                     <taxonomy>
-                      <code>CYPRCARP0</code>
+                      <code>CYPRCARP</code>
                       <scientific_name>Cyprinus carpio</scientific_name>
                     </taxonomy>
                   </clade>
@@ -1692,7 +1714,7 @@
                     <branch_length>1</branch_length>
                     <width>5</width>
                     <taxonomy>
-                      <code>DANIRERI0</code>
+                      <code>DANIRERI</code>
                       <scientific_name>Danio rerio</scientific_name>
                     </taxonomy>
                   </clade>
@@ -1705,7 +1727,7 @@
                   <branch_length>1</branch_length>
                   <width>5</width>
                   <taxonomy>
-                    <code>ACIPSCHR0</code>
+                    <code>ACIPSCHR</code>
                     <scientific_name>Acipenser schrenckii</scientific_name>
                   </taxonomy>
                 </clade>
@@ -1714,7 +1736,7 @@
                   <branch_length>2</branch_length>
                   <width>5</width>
                   <taxonomy>
-                    <code>ACIPSINE0</code>
+                    <code>ACIPSINE</code>
                     <scientific_name>Acipenser sinensis</scientific_name>
                   </taxonomy>
                 </clade>
