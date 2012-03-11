@@ -35,10 +35,22 @@ SCRIPT=script/
 #    $PERL $SCRIPT/fas2phylip.pl -i $FASTAFILE -c $TAXAMAP > $PHYLIPFILE
 #done
 
+# add short PHYLIP names to table
+#$PERL $SCRIPT/map_phylip_names.pl -d $RAWDATA -p phylip -f fas -c $TAXAMAP > $TAXAMAP.bak
+#mv $TAXAMAP.bak $TAXAMAP
+
+# rename tips in consensus trees, write out as newick
+#NEXUSTREES=`ls $RAWDATA/*.tre`
+#for NEXUSTREE in $NEXUSTREES; do
+#    NEWICKTREE=`echo $NEXUSTREE | sed -e 's/.tre/.dnd/'`
+#    $PERL $SCRIPT/nexus2newick.pl -c $TAXAMAP -i $NEXUSTREE > $NEWICKTREE
+#done
+
 # run phyml on each phylip file
 #PHYLIPFILES=`ls $RAWDATA/*.phylip`
 #for PHYLIPFILE in $PHYLIPFILES; do
-#    $PHYML -i $PHYLIPFILE
+#    NEWICKTREE=`echo $PHYLIPFILE | sed -e 's/.phylip/.dnd/'`
+#    $PHYML -i $PHYLIPFILE -u $NEWICKTREE -s BEST
 #done
 
 # write phyml files to phyloxml
