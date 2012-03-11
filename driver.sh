@@ -4,6 +4,7 @@ PERL=perl
 PHYML=phyml
 PAUPRAT=pauprat
 PAUP=paup
+MUSCLE=muscle
 
 # project variables
 DATA=data
@@ -90,3 +91,17 @@ SCRIPT=script/
 
 # write consensus PHYLOXML tree
 #$PERL $SCRIPT/make_consensus.pl -i $RATCHETRESULT -c $TAXAMAP -o $MRPOUTGROUP > $SPECIESPHYLOXML
+
+# fetch protein sequences from GenBank
+#FASTAFILES=`ls $RAWDATA/*.fas`
+#for FASTAFILE in $FASTAFILES; do
+#    PROTFILE=`echo $FASTAFILE | sed -e 's/.fas/.prot/'`
+#    $PERL $SCRIPT/fetch_protein.pl -f fasta -i $FASTAFILE -t dna -c $TAXAMAP > $PROTFILE
+#done
+
+# align protein sequences
+#PROTFILES=`ls $RAWDATA/*.prot`
+#for PROTFILE in $PROTFILES; do
+#    ALN=`echo $PROTFILE | sed -e 's/.prot/.aln/'`
+#    $MUSCLE -in $PROTFILE -out $ALN
+#done
