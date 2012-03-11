@@ -2,10 +2,12 @@
 use strict;
 use warnings;
 use Getopt::Long;
+use Data::Dumper;
 use Bio::DB::GenBank;
 use Bio::DB::Query::GenBank;
 use Bio::Phylo::IO 'parse';
 use Bio::Phylo::Cobra::TaxaMap;
+use Bio::Phylo::Util::Logger ':levels';
 use Bio::Phylo::Util::CONSTANT ':objecttypes';
 
 # this script takes an input alignment, parses the GIs out of the
@@ -31,7 +33,7 @@ my ($matrix) = @{
 		'-file'   => $infile,
 		'-type'   => $type,
 		'-as_project' => 1,
-	)->get_items(_MATRIX)
+	)->get_items(_MATRIX_)
 };
 
 # get GIs from input file
@@ -43,7 +45,7 @@ for my $row ( @{ $matrix->get_entities } ) {
 }
 
 # compose query object
-my $query_str = join ' or ', map { $_ . '[GI]' } @ids;
+my $query_str = join ' or ', map { $_ . '[GI]' } grep { /\d+/ } @ids;
 my $query_obj = Bio::DB::Query::GenBank->new( '-db' => 'nucleotide', '-query' => $query_str );
 
 # run query
@@ -56,13 +58,19 @@ my $stream_obj = $gb_obj->get_Stream_by_query($query_obj);
 	# verify that local and remote taxon IDs match
 	my $id = $seq->primary_id;
 	my $taxon_id = $seq->species->ncbi_taxid;
-	if ( $taxon_id == $map->get_taxonID_for_gi($id) ) {
+	my $phylip_name = $map->get_phylip_for_gi($id);
+	if ( $taxon_id == $map->get_taxonID_for_gi($id) && $phylip_name ) {
 	
-		# print protein translation
-		print '>', $id, "\n";
-		print $seq->translate->seq, "\n";
+		# get the coding sequence	
+		for my $feat ( $seq->get_SeqFeatures ) {
+			if ( $feat->primary_tag eq 'CDS' ) {
+				my ($feat_seq) = @{ $feat->{'_gsf_tag_hash'}->{'translation'} };
+				print '>', $phylip_name, "\n", $feat_seq, "\n";
+			}
+		}
+		
 	}
 	else {
-		warn "wrong species for GI: $id";
+		warn "wrong species for GI $id in $infile";
 	}
 }
