@@ -10,6 +10,8 @@ my %keys = (
 	'taxonID'    => 2,
 	'code'       => 3,
 	'gi'         => 4,
+	'phylip'     => 5,
+	'gene'       => 6,
 );
 
 =pod
@@ -27,6 +29,8 @@ my %keys = (
 =item $map->gi($label, [$gi])
 
 =item $map->code($label, [$code])
+
+=item $map->phylip($label, [$phylip])
 
 =back
 
