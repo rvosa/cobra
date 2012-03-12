@@ -30,9 +30,9 @@ my $map = Bio::Phylo::Cobra::TaxaMap->new($csv);
 $matrix->visit(sub{
     my $row = shift;
     if ( my $name = $row->get_name ) {
-        if ( $name =~ /^([^_]+_[^_]+_[^_]+)/ ) {
-            my $three_part_name = $1;
-            my $code = $map->get_code_for_label($three_part_name);
+        my $label = $map->parse_label($name);
+        if ( $label ) {
+            my $code = $map->get_code_for_label($label);
             $row->set_name($code);
         }
     }

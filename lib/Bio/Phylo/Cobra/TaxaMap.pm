@@ -32,15 +32,21 @@ my %keys = (
 
 =item $map->phylip($label, [$phylip])
 
+=item $map->gene($label, [$gene])
+
 =back
 
 =head1 QUERIES
+
+In the following, x and y are both one of label, 
+binomial, taxonID, gi, code, phylip, gene.
 
 =over
 
 =item $map->get_x_for_y()
 
-x and y are both one of label, binomial, taxonID, gi, code
+In scalar context, this returns the first result. In list context, all matching
+x will be returned in case of a one-to-many cardinality between y and x.
 
 =item $map->get_all_xs()
 
@@ -112,6 +118,9 @@ sub AUTOLOAD {
 		my $label = shift;
 		my $value = shift;
 		if ( defined $value ) {
+			# when doing a hash-based lookup, the indices
+			# are off by one because $label isn't part of
+			# the value array
 			$self->{$label}->[$keys{$method} - 1] = $value;
 		}
 		return $self->{$label}->[$keys{$method} - 1];
