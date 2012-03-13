@@ -1,10 +1,30 @@
 #!/bin/bash
-# I have these in my $PATH
+# on my system, $ perl -v:
+# This is perl, v5.10.0 built for darwin-thread-multi-2level
+# (with 2 registered patches, see perl -V for more detail)
 PERL=perl
+
+# $ phyml -version
+# PhyML v3.0_360-500M 
 PHYML=phyml
+
+# http://users.iab.uaf.edu/~derek_sikes/software2.htm
 PAUPRAT=pauprat
+
+# $ paup -v
+# P A U P *
+# Portable version 4.0b10 for Unix
 PAUP=paup
+
+# $ muscle -version
+# MUSCLE v3.6 by Robert C. Edgar
 MUSCLE=muscle
+
+# http://www.evolution.rdg.ac.uk/Files/BayesTraits-OSX-Intel-V1.0.tar.gz
+BAYESTRAITS=BayesTraits
+
+HYPHY_DIR=/Users/rvosa/Applications/hyphy1/hyphy/HYPHY/
+HYPHY="$HYPHY_DIR/HYPHY"
 
 # project variables
 DATA=data
@@ -14,26 +34,32 @@ SPECIESPHYLOXML=$DATA/speciestree.phyloxml
 SOURCETREES=$DATA/sourcetrees/
 LOGFILE=err.log
 
+# these are the data from Nick, with some edits recorded on github
+FASTAFILES=`ls $RAWDATA/*.fas`
+NEXUSTREES=`ls $RAWDATA/*.tre`
+
+# variables for supertree
 SUPERTREE=$DATA/supertree
 SUPERMRPSTEM=MRP_matrix
 SUPERMRP=$SUPERTREE/$SUPERMRPSTEM.nex
-SUPERFOOTER=$SUPERTREE/${SUPERMRPSTEM}_footer.nex
 MRPOUTGROUP=mrp_outgroup
 RATCHETSETUP=setup.nex
 RATCHETCOMMANDS=ratchet.nex
 RATCHETRESULT=$SUPERTREE/mydata.tre
 
+# variables for NCBI taxonomy tree
 NCBISTEM=phyliptree
 NCBITREE=$DATA/$NCBISTEM.phy
 NCBIMRP=$SOURCETREES/$NCBISTEM.dat
+
+# this adds the map object Bio::Phylo::Cobra::TaxaMap to the
+# perl class path
 PERL5LIB="${PERL5LIB}:lib"
+
+# here are the scripts
 SCRIPT=script/
 
-HYPHY=HYPHY
-HYPHY_DIR=/Users/rvosa/Applications/hyphy1/hyphy/HYPHY/
-
 # convert fasta files to phylip files for phyml
-FASTAFILES=`ls $RAWDATA/*.fas`
 for FASTAFILE in $FASTAFILES; do
     PHYLIPFILE=`echo $FASTAFILE | sed -e 's/.fas/.phylip/'`
     if [ ! -s "$PHYLIPFILE" ]; then
@@ -43,7 +69,6 @@ for FASTAFILE in $FASTAFILES; do
 done
 
 # rename tips in consensus trees, write out as newick
-NEXUSTREES=`ls $RAWDATA/*.tre`
 for NEXUSTREE in $NEXUSTREES; do
     NEWICKTREE=`echo $NEXUSTREE | sed -e 's/.tre/.dnd/'`
     if [ ! -s "$NEWICKTREE" ]; then
@@ -105,12 +130,14 @@ if [ ! -s "$SUPERTREE/$RATCHETCOMMANDS" ]; then
     cd $SUPERTREE
     $PAUPRAT $RATCHETSETUP
     cd -
+    $PERL $SCRIPT/make_ratchet_footer.pl \
+        --constraint $NCBITREE \
+        -f newick \
+        -o $MRPOUTGROUP \
+        -r $RATCHETCOMMANDS >> $SUPERMRP
 fi
 
-# append command block footer
-#$PERL $SCRIPT/make_ratchet_footer.pl --constraint $NCBITREE -f newick -o $MRPOUTGROUP -r $RATCHETCOMMANDS >> $SUPERMRP
-
-# run paup
+# run paup with parsimony ratchet
 if [ ! -s "$RATCHETRESULT" ]; then
     echo "*** Running parsimony ratchet"
     cd $SUPERTREE
@@ -118,33 +145,33 @@ if [ ! -s "$RATCHETRESULT" ]; then
     cd -
 fi
 
-# write consensus PHYLOXML tree
+# write consensus PHYLOXML tree over ratchet results
 if [ ! -s "$SPECIESPHYLOXML" ]; then
     echo "*** Making consensus $SPECIESPHYLOXML"
     $PERL $SCRIPT/make_consensus.pl -i $RATCHETRESULT -c $TAXAMAP -o $MRPOUTGROUP > $SPECIESPHYLOXML
 fi
 
 # fetch protein sequences from GenBank
-FASTAFILES=`ls $RAWDATA/*.fas`
-for FASTAFILE in $FASTAFILES; do
-    PROTFILE=`echo $FASTAFILE | sed -e 's/.fas/.prot/'`
-    if [ ! -s "$PROTFILE" ]; then
-        echo "*** Fetching data for $PROTFILE"
-        $PERL $SCRIPT/fetch_protein.pl -f fasta -i $FASTAFILE -t dna -c $TAXAMAP > $PROTFILE
-    fi
-done
+#FASTAFILES=`ls $RAWDATA/*.fas`
+#for FASTAFILE in $FASTAFILES; do
+#    PROTFILE=`echo $FASTAFILE | sed -e 's/.fas/.prot/'`
+#    if [ ! -s "$PROTFILE" ]; then
+#        echo "*** Fetching data for $PROTFILE"
+#        $PERL $SCRIPT/fetch_protein.pl -f fasta -i $FASTAFILE -t dna -c $TAXAMAP > $PROTFILE
+#    fi
+#done
 
 # align protein sequences
-PROTFILES=`ls $RAWDATA/*.prot`
-for PROTFILE in $PROTFILES; do
-    ALN=`echo $PROTFILE | sed -e 's/.prot/.aln/'`
-    if [ ! -s "$ALN" ]; then
-        echo "*** Aligning $PROTFILE"
-        $MUSCLE -in $PROTFILE -out $ALN
-    fi
-done
+#PROTFILES=`ls $RAWDATA/*.prot`
+#for PROTFILE in $PROTFILES; do
+#    ALN=`echo $PROTFILE | sed -e 's/.prot/.aln/'`
+#    if [ ! -s "$ALN" ]; then
+#        echo "*** Aligning $PROTFILE"
+#        $MUSCLE -in $PROTFILE -out $ALN
+#    fi
+#done
 
-# make nexus files
+# make nexus files containing codon alignment and ML tree
 NEWICKTREES=`ls $RAWDATA/*.dnd`
 for TREE in $NEWICKTREES; do
     DATA=`echo $TREE | sed -e 's/.dnd/.phylip/'`
@@ -161,23 +188,27 @@ for TREE in $NEWICKTREES; do
 done
 
 # make hyphy scripts
-NEXUSFILES=`ls $RAWDATA/*.nex`
-CWD=`pwd`
-for NEXUS in $NEXUSFILES; do
-    HYPHYIN=`echo $NEXUS | sed -e 's/.nex/.hyphyin/'`
-    if [ ! -s "$HYPHYIN" ]; then
-        echo "*** Making hyphy script $HYPHYIN"
-        $PERL $SCRIPT/hyphywrapper.pl -i "$CWD/$NEXUS" > $HYPHYIN
-    fi
-done
+#NEXUSFILES=`ls $RAWDATA/*.nex`
+#CWD=`pwd`
+#for NEXUS in $NEXUSFILES; do
+#    HYPHYIN=`echo $NEXUS | sed -e 's/.nex/.hyphyin/'`
+#    if [ ! -s "$HYPHYIN" ]; then
+#        echo "*** Making hyphy script $HYPHYIN"
+#        $PERL $SCRIPT/hyphywrapper.pl -i "$CWD/$NEXUS" > $HYPHYIN
+#    fi
+#done
 
 # run hyphy
-HYPHYINS=`ls $RAWDATA/*.hyphyin`
-CWD=`pwd`
-for HYPHYIN in $HYPHYINS; do
-    HYPHYOUT=`echo $HYPHYIN | sed -e 's/.hyphyin/.hyphyout/'`
-    if [ ! -s "$HYPHYOUT" ]; then
-        echo "*** Running hyphy $HYPHYOUT"
-        $PERL $SCRIPT/runhyphy.pl --executable=$HYPHY --hyphydir=$HYPHY_DIR --infile="$CWD/$HYPHYIN" > $HYPHYOUT
-    fi
-done
+#HYPHYINS=`ls $RAWDATA/*.hyphyin`
+#CWD=`pwd`
+#for HYPHYIN in $HYPHYINS; do
+#    HYPHYOUT=`echo $HYPHYIN | sed -e 's/.hyphyin/.hyphyout/'`
+#    if [ ! -s "$HYPHYOUT" ]; then
+#        echo "*** Running hyphy $HYPHYOUT"
+#        $PERL $SCRIPT/runhyphy.pl --executable=$HYPHY --hyphydir=$HYPHY_DIR --infile="$CWD/$HYPHYIN" > $HYPHYOUT
+#    fi
+#done
+
+# run bayestraits for each gene tree
+
+# test branches with non_venom -> venom changes for dN/dS deviation
