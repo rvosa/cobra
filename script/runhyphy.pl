@@ -13,4 +13,4 @@ unless( $hyphydir && -d $hyphydir && $executable && -x "${hyphydir}/${executable
 }
 
 chdir $hyphydir;
-system( "./$executable < $infile" ) == 0 or warn "problem executing ${infile}: $?\n";
+system( "./$executable TemplateBatchFiles/BranchSiteREL.bf < $infile" ) == 0 or warn "problem executing ${infile}: $?\n";
