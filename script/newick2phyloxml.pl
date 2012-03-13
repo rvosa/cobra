@@ -2,35 +2,28 @@
 use strict;
 use warnings;
 use Bio::Phylo::Factory;
+use Bio::Phylo::Cobra::TaxaMap;
 use Bio::Phylo::IO qw'parse unparse';
 use Bio::Phylo::Util::CONSTANT qw':objecttypes :namespaces';
 use Getopt::Long;
 
 # get command line arguments
-my ( $infile, $taxamap, %map );
+my ( $infile, $taxamap, $format );
 GetOptions(
     'infile=s'  => \$infile,
+    'format=s'  => \$format,
     'taxamap=s' => \$taxamap,
 );
 
 # parse input tree
 my $project = parse(
-    '-format'     => 'newick',
+    '-format'     => $format || 'newick',
     '-file'       => $infile,
     '-as_project' => 1,
 );
 
 # parse input table
-{
-    open my $fh, '<', $taxamap or die $!;
-    while(<$fh>) {
-        chomp;
-        my @fields = split /,/, $_;
-        shift @fields;
-        my $key    = shift @fields;
-        $map{$key} = \@fields;
-    }
-}
+my $map = Bio::Phylo::Cobra::TaxaMap->new($taxamap);
 
 # create taxa for the forest object
 my ($forest) = @{ $project->get_items(_FOREST_) };
@@ -49,7 +42,7 @@ for my $taxon ( @{ $taxa->get_entities } ) {
     $_->set_name($name) for @{ $taxon->get_nodes };
     
     # code is obtained form taxa.csv
-    my $code = $map{$name}->[1];
+    my $code = $map->get_code_for_binomial($name);
     
     # attach code as annotation
     $taxon->add_meta(
