@@ -5,13 +5,14 @@ use Bio::Phylo::Util::Exceptions 'throw';
 our $AUTOLOAD;
 
 my %keys = (
-	'label'      => 0,
-	'binomial'   => 1,
-	'taxonID'    => 2,
-	'code'       => 3,
-	'gi'         => 4,
-	'phylip'     => 5,
-	'gene'       => 6,
+	'label'    => 0,
+	'binomial' => 1,
+	'taxonID'  => 2,
+	'code'     => 3,
+	'gi'       => 4,
+	'phylip'   => 5,
+	'gene'     => 6,
+	'venom'    => 7,
 );
 
 =pod
@@ -21,8 +22,6 @@ my %keys = (
 =over
 
 =item $map->binomial($label, [$binomial])
-
-=item $map->namebankID($label, [$namebankID])
 
 =item $map->taxonID($label, [$taxonID])
 
@@ -34,12 +33,14 @@ my %keys = (
 
 =item $map->gene($label, [$gene])
 
+=item $map->venom($label, [$venom])
+
 =back
 
 =head1 QUERIES
 
 In the following, x and y are both one of label, 
-binomial, taxonID, gi, code, phylip, gene.
+binomial, taxonID, gi, code, phylip, gene, venom.
 
 =over
 
