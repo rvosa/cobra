@@ -1,37 +1,37 @@
 #NEXUS 
 
-Begin trees;  [Treefile saved Thu Mar  8 23:41:25 2012]
+Begin trees;  [Treefile saved Tue Mar 13 19:27:53 2012]
 [!
 >Data file = /Users/rvosa/Dropbox/documents/projects/current/cobra/data/supertree/MRP_matrix.nex
 >Heuristic search settings:
 >  Optimality criterion = parsimony
 >    Character-status summary:
->      Of 1196 total characters:
+>      Of 1164 total characters:
 >        All characters are of type 'ord' (Wagner)
 >        All characters have equal weight
->        574 characters are parsimony-uninformative
->        Number of parsimony-informative characters = 622
+>        549 characters are parsimony-uninformative
+>        Number of parsimony-informative characters = 615
 >    Gaps are treated as "missing"
 >  Branch-swapping algorithm: tree-bisection-reconnection (TBR)
 >  Initial swapping on tree 1 already in memory
 >  Steepest descent option not in effect
->  Initial 'MaxTrees' setting = 300 (will be auto-increased by 100)
+>  Initial 'MaxTrees' setting = 200 (will be auto-increased by 100)
 >  Branches collapsed (creating polytomies) if maximum branch length is zero
 >  'MulTrees' option not in effect; only 1 tree will be saved per replicate
 >  Keeping only trees compatible with constraint-tree "ncbi"
 >  Trees are unrooted
 >
 >Heuristic search completed
->   Total number of rearrangements tried = 3360
->   Score of best tree(s) found = 1303
+>   Total number of rearrangements tried = 3664
+>   Score of best tree(s) found = 1271
 >   Number of trees retained = 1
->   Time used = <1 sec (CPU time = 0.20 sec)
+>   Time used = <1 sec (CPU time = 0.21 sec)
 ]
 	Translate
 		1 Acipenser_schrenckii,
 		2 Acipenser_sinensis,
 		3 Agkistrodon_contortrix,
-		4 Agkistrodon_piscivorus,
+		4 Agkistrodon_piscivorus_piscivorus,
 		5 Ailuropoda_melanoleuca,
 		6 Anolis_carolinensis,
 		7 Atheris_nitschei,
@@ -42,12 +42,12 @@ Begin trees;  [Treefile saved Thu Mar  8 23:41:25 2012]
 		12 Bitis_gabonica,
 		13 Bos_taurus,
 		14 Bothriechis_schlegelii,
-		15 Bothrops_asper,
-		16 Bothrops_insularis,
-		17 Bothrops_jararaca,
-		18 Bothrops_jararacussu,
-		19 Bothrops_moojeni,
-		20 Bothrops_neuwiedi,
+		15 Bothropoides_pauloensis,
+		16 Bothrops_asper,
+		17 Bothrops_insularis,
+		18 Bothrops_jararaca,
+		19 Bothrops_jararacussu,
+		20 Bothrops_moojeni,
 		21 Bungarus_candidus,
 		22 Bungarus_fasciatus,
 		23 Bungarus_multicinctus,
@@ -62,7 +62,7 @@ Begin trees;  [Treefile saved Thu Mar  8 23:41:25 2012]
 		32 Crotalus_durissus,
 		33 Crotalus_horridus,
 		34 Crotalus_molossus,
-		35 Crotalus_oreganus,
+		35 Crotalus_oreganus_helleri,
 		36 Crotalus_viridis,
 		37 Cryptelytrops_albolabris,
 		38 Cyprinus_carpio,
@@ -163,5 +163,5 @@ Begin trees;  [Treefile saved Thu Mar  8 23:41:25 2012]
 		133 Xiphophorus_maculatus,
 		134 mrp_outgroup
 		;
-tree PAUP_1 = [&U] (1,(2,(((((((((((((((((((3,4),((((30,(35,36)),(31,(32,34))),33),104)),(14,59)),((((15,19),18),((16,17),20)),29)),((((52,54),53),(111,(112,113))),((89,91),90))),(37,130)),41),25),10),((7,(11,12)),((27,((45,47),46)),((39,(128,129)),67)))),((8,(((((9,78),(((83,84),95),(93,94))),(((42,(58,70)),(44,115)),62)),(((21,23),22),(71,((((74,75),76),77),81)))),(61,100))),(((28,48),(((43,(110,114)),108),((64,86),(99,109)))),(63,92)))),97),(((26,51,96),((((116,117),((118,126),(123,125))),(((119,124),122),(121,127))),120)),(55,56))),(6,87)),((50,69),107)),(((5,((13,106),49)),(((24,101),(((57,85),88),(65,66))),(((68,73),98),82))),72)),(131,132)),(60,(103,134))),((38,40),((((79,80),102),105),133)))));
+tree PAUP_1 = [&U] (1,(2,(((((((((((((((((((((3,4),(((((30,36),(31,(32,34))),33),35),104)),(14,59)),((((16,20),19),(17,18)),29)),(((52,54),53),((89,91),90))),((111,112),113)),(37,130)),41),25),15),10),((7,(11,12)),((27,((45,46),47)),((39,(128,129)),67)))),((8,((((((9,78),(((83,84),95),(93,94))),62),(((42,70),58),(44,115))),(((21,23),22),(71,((((74,77),75),76),81)))),(61,100))),((28,48),(((((43,108),110),114),((64,86),(99,109))),(63,92))))),97),(((26,51,96),((((116,117),((118,126),(123,125))),(((119,124),122),(121,127))),120)),(55,56))),(6,87)),((50,69),107)),((((5,49),(13,106)),(((24,101),(((57,85),88),(65,66))),(((68,73),98),82))),72)),(131,132)),(60,(103,134))),((38,40),((((79,80),102),105),133)))));
 End;
