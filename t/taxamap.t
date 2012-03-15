@@ -43,5 +43,5 @@ for my $gi ( @all_gis ) {
     my $remote_binomial = $seq->species->binomial('FULL');
     ok( $remote_binomial eq $local_binomial, "verify binomials match: $remote_binomial <=> $local_binomial (gi: $gi)" );
     
-    sleep(5);
+    sleep(2);
 }
