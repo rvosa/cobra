@@ -56,27 +56,15 @@ $project->insert($taxa,$forest);
 # re-root on MRP outgroup
 my $outgroup = $tree->get_by_name($og);
 $outgroup->set_root_below;
+$tree->prune_tips([$outgroup]);
+$tree->remove_unbranched_internals;
 
 # warn for polytomies
 $tree->visit(
     sub {
         my $node = shift;
         if ( scalar(@{ $node->get_children }) > 2 ) {
-            $node->add_meta(
-                $fac->create_meta(
-                    '-namespaces' => { 'pxml' => _NS_PHYLOXML_ },
-                    '-triple' => { 'pxml:width' => 1 },
-                )                
-            );
             warn $node->to_newick;
-        }
-        else {
-            $node->add_meta(
-                $fac->create_meta(
-                    '-namespaces' => { 'pxml' => _NS_PHYLOXML_ },
-                    '-triple' => { 'pxml:width' => 5 },
-                )                
-            );            
         }
     }
 );
@@ -90,10 +78,8 @@ my $map = Bio::Phylo::Cobra::TaxaMap->new($csv);
 $taxa->visit(
     sub {
         my $taxon = shift;
-        my $binomial = $taxon->get_name;
-        $binomial =~ s/'//g;
-        $binomial =~ s/_/ /g;
-        my $code = $map->get_code_for_binomial($binomial);
+        my $code = $taxon->get_name;
+        my ($binomial) = sort { length($a) <=> length($b) } $map->get_binomial_for_code($code);
         if ( $code ) {
             $taxon->add_meta(
                 $fac->create_meta(
@@ -102,12 +88,12 @@ $taxa->visit(
                 )
             );
         }
-        $taxon->add_meta(
-            $fac->create_meta(
-                '-namespaces' => { 'pxml' => _NS_PHYLOXML_ },
-                '-triple' => { 'pxml:scientific_name' => $binomial },
-            )
-        );            
+        #$taxon->add_meta(
+        #    $fac->create_meta(
+        #        '-namespaces' => { 'pxml' => _NS_PHYLOXML_ },
+        #        '-triple' => { 'pxml:scientific_name' => $binomial },
+        #    )
+        #);            
     }
 );
 
