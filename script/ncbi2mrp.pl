@@ -26,8 +26,8 @@ for my $tree ( @{ $forest->get_entities } ) {
         if ( my $name = $node->get_name ) {
             $name =~ s/['"]//g;
             $name =~ s/_/ /g;
-            my $id = $map->get_taxonID_for_binomial($name);
-            $node->set_name($id);
+            my $code = $map->get_code_for_binomial($name);
+            $node->set_name($code);
         }
     }
 }
