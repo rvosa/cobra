@@ -120,7 +120,6 @@ sub get_binomial_and_label_for_code {
                 my $label = $1;
                 my $code = $map->code($label);
                 my ($binomial) = sort { length($a) <=> length($b) } $map->get_binomial_for_code($code);
-                warn $code, "\t", $label, "\t", $binomial;
                 return $binomial, $label;
             }
         }
