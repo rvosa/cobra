@@ -18,9 +18,9 @@ GetOptions(
 
 my $log = Bio::Phylo::Util::Logger->new( '-level' => $verbose, '-class' => 'main' );
 
-# create seen hash for NCBI taxon ids
+# create seen hash for phyloxml codes
 my $map = Bio::Phylo::Cobra::TaxaMap->new($csv);
-my %seen = map { $_ => 1 } $map->get_all_taxonIDs;
+my %seen = map { $_ => 1 } $map->get_all_codes;
 $log->debug(Dumper(\%seen));
 
 # parse tree block from input file
@@ -34,7 +34,7 @@ my ($forest) = @{
 
 # for each tip in each tree, fetch its taxon object and from that get the
 # skos:*match annotations, which may have an NCBI taxon id. if it does,
-# copy it over to the tip and taxon name
+# use it to find the phyloxml code and use that for tip and taxon name
 for my $tree ( @{ $forest->get_entities } ) {
 	$log->debug("tree: " . $tree->get_name() . " in file $infile");
 	
@@ -52,9 +52,10 @@ for my $tree ( @{ $forest->get_entities } ) {
 				# this matches the ncbi taxonomy				
 				if ( $obj =~ m|http://purl.uniprot.org/taxonomy/(\d+)| ) {
 					my $id = $1;
-					$log->debug($id);					
-					$tip->set_name($id);
-					$taxon->set_name($id);
+					$log->debug($id);
+					my $code = $map->get_code_for_taxonID($id);
+					$tip->set_name($code);
+					$taxon->set_name($code);
 					last META;
 				}
 			}
