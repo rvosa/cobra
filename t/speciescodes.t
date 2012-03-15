@@ -43,18 +43,16 @@ for my $taxon ( keys %variants ) {
     }
 }
 
-my @genes = $map->get_distinct_genes;
-for my $gene ( @genes ) {
-    my @phylips = $map->get_phylip_for_gene($gene);
-    my @uniq = keys %{ { map { $_ => 1 } @phylips } };
+
+my @phylips = $map->get_all_phylips;
+my @uniq = keys %{ { map { $_ => 1 } @phylips } };
     
-    # test that phylip names are unique per gene
-    ok(scalar(@uniq) == scalar(@phylips), "$gene");
+# test that phylip names are unique per gene
+ok(scalar(@uniq) == scalar(@phylips), "check phylip names are GUIDs");
     
-    for my $phylip ( @phylips ) {
-        my $code = $map->get_code_for_phylip($phylip);
-        
-        # test that phylip names are codes with optional numerical suffix
-        ok( $phylip =~ /^$code\d*$/, "$phylip => $code" );
-    }
+for my $phylip ( @phylips ) {
+    my $code = $map->get_code_for_phylip($phylip);
+    
+    # test that phylip names are codes with optional numerical suffix
+    ok( $phylip =~ /^$code\d*$/, "$phylip => $code" );
 }
