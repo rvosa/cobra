@@ -65,7 +65,7 @@ for my $taxon ( @{ $taxa->get_entities } ) {
         # attach scientific name and code as phyloxml annotations
         my %ns = ( 'pxml' => _NS_PHYLOXML_ );
         update_meta( $taxon, 'pxml:code' => $code, %ns );
-        update_meta( $taxon, 'pxml:scientific_name' => $binomial, %ns );
+        #update_meta( $taxon, 'pxml:scientific_name' => $binomial, %ns );
         
         # use original sequence label as node name
         $taxon->get_nodes->[0]->set_name($label) if $label;
@@ -117,8 +117,9 @@ sub get_binomial_and_label_for_code {
     for my $i ( 0 .. $#phyliplines ) {
         if ( $phyliplines[$i] =~ /^\Q$code\E\d*\s+/ ) {
             if ( $fastalines[$i] =~ />([^_]+_[^_]+_[^_]+)/ ) {
-                my $label = $1;                
-                my $binomial = $map->get_binomial_for_label($label);
+                my $label = $1;
+                my $code = $map->code($label);
+                my ($binomial) = sort { length($a) <=> length($b) } $map->get_binomial_for_code($code);
                 warn $code, "\t", $label, "\t", $binomial;
                 return $binomial, $label;
             }
