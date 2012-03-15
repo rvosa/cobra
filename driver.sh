@@ -4,6 +4,12 @@
 # (with 2 registered patches, see perl -V for more detail)
 PERL=perl
 
+# $ java -version
+# java version "1.6.0_15"
+# Java(TM) SE Runtime Environment (build 1.6.0_15-b03-219)
+# Java HotSpot(TM) 64-Bit Server VM (build 14.1-b02-90, mixed mode)
+JAVA=java
+
 # $ phyml -version
 # PhyML v3.0_360-500M 
 PHYML=phyml
@@ -34,6 +40,9 @@ SPECIESPHYLOXML=$DATA/speciestree.phyloxml
 SOURCETREES=$DATA/sourcetrees/
 LOGFILE=err.log
 
+# initialize log, wipe previous
+date > $LOGFILE
+
 # these are the data from Nick, with some edits recorded on github
 FASTAFILES=`ls $RAWDATA/*.fas`
 NEXUSTREES=`ls $RAWDATA/*.tre`
@@ -63,7 +72,7 @@ SCRIPT=script/
 for FASTAFILE in $FASTAFILES; do
     PHYLIPFILE=`echo $FASTAFILE | sed -e 's/.fas/.phylip/'`
     if [ ! -s "$PHYLIPFILE" ]; then
-        echo "*** Converting $FASTAFILE to phylip" > $LOGFILE
+        echo "*** Converting $FASTAFILE to phylip" >> $LOGFILE
         $PERL $SCRIPT/fas2phylip.pl -i $FASTAFILE -c $TAXAMAP > $PHYLIPFILE 2>> $LOGFILE
     fi
 done
@@ -161,7 +170,7 @@ for GENETREE in $GENETREES; do
         
         # this requires that forester.jar is in the java class path
         # http://www.phylosoft.org/forester/download/forester.jar
-        java org.forester.application.sdi $GENETREE $SPECIESPHYLOXML $SDITREE 2>> $LOGFILE
+        $JAVA org.forester.application.sdi $GENETREE $SPECIESPHYLOXML $SDITREE 2>> $LOGFILE
     fi
 done
 
