@@ -42,8 +42,12 @@ for my $id ( @ids ) {
 		for my $res ( @{ $desc->get_entities } ) {
 			my $guid = $res->get_guid;
 			
+			# write the result to a file based on the GUID.
+			my $outfile = $guid;
+			$outfile =~ s|^.+:(.+)$|$dir/$1.xml|;				
+			
 			# don't download twice
-			if ( not $seen{$guid} ) {
+			if ( not -e $outfile ) {
 				
 				# fetch data
 				my $url  = $guid . '?format=nexml';
@@ -51,11 +55,7 @@ for my $id ( @ids ) {
 					'-format'     => 'nexml', 
 					'-url'        => $url,
 					'-as_project' => 1,
-				);
-				
-				# write the result to a file based on the GUID.
-				my $outfile = $guid;
-				$outfile =~ s|^.+:(.+)$|$dir/$1.xml|;			
+				);						
 				open my $fh, '>', $outfile or die "Can't open $outfile: $!";
 				print $fh $proj->to_xml, "\n";
 				warn "taxon $id written to $outfile";
