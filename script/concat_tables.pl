@@ -16,7 +16,7 @@ GetOptions(
 );
 
 # create taxa map
-my $map = Bio::Phylo::Cobra::TaxaMap->new($csv);
+#my $map = Bio::Phylo::Cobra::TaxaMap->new($csv);
 
 # concatenate tables
 my %table = ( $outgroup => undef );
@@ -44,15 +44,15 @@ my $fac = Bio::Phylo::Factory->new;
 my $matrix = $fac->create_matrix( '-type' => 'standard' );
 
 # alphabetize, as taxa blocks also are
-for my $row ( sort { $a cmp $b } keys %table ) {
-    my $binomial = $map->get_binomial_for_taxonID($row) || $outgroup;
+for my $code ( sort { $a cmp $b } keys %table ) {
+    #my $binomial = $map->get_binomial_for_taxonID($row) || $outgroup;
     $matrix->insert(
     
     	# create and insert matrix row
         $fac->create_datum(
             '-type' => 'standard',
-            '-name' => $binomial,
-            '-char' => $row eq $outgroup ? '0' x $TotalNchar : $table{$row},
+            '-name' => $code,
+            '-char' => $code eq $outgroup ? '0' x $TotalNchar : $table{$code},
         )
     )
 }
