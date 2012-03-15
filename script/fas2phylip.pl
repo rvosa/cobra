@@ -26,14 +26,14 @@ my ($matrix) = @{
 # instantiate map object
 my $map = Bio::Phylo::Cobra::TaxaMap->new($csv);
 
-# replace names with 10-character codes
+# replace names with phylip codes
 $matrix->visit(sub{
     my $row = shift;
     if ( my $name = $row->get_name ) {
         my $label = $map->parse_label($name);
         if ( $label ) {
-            my $code = $map->get_code_for_label($label);
-            $row->set_name($code);
+            my $phylip = $map->phylip($label);
+            $row->set_name($phylip);
         }
     }
 });
