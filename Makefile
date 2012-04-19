@@ -2,6 +2,7 @@ PHYML=phyml
 PAUPRAT=pauprat
 PAUP=paup
 JAVA=java
+GIT=git
 SCRIPT=script
 LIB=lib
 PERL=perl -I$(LIB)
@@ -36,6 +37,7 @@ PHYLIPFILES = $(patsubst %.fas,%.phylip,$(FASTAFILES))
 NEWICKTREES = $(patsubst %.tre,%.dnd,$(CONTREES))
 PHYMLTREES  = $(patsubst %.phylip,%.phylip_phyml_tree.txt,$(PHYLIPFILES))
 PHYLOXMLGENETREES = $(patsubst %.phylip_phyml_tree.txt,%.phyloxml,$(PHYMLTREES))
+NEXUSFILES = $(patsubst %.phylip_phyml_tree.txt,%.nex,$(PHYMLTREES))
 MRPMATRICES = $(patsubst %.xml,%.dat,$(NEXMLFILES))
 SDITREES = $(patsubst %.phyloxml,%.sdi,$(PHYLOXMLGENETREES))
 
@@ -43,7 +45,7 @@ SDITREES = $(patsubst %.phyloxml,%.sdi,$(PHYLOXMLGENETREES))
 
 all : genetrees speciestree sdi
 
-genetrees : $(FASTAFILES) $(PHYLIPFILES) $(NEWICKTREES) $(PHYMLTREES) $(PHYLOXMLGENETREES)
+genetrees : $(FASTAFILES) $(PHYLIPFILES) $(NEWICKTREES) $(PHYMLTREES) $(PHYLOXMLGENETREES) $(NEXUSFILES)
 
 speciestree : $(SPECIESPHYLOXML)
 
@@ -56,13 +58,15 @@ treebase :
 $(FASTAFILES) : %.fas : %.raw
 	cat $< | $(PERL) $(SCRIPT)/filter_frameshifts.pl -c $(TAXAMAP) \
         | $(PERL) $(SCRIPT)/filter_sparse_codons.pl \
-        | $(PERL) $(SCRIPT)/filter_short_seqs.pl -c $(TAXAMAP) \
-        -i OPHIHANN -i ANOLCARO > $@
-	git commit -m "re-generated filtered FASTA files" $(FASTAFILES)  
+        | $(PERL) $(SCRIPT)/filter_short_seqs.pl -c $(TAXAMAP) -i OPHIHANN -i ANOLCARO \
+        | $(PERL) $(SCRIPT)/filter_duplicate_seqs.pl > $@
+	$(GIT) add $@
+	$(GIT) commit --allow-empty -m "re-generated filtered FASTA file" $@  
 
 # converts fasta files to phylip files for phyml
 $(PHYLIPFILES) : %.phylip : %.fas
 	$(PERL) $(SCRIPT)/fas2phylip.pl -i $< -c $(TAXAMAP) > $@
+	$(GIT) commit --allow-empty -m "re-generated phylip file" $@
 
 # converts nick's consensus nexus trees to newick trees and uses them as
 # input trees for a phyml run on the filtered alignments
@@ -70,27 +74,40 @@ $(PHYMLTREES) : %.phylip_phyml_tree.txt : %.phylip
 	$(PERL) $(SCRIPT)/nexus2newick.pl -c $(TAXAMAP) -i $*.tre -s $*.fas > $*.dnd
 	$(PERL) -i $(SCRIPT)/nodelabels.pl $*.dnd
 	$(PHYML) -i $< -u $*.dnd -s BEST
-	git commit -m "re-ran PHYML" $(PHYMLTREES)
+	$(GIT) commit --allow-empty -m "re-ran PHYML" $*.phylip_phyml_tree.txt $*.phylip_phyml_stats.txt
 
 # generates phyloxml trees
 $(PHYLOXMLGENETREES) : %.phyloxml : %.phylip_phyml_tree.txt
 	$(PERL) $(SCRIPT)/phyloxml.pl -s $* -f newick -c $(TAXAMAP) > $@
-	git commit -m "re-generated PHYLOXML files" $(PHYLOXMLGENETREES)
+	$(GIT) commit --allow-empty -m "re-generated PHYLOXML files" $@
+
+# generates nexus files
+$(NEXUSFILES) : %.nex : %.phylip_phyml_tree.txt
+	$(PERL) $(SCRIPT)/make_nexus.pl \
+        --treefile=$< \
+        --treeformat=newick \
+        --labels \
+        --datafile=$*.phylip \
+        --dataformat=phylip \
+        --datatype=dna > $@
+	$(GIT) add $@        
+	$(GIT) commit --allow-empty -m "re-generated nexus files" $@
 
 # converts downloaded source trees to mrp matrices
 $(MRPMATRICES) : %.dat : %.xml
 	$(PERL) $(SCRIPT)/treebase2mrp.pl -i $< -f nexml -c $(TAXAMAP) > $@
-	git commit -m "re-generated MRP matrices" $(MRPMATRICES)
+	$(GIT) commit --allow-empty -m "re-generated MRP matrices" $@
 
 # converts the NCBI common tree to mrp matrix
 $(NCBIMRP) :
 	$(PERL) $(SCRIPT)/ncbi2mrp.pl -i $(NCBITREE) -f newick -c $(TAXAMAP) > $@
+	$(GIT) commit --allow-empty -m "re-generated MRP from NCBI common tree" $@
 
 # concatenates mrp matrices from treebase and ncbi common tree to nexus file
 $(SUPERMRP) : $(NCBIMRP) $(MRPMATRICES)
 	$(PERL) $(SCRIPT)/concat_tables.pl -d $(SOURCETREES) -c $(TAXAMAP) \
         -o $(MRPOUTGROUP) > $@
-	git commit -m "re-generated concatenated MRP matrix" $(SUPERMRP)
+	$(GIT) commit --allow-empty -m "re-generated concatenated MRP matrix" $(SUPERMRP)
 
 # appends command blocks to mrp nexus file
 $(RATCHETCOMMANDSABS) : $(SUPERMRP)
