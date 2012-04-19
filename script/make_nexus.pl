@@ -2,20 +2,21 @@
 use strict;
 use Getopt::Long;
 use Bio::Phylo::Factory;
-use Bio::Phylo::IO 'parse';
+use Bio::Phylo::IO qw'parse parse_matrix';
 use Bio::Phylo::Util::CONSTANT ':objecttypes';
 
 # instantiate factory
 my $fac = Bio::Phylo::Factory->new;
 
 # process command line arguments
-my ( $treefile, $treeformat, $datafile, $dataformat, $datatype );
+my ( $treefile, $treeformat, $datafile, $dataformat, $datatype, $labels );
 GetOptions(
     'treefile=s'   => \$treefile,
     'treeformat=s' => \$treeformat,
     'datafile=s'   => \$datafile,
     'dataformat=s' => \$dataformat,
     'datatype=s'   => \$datatype,
+    'labels+'      => \$labels,
 );
 
 # read trees from tree file
@@ -27,14 +28,26 @@ my ($forest) = @{
     )->get_items(_FOREST_)
 };
 
+# optionally apply node labels for hyphy branchsiterel
+if ( $labels ) {
+    $forest->visit(sub{
+        my $tree = shift;
+        my $i = 0;
+        $tree->visit(sub{
+            my $node = shift;
+            if ( $node->is_internal ) {
+                $node->set_name( 'node' . ++$i );
+            }
+        });
+    });
+}
+
 # read data from data file
-my ($matrix) = @{
-    parse(
-        '-format' => $dataformat,
-        '-file'   => $datafile,
-        '-type'   => $datatype,
-    )
-};
+my $matrix = parse_matrix(
+    '-format' => $dataformat,
+    '-file'   => $datafile,
+    '-type'   => $datatype,
+);
 
 # reconcile taxa
 my $proj = $fac->create_project;
