@@ -38,7 +38,7 @@ my ($matrix) = @{
 
 # filter incorrect back translations
 my @incorrect;
-for my $row ( @{ $matrix->get_entities } ) {
+ROW: for my $row ( @{ $matrix->get_entities } ) {
     my @char = $row->get_char;
     
     # compute protein translations
@@ -62,14 +62,16 @@ for my $row ( @{ $matrix->get_entities } ) {
             
             # get the coding sequence	
             for my $feat ( $seq->get_SeqFeatures ) {
-                if ( $feat->primary_tag eq 'CDS' ) {
+                if ( $feat->primary_tag eq 'CDS' ) {                    
                     my ($feat_seq) = @{ $feat->{'_gsf_tag_hash'}->{'translation'} };
+                    $feat_seq =~ s/X//g;
                     if ( $feat_seq !~ /\Q$translation\E/ && $translation !~ /\Q$feat_seq\E/ ) {
                         $log->warn( "***Possible frame shift:\nGenbank: $feat_seq\nFasta:   $translation\n" );
                         push @incorrect, $row;
                     }
                     else {
                         $log->info("no frame shifts in alignment of $gi");
+                        next ROW;
                     }
                 }
             }
