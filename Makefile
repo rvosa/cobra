@@ -2,6 +2,7 @@ PHYML=phyml
 PAUPRAT=pauprat
 PAUP=paup
 JAVA=java
+CODONML=codonml
 SCRIPT=script
 LIB=lib
 PERL=perl -I$(LIB)
@@ -34,6 +35,9 @@ RATCHETFILES=$(SUPERTREE)/mydata.tre $(SUPERTREE)/mydata.tmp $(RATCHETCOMMANDSAB
 FASTAFILES  = $(patsubst %.raw,%.fas,$(RAWFILES))
 PHYLIPFILES = $(patsubst %.fas,%.phylip,$(FASTAFILES))
 NEWICKTREES = $(patsubst %.tre,%.dnd,$(CONTREES))
+PAMLTREES   = $(patsubst %.dnd,%.pamltree,$(NEWICKTREES))
+PAMLCTLS    = $(patsubst %.dnd,%.pamlctl,$(NEWICKTREES))
+PAMLOUTS    = $(patsubst %.pamlctl,%.pamlout,$(PAMLCTLS))
 PHYMLTREES  = $(patsubst %.phylip,%.phylip_phyml_tree.txt,$(PHYLIPFILES))
 PHYLOXMLGENETREES = $(patsubst %.phylip_phyml_tree.txt,%.phyloxml,$(PHYMLTREES))
 NEXUSFILES = $(patsubst %.phylip_phyml_tree.txt,%.nex,$(PHYMLTREES))
@@ -47,6 +51,8 @@ SDITREES = $(patsubst %.phyloxml,%.sdi,$(PHYLOXMLGENETREES))
 all : genetrees speciestree sdi
 
 genetrees : $(FASTAFILES) $(PHYLIPFILES) $(NEWICKTREES) $(PHYMLTREES) $(PHYLOXMLGENETREES) $(NEXUSFILES) $(SVGFILES)
+
+paml : $(PAMLOUTS)
 
 speciestree : $(SPECIESPHYLOXML)
 
@@ -72,6 +78,18 @@ $(PHYMLTREES) : %.phylip_phyml_tree.txt : %.phylip
 	$(PERL) $(SCRIPT)/nexus2newick.pl -c $(TAXAMAP) -i $*.tre -s $*.fas > $*.dnd
 	$(PERL) -i $(SCRIPT)/nodelabels.pl $*.dnd
 	$(PHYML) -i $< -u $*.dnd -s BEST
+
+# generate trees with labeled internal nodes for PAML codeml
+$(PAMLTREES) : %.pamltree : %.dnd
+	$(PERL) $(SCRIPT)/make_paml_tree.pl -c $(TAXAMAP) -i $< > $@
+
+# generate paml control files
+$(PAMLCTLS) : %.pamlctl : %.dnd
+	$(PERL) $(SCRIPT)/make_paml_ctl.pl -t $< -s $*.phylip -o $*.pamlout > $@
+
+# run codonml
+$(PAMLOUTS) : %.pamlout : %.pamlctl
+	$(CODONML) $<
 
 # generates phyloxml trees
 $(PHYLOXMLGENETREES) : %.phyloxml : %.phylip_phyml_tree.txt
