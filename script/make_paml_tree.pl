@@ -27,7 +27,9 @@ $tree->visit_depth_first(
 		my $node = shift;
 		if ( $node->is_terminal ) {
 			my $name = $node->get_name;
-			$node->set_generic( 'venom' => $map->get_venom_for_phylip($name) );
+			my $venom = $map->get_venom_for_phylip($name);
+			$node->set_generic( 'venom' =>  $venom );
+			$node->set_name( "${name}#${venom}" );
 		}
 		else {
 			my @children = @{ $node->get_children };

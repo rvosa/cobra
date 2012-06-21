@@ -17,7 +17,7 @@ print <<"PAML";
      treefile = $treefile
       outfile = $outfile
 
-        noisy = 9   * 0,1,2,3,9: how much rubbish on the screen
+        noisy = 0   * 0,1,2,3,9: how much rubbish on the screen
       verbose = 1   * 1: detailed output, 0: concise output
       runmode = 0   * 0: user tree;  1: semi-automatic;  2: automatic
                     * 3: StepwiseAddition; (4,5):PerturbationNNI 
@@ -42,7 +42,7 @@ print <<"PAML";
        Malpha = 0   * different alphas for genes
         ncatG = 4   * # of categories in the dG or AdG models of rates
 
-        getSE = 0   * 0: don't want them, 1: want S.E.s of estimates
+        getSE = 1   * 0: don't want them, 1: want S.E.s of estimates
  RateAncestor = 0   * (1/0): rates (alpha>0) or ancestral states (alpha=0)
        method = 0   * 0: simultaneous; 1: one branch at a time
 

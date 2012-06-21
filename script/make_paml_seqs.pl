@@ -24,12 +24,12 @@ my $pamlnchar = $nchar - $remainder;
 my $ntax = $matrix->get_ntax;
 
 # print phylip header
-print $ntax, ' ', $pamlnchar, "\n";
+print '  ', $ntax, '  ', $pamlnchar, "\n";
 
 # print sequences
 for my $row ( @{ $matrix->get_entities } ) {
 	my $name = $row->get_name;
 	my $seq  = $row->get_char;
 	my $codons = substr $seq, 0, $pamlnchar;
-	print $name, '  ', $codons, "\n";
+	print "\n", $name, "\n", $codons, "\n";
 }
