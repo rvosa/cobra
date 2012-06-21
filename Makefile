@@ -90,7 +90,7 @@ $(PAMLSEQS) : %.pamlseq : %.phylip
 
 # generate paml control files
 $(PAMLCTLS) : %.pamlctl : %.pamltree
-	$(PERL) $(SCRIPT)/make_paml_ctl.pl -t $< -s $*.phylip -o $*.pamlout > $@
+	$(PERL) $(SCRIPT)/make_paml_ctl.pl -t $< -s $*.pamlseq -o $*.pamlout > $@
 
 # run codonml
 $(PAMLOUTS) : %.pamlout : %.pamlctl
