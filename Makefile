@@ -2,7 +2,7 @@ PHYML=phyml
 PAUPRAT=pauprat
 PAUP=paup
 JAVA=java
-CODONML=codonml
+CODONML=/Users/rvosa/Applications/paml44/bin/codeml
 SCRIPT=script
 LIB=lib
 PERL=perl -I$(LIB)
@@ -38,6 +38,7 @@ NEWICKTREES = $(patsubst %.tre,%.dnd,$(CONTREES))
 PAMLTREES   = $(patsubst %.dnd,%.pamltree,$(NEWICKTREES))
 PAMLCTLS    = $(patsubst %.dnd,%.pamlctl,$(NEWICKTREES))
 PAMLOUTS    = $(patsubst %.pamlctl,%.pamlout,$(PAMLCTLS))
+PAMLSEQS    = $(patsubst %.phylip,%.pamlseq,$(PHYLIPFILES))
 PHYMLTREES  = $(patsubst %.phylip,%.phylip_phyml_tree.txt,$(PHYLIPFILES))
 PHYLOXMLGENETREES = $(patsubst %.phylip_phyml_tree.txt,%.phyloxml,$(PHYMLTREES))
 NEXUSFILES = $(patsubst %.phylip_phyml_tree.txt,%.nex,$(PHYMLTREES))
@@ -52,7 +53,7 @@ all : genetrees speciestree sdi
 
 genetrees : $(FASTAFILES) $(PHYLIPFILES) $(NEWICKTREES) $(PHYMLTREES) $(PHYLOXMLGENETREES) $(NEXUSFILES) $(SVGFILES)
 
-paml : $(PAMLOUTS)
+paml : $(PAMLSEQS) $(PAMLOUTS)
 
 speciestree : $(SPECIESPHYLOXML)
 
@@ -83,8 +84,12 @@ $(PHYMLTREES) : %.phylip_phyml_tree.txt : %.phylip
 $(PAMLTREES) : %.pamltree : %.dnd
 	$(PERL) $(SCRIPT)/make_paml_tree.pl -c $(TAXAMAP) -i $< > $@
 
+# generate PAML's retarded version of phylip files
+$(PAMLSEQS) : %.pamlseq : %.phylip
+	$(PERL) $(SCRIPT)/make_paml_seqs.pl -i $< > $@
+
 # generate paml control files
-$(PAMLCTLS) : %.pamlctl : %.dnd
+$(PAMLCTLS) : %.pamlctl : %.pamltree
 	$(PERL) $(SCRIPT)/make_paml_ctl.pl -t $< -s $*.phylip -o $*.pamlout > $@
 
 # run codonml
