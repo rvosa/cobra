@@ -29,6 +29,7 @@ my ($forest) = @{
 };
 
 # optionally apply node labels for hyphy branchsiterel
+my %tips;
 if ( $labels ) {
     $forest->visit(sub{
         my $tree = shift;
@@ -37,6 +38,9 @@ if ( $labels ) {
             my $node = shift;
             if ( $node->is_internal ) {
                 $node->set_name( 'node' . ++$i );
+            }
+            else {
+                $tips{$node->get_name} = 1;
             }
         });
     });
@@ -48,6 +52,14 @@ my $matrix = parse_matrix(
     '-file'   => $datafile,
     '-type'   => $datatype,
 );
+
+# prune sequences not in tree
+my @delete;
+$matrix->visit(sub{
+    my $row = shift;
+    push @delete, $row if not $tips{$row->get_name};
+});
+$matrix->delete($_) for @delete;
 
 # reconcile taxa
 my $proj = $fac->create_project;
