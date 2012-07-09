@@ -13,17 +13,18 @@ my $fac = Bio::Phylo::Factory->new;
 my $log = Bio::Phylo::Util::Logger->new;
 
 # process command line arguments
-my ( $infile, $format, $csv );
+my ( $infile, $format, $csv, $extension );
 GetOptions(
-    'stem=s'   => \$infile,
-    'format=s' => \$format,
-    'csv=s'    => \$csv,
+    'stem=s'      => \$infile,
+    'format=s'    => \$format,
+    'csv=s'       => \$csv,
+    'extension=s' => \$extension,
 );
 
 # parse infile
 my $project = parse(
     '-format'     => $format,
-    '-file'       => "$infile.phylip_phyml_tree.txt",
+    '-file'       => "$infile.$extension",
     '-as_project' => 1
 );
 
