@@ -2,12 +2,13 @@
 use strict;
 use warnings;
 use Getopt::Long;
-use Bio::Phylo::IO 'parse_matrix';
+use Bio::Phylo::IO qw'parse_matrix parse_tree';
 
 # process command line arguments
-my $infile;
+my ( $infile, $treefile );
 GetOptions(
-	'infile=s' => \$infile,
+	'infile=s'   => \$infile,
+	'treefile=s' => \$treefile,
 );
 
 # parse matrix
@@ -16,6 +17,24 @@ my $matrix = parse_matrix(
 	'-file'   => $infile,
 	'-type'   => 'dna',
 );
+
+# parse tree
+my $tree = parse_tree(
+	'-format' => 'newick',
+	'-file'   => $treefile,
+);
+
+# prune sequences not in tree
+my %tips = map { $_->get_name => 1 } @{ $tree->get_terminals };
+my @delete;
+$matrix->visit(sub{
+	my $row = shift;
+	my $name = $row->get_name;
+	if ( not $tips{$name} ) {
+		push @delete, $row;	
+	}
+});
+$matrix->delete($_) for @delete;
 
 # needs to be multiple of 3
 my $nchar = $matrix->get_nchar;
