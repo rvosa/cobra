@@ -35,13 +35,14 @@ RATCHETFILES=$(SUPERTREE)/mydata.tre $(SUPERTREE)/mydata.tmp $(RATCHETCOMMANDSAB
 FASTAFILES  = $(patsubst %.raw,%.fas,$(RAWFILES))
 PHYLIPFILES = $(patsubst %.fas,%.phylip,$(FASTAFILES))
 NEWICKTREES = $(patsubst %.tre,%.dnd,$(CONTREES))
-PAMLTREES   = $(patsubst %.dnd,%.pamltree,$(NEWICKTREES))
-PAMLCTLS    = $(patsubst %.dnd,%.pamlctl,$(NEWICKTREES))
-PAMLOUTS    = $(patsubst %.pamlctl,%.pamlout,$(PAMLCTLS))
-PAMLSEQS    = $(patsubst %.phylip,%.pamlseq,$(PHYLIPFILES))
 PHYMLTREES  = $(patsubst %.phylip,%.phylip_phyml_tree.txt,$(PHYLIPFILES))
-PHYLOXMLGENETREES = $(patsubst %.phylip_phyml_tree.txt,%.phyloxml,$(PHYMLTREES))
-NEXUSFILES = $(patsubst %.phylip_phyml_tree.txt,%.nex,$(PHYMLTREES))
+COLLAPSEDTREES = $(patsubst %.phylip_phyml_tree.txt,%.ctree,$(PHYMLTREES))
+PAMLSEQS    = $(patsubst %.ctree,%.pamlseq,$(COLLAPSEDTREES))
+PAMLTREES   = $(patsubst %.ctree,%.pamltree,$(COLLAPSEDTREES))
+PAMLCTLS    = $(patsubst %.pamltree,%.pamlctl,$(PAMLTREES))
+PAMLOUTS    = $(patsubst %.pamlctl,%.pamlout,$(PAMLCTLS))
+PHYLOXMLGENETREES = $(patsubst %.ctree,%.phyloxml,$(COLLAPSEDTREES))
+NEXUSFILES = $(patsubst %.ctree,%.nex,$(COLLAPSEDTREES))
 SVGFILES = $(patsubst %.nex,%.svg,$(NEXUSFILES))
 CSVFILES = $(patsubst %.nex,%.csv,$(NEXUSFILES))
 MRPMATRICES = $(patsubst %.xml,%.dat,$(NEXMLFILES))
@@ -58,6 +59,8 @@ paml : $(PAMLSEQS) $(PAMLOUTS)
 speciestree : $(SPECIESPHYLOXML)
 
 sdi : $(SPECIESPHYLOXML) $(PHYLOXMLGENETREES) $(SDITREES)
+
+nexus : $(NEXUSFILES)
 
 treebase :
 	$(PERL) $(SCRIPT)/fetch_trees.pl -d $(SOURCETREES) -c $(TAXAMAP)
@@ -80,13 +83,19 @@ $(PHYMLTREES) : %.phylip_phyml_tree.txt : %.phylip
 	$(PERL) -i $(SCRIPT)/nodelabels.pl $*.dnd
 	$(PHYML) -i $< -u $*.dnd -s BEST
 
+# collapse monophyletic clades, which are either in-paralogs or multiple
+# genbank records for the same locus and the same species
+$(COLLAPSEDTREES) : %.ctree : %.phylip_phyml_tree.txt
+	$(PERL) $(SCRIPT)/collapse_monophyletic.pl -i $< -f newick -l phylip \
+		-c $(TAXAMAP) -s ANOLCARO -s OPHIHANN > $@
+
 # generate trees with labeled internal nodes for PAML codeml
-$(PAMLTREES) : %.pamltree : %.dnd
+$(PAMLTREES) : %.pamltree : %.ctree
 	$(PERL) $(SCRIPT)/make_paml_tree.pl -c $(TAXAMAP) -i $< > $@
 
 # generate PAML's retarded version of phylip files
-$(PAMLSEQS) : %.pamlseq : %.phylip
-	$(PERL) $(SCRIPT)/make_paml_seqs.pl -i $< > $@
+$(PAMLSEQS) : %.pamlseq : %.ctree
+	$(PERL) $(SCRIPT)/make_paml_seqs.pl -i $*.phylip -t $< > $@
 
 # generate paml control files
 $(PAMLCTLS) : %.pamlctl : %.pamltree
@@ -97,11 +106,11 @@ $(PAMLOUTS) : %.pamlout : %.pamlctl
 	$(CODONML) $<
 
 # generates phyloxml trees
-$(PHYLOXMLGENETREES) : %.phyloxml : %.phylip_phyml_tree.txt
-	$(PERL) $(SCRIPT)/phyloxml.pl -s $* -f newick -c $(TAXAMAP) > $@
+$(PHYLOXMLGENETREES) : %.phyloxml : %.ctree
+	$(PERL) $(SCRIPT)/phyloxml.pl -s $* -f newick -c $(TAXAMAP) -e ctree > $@
 
 # generates nexus files
-$(NEXUSFILES) : %.nex : %.phylip_phyml_tree.txt
+$(NEXUSFILES) : %.nex : %.ctree
 	$(PERL) $(SCRIPT)/make_nexus.pl \
         --treefile=$< \
         --treeformat=newick \
