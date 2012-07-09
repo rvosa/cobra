@@ -7,11 +7,9 @@ use Bio::Phylo::Util::Logger;
 use Bio::Phylo::Cobra::TaxaMap;
 use Bio::Phylo::IO 'parse_tree';
 
-my ( $infile, $csv );
-my $format  = 'newick';
-my $label   = 'label';
+# process command line arguments
+my ( $infile, $csv, @skip, $format, $label );
 my $verbose = 2;
-my @skip    = qw(ANOLCARO OPHIHANN);
 GetOptions(
 	'infile=s' => \$infile,
 	'format=s' => \$format,
