@@ -60,7 +60,7 @@ all : genetrees speciestree sdi
 
 fasta : $(FASTAFILES)
 
-mrbayes : $(MRBAYESFILES)
+mrbayes : $(MCMCFILES)
 
 genetrees : fasta $(PHYLIPFILES) $(NEWICKTREES) $(PHYMLTREES) $(PHYLOXMLGENETREES) $(NEXUSFILES) $(SVGFILES)
 
