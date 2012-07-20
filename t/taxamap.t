@@ -19,6 +19,26 @@ for my $gene ( @genes ) {
     ok( scalar(@phylip) == scalar(@unique), "distinct phylip labels for gene $gene");
 }
 
+# test: all binomials must have distinct codes
+{
+	my @binomials = $map->get_distinct_binomials;
+	for my $species ( @binomials ) {
+		my @code = $map->get_code_for_binomial($species);
+		my @uniq = keys %{ { map { $_ => 1 } @code } };
+		ok( scalar(@uniq) == 1, "One code for binomial $species (@uniq)" );
+	}
+}
+
+# test: all codes must have distinct binomials
+{
+	my @codes = $map->get_distinct_codes;
+	for my $code ( @codes ) {
+		my @binomials = $map->get_binomial_for_code($code);
+		my @uniq = keys %{ { map { $_ => 1 } @binomials } };
+		ok( scalar(@uniq) == 1, "One binomial for code $code (@uniq)" );
+	}
+}
+
 # test: gis must be unique across entire table
 my @all_gis = grep { /\d+/ } $map->get_all_gis;
 my %seen;
