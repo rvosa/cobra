@@ -39,7 +39,7 @@ RATCHETFILES=$(SUPERTREE)/mydata.tre $(SUPERTREE)/mydata.tmp $(RATCHETCOMMANDSAB
 FASTAFILES   = $(patsubst %.raw,%.fas,$(RAWFILES))
 PHYLIPFILES  = $(patsubst %.fas,%.phylip,$(FASTAFILES))
 MRBAYESFILES = $(patsubst %.fas,%.mb,$(FASTAFILES))
-MCMCFILES    = $(patsubst %.mb,%.mb.mcmc,$(MRBAYESFILES))
+MCMCTREES    = $(patsubst %.mb,%.mb.con.tre,$(MRBAYESFILES))
 NEWICKTREES  = $(patsubst %.tre,%.dnd,$(CONTREES))
 PHYMLTREES   = $(patsubst %.phylip,%.phylip_phyml_tree.txt,$(PHYLIPFILES))
 COLLAPSEDTREES = $(patsubst %.phylip_phyml_tree.txt,%.ctree,$(PHYMLTREES))
@@ -60,7 +60,7 @@ all : genetrees speciestree sdi
 
 fasta : $(FASTAFILES)
 
-mrbayes : $(MCMCFILES)
+mrbayes : $(MCMCTREES)
 
 genetrees : fasta $(PHYLIPFILES) $(NEWICKTREES) $(PHYMLTREES) $(PHYLOXMLGENETREES) $(NEXUSFILES) $(SVGFILES)
 
@@ -87,7 +87,7 @@ $(MRBAYESFILES) : %.mb : %.fas
 	$(PERL) $(SCRIPT)/make_mrbayes_data.pl -i $< -c $(TAXAMAP) -s fasta -d dna -m $(MRBAYESBLOCK) > $@
 
 # run mrbayes
-$(MCMCFILES) : %.mb.mcmc : %.mb
+$(MCMCTREES) : %.mb.con.tre : %.mb
 	$(MB) $<
 
 # converts fasta files to phylip files for phyml
@@ -97,7 +97,7 @@ $(PHYLIPFILES) : %.phylip : %.fas
 # converts nick's consensus nexus trees to newick trees and uses them as
 # input trees for a phyml run on the filtered alignments
 $(PHYMLTREES) : %.phylip_phyml_tree.txt : %.phylip
-	$(PERL) $(SCRIPT)/nexus2newick.pl -c $(TAXAMAP) -i $*.tre -s $*.fas > $*.dnd
+	$(PERL) $(SCRIPT)/nexus2newick.pl -c $(TAXAMAP) -i $*.mb.con.tre -s $*.fas > $*.dnd
 	$(PERL) -i $(SCRIPT)/nodelabels.pl $*.dnd
 	$(PHYML) -i $< -u $*.dnd -s BEST
 
