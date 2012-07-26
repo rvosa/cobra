@@ -62,6 +62,8 @@ fasta : $(FASTAFILES)
 
 mrbayes : $(MCMCTREES)
 
+mrbayesinput : $(MRBAYESFILES)
+
 genetrees : fasta $(PHYLIPFILES) $(NEWICKTREES) $(PHYMLTREES) $(PHYLOXMLGENETREES) $(NEXUSFILES) $(SVGFILES)
 
 paml : $(PAMLSEQS) $(PAMLOUTS)
