@@ -1,6 +1,6 @@
 #NEXUS
 BEGIN DATA;
-[! Characters block written by Bio::Phylo::Matrices::Matrix 0.50_1660 on Fri Jul 20 22:57:07 2012 ]
+[! Characters block written by Bio::Phylo::Matrices::Matrix 0.50_1660 on Wed Jul 25 14:47:42 2012 ]
 	DIMENSIONS NTAX=57 NCHAR=729;
 	FORMAT DATATYPE=Dna MATCHCHAR=. MISSING=? GAP=-;
 	MATRIX
@@ -68,7 +68,7 @@ begin mrbayes;
 	lset nst=6 rates=invgamma;
 	unlink statefreq=(all) revmat=(all) shape=(all) pinvar=(all); 
 	prset applyto=(all) ratepr=variable;
-	mcmcp ngen= 10000000 relburnin=yes burninfrac=0.25  printfreq=1000  samplefreq=1000 nchains=4 savebrlens=yes;
+	mcmcp ngen=2000000 relburnin=yes burninfrac=0.1  printfreq=1000  samplefreq=1000 nchains=4 savebrlens=yes;
 	mcmc;
 	sumt;
 end;
