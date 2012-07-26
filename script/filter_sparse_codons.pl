@@ -5,14 +5,16 @@ use Getopt::Long;
 use Bio::Phylo::Util::Logger ':levels';
 use Bio::Phylo::IO qw'parse_matrix unparse';
 
-# instantiate logger
-my $log = Bio::Phylo::Util::Logger->new;
-
 # process command line arguments
+my $verbosity;
 my $cutoff = 0.5;
 GetOptions(
     'cutoff=s' => \$cutoff,
+    'verbose+' => \$verbosity,
 );
+
+# instantiate logger
+my $log = Bio::Phylo::Util::Logger->new( '-class' => 'main', '-level' => $verbosity );
 
 # parse input matrix
 my $matrix = parse_matrix(
