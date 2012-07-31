@@ -1,16 +1,26 @@
+# the following are 3rd party executables you will need to download and install
+# http://www.atgc-montpellier.fr/download/binaries/phyml/phyml_v2.4.4.tar.gz
 PHYML=phyml
-PAUPRAT=pauprat
+# http://paup.csit.fsu.edu/
 PAUP=paup
-JAVA=java
+# http://mrbayes.sourceforge.net/
 MB=mb
+# http://abacus.gene.ucl.ac.uk/software/paml.html
 CODONML=/Users/rvosa/Applications/paml44/bin/codeml
+
+# these are probably standard, if not you need to install them
+JAVA=java
+PERL=perl -I$(LIB)
+
+VERBOSITY=-v -v -v -v
 SCRIPT=script
 LIB=lib
-PERL=perl -I$(LIB)
 DATA=data
 RAWDATA=$(DATA)/pythonsequences/
 SOURCETREES=$(DATA)/sourcetrees
+
 TAXAMAP=$(DATA)/excel/taxa.csv
+SPECIESLIST=$(DATA)/specieslist.txt
 SPECIESPHYLOXML=$(DATA)/speciestree.xml
 RAWFILES := $(wildcard $(RAWDATA)/*.raw)
 CONTREES := $(wildcard $(RAWDATA)/*.tre)
@@ -75,7 +85,10 @@ sdi : $(SPECIESPHYLOXML) $(PHYLOXMLGENETREES) $(SDITREES)
 nexus : $(NEXUSFILES)
 
 treebase :
-	$(PERL) $(SCRIPT)/fetch_trees.pl -d $(SOURCETREES) -c $(TAXAMAP)
+	$(PERL) $(SCRIPT)/fetch_trees.pl -d $(SOURCETREES) -c $(TAXAMAP) $(VERBOSITY)
+
+specieslist :
+	cut -f 3 -d ',' $(TAXAMAP) | sort | uniq > $(SPECIESLIST)
 
 # clean up nick's raw fasta files
 $(FASTAFILES) : %.fas : %.raw
@@ -170,7 +183,7 @@ $(SUPERMRP) : $(NCBIMRP) $(MRPMATRICES)
 
 # appends command blocks to mrp nexus file
 $(RATCHETCOMMANDSABS) : $(SUPERMRP)
-	cd $(SUPERTREE) && $(PAUPRAT) $(RATCHETSETUP) && cd -
+	$(PERL) $(SCRIPT)/make_ratchet_commands.pl -s $(RATCHETSETUP) -r 200 -p 15 -m $(SUPERMRP) > $(RATCHETCOMMANDS)
 	$(PERL) $(SCRIPT)/make_ratchet_footer.pl --constraint $(NCBITREE) \
         -f newick -o $(MRPOUTGROUP) --csv $(TAXAMAP) -r $(RATCHETCOMMANDS) \
         >> $(SUPERMRP)
