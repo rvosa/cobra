@@ -99,7 +99,7 @@ $(PHYLIPFILES) : %.phylip : %.fas
 # converts nick's consensus nexus trees to newick trees and uses them as
 # input trees for a phyml run on the filtered alignments
 $(PHYMLTREES) : %.phylip_phyml_tree.txt : %.phylip
-	$(PERL) $(SCRIPT)/nexus2newick.pl -c $(TAXAMAP) -i $*.mb.con.tre -s $*.fas > $*.dnd
+	$(PERL) $(SCRIPT)/nexus2newick.pl -i $*.mb.con.tre > $*.dnd
 	$(PERL) -i $(SCRIPT)/nodelabels.pl $*.dnd
 	$(PHYML) -i $< -u $*.dnd -s BEST
 
