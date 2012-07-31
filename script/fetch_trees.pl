@@ -5,20 +5,26 @@ use Bio::Phylo::Cobra::TaxaMap;
 use Bio::Phylo::PhyloWS::Client;
 use Bio::Phylo::Factory;
 use Bio::Phylo::IO 'parse';
+use Bio::Phylo::Util::Logger;
 use Getopt::Long;
 
 # process command line arguments
-my ( $dir, $file, $id );
+my ( $dir, $file, $id, $verbosity );
 GetOptions(
 	'dir=s' => \$dir, # sourcetrees
 	'csv=s' => \$file, # taxa.csv
 	'id=i'  => \$id, # optional: use single NCBI identifier
+	'verbose+' => \$verbosity,
 );
+
+# instantiate logger
+my $log = Bio::Phylo::Util::Logger->new( '-class' => 'main', '-level' => $verbosity );
 
 # read csv file, get distinct NCBI taxon IDs
 my $map = Bio::Phylo::Cobra::TaxaMap->new($file);
 my @ids = $map->get_distinct_taxonIDs;
 @ids = ( $id ) if $id;
+$log->debug("going to fetch trees for these NCBI taxon IDs: @ids");
 
 # instantiate client
 my $fac = Bio::Phylo::Factory->new;
@@ -58,7 +64,10 @@ for my $id ( @ids ) {
 				);						
 				open my $fh, '>', $outfile or die "Can't open $outfile: $!";
 				print $fh $proj->to_xml, "\n";
-				warn "taxon $id written to $outfile";
+				$log->info("taxon $id written to $outfile");
+			}
+			else {
+				$log->info("already downloaded $outfile");
 			}
 			
 			# counting seen files so we can count overlap
@@ -69,7 +78,7 @@ for my $id ( @ids ) {
 		push @notseen, $id unless scalar( @{ $desc->get_entities } );
 	};
 	if ( $@ ) {
-		warn "problem with taxon $id: $@";
+		$log->warn( "problem with taxon $id: $@" );
 	}
 }
 
