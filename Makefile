@@ -2,7 +2,7 @@
 # http://www.atgc-montpellier.fr/download/binaries/phyml/phyml_v2.4.4.tar.gz
 PHYML=phyml
 # http://paup.csit.fsu.edu/
-PAUP=paup
+PAUP=bin/paup4a125_osx_leopard
 # http://mrbayes.sourceforge.net/
 MB=mb
 # http://abacus.gene.ucl.ac.uk/software/paml.html
@@ -12,16 +12,22 @@ CODONML=/Users/rvosa/Applications/paml44/bin/codeml
 JAVA=java
 PERL=perl -I$(LIB)
 
+# verbosity for perl logger
 VERBOSITY=-v -v -v -v
+
+# standard locations
 SCRIPT=script
 LIB=lib
 DATA=data
 RAWDATA=$(DATA)/pythonsequences/
 SOURCETREES=$(DATA)/sourcetrees
 
+# important singleton files
 TAXAMAP=$(DATA)/excel/taxa.csv
 SPECIESLIST=$(DATA)/specieslist.txt
 SPECIESPHYLOXML=$(DATA)/speciestree.xml
+PAMLRESULT=$(DATA)/pamlresult.txt
+
 RAWFILES := $(wildcard $(RAWDATA)/*.raw)
 CONTREES := $(wildcard $(RAWDATA)/*.tre)
 NEXMLFILES := $(wildcard $(SOURCETREES)/*.xml)
@@ -66,23 +72,19 @@ SDITREES = $(patsubst %.phyloxml,%.sdi,$(PHYLOXMLGENETREES))
 
 .PHONY : clean all genetrees speciestree sdi treebase
 
-all : genetrees speciestree sdi
+all : paml sdi hyphy
 
 fasta : $(FASTAFILES)
 
 mrbayes : $(MCMCTREES)
 
-mrbayesinput : $(MRBAYESFILES)
-
-genetrees : fasta $(PHYLIPFILES) $(NEWICKTREES) $(PHYMLTREES) $(PHYLOXMLGENETREES) $(NEXUSFILES) $(SVGFILES)
-
-paml : $(PAMLSEQS) $(PAMLOUTS)
+paml : $(PAMLRESULT)
 
 speciestree : $(SPECIESPHYLOXML)
 
 sdi : $(SPECIESPHYLOXML) $(PHYLOXMLGENETREES) $(SDITREES)
 
-nexus : $(NEXUSFILES)
+hyphy : $(NEXUSFILES)
 
 treebase :
 	$(PERL) $(SCRIPT)/fetch_trees.pl -d $(SOURCETREES) -c $(TAXAMAP) $(VERBOSITY)
@@ -105,16 +107,11 @@ $(MRBAYESFILES) : %.mb : %.fas
 $(MCMCTREES) : %.mb.con.tre : %.mb
 	$(MB) $<
 
-# converts fasta files to phylip files for phyml
-$(PHYLIPFILES) : %.phylip : %.fas
-	$(PERL) $(SCRIPT)/fas2phylip.pl -i $< -c $(TAXAMAP) > $@
-
-# converts nick's consensus nexus trees to newick trees and uses them as
-# input trees for a phyml run on the filtered alignments
-$(PHYMLTREES) : %.phylip_phyml_tree.txt : %.phylip
-	$(PERL) $(SCRIPT)/nexus2newick.pl -i $*.mb.con.tre > $*.dnd
-	$(PERL) -i $(SCRIPT)/nodelabels.pl $*.dnd
-	$(PHYML) -i $< -u $*.dnd -s BEST
+# run phyml
+$(PHYMLTREES) : %.phylip_phyml_tree.txt : %.mb.con.tre
+	$(PERL) $(SCRIPT)/fas2phylip.pl -i $*.fas -c $(TAXAMAP) > $*.phylip
+	$(PERL) $(SCRIPT)/nexus2newick.pl -i $< > $*.dnd
+	$(PHYML) -i $*.phylip -u $*.dnd -s BEST
 
 # collapse monophyletic clades, which are either in-paralogs or multiple
 # genbank records for the same locus and the same species
@@ -126,7 +123,7 @@ $(COLLAPSEDTREES) : %.ctree : %.phylip_phyml_tree.txt
 $(PAMLTREES) : %.pamltree : %.ctree
 	$(PERL) $(SCRIPT)/make_paml_tree.pl -c $(TAXAMAP) -i $< > $@
 
-# generate PAML's retarded version of phylip files
+# generate PAML's version of phylip files
 $(PAMLSEQS) : %.pamlseq : %.ctree
 	$(PERL) $(SCRIPT)/make_paml_seqs.pl -i $*.phylip -t $< > $@
 
@@ -138,6 +135,10 @@ $(PAMLCTLS) : %.pamlctl : %.pamltree
 $(PAMLOUTS) : %.pamlout : %.pamlctl
 	$(CODONML) $<
 
+# parse codonml output
+$(PAMLRESULT) : $(PAMLSEQS) $(PAMLOUTS)
+	$(PERL) $(SCRIPT)/parse_paml_out.pl $(PAMLOUTS) > $@
+	
 # generates phyloxml trees
 $(PHYLOXMLGENETREES) : %.phyloxml : %.ctree
 	$(PERL) $(SCRIPT)/phyloxml.pl -s $* -f newick -c $(TAXAMAP) -e ctree > $@
