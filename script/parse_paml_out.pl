@@ -3,7 +3,7 @@ use strict;
 use warnings;
 
 my @infiles = @ARGV;
-print "file\tnon-venomous branches\tvenomous branches\n";
+print "file\tw non-venomous branches\tw venomous branches\n";
 for my $file ( @infiles ) {
     open my $fh, '<', $file or die $!;
     while(<$fh>) {
