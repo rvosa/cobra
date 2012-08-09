@@ -4,16 +4,22 @@ use strict;
 use Getopt::Long;
 use Bio::Phylo::Cobra::TaxaMap;
 use Bio::Phylo::IO qw'parse unparse';
+use Bio::Phylo::Util::Logger;
 use Bio::Phylo::Util::CONSTANT qw':objecttypes :namespaces';
 use Bio::Phylo::Factory;
 
 # process command line arguments
-my ( $infile, $csv, $og );
+my ( $infile, $csv, $og, $verbosity );
 GetOptions(
     'infile=s'   => \$infile,
     'csv=s'      => \$csv,
     'outgroup=s' => \$og,
+    'verbose+'   => \$verbosity,
 );
+
+# instantiate helper objects
+my $map = Bio::Phylo::Cobra::TaxaMap->new($csv);
+my $log = Bio::Phylo::Util::Logger->new( '-class' => 'main', '-level' => $verbosity );
 
 # build nexus string from $infile only keeping distinct trees
 my %seen;
@@ -64,7 +70,7 @@ $tree->visit(
     sub {
         my $node = shift;
         if ( scalar(@{ $node->get_children }) > 2 ) {
-            warn $node->to_newick;
+            $log->warn("polytomy: ".$node->to_newick);
         }
     }
 );
@@ -72,28 +78,15 @@ $tree->visit(
 # resolve polytomies
 $tree->resolve;
 
-# attach 10-character code (from csv) and binomial
-# as phyloxml annotations
-my $map = Bio::Phylo::Cobra::TaxaMap->new($csv);
+# attach 8-character code (from csv) as phyloxml taxon annotation, use binomial as node 
+# name
 $taxa->visit(
     sub {
         my $taxon = shift;
         my $code = $taxon->get_name;
-        my ($binomial) = sort { length($a) <=> length($b) } $map->get_binomial_for_code($code);
-        if ( $code ) {
-            $taxon->add_meta(
-                $fac->create_meta(
-                    '-namespaces' => { 'pxml' => _NS_PHYLOXML_ },
-                    '-triple' => { 'pxml:code' => $code },
-                )
-            );
-        }
-        #$taxon->add_meta(
-        #    $fac->create_meta(
-        #        '-namespaces' => { 'pxml' => _NS_PHYLOXML_ },
-        #        '-triple' => { 'pxml:scientific_name' => $binomial },
-        #    )
-        #);            
+        $taxon->set_namespaces( 'pxml' => _NS_PHYLOXML_ );        
+		$taxon->add_meta( $fac->create_meta( '-triple' => { 'pxml:code' => $code } ) );
+		$_->set_name( $map->get_binomial_for_code($code) ) for @{ $taxon->get_nodes };
     }
 );
 
