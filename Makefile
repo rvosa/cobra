@@ -80,6 +80,8 @@ mrbayes : $(MCMCTREES)
 
 paml : $(PAMLRESULT)
 
+genetrees : $(PHYLOXMLGENETREES)
+
 speciestree : $(SPECIESPHYLOXML)
 
 sdi : $(SPECIESPHYLOXML) $(PHYLOXMLGENETREES) $(SDITREES)
